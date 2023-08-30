@@ -1,6 +1,6 @@
-# Barn
+# PLY Mappings
 
-**B**eta y**arn** is a [yarn](https://github.com/FabricMC/yarn) fork for b1.7.3
+**P**roject **L**egacy **M**mappings is a [barn](https://github.com/babric/barn) fork, which is a [yarn](https://github.com/FabricMC/yarn) fork for b1.7.3
 
 ## Usage
 
