@@ -1,6 +1,8 @@
-# PLY Mappings
+# BINY Mappings
 
-**P**roject **L**egacy **M**appings is a [barn](https://github.com/babric/barn) fork, which is a [yarn](https://github.com/FabricMC/yarn) fork for b1.7.3
+**B**oring **I**nstructional **N**ames (**Y**arn Edition) is a [barn](https://github.com/babric/barn) fork, which is a [yarn](https://github.com/FabricMC/yarn) fork for b1.7.3
+
+The intent of this project is to continue the work of BIN mappings, but this time following Yarn's naming scheme better.
 
 ## Usage
 
