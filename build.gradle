@@ -42,6 +42,7 @@ def build_number = project.build_id ?: "local"
 def yarnVersion = "${minecraft_version}+$build_number"
 version = yarnVersion
 
+def ENV = System.getenv()
 if (ENV.BRANCH_NAME) {
 	def branch = ENV.BRANCH_NAME.substring(ENV.BRANCH_NAME.lastIndexOf("/") + 1)
 	if (minecraft_version != branch) {
