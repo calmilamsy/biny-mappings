@@ -37,7 +37,7 @@ filament {
 }
 
 // Fetch build number from BuildBot
-def build_number = project.build_id ?: "local"
+def build_number = project.hasProperty("build_id")? project.build_id : "local"
 
 def yarnVersion = "${minecraft_version}+$build_number"
 version = yarnVersion
