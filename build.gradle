@@ -651,7 +651,7 @@ publishing {
 		}
 	}
 	repositories {
-		if (project.glass_maven_url) {
+		if (project.hasProperty("glass_maven_url")) {
 			maven {
 				url project.glass_maven_url
 				credentials {
