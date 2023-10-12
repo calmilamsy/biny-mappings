@@ -14,16 +14,25 @@ CLASS net/minecraft/class_25 net/minecraft/util/math/Box
 		ARG 7 x2
 		ARG 9 y2
 		ARG 11 z2
+	METHOD method_100 containsInXZPlane (Lnet/minecraft/class_26;)Z
+		ARG 1 pos
 	METHOD method_101 getZOffset (Lnet/minecraft/class_25;D)D
 		ARG 1 box
 		ARG 2 z
-	METHOD method_102 shift (DDD)Lnet/minecraft/class_25;
+	METHOD method_102 translate (DDD)Lnet/minecraft/class_25;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_103 containsInXYPlane (Lnet/minecraft/class_26;)Z
+		ARG 1 pos
+	METHOD method_104 contract (DDD)Lnet/minecraft/class_25;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 	METHOD method_105 clearCache ()V
+	METHOD method_106 getAverageSideLength ()D
 	METHOD method_85 resetCacheCount ()V
-	METHOD method_86 add (DDD)Lnet/minecraft/class_25;
+	METHOD method_86 stretch (DDD)Lnet/minecraft/class_25;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
@@ -34,28 +43,36 @@ CLASS net/minecraft/class_25 net/minecraft/util/math/Box
 		ARG 6 x2
 		ARG 8 y2
 		ARG 10 z2
+	METHOD method_88 contains (Lnet/minecraft/class_26;)Z
+		ARG 1 pos
+	METHOD method_89 raycast (Lnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
+		ARG 1 min
+		ARG 2 max
 	METHOD method_90 intersects (Lnet/minecraft/class_25;)Z
 		ARG 1 box
 	METHOD method_91 getXOffset (Lnet/minecraft/class_25;D)D
 		ARG 1 box
 		ARG 2 x
+	METHOD method_92 copy ()Lnet/minecraft/class_25;
 	METHOD method_93 expand (DDD)Lnet/minecraft/class_25;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD method_94 getOrCreate (DDDDDD)Lnet/minecraft/class_25;
+	METHOD method_94 createCached (DDDDDD)Lnet/minecraft/class_25;
 		ARG 0 x1
 		ARG 2 y1
 		ARG 4 z1
 		ARG 6 x2
 		ARG 8 y2
 		ARG 10 z2
-	METHOD method_96 copy (Lnet/minecraft/class_25;)V
-		ARG 1 from
+	METHOD method_95 containsInYZPlane (Lnet/minecraft/class_26;)Z
+		ARG 1 pos
+	METHOD method_96 clone (Lnet/minecraft/class_25;)V
+		ARG 1 other
 	METHOD method_97 getYOffset (Lnet/minecraft/class_25;D)D
 		ARG 1 box
 		ARG 2 y
-	METHOD method_98 move (DDD)Lnet/minecraft/class_25;
+	METHOD method_98 offset (DDD)Lnet/minecraft/class_25;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z

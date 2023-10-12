@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_27 net/minecraft/util/hit/HitResult
+	FIELD field_1983 type Lnet/minecraft/class_212;
+	FIELD field_1984 blockX I
+	FIELD field_1985 blockY I
+	FIELD field_1986 blockZ I
+	FIELD field_1987 side I
+	FIELD field_1988 pos Lnet/minecraft/class_26;
+	FIELD field_1989 entity Lnet/minecraft/class_57;
+	METHOD <init> (IIIILnet/minecraft/class_26;)V
+		ARG 1 blockX
+		ARG 2 blockY
+		ARG 3 blockZ
+		ARG 4 side
+		ARG 5 pos
+	METHOD <init> (Lnet/minecraft/class_57;)V
+		ARG 1 entity
