@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_148 net/minecraft/recipe/CraftingRecipeManager
+	FIELD field_561 INSTANCE Lnet/minecraft/class_148;
+	FIELD field_562 recipes Ljava/util/List;
+	METHOD method_538 getInstance ()Lnet/minecraft/class_148;
+	METHOD method_539 addShapedRecipe (Lnet/minecraft/class_31;[Ljava/lang/Object;)V
+		ARG 1 output
+		ARG 2 input
+	METHOD method_540 craft (Lnet/minecraft/class_159;)Lnet/minecraft/class_31;
+	METHOD method_541 getRecipes ()Ljava/util/List;
+	METHOD method_542 addShapelessRecipe (Lnet/minecraft/class_31;[Ljava/lang/Object;)V
+		ARG 1 output
+		ARG 2 input
+	CLASS 1
+		METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I
+			ARG 1 recipe
+			ARG 2 recipe2

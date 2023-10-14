@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_233 net/minecraft/recipe/BasicBlockRecipes
+	METHOD method_784 add (Lnet/minecraft/class_148;)V
+		ARG 1 recipeManager

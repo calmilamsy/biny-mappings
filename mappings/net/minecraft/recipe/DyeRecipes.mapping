@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_298 net/minecraft/recipe/DyeRecipes
+	METHOD method_989 add (Lnet/minecraft/class_148;)V
+		ARG 1 recipeManager

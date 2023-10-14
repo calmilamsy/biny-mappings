@@ -89,5 +89,5 @@ CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
 	METHOD method_720 isDamaged ()Z
 	METHOD method_722 getDamage ()I
 	METHOD method_723 getMaxDamage ()I
-	METHOD method_724 clone ()Lnet/minecraft/class_31;
+	METHOD method_724 copy ()Lnet/minecraft/class_31;
 	METHOD method_726 getTranslationKey ()Ljava/lang/String;
