@@ -7,7 +7,7 @@ CLASS net/minecraft/class_189 net/minecraft/util/math/MathHelper
 		ARG 2 b
 	METHOD method_644 sin (F)F
 		ARG 0 value
-	METHOD method_645 floot (D)I
+	METHOD method_645 floor (D)I
 		ARG 0 value
 	METHOD method_646 cos (F)F
 		ARG 0 value
@@ -17,5 +17,8 @@ CLASS net/minecraft/class_189 net/minecraft/util/math/MathHelper
 		ARG 0 value
 	METHOD method_649 abs (F)F
 		ARG 0 value
+	METHOD method_650 floorDiv (II)I
+		ARG 0 dividend
+		ARG 1 divisor
 	METHOD method_651 isNullOrEmtpy (Ljava/lang/String;)Z
 		ARG 0 text
