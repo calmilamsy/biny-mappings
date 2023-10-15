@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_584 net/minecraft/client/gui/DrawableHelper
+CLASS net/minecraft/class_584 net/minecraft/client/gui/DrawContext
 	FIELD field_2522 zOffset F
 	METHOD method_1931 drawHorizontalLine (IIII)V
 		ARG 1 x1
@@ -7,8 +7,8 @@ CLASS net/minecraft/class_584 net/minecraft/client/gui/DrawableHelper
 		ARG 4 color
 	METHOD method_1932 fill (IIIII)V
 		ARG 1 x1
-		ARG 2 x2
-		ARG 3 y1
+		ARG 2 y1
+		ARG 3 x2
 		ARG 4 y2
 		ARG 5 color
 	METHOD method_1933 fillGradient (IIIIII)V
@@ -21,7 +21,7 @@ CLASS net/minecraft/class_584 net/minecraft/client/gui/DrawableHelper
 	METHOD method_1934 drawCenteredTextWithShadow (Lnet/minecraft/class_34;Ljava/lang/String;III)V
 		ARG 1 textRenderer
 		ARG 2 text
-		ARG 3 x
+		ARG 3 centerX
 		ARG 4 y
 		ARG 5 color
 	METHOD method_1935 drawVerticalLine (IIII)V
@@ -36,7 +36,7 @@ CLASS net/minecraft/class_584 net/minecraft/client/gui/DrawableHelper
 		ARG 4 v
 		ARG 5 width
 		ARG 6 height
-	METHOD method_1937 drawStringWithShadow (Lnet/minecraft/class_34;Ljava/lang/String;III)V
+	METHOD method_1937 drawTextWithShadow (Lnet/minecraft/class_34;Ljava/lang/String;III)V
 		ARG 1 textRenderer
 		ARG 2 text
 		ARG 3 x

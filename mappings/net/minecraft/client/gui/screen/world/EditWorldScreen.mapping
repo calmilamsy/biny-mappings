@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_341 net/minecraft/client/gui/screen/world/EditWorldScreen
+	FIELD field_1272 levelNameTextField Lnet/minecraft/class_181;

@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_180 net/minecraft/client/gui/screen/world/CreateWorldScreen
+	FIELD field_632 worldNameField Lnet/minecraft/class_181;
+	FIELD field_633 seedField Lnet/minecraft/class_181;

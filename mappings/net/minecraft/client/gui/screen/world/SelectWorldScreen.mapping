@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_568 net/minecraft/client/gui/screen/world/SelectWorldScreen
+	CLASS class_569 WorldListWidget
