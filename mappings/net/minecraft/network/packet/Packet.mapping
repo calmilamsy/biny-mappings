@@ -1,0 +1,32 @@
+CLASS net/minecraft/class_169 net/minecraft/network/packet/Packet
+	FIELD field_899 rawIdToType Ljava/util/Map;
+	FIELD field_900 typeToRawId Ljava/util/Map;
+	FIELD field_901 clientBoundPackets Ljava/util/Set;
+	FIELD field_902 serverBoundPackets Ljava/util/Set;
+	FIELD field_906 worldPacket Z
+	METHOD method_798 size ()I
+	METHOD method_799 create (I)Lnet/minecraft/class_169;
+		ARG 0 rawId
+	METHOD method_800 register (IZZLjava/lang/Class;)V
+		ARG 0 rawId
+		ARG 1 clientBound
+		ARG 2 serverBound
+		ARG 3 type
+	METHOD method_801 write (Lnet/minecraft/class_169;Ljava/io/DataOutputStream;)V
+		ARG 0 packet
+		ARG 1 stream
+	METHOD method_802 readString (Ljava/io/DataInputStream;I)Ljava/lang/String;
+		ARG 0 stream
+		ARG 1 maxLength
+	METHOD method_803 read (Ljava/io/DataInputStream;Z)Lnet/minecraft/class_169;
+		ARG 0 stream
+	METHOD method_804 writeString (Ljava/lang/String;Ljava/io/DataOutputStream;)V
+		ARG 0 string
+		ARG 1 stream
+	METHOD method_805 getRawId ()I
+	METHOD method_806 read (Ljava/io/DataInputStream;)V
+		ARG 1 stream
+	METHOD method_807 write (Ljava/io/DataOutputStream;)V
+		ARG 1 stream
+	METHOD method_808 apply (Lnet/minecraft/class_240;)V
+		ARG 1 networkHandler

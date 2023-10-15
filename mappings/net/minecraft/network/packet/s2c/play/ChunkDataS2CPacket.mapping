@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_6 net/minecraft/network/packet/play/ChunkDataPacket
+CLASS net/minecraft/class_6 net/minecraft/network/packet/s2c/play/ChunkDataS2CPacket
 	FIELD field_10 sizeZ I
 	FIELD field_11 chunkData [B
 	FIELD field_12 chunkDataSize I

@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_119 net/minecraft/network/packet/s2c/play/EntityVelocityUpdateS2CPacket
+	FIELD field_364 id I
+	FIELD field_365 velocityX I
+	FIELD field_366 velocityY I
+	FIELD field_367 velocityZ I
+	METHOD <init> (IDDD)V
+		ARG 1 id
+		ARG 2 velocityX
+		ARG 4 velocityY
+		ARG 6 velocityZ
+	METHOD <init> (Lnet/minecraft/class_57;)V
+		ARG 1 entity

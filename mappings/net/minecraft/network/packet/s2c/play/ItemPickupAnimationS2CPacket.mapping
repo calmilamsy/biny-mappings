@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_435 net/minecraft/network/packet/s2c/play/ItemPickupAnimationS2CPacket
+	FIELD field_2695 entityId I
+	FIELD field_2696 collectorEntityId I
+	METHOD <init> (II)V
+		ARG 1 entityId
+		ARG 2 collectorId

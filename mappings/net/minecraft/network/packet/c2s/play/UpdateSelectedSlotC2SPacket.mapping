@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_170 net/minecraft/network/packet/c2s/play/UpdateSelectedSlotC2SPacket
+	FIELD field_592 selectedSlot I

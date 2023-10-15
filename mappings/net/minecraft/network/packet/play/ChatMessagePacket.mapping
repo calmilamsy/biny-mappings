@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_340 net/minecraft/network/packet/play/ChatMessagePacket
+	FIELD field_1270 chatMessage Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 chatMessage
