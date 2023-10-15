@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_513 net/minecraft/client/render/entity/TntEntityRenderer
+	FIELD field_2128 blockRenderManager Lnet/minecraft/class_13;

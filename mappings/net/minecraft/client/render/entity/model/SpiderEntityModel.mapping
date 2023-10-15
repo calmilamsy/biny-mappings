@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_571 net/minecraft/client/render/entity/model/SpiderEntityModel
+	FIELD field_2448 head Lnet/minecraft/class_163;
+	FIELD field_2449 body0 Lnet/minecraft/class_163;
+	FIELD field_2450 body1 Lnet/minecraft/class_163;
+	FIELD field_2451 rightHindLeg Lnet/minecraft/class_163;
+	FIELD field_2452 leftHindLeg Lnet/minecraft/class_163;
+	FIELD field_2453 rightMiddleHindLeg Lnet/minecraft/class_163;
+	FIELD field_2454 leftMiddleHindLeg Lnet/minecraft/class_163;
+	FIELD field_2455 rightMiddleFrontLeg Lnet/minecraft/class_163;
+	FIELD field_2456 leftMiddleFrontLeg Lnet/minecraft/class_163;
+	FIELD field_2457 rightFrontLeg Lnet/minecraft/class_163;
+	FIELD field_2458 leftFrontLeg Lnet/minecraft/class_163;
