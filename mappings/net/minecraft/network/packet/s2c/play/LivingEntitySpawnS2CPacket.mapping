@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_215 net/minecraft/network/packet/s2c/play/LivingEntitySpawnS2CPacket
+	FIELD field_797 pitch B
+	FIELD field_798 dataTracker Lnet/minecraft/class_216;
+	FIELD field_799 trackedValues Ljava/util/List;
+	FIELD field_800 id I
+	FIELD field_801 entityType B
+	FIELD field_802 x I
+	FIELD field_803 y I
+	FIELD field_804 z I
+	FIELD field_805 yaw B
+	METHOD <init> (Lnet/minecraft/class_127;)V
+		ARG 1 livingEntity

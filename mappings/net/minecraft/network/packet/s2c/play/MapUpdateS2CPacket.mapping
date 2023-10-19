@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_161 net/minecraft/network/packet/s2c/play/MapUpdateS2CPacket
+	FIELD field_570 itemRawId S
+	FIELD field_571 id S
+	FIELD field_572 updateData [B
+	METHOD <init> (SS[B)V
+		ARG 1 itemRawId
+		ARG 2 id
+		ARG 3 updateData

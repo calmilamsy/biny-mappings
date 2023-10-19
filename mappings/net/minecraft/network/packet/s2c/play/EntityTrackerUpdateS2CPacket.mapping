@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_438 net/minecraft/network/packet/s2c/play/EntityTrackerUpdateS2CPacket
+	FIELD field_1975 id I
+	FIELD field_1976 trackedValues Ljava/util/List;
+	METHOD <init> (ILnet/minecraft/class_216;)V
+		ARG 1 entityId
+		ARG 2 dataTracker
+	METHOD method_1649 getTrackedValues ()Ljava/util/List;

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_228 net/minecraft/network/packet/play/PlayerActionPacket
+CLASS net/minecraft/class_228 net/minecraft/network/packet/c2s/play/PlayerActionC2SPacket
 	FIELD field_852 x I
 	FIELD field_853 y I
 	FIELD field_854 z I

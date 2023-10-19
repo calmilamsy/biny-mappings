@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_171 net/minecraft/network/packet/s2c/play/ScreenHandlerSlotUpdateS2CPacket
+	FIELD field_593 syncId I
+	FIELD field_594 slot I
+	FIELD field_595 stack Lnet/minecraft/class_31;
+	METHOD <init> (IILnet/minecraft/class_31;)V
+		ARG 1 syncId
+		ARG 2 slot
+		ARG 3 stack

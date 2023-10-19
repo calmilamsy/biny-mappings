@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_437 net/minecraft/network/packet/s2c/play/EntityS2CPacket
+	FIELD field_1748 id I
+	FIELD field_1749 deltaX B
+	FIELD field_1750 deltaY B
+	FIELD field_1751 deltaZ B
+	FIELD field_1752 yaw B
+	FIELD field_1753 pitch B
+	FIELD field_1754 rotate Z
+	METHOD <init> (I)V
+		ARG 1 entityId
