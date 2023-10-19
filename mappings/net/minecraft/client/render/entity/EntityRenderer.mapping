@@ -5,4 +5,6 @@ CLASS net/minecraft/class_579 net/minecraft/client/render/entity/EntityRenderer
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
+	METHOD method_2026 bindTexture (Ljava/lang/String;)V
+		ARG 1 texturePath
 	METHOD method_2029 setDispatcher (Lnet/minecraft/class_578;)V

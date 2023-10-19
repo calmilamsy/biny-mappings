@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_503 net/minecraft/client/render/entity/model/WolfEntityModel
+	FIELD field_2090 torso Lnet/minecraft/class_163;
+	FIELD field_2091 rightHindLeg Lnet/minecraft/class_163;
+	FIELD field_2092 leftHindLeg Lnet/minecraft/class_163;
+	FIELD field_2093 rightFrontLeg Lnet/minecraft/class_163;
+	FIELD field_2094 leftFrontLeg Lnet/minecraft/class_163;
+	FIELD field_2098 tail Lnet/minecraft/class_163;
+	FIELD field_2099 neck Lnet/minecraft/class_163;

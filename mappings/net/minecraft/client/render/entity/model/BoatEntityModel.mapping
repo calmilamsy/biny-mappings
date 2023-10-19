@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_162 net/minecraft/client/render/entity/model/BoatEntityModel
+	FIELD field_573 parts [Lnet/minecraft/class_163;
