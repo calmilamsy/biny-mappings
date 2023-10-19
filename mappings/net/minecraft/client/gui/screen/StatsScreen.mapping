@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_91 net/minecraft/client/gui/screen/StatsScreen
+	CLASS class_93 GeneralStatsListWidget
+	CLASS class_94 ItemStatsListWidget
+	CLASS class_95 BlockStatsListWidget
+	CLASS class_99 AbstractStatsListWidget
