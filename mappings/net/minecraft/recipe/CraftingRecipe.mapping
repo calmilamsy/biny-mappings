@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_160 net/minecraft/recipe/CraftingRecipe
+	METHOD method_2071 getSize ()I
+	METHOD method_2072 matches (Lnet/minecraft/class_159;)Z
+	METHOD method_2073 getOutput ()Lnet/minecraft/class_31;
+	METHOD method_2074 craft (Lnet/minecraft/class_159;)Lnet/minecraft/class_31;

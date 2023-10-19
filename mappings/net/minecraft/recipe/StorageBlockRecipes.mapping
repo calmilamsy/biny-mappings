@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_446 net/minecraft/recipe/StorageBlockRecipes
+	FIELD field_1703 items [[Ljava/lang/Object;
+	METHOD method_1481 add (Lnet/minecraft/class_148;)V
+		ARG 1 recipeManager
