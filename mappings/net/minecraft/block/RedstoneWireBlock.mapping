@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_408 net/minecraft/block/RedstoneWireBlock
+	FIELD field_1570 powered Z
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId
