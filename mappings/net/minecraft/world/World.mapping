@@ -20,6 +20,8 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 3 dimension
 		ARG 4 seed
 	METHOD method_150 playSound (DDDLjava/lang/String;FF)V
+	METHOD method_156 (IIIIZI)Z
+		ARG 6 side
 	METHOD method_159 setTime (J)V
 		ARG 1 time
 	METHOD method_168 canSpawnEntity (Lnet/minecraft/class_25;)Z

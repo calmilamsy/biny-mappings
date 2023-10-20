@@ -136,6 +136,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 4 x
 		ARG 5 y
 		ARG 6 z
+		ARG 7 side
 	METHOD method_446 postHit (Lnet/minecraft/class_31;Lnet/minecraft/class_127;Lnet/minecraft/class_127;)Z
 		ARG 1 stack
 	METHOD method_447 getDamageOnEntity (Lnet/minecraft/class_57;)I

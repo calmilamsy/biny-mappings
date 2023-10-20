@@ -121,7 +121,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 	FIELD field_1940 BLOCKS_WITH_ENTITY [Z
 	FIELD field_1941 BLOCKS_LIGHT_OPACITY [I
 	FIELD field_1942 BLOCKS_ALLOW_VISION [Z
-	FIELD field_1943 BLOCKS_LIGHT_VALUE [I
+	FIELD field_1943 BLOCKS_LIGHT_LUMINANCE [I
 	FIELD field_1944 BLOCKS_IGNORE_META_UPDATE [Z
 	FIELD field_1945 STONE Lnet/minecraft/class_17;
 	FIELD field_1946 GRASS_BLOCK Lnet/minecraft/class_476;
@@ -142,13 +142,13 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 		ARG 5 entity
-	METHOD method_1561 canPlaceAtConsideringMeta (Lnet/minecraft/class_18;IIII)Z
+	METHOD method_1561 canPlaceAt (Lnet/minecraft/class_18;IIII)Z
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-		ARG 5 meta
-	METHOD method_1562 addBoundingBoxIfCollidingPos (Lnet/minecraft/class_18;IIILnet/minecraft/class_25;Ljava/util/ArrayList;)V
+		ARG 5 side
+	METHOD method_1562 addIntersectingBoundingBox (Lnet/minecraft/class_18;IIILnet/minecraft/class_25;Ljava/util/ArrayList;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
@@ -162,15 +162,14 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 4 z
 		ARG 5 data1
 		ARG 6 data2
-	METHOD method_1564 calculateRayIntersection (Lnet/minecraft/class_18;IIILnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
+	METHOD method_1564 raycast (Lnet/minecraft/class_18;IIILnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 startPos
 		ARG 6 endPos
-	METHOD method_1565 getTickrate ()I
-		COMMENT
+	METHOD method_1565 getTickRate ()I
 	METHOD method_1566 canGrow (Lnet/minecraft/class_18;III)Z
 		ARG 1 world
 		ARG 2 x
@@ -202,15 +201,15 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 		ARG 5 entity
-	METHOD method_1573 isSolid (Lnet/minecraft/class_14;IIII)Z
+	METHOD method_1573 isSolidBlock (Lnet/minecraft/class_14;IIII)Z
 		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1574 getPistonPushMode ()I
+	METHOD method_1574 getPistonBehavior ()I
 	METHOD method_1575 getBlastResisence (Lnet/minecraft/class_57;)F
 	METHOD method_1576 hasCollision ()Z
-	METHOD method_1577 setLightValue (F)Lnet/minecraft/class_17;
+	METHOD method_1577 setLuminance (F)Lnet/minecraft/class_17;
 		ARG 1 fractionalValue
 	METHOD method_1578 setBoundingBox (FFFFFF)V
 		ARG 1 minX
@@ -219,10 +218,10 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 4 maxX
 		ARG 5 maxY
 		ARG 6 maxZ
-	METHOD method_1579 isInsideYZ (Lnet/minecraft/class_26;)Z
+	METHOD method_1579 containsInYZPlane (Lnet/minecraft/class_26;)Z
 	METHOD method_1580 setSoundGroup (Lnet/minecraft/class_475;)Lnet/minecraft/class_17;
 		ARG 1 soundGroup
-	METHOD method_1581 spawnItemEntity (Lnet/minecraft/class_18;IIILnet/minecraft/class_31;)V
+	METHOD method_1581 dropStack (Lnet/minecraft/class_18;IIILnet/minecraft/class_31;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
@@ -232,20 +231,19 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 1 player
 	METHOD method_1583 setTranslationKey (Ljava/lang/String;)Lnet/minecraft/class_17;
 		ARG 1 name
-	METHOD method_1584 setHasRandomTicks (Z)Lnet/minecraft/class_17;
-		ARG 1 ticks
-	METHOD method_1585 setBlastResistance (F)Lnet/minecraft/class_17;
+	METHOD method_1584 setTickRandomly (Z)Lnet/minecraft/class_17;
+		ARG 1 tickRandomly
+	METHOD method_1585 setResistance (F)Lnet/minecraft/class_17;
 		ARG 1 resistence
-	METHOD method_1586 isInsideXZ (Lnet/minecraft/class_26;)Z
+	METHOD method_1586 containsInXZPlane (Lnet/minecraft/class_26;)Z
 	METHOD method_1587 setHardness (F)Lnet/minecraft/class_17;
 		ARG 1 hardness
-	METHOD method_1588 isInsideXY (Lnet/minecraft/class_26;)Z
-	METHOD method_1589 getBaseColor (I)I
+	METHOD method_1588 containsInXYPlane (Lnet/minecraft/class_26;)Z
+	METHOD method_1589 getColor (I)I
 		ARG 1 meta
-	METHOD method_1590 setLightOpacity (I)Lnet/minecraft/class_17;
-		ARG 1 ByteSizedInteger
-	METHOD method_1591 ignoreMetaChangeNotifications ()Lnet/minecraft/class_17;
-	METHOD method_1592 dropItems (Lnet/minecraft/class_18;IIII)V
+	METHOD method_1590 setOpacity (I)Lnet/minecraft/class_17;
+	METHOD method_1591 ignoreMetaUpdates ()Lnet/minecraft/class_17;
+	METHOD method_1592 dropStacks (Lnet/minecraft/class_18;IIII)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
@@ -286,6 +284,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 direction
 	METHOD method_1607 getTexture (I)I
 		ARG 1 side
 	METHOD method_1608 onUse (Lnet/minecraft/class_18;IIILnet/minecraft/class_54;)Z
@@ -322,7 +321,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1614 afterPlaced (Lnet/minecraft/class_18;IIILnet/minecraft/class_127;)V
+	METHOD method_1614 onPlaced (Lnet/minecraft/class_18;IIILnet/minecraft/class_127;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
@@ -345,13 +344,13 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 		ARG 5 random
-	METHOD method_1618 isSideRendered (Lnet/minecraft/class_14;IIII)Z
+	METHOD method_1618 isSideVisible (Lnet/minecraft/class_14;IIII)Z
 		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 side
-	METHOD method_1619 getRenderPass ()I
+	METHOD method_1619 getRenderLayer ()I
 	METHOD method_1620 isOpaque ()Z
 	METHOD method_1621 getRenderType ()I
 	METHOD method_1622 getBoundingBox (Lnet/minecraft/class_18;III)Lnet/minecraft/class_25;
@@ -376,7 +375,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 	METHOD method_1627 getTexture (II)I
 		ARG 1 side
 		ARG 2 meta
-	METHOD method_1628 onBreak (Lnet/minecraft/class_18;Lnet/minecraft/class_54;IIII)V
+	METHOD method_1628 afterBreak (Lnet/minecraft/class_18;Lnet/minecraft/class_54;IIII)V
 		ARG 1 world
 		ARG 2 playerEntity
 		ARG 3 x
@@ -385,7 +384,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 6 meta
 	METHOD method_1629 getDroppedItemMeta (I)I
 		ARG 1 blockMeta
-	METHOD method_1630 afterBreak (Lnet/minecraft/class_18;III)V
+	METHOD method_1630 onBreak (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
