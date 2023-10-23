@@ -18,7 +18,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 	FIELD field_1837 DISPENSER Lnet/minecraft/class_17;
 	FIELD field_1838 SANDSTONE Lnet/minecraft/class_17;
 	FIELD field_1839 NOTE_BLOCK Lnet/minecraft/class_17;
-	FIELD field_1840 RED_BED Lnet/minecraft/class_17;
+	FIELD field_1840 BED Lnet/minecraft/class_17;
 	FIELD field_1841 POWERED_RAIL Lnet/minecraft/class_17;
 	FIELD field_1842 DETECTOR_RAIL Lnet/minecraft/class_17;
 	FIELD field_1843 STICKY_PISTON Lnet/minecraft/class_17;
@@ -154,7 +154,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 		ARG 5 box
-		ARG 6 boundingBoxes
+		ARG 6 boxes
 	METHOD method_1563 onBlockAction (Lnet/minecraft/class_18;IIIII)V
 		ARG 1 world
 		ARG 2 x
@@ -207,7 +207,8 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 	METHOD method_1574 getPistonBehavior ()I
-	METHOD method_1575 getBlastResisence (Lnet/minecraft/class_57;)F
+	METHOD method_1575 getBlastResistence (Lnet/minecraft/class_57;)F
+		ARG 1 entity
 	METHOD method_1576 hasCollision ()Z
 	METHOD method_1577 setLuminance (F)Lnet/minecraft/class_17;
 		ARG 1 fractionalValue
@@ -327,11 +328,11 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 		ARG 5 placer
-	METHOD method_1615 onEntityIntersectingBlockSpace (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;)V
+	METHOD method_1615 applyVelocity (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;)V
 		ARG 1 world
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
+		ARG 2 velocityX
+		ARG 3 velocityY
+		ARG 4 velocityZ
 		ARG 5 entity
 	METHOD method_1616 updateBoundingBox (Lnet/minecraft/class_14;III)V
 		ARG 1 blockView
@@ -364,7 +365,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1625 yieldDrops (Lnet/minecraft/class_18;IIIIF)V
+	METHOD method_1625 dropStacks (Lnet/minecraft/class_18;IIIIF)V
 		ARG 1 world
 	METHOD method_1626 getTextureId (Lnet/minecraft/class_14;IIII)I
 		ARG 1 blockView
