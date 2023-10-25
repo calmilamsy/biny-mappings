@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_98 net/minecraft/stat/ItemOrBlockStat
+	FIELD field_1721 itemOrBlockid I
+	METHOD <init> (ILjava/lang/String;I)V
+		ARG 1 statId
+		ARG 2 translationKey
+		ARG 3 itemIdOrBlockId
+	METHOD method_1493 getItemOrBlockId ()I
