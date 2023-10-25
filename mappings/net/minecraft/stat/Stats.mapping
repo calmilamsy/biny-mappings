@@ -1,4 +1,53 @@
 CLASS net/minecraft/class_217 net/minecraft/stat/Stats
+	FIELD field_806 PLAYER_KILLS Lnet/minecraft/class_139;
+	FIELD field_807 FISH_CAUGHT Lnet/minecraft/class_139;
+	FIELD field_808 MINE_BLOCK [Lnet/minecraft/class_139;
 	FIELD field_809 CRAFTED [Lnet/minecraft/class_139;
 	FIELD field_810 USED [Lnet/minecraft/class_139;
 	FIELD field_811 BROKEN [Lnet/minecraft/class_139;
+	FIELD field_812 hasBasicItemStatsInitialized Z
+	FIELD field_813 hasExtendedItemStatsInitialized Z
+	FIELD field_814 ID_TO_STAT Ljava/util/Map;
+	FIELD field_815 ALL_STATS Ljava/util/List;
+	FIELD field_816 GENERAL_STATS Ljava/util/List;
+	FIELD field_817 ITEM_STATS Ljava/util/List;
+	FIELD field_818 BLOCK_MINED_STATS Ljava/util/List;
+	FIELD field_819 START_GAME Lnet/minecraft/class_139;
+	FIELD field_820 CREATE_WORLD Lnet/minecraft/class_139;
+	FIELD field_821 LOAD_WORLD Lnet/minecraft/class_139;
+	FIELD field_822 JOIN_MULTIPLAYER Lnet/minecraft/class_139;
+	FIELD field_823 LEAVE_GAME Lnet/minecraft/class_139;
+	FIELD field_824 PLAY_ONE_MINUTE Lnet/minecraft/class_139;
+	FIELD field_825 WALK_ONE_CM Lnet/minecraft/class_139;
+	FIELD field_826 SWIM_ONE_CM Lnet/minecraft/class_139;
+	FIELD field_827 FALL_ONE_CM Lnet/minecraft/class_139;
+	FIELD field_828 CLIMB_ONE_CM Lnet/minecraft/class_139;
+	FIELD field_829 FLY_ONE_CM Lnet/minecraft/class_139;
+	FIELD field_830 DIVE_ONE_CM Lnet/minecraft/class_139;
+	FIELD field_831 MINECART_ONE_CM Lnet/minecraft/class_139;
+	FIELD field_832 BOAT_ONE_CM Lnet/minecraft/class_139;
+	FIELD field_833 PIG_ONE_CM Lnet/minecraft/class_139;
+	FIELD field_834 JUMP Lnet/minecraft/class_139;
+	FIELD field_835 DROP Lnet/minecraft/class_139;
+	FIELD field_836 DAMAGE_DEALT Lnet/minecraft/class_139;
+	FIELD field_837 DAMAGE_TAKEN Lnet/minecraft/class_139;
+	FIELD field_838 DEATHS Lnet/minecraft/class_139;
+	FIELD field_839 MOB_KILLS Lnet/minecraft/class_139;
+	METHOD method_748 initialize ()V
+	METHOD method_750 linkAlternateBlockStats ([Lnet/minecraft/class_139;)V
+		ARG 0 statsArray
+	METHOD method_751 linkBlocks ([Lnet/minecraft/class_139;II)V
+		ARG 0 statsArray
+		ARG 1 sourceId
+		ARG 2 targetId
+	METHOD method_753 initializeItemStats ()V
+	METHOD method_754 initializeBrokenItemStats ([Lnet/minecraft/class_139;Ljava/lang/String;III)[Lnet/minecraft/class_139;
+		ARG 0 statsArray
+		ARG 1 translationKey
+		ARG 2 offset
+		ARG 3 start
+		ARG 4 end
+	METHOD method_755 initializeExtendedItemStats ()V
+	METHOD method_756 initializeCraftedItemStats ()V
+	METHOD method_757 getStatById (I)Lnet/minecraft/class_139;
+		ARG 0 id

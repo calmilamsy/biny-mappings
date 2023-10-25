@@ -1,1 +1,21 @@
 CLASS net/minecraft/class_139 net/minecraft/stat/Stat
+	FIELD field_2022 formatter Lnet/minecraft/class_498;
+	FIELD field_2023 DEFAULT_NUMBER_FORMAT Ljava/text/NumberFormat;
+	FIELD field_2024 DEFAULT_DECIMAL_FORMAT Ljava/text/DecimalFormat;
+	FIELD field_2025 id I
+	FIELD field_2026 stringId Ljava/lang/String;
+	FIELD field_2027 localOnly Z
+	FIELD field_2029 INTEGER_FORMAT Lnet/minecraft/class_498;
+	FIELD field_2030 TIME_PROVIDER Lnet/minecraft/class_498;
+	FIELD field_2031 DISTANCE_PROVIDER Lnet/minecraft/class_498;
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 stringId
+	METHOD <init> (ILjava/lang/String;Lnet/minecraft/class_498;)V
+		ARG 1 id
+		ARG 2 stringId
+		ARG 3 statTypeProvider
+	METHOD method_1676 addStat ()Lnet/minecraft/class_139;
+	METHOD method_1677 localOnly ()Lnet/minecraft/class_139;
+	METHOD method_1678 isAchievement ()Z
+	METHOD method_1679 format (I)Ljava/lang/String;
