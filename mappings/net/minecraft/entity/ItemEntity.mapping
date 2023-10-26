@@ -1,1 +1,13 @@
 CLASS net/minecraft/class_142 net/minecraft/entity/ItemEntity
+	FIELD field_564 stack Lnet/minecraft/class_31;
+	FIELD field_565 itemAge I
+	FIELD field_566 pickupDelay I
+	FIELD field_567 initialRotationAngle F
+	FIELD field_568 itemTicks I
+	FIELD field_569 health I
+	METHOD <init> (Lnet/minecraft/class_18;DDDLnet/minecraft/class_31;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 stack
