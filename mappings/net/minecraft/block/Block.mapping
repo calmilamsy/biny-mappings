@@ -265,8 +265,8 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 1 blockMeta
 		ARG 2 random
 	METHOD method_1602 onTick (Lnet/minecraft/class_18;IIILjava/util/Random;)V
-		COMMENT Called at a frequency based on the return value of {@link getTickrate()}.
-		COMMENT This method will be called approximately {@link getTickrate()} times per second.
+		COMMENT Called at a frequency based on the return value of {@link getTickRate()}.
+		COMMENT This method will be called approximately {@link getTickRate()} times per second.
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
@@ -274,7 +274,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 5 random
 	METHOD method_1603 getDroppedItemCount (Ljava/util/Random;)I
 		ARG 1 random
-	METHOD method_1604 getBrightness (Lnet/minecraft/class_14;III)F
+	METHOD method_1604 getLuminance (Lnet/minecraft/class_14;III)F
 		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y
