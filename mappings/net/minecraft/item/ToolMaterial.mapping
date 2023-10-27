@@ -1,13 +1,19 @@
 CLASS net/minecraft/class_428 net/minecraft/item/ToolMaterial
+	FIELD field_1688 WOOD Lnet/minecraft/class_428;
+	FIELD field_1689 STONE Lnet/minecraft/class_428;
+	FIELD field_1690 IRON Lnet/minecraft/class_428;
 	FIELD field_1691 DIAMOND Lnet/minecraft/class_428;
+	FIELD field_1692 GOLD Lnet/minecraft/class_428;
 	FIELD field_1693 miningLevel I
 	FIELD field_1694 durability I
 	FIELD field_1695 miningSpeed F
-	FIELD field_1696 damage I
+	FIELD field_1696 attackDamage I
 	METHOD <init> (Ljava/lang/String;IIIFI)V
 		ARG 3 miningLevel
 		ARG 4 durability
+		ARG 5 miningSpeed
+		ARG 6 attackDamage
 	METHOD method_1417 getDurability ()I
-	METHOD method_1418 getMiningSpeed ()F
-	METHOD method_1419 getDamage ()I
+	METHOD method_1418 getMiningSpeedMultiplier ()F
+	METHOD method_1419 getAttackDamage ()I
 	METHOD method_1420 getMiningLevel ()I

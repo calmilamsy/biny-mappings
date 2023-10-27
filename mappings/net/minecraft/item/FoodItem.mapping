@@ -1,3 +1,11 @@
 CLASS net/minecraft/class_554 net/minecraft/item/FoodItem
+	FIELD field_2325 healthRestored I
+	FIELD field_2326 meat Z
+		COMMENT This determines if a food is edible by wolves
 	METHOD <init> (IIZ)V
 		ARG 1 id
+		ARG 2 healthRestored
+		ARG 3 meat
+	METHOD method_1835 getHealthRestored ()I
+	METHOD method_1836 isMeat ()Z
+		COMMENT Used to determing if a food is edible by wolves

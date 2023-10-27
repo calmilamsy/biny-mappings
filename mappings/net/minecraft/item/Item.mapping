@@ -123,9 +123,14 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 3 x
 		ARG 4 y
 		ARG 5 z
+		ARG 6 miner
 	METHOD method_438 getMiningSpeedMultiplier (Lnet/minecraft/class_31;Lnet/minecraft/class_17;)F
 		ARG 1 stack
 		ARG 2 block
+	METHOD method_439 getTexturePosition (Lnet/minecraft/class_31;)I
+		ARG 1 itemStack
+	METHOD method_441 getTexturePosition (I)I
+		ARG 1 damage
 	METHOD method_442 getTranslationKey (Lnet/minecraft/class_31;)Ljava/lang/String;
 		ARG 1 stack
 	METHOD method_443 getTranslationKey ()Ljava/lang/String;
@@ -139,6 +144,8 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 7 side
 	METHOD method_446 postHit (Lnet/minecraft/class_31;Lnet/minecraft/class_127;Lnet/minecraft/class_127;)Z
 		ARG 1 stack
+		ARG 2 target
+		ARG 3 attacker
 	METHOD method_447 getDamageOnEntity (Lnet/minecraft/class_57;)I
 		ARG 1 entity
 	METHOD method_448 getIsHandheld ()Z
@@ -166,6 +173,8 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 1 key
 	METHOD method_457 setFuel (Z)Lnet/minecraft/class_124;
 		ARG 1 isFuel
+	METHOD method_458 setTexturePosition (I)Lnet/minecraft/class_124;
+		ARG 1 texturePosition
 	METHOD method_459 getMaxCount ()I
 	METHOD method_460 setMaxCount (I)Lnet/minecraft/class_124;
 		ARG 1 maxCount
@@ -173,9 +182,11 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 1 stack
 		ARG 2 world
 		ARG 3 player
+	METHOD method_462 isFuel ()Z
 	METHOD method_463 setMaxDamage (I)Lnet/minecraft/class_124;
 		ARG 1 maxDamage
 	METHOD method_464 getMaxDamage ()I
+	METHOD method_465 isDamageable ()Z
 	METHOD method_466 setHandheld ()Lnet/minecraft/class_124;
 	METHOD method_467 getCraftingReturnItem ()Lnet/minecraft/class_124;
 	METHOD method_468 hasCraftingReturnItem ()Z

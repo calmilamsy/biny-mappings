@@ -1,1 +1,9 @@
 CLASS net/minecraft/class_381 net/minecraft/item/MinecartItem
+	FIELD field_1431 type I
+		COMMENT Determines the type of the minecart
+		COMMENT 0 : Normal
+		COMMENT 1 : Chest
+		COMMENT 2 : Furnace
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 type

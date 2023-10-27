@@ -1,1 +1,9 @@
 CLASS net/minecraft/class_69 net/minecraft/entity/player/ServerPlayerEntity
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_18;Ljava/lang/String;Lnet/minecraft/class_70;)V
+		ARG 1 minecraftServer
+		ARG 2 world
+		ARG 3 name
+	METHOD method_310 (FFZZFF)V
+		ARG 3 jumping
+		ARG 5 pitch
+		ARG 6 yaw

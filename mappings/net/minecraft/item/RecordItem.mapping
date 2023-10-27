@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_449 net/minecraft/item/RecordItem
+	FIELD field_1710 description Ljava/lang/String;
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 description
