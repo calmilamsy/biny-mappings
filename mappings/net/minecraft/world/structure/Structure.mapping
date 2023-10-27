@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_239 net/minecraft/world/structure/Structure
+	METHOD method_1142 generate (Lnet/minecraft/class_18;Ljava/util/Random;III)Z
+		ARG 1 world
+		ARG 2 random
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z

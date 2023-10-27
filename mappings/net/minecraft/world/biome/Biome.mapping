@@ -1,0 +1,25 @@
+CLASS net/minecraft/class_153 net/minecraft/world/biome/Biome
+	FIELD field_888 name Ljava/lang/String;
+	FIELD field_889 grassColor I
+	FIELD field_890 topBlockId B
+	FIELD field_891 soilBlockId B
+	FIELD field_892 foliageColor I
+	FIELD field_893 spawnableMonsters Ljava/util/List;
+	FIELD field_894 spawnablePassive Ljava/util/List;
+	FIELD field_895 spawnableWaterCreatures Ljava/util/List;
+	FIELD field_896 hasSnow Z
+	FIELD field_897 hasRain Z
+	FIELD field_898 BIOMES [Lnet/minecraft/class_153;
+	METHOD method_785 init ()V
+	METHOD method_788 setFoliageColor (I)Lnet/minecraft/class_153;
+		ARG 1 foliageColor
+	METHOD method_790 setName (Ljava/lang/String;)Lnet/minecraft/class_153;
+		ARG 1 name
+	METHOD method_791 enableSnow ()Lnet/minecraft/class_153;
+	METHOD method_792 setGrassColor (I)Lnet/minecraft/class_153;
+		ARG 1 grassColor
+	METHOD method_793 canSnow ()Z
+	METHOD method_794 canRain ()Z
+	METHOD method_795 disableRain ()Lnet/minecraft/class_153;
+	METHOD method_797 (Ljava/util/Random;)Lnet/minecraft/class_239;
+		ARG 1 random

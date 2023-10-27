@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_624 net/minecraft/world/structure/LakeStructure
+	FIELD field_2697 waterBlockId I
+	METHOD <init> (I)V
+		ARG 1 waterBlockId
