@@ -16,8 +16,12 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerEntity
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_485 (Lnet/minecraft/class_137;)V
+		ARG 1 dispenserBlockEntity
 	METHOD method_486 (Lnet/minecraft/class_134;)V
 		ARG 1 inventory
+	METHOD method_487 (Lnet/minecraft/class_138;)V
+		ARG 1 furnaceBlockEntity
 	METHOD method_488 increaseStat (Lnet/minecraft/class_139;I)V
 		ARG 1 stat
 		ARG 2 amount

@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_407 net/minecraft/inventory/container/DispenserContainer
+	FIELD field_1551 dispenserBlockEntity Lnet/minecraft/class_137;
+	METHOD <init> (Lnet/minecraft/class_134;Lnet/minecraft/class_137;)V
+		ARG 1 playerInventory
+		ARG 2 dispenserBlockEntity
