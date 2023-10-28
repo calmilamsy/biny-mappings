@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_351 net/minecraft/world/structure/NetherLavaSpringStructure
-	FIELD field_1313 lavaBlockId I

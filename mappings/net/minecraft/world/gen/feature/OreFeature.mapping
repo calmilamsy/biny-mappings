@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_82 net/minecraft/world/structure/OreStructure
+CLASS net/minecraft/class_82 net/minecraft/world/gen/feature/OreFeature
 	FIELD field_283 oreBlockId I
 	FIELD field_284 oreCount I
 	METHOD <init> (II)V

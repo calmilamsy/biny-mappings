@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_239 net/minecraft/world/structure/Structure
+CLASS net/minecraft/class_239 net/minecraft/world/gen/feature/Feature
 	METHOD method_1142 generate (Lnet/minecraft/class_18;Ljava/util/Random;III)Z
 		ARG 1 world
 		ARG 2 random

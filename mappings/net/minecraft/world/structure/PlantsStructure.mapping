@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_231 net/minecraft/world/structure/PlantsStructure
-	FIELD field_858 plantBlockId I
-	METHOD <init> (I)V
-		ARG 1 plantBlockId
