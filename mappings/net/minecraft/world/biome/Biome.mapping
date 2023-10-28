@@ -1,4 +1,17 @@
 CLASS net/minecraft/class_153 net/minecraft/world/biome/Biome
+	FIELD field_875 RAINFOREST Lnet/minecraft/class_153;
+	FIELD field_876 SWAMPLAND Lnet/minecraft/class_153;
+	FIELD field_877 SEASONAL_FOREST Lnet/minecraft/class_153;
+	FIELD field_878 FOREST Lnet/minecraft/class_153;
+	FIELD field_879 SAVANNA Lnet/minecraft/class_153;
+	FIELD field_880 SHRUBLAND Lnet/minecraft/class_153;
+	FIELD field_881 TAIGA Lnet/minecraft/class_153;
+	FIELD field_882 DESERT Lnet/minecraft/class_153;
+	FIELD field_883 PLAINS Lnet/minecraft/class_153;
+	FIELD field_884 ICE_DESERT Lnet/minecraft/class_153;
+	FIELD field_885 TUNDRA Lnet/minecraft/class_153;
+	FIELD field_886 HELL Lnet/minecraft/class_153;
+	FIELD field_887 SKY Lnet/minecraft/class_153;
 	FIELD field_888 name Ljava/lang/String;
 	FIELD field_889 grassColor I
 	FIELD field_890 topBlockId B
