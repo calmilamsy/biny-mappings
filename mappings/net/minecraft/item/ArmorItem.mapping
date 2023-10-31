@@ -1,14 +1,14 @@
 CLASS net/minecraft/class_500 net/minecraft/item/ArmorItem
-	FIELD field_2082 tier I
-	FIELD field_2083 slot I
+	FIELD field_2082 type I
+	FIELD field_2083 equipmentSlot I
 	FIELD field_2084 maxProtection I
 	FIELD field_2085 textureIndex I
-		COMMENT Used in PlayerEntityRenderer to determine which texture file to use in order of :
+		COMMENT Used in {@link net.minecraft.client.render.entity.PlayerEntityRenderer} to determine which texture file to use in order of :
 		COMMENT cloth, chain, iron, diamond, gold
-	FIELD field_2086 protectionBySlot [I
-	FIELD field_2087 durabilityBySlot [I
+	FIELD field_2086 PROTECTION_BY_SLOT [I
+	FIELD field_2087 DURABILITY_BY_SLOT [I
 	METHOD <init> (IIII)V
 		ARG 1 id
-		ARG 2 tier
+		ARG 2 type
 		ARG 3 textureIndex
-		ARG 4 slot
+		ARG 4 equipmentSlot
