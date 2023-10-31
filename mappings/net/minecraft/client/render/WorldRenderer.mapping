@@ -1,2 +1,5 @@
 CLASS net/minecraft/class_471 net/minecraft/client/render/WorldRenderer
+	FIELD field_1805 world Lnet/minecraft/class_18;
 	FIELD field_1806 textureManager Lnet/minecraft/class_76;
+	FIELD field_1814 minecraft Lnet/minecraft/client/Minecraft;
+	FIELD field_1815 blockRenderManager Lnet/minecraft/class_13;

@@ -34,5 +34,5 @@ CLASS net/minecraft/class_153 net/minecraft/world/biome/Biome
 	METHOD method_793 canSnow ()Z
 	METHOD method_794 canRain ()Z
 	METHOD method_795 disableRain ()Lnet/minecraft/class_153;
-	METHOD method_797 (Ljava/util/Random;)Lnet/minecraft/class_239;
+	METHOD method_797 getRandomTreeFeature (Ljava/util/Random;)Lnet/minecraft/class_239;
 		ARG 1 random
