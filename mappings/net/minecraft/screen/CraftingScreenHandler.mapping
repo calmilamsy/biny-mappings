@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_196 net/minecraft/inventory/container/CraftingContainer
+CLASS net/minecraft/class_196 net/minecraft/screen/CraftingScreenHandler
 	FIELD field_708 craftingInventory Lnet/minecraft/class_159;
 	FIELD field_709 resultInventory Lnet/minecraft/class_134;
 	FIELD field_710 world Lnet/minecraft/class_18;

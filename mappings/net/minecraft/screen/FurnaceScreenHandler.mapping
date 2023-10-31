@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_337 net/minecraft/inventory/container/FurnaceContainer
+CLASS net/minecraft/class_337 net/minecraft/screen/FurnaceScreenHandler
 	FIELD field_1258 furnaceBlockEntity Lnet/minecraft/class_138;
 	FIELD field_1259 cookTime I
 	FIELD field_1260 burnTime I

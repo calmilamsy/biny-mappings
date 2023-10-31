@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_71 net/minecraft/inventory/Container
+CLASS net/minecraft/class_71 net/minecraft/screen/ScreenHandler
 	FIELD field_2731 revision S
 	FIELD field_2733 trackedStacks Ljava/util/List;
 	FIELD field_2734 slots Ljava/util/List;
