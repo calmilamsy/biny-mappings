@@ -15,6 +15,10 @@ CLASS net/minecraft/class_71 net/minecraft/screen/ScreenHandler
 		ARG 1 slot
 	METHOD method_2084 getSlot (I)Lnet/minecraft/class_133;
 		ARG 1 slotIndex
+	METHOD method_2086 getStackInSlot (I)Lnet/minecraft/class_31;
+		ARG 1 slotIndex
+	METHOD method_2087 onClosed (Lnet/minecraft/class_54;)V
+		ARG 1 player
 	METHOD method_2090 nextRevision (Lnet/minecraft/class_136;)S
 		ARG 1 inventory
 	METHOD method_2094 canUse (Lnet/minecraft/class_54;)Z
