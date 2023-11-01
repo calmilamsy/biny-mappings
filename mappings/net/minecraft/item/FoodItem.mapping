@@ -8,4 +8,4 @@ CLASS net/minecraft/class_554 net/minecraft/item/FoodItem
 		ARG 3 meat
 	METHOD method_1835 getHealthRestored ()I
 	METHOD method_1836 isMeat ()Z
-		COMMENT Used to determing if a food is edible by wolves
+		COMMENT Used to determine if a food is edible by wolves

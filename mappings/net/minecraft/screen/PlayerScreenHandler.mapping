@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_277 net/minecraft/screen/PlayerScreenHandler
-	FIELD field_1124 craftingInventory Lnet/minecraft/class_159;
-	FIELD field_1125 craftingResultInventory Lnet/minecraft/class_134;
+	FIELD field_1124 craftingInput Lnet/minecraft/class_159;
+	FIELD field_1125 craftingResult Lnet/minecraft/class_134;
 	METHOD <init> (Lnet/minecraft/class_136;)V
-		ARG 1 playerInventory
+		ARG 1 inventory
 	METHOD <init> (Lnet/minecraft/class_136;Z)V
-		ARG 1 playerInventory
+		ARG 1 inventory

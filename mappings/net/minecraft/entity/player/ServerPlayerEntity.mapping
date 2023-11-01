@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_69 net/minecraft/entity/player/ServerPlayerEntity
+	FIELD field_256 server Lnet/minecraft/server/MinecraftServer;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_18;Ljava/lang/String;Lnet/minecraft/class_70;)V
-		ARG 1 minecraftServer
+		ARG 1 server
 		ARG 2 world
 		ARG 3 name
 	METHOD method_310 (FFZZFF)V

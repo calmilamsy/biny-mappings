@@ -10,7 +10,7 @@ CLASS net/minecraft/class_428 net/minecraft/item/ToolMaterial
 	FIELD field_1696 attackDamage I
 	METHOD <init> (Ljava/lang/String;IIIFI)V
 		ARG 3 miningLevel
-		ARG 4 durability
+		ARG 4 itemDurability
 		ARG 5 miningSpeed
 		ARG 6 attackDamage
 	METHOD method_1417 getDurability ()I

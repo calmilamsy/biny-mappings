@@ -146,7 +146,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 1 stack
 		ARG 2 target
 		ARG 3 attacker
-	METHOD method_447 getAttackDamageOnEntity (Lnet/minecraft/class_57;)I
+	METHOD method_447 getAttackDamage (Lnet/minecraft/class_57;)I
 		ARG 1 entity
 	METHOD method_448 getIsHandheld ()Z
 	METHOD method_450 isSuitableFor (Lnet/minecraft/class_17;)Z

@@ -66,7 +66,7 @@ CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
 		ARG 2 attacker
 	METHOD method_706 writeNbt (Lnet/minecraft/class_8;)Lnet/minecraft/class_8;
 		ARG 1 nbt
-	METHOD method_707 getAttackDamageOnEntity (Lnet/minecraft/class_57;)I
+	METHOD method_707 getAttackDamage (Lnet/minecraft/class_57;)I
 		ARG 1 otherEntity
 	METHOD method_708 getMiningSpeedMultiplier (Lnet/minecraft/class_17;)F
 		ARG 1 block
