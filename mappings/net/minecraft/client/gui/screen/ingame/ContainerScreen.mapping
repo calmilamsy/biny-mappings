@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_293 net/minecraft/client/gui/screen/container/ContainerScreen
+CLASS net/minecraft/class_293 net/minecraft/client/gui/screen/ingame/ContainerScreen
 	FIELD field_1152 backgroundWidth I
 	FIELD field_1153 backgroundHeight I
 	FIELD field_1154 container Lnet/minecraft/class_71;

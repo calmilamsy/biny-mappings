@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_516 net/minecraft/client/gui/screen/ingame/CraftingScreen
+	METHOD <init> (Lnet/minecraft/class_136;Lnet/minecraft/class_18;III)V
+		ARG 1 playerInventory
+		ARG 2 world

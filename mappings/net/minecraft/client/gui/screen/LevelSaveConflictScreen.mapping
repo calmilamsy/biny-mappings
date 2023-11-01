@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_562 net/minecraft/client/gui/screen/LevelSaveConflictScreen
+	FIELD field_2382 ticksRan I
