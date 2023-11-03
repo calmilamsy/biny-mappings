@@ -26,12 +26,12 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_860 setRawBlockId (IIII)Z
+	METHOD method_860 setBlockId (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 rawId
-	METHOD method_861 setRawBlockIdAndMeta (IIIII)Z
+	METHOD method_861 setBlock (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
