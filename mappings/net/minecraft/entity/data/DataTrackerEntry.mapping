@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_270 net/minecraft/entity/data/DataTrackerEntry
+	FIELD field_1093 dataTypeId I
+	FIELD field_1094 id I
+	FIELD field_1095 value Ljava/lang/Object;
+	FIELD field_1096 dirty Z
+	METHOD <init> (IILjava/lang/Object;)V
+		ARG 1 dataTypeId
+		ARG 2 id
+		ARG 3 valuje
+	METHOD method_960 getId ()I
+	METHOD method_961 setValue (Ljava/lang/Object;)V
+		ARG 1 value
+	METHOD method_962 setDirty (Z)V
+		ARG 1 dirty
+	METHOD method_963 get ()Ljava/lang/Object;
+	METHOD method_964 getDataTypeId ()I
+	METHOD method_965 isDirty ()Z
