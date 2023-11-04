@@ -1,5 +1,10 @@
 CLASS net/minecraft/class_57 net/minecraft/entity/Entity
+	FIELD field_1590 CURRENT_ID I
 	FIELD field_1591 id I
+	FIELD field_1592 renderDistanceMultiplier D
+	FIELD field_1593 blocksSpawningEntities Z
+	FIELD field_1594 passenger Lnet/minecraft/class_57;
+	FIELD field_1595 vehicle Lnet/minecraft/class_57;
 	FIELD field_1596 world Lnet/minecraft/class_18;
 	FIELD field_1597 prevX D
 	FIELD field_1598 prevY D
@@ -15,18 +20,46 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1608 prevYaw F
 	FIELD field_1609 prevPitch F
 	FIELD field_1610 boundingBox Lnet/minecraft/class_25;
+	FIELD field_1612 submergedInWater Z
 	FIELD field_1614 air I
 	FIELD field_1615 fireImmune Z
 	FIELD field_1616 dataTracker Lnet/minecraft/class_216;
-	FIELD field_1630 dead Z
+	FIELD field_1617 entityRenderBrightness F
+	FIELD field_1619 chunkPosX I
+	FIELD field_1620 chunkIndex I
+	FIELD field_1621 chunkPosZ I
+	FIELD field_1622 ignoreFrustumCull Z
+	FIELD field_1623 onGround Z
+	FIELD field_1624 horizontalCollision Z
+	FIELD field_1625 verticalCollision Z
+	FIELD field_1626 hasCollision Z
+	FIELD field_1627 wasAttacked Z
+	FIELD field_1628 slowMovement Z
+	FIELD field_1630 removed Z
 	FIELD field_1631 eyeHeight F
-	FIELD field_1632 spacingXZ F
-	FIELD field_1633 spacingY F
+	FIELD field_1632 widthXZ F
+		COMMENT dimensions.width in modern yarn
+	FIELD field_1633 height F
+		COMMENT dimensions.height in modern yarn
+	FIELD field_1636 fallDistance F
+	FIELD field_1637 lastRenderX D
+	FIELD field_1638 lastRenderY D
+	FIELD field_1639 lastRenderZ D
+	FIELD field_1640 stepHeight F
+	FIELD field_1642 cannotMove Z
+	FIELD field_1643 pushResistance F
 	FIELD field_1644 random Ljava/util/Random;
-	FIELD field_1647 fire I
+	FIELD field_1645 age I
+	FIELD field_1646 fireImmunityTicks I
+	FIELD field_1647 fireTicks I
 	FIELD field_1648 maxAir I
+	FIELD field_1650 vehiclePitchDelta D
+	FIELD field_1651 vehicleYawDelta D
 	FIELD field_1652 skinUrl Ljava/lang/String;
 	FIELD field_1653 capeUrl Ljava/lang/String;
+	FIELD field_1654 trackedPosX I
+	FIELD field_1655 trackedPosY I
+	FIELD field_1656 trackedPosZ I
 	METHOD <init> (Lnet/minecraft/class_18;)V
 		ARG 1 world
 	METHOD method_1310 initDataTracker ()V
@@ -36,19 +69,85 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	METHOD method_1321 setBoundingBoxSpacing (FF)V
 		ARG 1 spacingXZ
 		ARG 2 spacingY
+	METHOD method_1322 addVelocity (DDD)V
+		ARG 1 deltaX
+		ARG 3 deltaY
+		ARG 5 deltaZ
+	METHOD method_1325 dropStack (IIF)Lnet/minecraft/class_142;
+		ARG 1 id
+		ARG 2 amount
+		ARG 3 damage
+	METHOD method_1326 setFlag (IZ)V
+		ARG 1 flag
+		ARG 2 set
+	METHOD method_1327 dropStack (Lnet/minecraft/class_31;F)Lnet/minecraft/class_142;
+		ARG 1 stack
+		ARG 2 yOffset
 	METHOD method_1328 isInFluid (Lnet/minecraft/class_15;)Z
+	METHOD method_1331 getDataTracker ()Lnet/minecraft/class_216;
+	METHOD method_1334 isSubmerged ()Z
+	METHOD method_1335 updateLavaState ()Z
+	METHOD method_1336 attack ()V
+	METHOD method_1338 refreshPositionAndRotation (DDDFF)V
+		COMMENT Used to refresh position and angles from networked packets
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
+	METHOD method_1339 dropStack (II)Lnet/minecraft/class_142;
+		ARG 1 id
+		ARG 2 amount
+	METHOD method_1340 setPosition (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1341 setPositionAndRotation (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
+	METHOD method_1342 setRotation (FF)V
+		ARG 1 yaw
+		ARG 2 pitch
+	METHOD method_1345 checkFlag (I)Z
+		ARG 1 flag
 	METHOD method_1346 write (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
+	METHOD method_1347 squaredDistanceTo (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_1348 read (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
-	METHOD method_1354 onPlayerInteraction (Lnet/minecraft/class_54;)V
+	METHOD method_1349 setSneaking (Z)V
+		ARG 1 sneaking
+	METHOD method_1350 distanceTo (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1351 distanceTo (Lnet/minecraft/class_57;)F
+		ARG 1 entity
+	METHOD method_1352 squaredDistanceTo (Lnet/minecraft/class_57;)D
+		ARG 1 entity
+	METHOD method_1353 pushAwayFrom (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_1354 onPlayerCollision (Lnet/minecraft/class_54;)V
 		ARG 1 player
 	METHOD method_1355 damage (Lnet/minecraft/class_57;I)Z
 		ARG 1 damageSource
 		ARG 2 amount
+	METHOD method_1357 getMountedYOffset ()D
 	METHOD method_1358 bypassesSteppingEffects ()Z
+	METHOD method_1359 isOnFire ()Z
+	METHOD method_1360 hasVehicle ()Z
 	METHOD method_1363 readNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
+	METHOD method_1365 setVelocity (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_1368 writeNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
 	METHOD method_1370 tick ()V
@@ -60,7 +159,22 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD method_1386 markDead ()V
-	METHOD method_1392 damage (I)V
+	METHOD method_1373 isSneaking ()Z
+	METHOD method_1375 setWorld (Lnet/minecraft/class_18;)V
+		ARG 1 world
+	METHOD method_1376 startRiding (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_1377 getEquipment ()[Lnet/minecraft/class_31;
+	METHOD method_1382 updatePassengerPosition ()V
+	METHOD method_1383 onStruckByLightning (Lnet/minecraft/class_411;)V
+		ARG 1 lightning
+	METHOD method_1384 updateRiding ()V
+	METHOD method_1385 getEyeHeight ()D
+	METHOD method_1386 remove ()V
+	METHOD method_1389 damagePassanger (F)V
 		ARG 1 amount
-	METHOD method_1393 isSubmergedInWater ()Z
+	METHOD method_1390 onKillEntity (Lnet/minecraft/class_127;)V
+		ARG 1 entity
+	METHOD method_1392 fireDamage (I)V
+		ARG 1 amount
+	METHOD method_1393 updateWaterState ()Z
