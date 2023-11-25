@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_524 net/minecraft/client/gui/screen/ingame/FurnaceScreen
 	FIELD field_2191 furnaceBlockEntity Lnet/minecraft/class_138;
 	METHOD <init> (Lnet/minecraft/class_136;Lnet/minecraft/class_138;)V
-		ARG 1 playerInventory
+		ARG 1 inventory
 		ARG 2 furnaceBlockEntity

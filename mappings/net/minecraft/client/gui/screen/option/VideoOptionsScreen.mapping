@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_486 net/minecraft/client/gui/screen/option/VideoOptionsScreen
 	FIELD field_2000 title Ljava/lang/String;
 	FIELD field_2001 parent Lnet/minecraft/class_32;
-	FIELD field_2002 settings Lnet/minecraft/class_322;
+	FIELD field_2002 options Lnet/minecraft/class_322;
 	METHOD <init> (Lnet/minecraft/class_32;Lnet/minecraft/class_322;)V
 		ARG 1 parent
-		ARG 2 settings
+		ARG 2 options
