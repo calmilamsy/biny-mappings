@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_585 net/minecraft/client/gui/screen/ingame/InventoryScreen
+	FIELD field_2523 mouseX F
+	FIELD field_2524 mouseY F
+	METHOD <init> (Lnet/minecraft/class_54;)V
+		ARG 1 player

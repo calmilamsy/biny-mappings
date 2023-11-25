@@ -1,4 +1,10 @@
 CLASS net/minecraft/class_91 net/minecraft/client/gui/screen/StatsScreen
+	FIELD field_303 parent Lnet/minecraft/class_32;
+	FIELD field_306 generalStats Lnet/minecraft/class_91$class_93;
+	FIELD field_307 itemStats Lnet/minecraft/class_91$class_94;
+	FIELD field_308 blockStats Lnet/minecraft/class_91$class_95;
+	METHOD <init> (Lnet/minecraft/class_32;Lnet/minecraft/class_96;)V
+		ARG 1 parent
 	CLASS class_93 GeneralStatsListWidget
 	CLASS class_94 ItemStatsListWidget
 	CLASS class_95 BlockStatsListWidget

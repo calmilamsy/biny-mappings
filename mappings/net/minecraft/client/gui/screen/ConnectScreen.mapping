@@ -5,3 +5,5 @@ CLASS net/minecraft/class_595 net/minecraft/client/gui/screen/ConnectScreen
 		ARG 1 minecraft
 		ARG 2 address
 		ARG 3 port
+	CLASS 1
+		METHOD run run ()V
