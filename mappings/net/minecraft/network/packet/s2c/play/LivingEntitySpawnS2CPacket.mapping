@@ -10,3 +10,4 @@ CLASS net/minecraft/class_215 net/minecraft/network/packet/s2c/play/LivingEntity
 	FIELD field_805 yaw B
 	METHOD <init> (Lnet/minecraft/class_127;)V
 		ARG 1 livingEntity
+	METHOD method_747 getTrackedValues ()Ljava/util/List;

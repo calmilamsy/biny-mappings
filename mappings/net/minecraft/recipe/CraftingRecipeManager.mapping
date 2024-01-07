@@ -6,6 +6,7 @@ CLASS net/minecraft/class_148 net/minecraft/recipe/CraftingRecipeManager
 		ARG 1 output
 		ARG 2 input
 	METHOD method_540 craft (Lnet/minecraft/class_159;)Lnet/minecraft/class_31;
+		ARG 1 craftingInventory
 	METHOD method_541 getRecipes ()Ljava/util/List;
 	METHOD method_542 addShapelessRecipe (Lnet/minecraft/class_31;[Ljava/lang/Object;)V
 		ARG 1 output

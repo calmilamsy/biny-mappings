@@ -1,2 +1,4 @@
 CLASS net/minecraft/class_165 net/minecraft/nbt/NbtByteArray
 	FIELD field_576 value [B
+	METHOD <init> ([B)V
+		ARG 1 value

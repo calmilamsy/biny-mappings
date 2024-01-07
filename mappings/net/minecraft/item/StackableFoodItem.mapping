@@ -1,1 +1,6 @@
 CLASS net/minecraft/class_355 net/minecraft/item/StackableFoodItem
+	METHOD <init> (IIZI)V
+		ARG 1 id
+		ARG 2 healthRestored
+		ARG 3 meat
+		ARG 4 maxCount

@@ -1,2 +1,4 @@
 CLASS net/minecraft/class_419 net/minecraft/nbt/NbtDouble
 	FIELD field_1680 value D
+	METHOD <init> (D)V
+		ARG 1 value

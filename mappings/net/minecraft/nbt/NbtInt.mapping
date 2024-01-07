@@ -1,2 +1,4 @@
 CLASS net/minecraft/class_347 net/minecraft/nbt/NbtInt
 	FIELD field_1312 value I
+	METHOD <init> (I)V
+		ARG 1 value

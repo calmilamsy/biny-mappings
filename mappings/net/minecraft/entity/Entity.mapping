@@ -60,6 +60,8 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+	METHOD method_1375 (Lnet/minecraft/class_18;)V
+		ARG 1 world
 	METHOD method_1386 markDead ()V
 	METHOD method_1392 damage (I)V
 		ARG 1 amount

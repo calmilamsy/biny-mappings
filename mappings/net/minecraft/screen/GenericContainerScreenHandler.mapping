@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_506 net/minecraft/screen/GenericContainerScreenHandler
+	FIELD field_2110 inventory Lnet/minecraft/class_134;
+	FIELD field_2111 rows I
+	METHOD <init> (Lnet/minecraft/class_134;Lnet/minecraft/class_134;)V
+		ARG 1 playerInventory
+		ARG 2 inventory
