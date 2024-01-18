@@ -67,7 +67,7 @@ CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
 	METHOD method_706 writeNbt (Lnet/minecraft/class_8;)Lnet/minecraft/class_8;
 		ARG 1 nbt
 	METHOD method_707 getAttackDamage (Lnet/minecraft/class_57;)I
-		ARG 1 otherEntity
+		ARG 1 attackedEntity
 	METHOD method_708 getMiningSpeedMultiplier (Lnet/minecraft/class_17;)F
 		ARG 1 block
 	METHOD method_709 getMaxCount ()I
