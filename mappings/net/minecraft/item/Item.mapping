@@ -89,7 +89,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 	FIELD field_463 textureId I
 	FIELD field_464 handheld Z
 	FIELD field_465 hasSubtypes Z
-	FIELD field_466 craftingReturmItem Lnet/minecraft/class_124;
+	FIELD field_466 craftingReturnItem Lnet/minecraft/class_124;
 	FIELD field_467 translationKey Ljava/lang/String;
 	FIELD field_468 ITEMS [Lnet/minecraft/class_124;
 	FIELD field_469 IRON_SHOVEL Lnet/minecraft/class_124;
