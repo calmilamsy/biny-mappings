@@ -1,0 +1,129 @@
+CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
+	FIELD field_954 blocks [B
+	FIELD field_956 world Lnet/minecraft/class_18;
+	FIELD field_957 meta Lnet/minecraft/class_257;
+	FIELD field_958 skyLight Lnet/minecraft/class_257;
+	FIELD field_959 blockLight Lnet/minecraft/class_257;
+	FIELD field_960 heightmap [B
+	FIELD field_961 minHeightmapValue I
+	FIELD field_962 x I
+	FIELD field_963 z I
+	FIELD field_964 blockEntities Ljava/util/Map;
+	FIELD field_965 entities [Ljava/util/List;
+	METHOD <init> (Lnet/minecraft/class_18;II)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 z
+	METHOD <init> (Lnet/minecraft/class_18;[BII)V
+		ARG 1 world
+		ARG 2 blocks
+		ARG 3 x
+		ARG 4 z
+	METHOD method_858 chunkPosEquals (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD method_859 getBlockId (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_860 setBlockId (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 rawId
+	METHOD method_861 setBlock (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 rawId
+		ARG 5 meta
+	METHOD method_862 setBlockEntity (IIILnet/minecraft/class_55;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockEntity
+	METHOD method_863 getSlimeRandom (J)Ljava/util/Random;
+		ARG 1 scrambler
+	METHOD method_864 getLight (Lnet/minecraft/class_56;III)I
+		ARG 1 lightType
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_865 setLight (Lnet/minecraft/class_56;IIII)V
+		ARG 1 lightType
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 value
+	METHOD method_866 collectEntitiesByClass (Ljava/lang/Class;Lnet/minecraft/class_25;Ljava/util/List;)V
+		ARG 1 entityClass
+		ARG 2 box
+		ARG 3 result
+	METHOD method_867 addBlockEntity (Lnet/minecraft/class_55;)V
+		ARG 1 blockEntity
+	METHOD method_868 addEntity (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_869 removeEntity (Lnet/minecraft/class_57;I)V
+		ARG 1 entity
+		ARG 2 chunkY
+	METHOD method_870 collectOtherEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;Ljava/util/List;)V
+		ARG 1 except
+		ARG 2 box
+		ARG 3 result
+	METHOD method_872 toPacket ([BIIIIIII)I
+		ARG 1 bytes
+		ARG 2 minX
+		ARG 3 minY
+		ARG 4 minZ
+		ARG 5 maxX
+		ARG 6 maxY
+		ARG 7 maxZ
+		ARG 8 offset
+	METHOD method_874 getHeight (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD method_875 getBlockMeta (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_876 setBlockMeta (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 meta
+	METHOD method_877 removeEntity (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_879 isAboveMaxHeight (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_880 getLight (IIII)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 ambientDarkness
+	METHOD method_882 getBlockEntity (III)Lnet/minecraft/class_55;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_887 (II)V
+		ARG 1 x
+		ARG 2 z
+	METHOD method_888 (III)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 neighborMaxY
+	METHOD method_889 (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_891 loadFromPacket ([BIIIIIII)I
+		ARG 1 bytes
+		ARG 2 minX
+		ARG 3 minY
+		ARG 4 minZ
+		ARG 5 maxX
+		ARG 6 maxY
+		ARG 7 maxZ
+		ARG 8 offset
+	METHOD method_892 populateHeightmap ()V
