@@ -19,7 +19,7 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 		ARG 2 blocks
 		ARG 3 x
 		ARG 4 z
-	METHOD method_858 (II)Z
+	METHOD method_858 chunkPosEquals (II)Z
 		ARG 1 x
 		ARG 2 z
 	METHOD method_859 getBlockId (III)I
