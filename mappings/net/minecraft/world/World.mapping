@@ -20,12 +20,21 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 3 dimension
 		ARG 4 seed
 	METHOD method_150 playSound (DDDLjava/lang/String;FF)V
+	METHOD method_155 isRegionLoaded (IIIIII)Z
 	METHOD method_156 (IIIIZI)Z
 		ARG 6 side
 	METHOD method_159 setTime (J)V
 		ARG 1 time
 	METHOD method_168 canSpawnEntity (Lnet/minecraft/class_25;)Z
 		ARG 1 box
+	METHOD method_169 isBoxInMaterial (Lnet/minecraft/class_25;Lnet/minecraft/class_15;)Z
+		ARG 1 boundingBox
+		ARG 2 material
+	METHOD method_170 updateMovementInFluid (Lnet/minecraft/class_25;Lnet/minecraft/class_15;Lnet/minecraft/class_57;)Z
+		COMMENT Also could be for materials, but updated in later versions to be exclusive to fluids
+		ARG 1 entityBoundingBox
+		ARG 2 fluidMaterial
+		ARG 3 entity
 	METHOD method_172 (Lnet/minecraft/class_54;IIII)V
 		ARG 2 x
 		ARG 3 y
@@ -47,8 +56,13 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_207 isBoxSubmergedInFluid (Lnet/minecraft/class_25;Lnet/minecraft/class_15;)Z
+		COMMENT Also could be for materials, but updated in later versions to be exclusive to fluids
+		ARG 1 boundingBox
+		ARG 2 material
 	METHOD method_208 getIdCount (Ljava/lang/String;)I
 		ARG 1 id
+	METHOD method_210 spawnEntity (Lnet/minecraft/class_57;)Z
 	METHOD method_211 getEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
 	METHOD method_215 (IIII)V
 		ARG 1 x
