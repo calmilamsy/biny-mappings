@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_557 net/minecraft/screen/slot/CraftingResultSlot
+	FIELD field_2367 player Lnet/minecraft/class_54;
+	METHOD <init> (Lnet/minecraft/class_54;Lnet/minecraft/class_134;Lnet/minecraft/class_134;III)V
+		ARG 1 player
+		ARG 3 inventory
+		ARG 4 index
+		ARG 5 x
+		ARG 6 y
