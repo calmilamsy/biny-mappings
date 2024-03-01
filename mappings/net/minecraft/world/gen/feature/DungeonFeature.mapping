@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_30 net/minecraft/world/gen/feature/DungeonFeature
+	METHOD method_115 getRandomChestItem (Ljava/util/Random;)Lnet/minecraft/class_31;
+		ARG 1 random
+	METHOD method_116 getRandomEntity (Ljava/util/Random;)Ljava/lang/String;
+		ARG 1 random

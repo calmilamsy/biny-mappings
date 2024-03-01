@@ -61,6 +61,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 4 sizeX
 		ARG 5 sizeY
 		ARG 6 sizeZ
+	METHOD method_222 getTopY (II)I
 	METHOD method_223 (IIII)Z
 		ARG 1 x
 		ARG 2 y

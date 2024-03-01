@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_594 net/minecraft/client/gui/hud/toast/AchievementToast
+	FIELD field_2571 client Lnet/minecraft/client/Minecraft;
+	FIELD field_2574 title Ljava/lang/String;
+	FIELD field_2575 description Ljava/lang/String;
+	FIELD field_2576 achievement Lnet/minecraft/class_24;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 client
+	METHOD method_1964 (Lnet/minecraft/class_24;)V
+		ARG 1 achievement
+	METHOD method_1966 (Lnet/minecraft/class_24;)V
+		ARG 1 achievement

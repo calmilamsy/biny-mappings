@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_231 net/minecraft/world/gen/feature/PlantPatchFeature
+	FIELD field_858 plantBlockId I
+	METHOD <init> (I)V
+		ARG 1 plantBlockId

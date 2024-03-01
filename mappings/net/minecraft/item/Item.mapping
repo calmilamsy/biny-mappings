@@ -86,10 +86,10 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 	FIELD field_460 RECORD_CAT Lnet/minecraft/class_124;
 	FIELD field_461 id I
 	FIELD field_462 maxCount I
-	FIELD field_463 texturePosition I
+	FIELD field_463 textureId I
 	FIELD field_464 handheld Z
-	FIELD field_465 fuel Z
-	FIELD field_466 craftingReturmItem Lnet/minecraft/class_124;
+	FIELD field_465 hasSubtypes Z
+	FIELD field_466 craftingReturnItem Lnet/minecraft/class_124;
 	FIELD field_467 translationKey Ljava/lang/String;
 	FIELD field_468 ITEMS [Lnet/minecraft/class_124;
 	FIELD field_469 IRON_SHOVEL Lnet/minecraft/class_124;
@@ -123,9 +123,14 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 3 x
 		ARG 4 y
 		ARG 5 z
+		ARG 6 miner
 	METHOD method_438 getMiningSpeedMultiplier (Lnet/minecraft/class_31;Lnet/minecraft/class_17;)F
 		ARG 1 stack
 		ARG 2 block
+	METHOD method_439 getTextureId (Lnet/minecraft/class_31;)I
+		ARG 1 itemStack
+	METHOD method_441 getTextureId (I)I
+		ARG 1 damage
 	METHOD method_442 getTranslationKey (Lnet/minecraft/class_31;)Ljava/lang/String;
 		ARG 1 stack
 	METHOD method_443 getTranslationKey ()Ljava/lang/String;
@@ -139,9 +144,11 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 7 side
 	METHOD method_446 postHit (Lnet/minecraft/class_31;Lnet/minecraft/class_127;Lnet/minecraft/class_127;)Z
 		ARG 1 stack
-	METHOD method_447 getDamageOnEntity (Lnet/minecraft/class_57;)I
-		ARG 1 entity
-	METHOD method_448 getIsHandheld ()Z
+		ARG 2 target
+		ARG 3 attacker
+	METHOD method_447 getAttackDamage (Lnet/minecraft/class_57;)I
+		ARG 1 attackedEntity
+	METHOD method_448 isHandheld ()Z
 	METHOD method_450 isSuitableFor (Lnet/minecraft/class_17;)Z
 		ARG 1 block
 	METHOD method_451 use (Lnet/minecraft/class_31;Lnet/minecraft/class_18;Lnet/minecraft/class_54;)Lnet/minecraft/class_31;
@@ -164,8 +171,10 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 2 entity
 	METHOD method_456 setTranslationKey (Ljava/lang/String;)Lnet/minecraft/class_124;
 		ARG 1 key
-	METHOD method_457 setFuel (Z)Lnet/minecraft/class_124;
-		ARG 1 isFuel
+	METHOD method_457 setHasSubtypes (Z)Lnet/minecraft/class_124;
+		ARG 1 hasSubtypes
+	METHOD method_458 setTextureId (I)Lnet/minecraft/class_124;
+		ARG 1 textureId
 	METHOD method_459 getMaxCount ()I
 	METHOD method_460 setMaxCount (I)Lnet/minecraft/class_124;
 		ARG 1 maxCount
@@ -173,9 +182,11 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 1 stack
 		ARG 2 world
 		ARG 3 player
+	METHOD method_462 hasSubtypes ()Z
 	METHOD method_463 setMaxDamage (I)Lnet/minecraft/class_124;
 		ARG 1 maxDamage
 	METHOD method_464 getMaxDamage ()I
+	METHOD method_465 isDamageable ()Z
 	METHOD method_466 setHandheld ()Lnet/minecraft/class_124;
 	METHOD method_467 getCraftingReturnItem ()Lnet/minecraft/class_124;
 	METHOD method_468 hasCraftingReturnItem ()Z
