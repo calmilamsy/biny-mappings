@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_283 net/minecraft/block/entity/PistonBlockEntity
+	FIELD field_1761 blockId I
+	FIELD field_1762 blockData I
+	FIELD field_1763 facing I
+	FIELD field_1764 extending Z
+	FIELD field_1765 source Z
+	FIELD field_1766 lastProgress F
+	FIELD field_1767 progress F
+	METHOD <init> (IIIZZ)V
+		ARG 1 pushedBlockId
+		ARG 2 pushedBlockData
+		ARG 3 facing
+		ARG 4 extending
+		ARG 5 source
+	METHOD method_1518 getPushedBlockId ()I
+	METHOD method_1519 getProgress (F)F
+		ARG 1 tickDelta
+	METHOD method_1521 isExtending ()Z
+	METHOD method_1522 getFacing ()I
+	METHOD method_1527 isSource ()Z

@@ -1,9 +1,21 @@
 CLASS net/minecraft/class_55 net/minecraft/block/entity/BlockEntity
+	FIELD field_1236 idToClass Ljava/util/Map;
+	FIELD field_1237 classToId Ljava/util/Map;
 	FIELD field_1238 world Lnet/minecraft/class_18;
 	FIELD field_1239 x I
 	FIELD field_1240 y I
 	FIELD field_1241 z I
+	FIELD field_1242 removed Z
+	METHOD method_1067 create (Ljava/lang/Class;Ljava/lang/String;)V
+		ARG 0 blockEntityClass
+		ARG 1 id
+	METHOD method_1068 createFromNbt (Lnet/minecraft/class_8;)Lnet/minecraft/class_55;
+		ARG 0 nbt
+	METHOD method_1069 getPushedBlockData ()I
 	METHOD method_1070 createUpdatePacket ()Lnet/minecraft/class_169;
+	METHOD method_1071 isRemoved ()Z
+	METHOD method_1072 markRemoved ()V
+	METHOD method_1073 cancelRemoval ()V
 	METHOD method_1075 getBlock ()Lnet/minecraft/class_17;
 	METHOD method_1077 readNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
