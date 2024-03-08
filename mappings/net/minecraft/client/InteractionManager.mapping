@@ -14,3 +14,4 @@ CLASS net/minecraft/class_504 net/minecraft/client/InteractionManager
 	METHOD method_1719 attackEntity (Lnet/minecraft/class_54;Lnet/minecraft/class_57;)V
 		ARG 1 player
 		ARG 2 target
+	METHOD method_1720 tick ()V
