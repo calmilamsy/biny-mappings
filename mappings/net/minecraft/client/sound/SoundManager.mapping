@@ -3,6 +3,7 @@ CLASS net/minecraft/class_617 net/minecraft/client/sound/SoundManager
 	FIELD field_2668 sounds Lnet/minecraft/class_266;
 	FIELD field_2669 streamingSounds Lnet/minecraft/class_266;
 	FIELD field_2670 music Lnet/minecraft/class_266;
+	FIELD field_2671 soundSourceSuffix I
 	FIELD field_2672 gameOptions Lnet/minecraft/class_322;
 	FIELD field_2673 started Z
 	FIELD field_2674 random Ljava/util/Random;
