@@ -3,3 +3,4 @@ CLASS net/minecraft/class_188 net/minecraft/entity/mob/MobEntity
 	METHOD method_634 getTarget ()Lnet/minecraft/class_57;
 	METHOD method_636 setTarget (Lnet/minecraft/class_57;)V
 		ARG 1 target
+	METHOD method_638 getTargetInRange ()Lnet/minecraft/class_57;
