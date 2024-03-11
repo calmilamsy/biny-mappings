@@ -21,9 +21,15 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1609 prevPitch F
 	FIELD field_1610 boundingBox Lnet/minecraft/class_25;
 	FIELD field_1611 nextStepSoundDistance I
+	FIELD field_1612 submergedInWater Z
+	FIELD field_1613 hearts I
 	FIELD field_1614 air I
 	FIELD field_1615 fireImmune Z
 	FIELD field_1616 dataTracker Lnet/minecraft/class_216;
+	FIELD field_1617 minBrightness F
+		COMMENT Set to 1 when rendering inside inventory.
+	FIELD field_1618 inChunk Z
+		COMMENT Is this entity being ticked over by a chunk?
 	FIELD field_1619 chunkX I
 	FIELD field_1620 chunkY I
 	FIELD field_1621 chunkZ I
@@ -34,13 +40,13 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		COMMENT This is true if delta Y in {@link move} was cut short. Usually caused by bumping into a block.
 	FIELD field_1626 anyCollision Z
 		COMMENT Will be true if either {@link horizontalCollision} or {@link verticalCollision} is true.
-	FIELD field_1627 sendVelocityImmediately Z
-		COMMENT This is a weird one. This will be always stuck to true on clients once set to true, but on server, this is used to track when the initial damage velocity update should be sent to clients for better responsiveness.
+	FIELD field_1627 velocityModified Z
+		COMMENT This is a weird one. This will be always stuck to true on clients once set to true, but on server, this behaves as described.
 	FIELD field_1628 slowed Z
 	FIELD field_1629 keepVelocityOnCollision Z
 		COMMENT When false, reset all velocity to 0 on any collision while moving.
 	FIELD field_1630 dead Z
-	FIELD field_1631 eyeHeight F
+	FIELD field_1631 standingEyeHeight F
 	FIELD field_1632 spacingXZ F
 	FIELD field_1633 spacingY F
 	FIELD field_1634 prevHorizontalSpeed F
@@ -50,33 +56,144 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1638 lastTickY D
 	FIELD field_1639 lastTickZ D
 	FIELD field_1640 cameraOffset F
+	FIELD field_1641 stepHeight F
+	FIELD field_1642 noClip Z
+	FIELD field_1643 F
+		COMMENT MCP seems to think this reduces collision, but changing this has no observable difference.
 	FIELD field_1644 random Ljava/util/Random;
-	FIELD field_1647 fire I
+	FIELD field_1645 age I
+	FIELD field_1646 fireTickStep I
+	FIELD field_1647 fireTicks I
 	FIELD field_1648 maxAir I
+	FIELD field_1649 firstTick Z
+	FIELD field_1650 relativeTargetYaw D
+		COMMENT Moves the camera in the specified direction until it's moved by this amount, ignoring other camera movements.
+	FIELD field_1651 relativeTargetPitch D
+		COMMENT Moves the camera in the specified direction until it's moved by this amount, ignoring other camera movements.
 	FIELD field_1652 skinUrl Ljava/lang/String;
 	FIELD field_1653 capeUrl Ljava/lang/String;
+	FIELD field_1654 remotePosX I
+	FIELD field_1655 remotePosY I
+	FIELD field_1656 remotePosZ I
 	METHOD <init> (Lnet/minecraft/class_18;)V
 		ARG 1 world
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 object
 	METHOD method_1310 initDataTracker ()V
+	METHOD method_1311 setPositionAndAnglesAvoidEntities (DDDFFI)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 pitch
+		ARG 8 yaw
+	METHOD method_1314 getTexture ()Ljava/lang/String;
+	METHOD method_1315 teleportTop ()V
 	METHOD method_1316 updateCapeUrl ()V
 	METHOD method_1317 baseTick ()V
 	METHOD method_1318 isAlive ()Z
+	METHOD method_1319 kill ()V
 	METHOD method_1321 setBoundingBoxSpacing (FF)V
 		ARG 1 spacingXZ
 		ARG 2 spacingY
+	METHOD method_1322 addVelocity (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1323 interact (Lnet/minecraft/class_54;)Z
+		ARG 1 player
+	METHOD method_1324 moveNonSolid (FFF)V
+	METHOD method_1325 dropItem (IIF)Lnet/minecraft/class_142;
+		ARG 1 id
+		ARG 2 amount
+		ARG 3 yOffset
+	METHOD method_1326 setFlag (IZ)V
+		ARG 1 index
+		ARG 2 value
+	METHOD method_1327 dropItem (Lnet/minecraft/class_31;F)Lnet/minecraft/class_142;
+		ARG 1 itemStack
+		ARG 2 yOffset
 	METHOD method_1328 isInFluid (Lnet/minecraft/class_15;)Z
+		ARG 1 material
+	METHOD method_1329 toNbtList ([D)Lnet/minecraft/class_202;
+		ARG 1 values
+	METHOD method_1330 toNbtList ([F)Lnet/minecraft/class_202;
+		ARG 1 values
+	METHOD method_1331 getDataTracker ()Lnet/minecraft/class_216;
+	METHOD method_1332 lightOnFire ()V
+	METHOD method_1333 isWet ()Z
+	METHOD method_1334 isSubmergedInWater ()Z
+	METHOD method_1335 isTouchingLava ()Z
+	METHOD method_1336 scheduleVelocityUpdate ()V
+	METHOD method_1337 getRegistryEntry ()Ljava/lang/String;
+	METHOD method_1338 setPositionAndAngles (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
+	METHOD method_1339 dropItem (II)Lnet/minecraft/class_142;
+		COMMENT
+		ARG 1 id
+		ARG 2 amount
+	METHOD method_1340 setPos (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1341 setPositionAndAnglesKeepPrevAngles (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
+	METHOD method_1342 setRotation (FF)V
+		ARG 1 yaw
+		ARG 2 pitch
+	METHOD method_1343 saveSelfNbt (Lnet/minecraft/class_8;)Z
+		ARG 1 nbt
+	METHOD method_1344 getEntitiesInside (DDD)Z
+		ARG 1 offsetX
+		ARG 3 offsetY
+		ARG 5 offsetZ
+	METHOD method_1345 getFlag (I)Z
+		ARG 1 index
 	METHOD method_1346 write (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
+	METHOD method_1347 (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_1348 read (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
+	METHOD method_1349 setSneaking (Z)V
+		ARG 1 sneaking
+	METHOD method_1350 getDistance (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1351 getDistance (Lnet/minecraft/class_57;)F
+		ARG 1 entity
+	METHOD method_1353 onCollision (Lnet/minecraft/class_57;)V
+		ARG 1 otherEntity
 	METHOD method_1354 onPlayerInteraction (Lnet/minecraft/class_54;)V
 		ARG 1 player
 	METHOD method_1355 damage (Lnet/minecraft/class_57;I)Z
 		ARG 1 damageSource
 		ARG 2 amount
+	METHOD method_1356 isCollidable ()Z
+	METHOD method_1357 getPassengerRidingHeight ()D
 	METHOD method_1358 bypassesSteppingEffects ()Z
+	METHOD method_1359 isOnFire ()Z
+	METHOD method_1360 hasVehicle ()Z
+	METHOD method_1362 changeLookDirection (FF)V
+		ARG 1 cursorDeltaX
+		ARG 2 cursorDeltaY
 	METHOD method_1363 readNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
+	METHOD method_1365 setVelocity (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1366 getShadowRadius ()F
 	METHOD method_1368 writeNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
 	METHOD method_1370 tick ()V
@@ -88,9 +205,34 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD method_1375 (Lnet/minecraft/class_18;)V
+	METHOD method_1373 isSneaking ()Z
+	METHOD method_1374 fall (DZ)V
+		ARG 1 heightDifference
+		ARG 3 onGround
+	METHOD method_1375 setWorld (Lnet/minecraft/class_18;)V
 		ARG 1 world
+	METHOD method_1376 setRiding (Lnet/minecraft/class_57;)V
+		COMMENT If given null or their existing vehicle, removes the rider from their vehicle. If given a new vehicle, moves them to the new vehicle.
+		ARG 1 entity
+	METHOD method_1378 getEyeHeight ()F
+	METHOD method_1379 (Lnet/minecraft/class_57;)Lnet/minecraft/class_25;
+		COMMENT Seems to return anything only for minecarts and boats.
+	METHOD method_1380 isPushable ()Z
+	METHOD method_1381 getBoundingBox ()Lnet/minecraft/class_25;
+	METHOD method_1382 updatePassengerPosition ()V
+	METHOD method_1383 onStruckByLightning (Lnet/minecraft/class_411;)V
+		ARG 1 lightning
+	METHOD method_1384 tickRiding ()V
+	METHOD method_1385 getStandingEyeHeight ()D
 	METHOD method_1386 markDead ()V
+	METHOD method_1387 isInsideWall ()Z
+	METHOD method_1389 onLanding (F)V
+		ARG 1 fallDistance
+	METHOD method_1390 onKilledOther (Lnet/minecraft/class_127;)V
+		ARG 1 other
 	METHOD method_1392 damage (I)V
 		ARG 1 amount
-	METHOD method_1393 isSubmergedInWater ()Z
+	METHOD method_1393 ()Z
+		COMMENT
+	METHOD method_1394 getBrightnessAtEyes (F)F
+		COMMENT The float here seems to be randomly used for seemingly random things.

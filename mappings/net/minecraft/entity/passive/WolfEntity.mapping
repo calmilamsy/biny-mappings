@@ -1,1 +1,25 @@
 CLASS net/minecraft/class_121 net/minecraft/entity/passive/WolfEntity
+	FIELD field_368 begging Z
+	FIELD field_369 begAnimationProgress F
+	FIELD field_370 lastBegAnimationProcess F
+	FIELD field_371 furWet Z
+	FIELD field_372 canShakeWaterOff Z
+	FIELD field_373 shakeProgress F
+	FIELD field_374 lastShakeProgress F
+	METHOD method_420 getShakeAnimationProgress (FF)F
+	METHOD method_421 getFurBrightnessMultiplier (F)F
+		ARG 1 tickDelta
+	METHOD method_422 getBegAnimationProgress (F)F
+		ARG 1 tickDelta
+	METHOD method_423 isFurWet ()Z
+	METHOD method_425 isTamed ()Z
+	METHOD method_426 setOwner (Ljava/lang/String;)V
+	METHOD method_428 setSitting (Z)V
+	METHOD method_429 applyDamage (Lnet/minecraft/class_57;F)V
+		ARG 1 source
+		ARG 2 amount
+	METHOD method_430 setAngry (Z)V
+	METHOD method_431 setTamed (Z)V
+	METHOD method_432 getOwner ()Ljava/lang/String;
+	METHOD method_433 isSitting ()Z
+	METHOD method_434 isAngry ()Z
