@@ -86,6 +86,8 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 5 z
 		ARG 7 pitch
 		ARG 8 yaw
+	METHOD method_1313 processServerEntityStatus (B)V
+		ARG 1 status
 	METHOD method_1314 getTexture ()Ljava/lang/String;
 	METHOD method_1315 teleportTop ()V
 	METHOD method_1316 updateCapeUrl ()V
