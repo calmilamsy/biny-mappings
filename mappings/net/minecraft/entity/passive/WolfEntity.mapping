@@ -3,7 +3,7 @@ CLASS net/minecraft/class_121 net/minecraft/entity/passive/WolfEntity
 	FIELD field_369 begAnimationProgress F
 	FIELD field_370 lastBegAnimationProcess F
 	FIELD field_371 furWet Z
-	FIELD field_372 isShakingWaterOff Z
+	FIELD field_372 shakingWaterOff Z
 	FIELD field_373 shakeProgress F
 	FIELD field_374 lastShakeProgress F
 	METHOD method_420 getShakeAnimationProgress (FF)F

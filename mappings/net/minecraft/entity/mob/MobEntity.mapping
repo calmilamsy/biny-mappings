@@ -7,3 +7,4 @@ CLASS net/minecraft/class_188 net/minecraft/entity/mob/MobEntity
 		ARG 1 other
 		ARG 2 distance
 	METHOD method_638 getTargetInRange ()Lnet/minecraft/class_57;
+	METHOD method_640 cantMove ()Z
