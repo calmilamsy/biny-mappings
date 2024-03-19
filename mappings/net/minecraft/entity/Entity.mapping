@@ -93,7 +93,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	METHOD method_1316 updateCapeUrl ()V
 	METHOD method_1317 baseTick ()V
 	METHOD method_1318 isAlive ()Z
-	METHOD method_1319 kill ()V
+	METHOD method_1319 tickInVoid ()V
 	METHOD method_1321 setBoundingBoxSpacing (FF)V
 		ARG 1 spacingXZ
 		ARG 2 spacingY
