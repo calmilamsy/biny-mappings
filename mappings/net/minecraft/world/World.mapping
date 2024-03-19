@@ -26,6 +26,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 time
 	METHOD method_168 canSpawnEntity (Lnet/minecraft/class_25;)Z
 		ARG 1 box
+	METHOD method_169 isIn (Lnet/minecraft/class_25;Lnet/minecraft/class_15;)Z
 	METHOD method_172 (Lnet/minecraft/class_54;IIII)V
 		ARG 2 x
 		ARG 3 y
@@ -37,6 +38,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	METHOD method_180 setState (Ljava/lang/String;Lnet/minecraft/class_58;)V
 		ARG 1 id
 		ARG 2 state
+	METHOD method_190 getEntityCollisions (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
 	METHOD method_191 playSound (Lnet/minecraft/class_57;Ljava/lang/String;FF)V
 	METHOD method_200 (IIII)Z
 		ARG 1 x
@@ -49,6 +51,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 3 z
 	METHOD method_208 getIdCount (Ljava/lang/String;)I
 		ARG 1 id
+	METHOD method_210 spawnEntity (Lnet/minecraft/class_57;)Z
 	METHOD method_211 getEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
 	METHOD method_215 (IIII)V
 		ARG 1 x
@@ -61,6 +64,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 4 sizeX
 		ARG 5 sizeY
 		ARG 6 sizeZ
+	METHOD method_218 isWater (Lnet/minecraft/class_25;)Z
 	METHOD method_222 getTopY (II)I
 	METHOD method_223 (IIII)Z
 		ARG 1 x
