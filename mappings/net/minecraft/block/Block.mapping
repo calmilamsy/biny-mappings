@@ -367,6 +367,9 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 4 z
 	METHOD method_1625 dropStacks (Lnet/minecraft/class_18;IIIIF)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1626 getTextureId (Lnet/minecraft/class_14;IIII)I
 		ARG 1 blockView
 		ARG 2 x

@@ -3,3 +3,8 @@ CLASS net/minecraft/class_510 net/minecraft/block/RepeaterBlock
 	METHOD <init> (IZ)V
 		ARG 1 id
 		ARG 2 lit
+	METHOD method_1728 (Lnet/minecraft/class_18;IIII)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

@@ -2,3 +2,9 @@ CLASS net/minecraft/class_463 net/minecraft/block/CakeBlock
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId
+	METHOD method_1528 attemptEat (Lnet/minecraft/class_18;IIILnet/minecraft/class_54;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 player

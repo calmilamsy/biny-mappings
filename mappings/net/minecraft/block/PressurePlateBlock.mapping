@@ -3,3 +3,8 @@ CLASS net/minecraft/class_457 net/minecraft/block/PressurePlateBlock
 		ARG 1 id
 		ARG 2 textureId
 		ARG 4 material
+	METHOD method_1512 (Lnet/minecraft/class_18;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

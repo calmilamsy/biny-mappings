@@ -4,3 +4,30 @@ CLASS net/minecraft/class_223 net/minecraft/block/PistonBlock
 		ARG 1 id
 		ARG 2 textureId
 		ARG 3 sticky
+	METHOD method_759 (ILnet/minecraft/class_18;IIIZ)Z
+		ARG 0 blockId
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_761 (Lnet/minecraft/class_18;IIILnet/minecraft/class_54;)I
+		ARG 0 world
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 player
+	METHOD method_763 (Lnet/minecraft/class_18;IIII)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_765 (Lnet/minecraft/class_18;IIII)Z
+		ARG 0 world
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_766 (Lnet/minecraft/class_18;IIII)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

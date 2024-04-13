@@ -111,7 +111,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 	FIELD field_485 STONE_SWORD Lnet/minecraft/class_124;
 	FIELD field_486 STONE_SHOVEL Lnet/minecraft/class_124;
 	FIELD field_487 STONE_PICKAXE Lnet/minecraft/class_124;
-	FIELD field_488 STONE_HATCHET Lnet/minecraft/class_124;
+	FIELD field_488 STONE_AXE Lnet/minecraft/class_124;
 	FIELD field_489 DIAMOND_SWORD Lnet/minecraft/class_124;
 	FIELD field_490 DIAMOND_SHOVEL Lnet/minecraft/class_124;
 	FIELD field_491 DIAMOND_PICKAXE Lnet/minecraft/class_124;

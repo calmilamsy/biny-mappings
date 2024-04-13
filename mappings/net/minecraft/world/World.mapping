@@ -22,6 +22,10 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	METHOD method_150 playSound (DDDLjava/lang/String;FF)V
 	METHOD method_156 (IIIIZI)Z
 		ARG 6 side
+	METHOD method_157 (IIILnet/minecraft/class_55;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_159 setTime (J)V
 		ARG 1 time
 	METHOD method_168 canSpawnEntity (Lnet/minecraft/class_25;)Z
@@ -86,5 +90,9 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	METHOD method_254 getSeed ()J
 	METHOD method_256 getTime ()J
 	METHOD method_258 getSpawnPos ()Lnet/minecraft/class_63;
+	METHOD method_260 (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_276 setSpawnPos (Lnet/minecraft/class_63;)V
 		ARG 1 pos

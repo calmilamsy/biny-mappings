@@ -1,1 +1,8 @@
 CLASS net/minecraft/class_252 net/minecraft/block/DoorBlock
+	METHOD method_837 (Lnet/minecraft/class_18;IIIZ)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_838 (I)V
+		ARG 1 meta

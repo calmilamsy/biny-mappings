@@ -2,3 +2,30 @@ CLASS net/minecraft/class_474 net/minecraft/block/FireBlock
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId
+	METHOD method_1822 addBurnableBlock (III)V
+		ARG 1 blockId
+	METHOD method_1823 (Lnet/minecraft/class_18;IIIILjava/util/Random;I)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1824 (Lnet/minecraft/class_14;III)Z
+		ARG 1 blockView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1825 (Lnet/minecraft/class_18;IIII)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1826 (Lnet/minecraft/class_18;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1827 (Lnet/minecraft/class_18;III)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
