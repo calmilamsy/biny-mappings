@@ -1,1 +1,6 @@
 CLASS net/minecraft/class_227 net/minecraft/client/particle/FootstepParticle
+	METHOD <init> (Lnet/minecraft/class_76;Lnet/minecraft/class_18;DDD)V
+		ARG 2 world
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z

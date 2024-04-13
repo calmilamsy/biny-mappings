@@ -7,7 +7,23 @@ CLASS net/minecraft/class_136 net/minecraft/entity/player/PlayerInventory
 	FIELD field_750 cursorStack Lnet/minecraft/class_31;
 	METHOD <init> (Lnet/minecraft/class_54;)V
 		ARG 1 player
+	METHOD method_671 (Lnet/minecraft/class_31;)Z
+		ARG 1 stack
+	METHOD method_672 getSelectedSlotAttackDamage (Lnet/minecraft/class_57;)I
+		ARG 1 target
 	METHOD method_675 getSelectedItem ()Lnet/minecraft/class_31;
+	METHOD method_676 decrementSlotContainingItem (I)Z
+		ARG 1 itemId
 	METHOD method_677 setCursorStack (Lnet/minecraft/class_31;)V
 		ARG 1 cursorStack
+	METHOD method_681 (Lnet/minecraft/class_31;)Z
+		ARG 1 stack
+	METHOD method_682 getSlotContainingItem (I)I
+		ARG 1 itemId
+	METHOD method_683 (Lnet/minecraft/class_31;)I
+		ARG 1 stack
+	METHOD method_685 (Lnet/minecraft/class_31;)I
+		ARG 1 stack
 	METHOD method_689 getCursorStack ()Lnet/minecraft/class_31;
+	METHOD method_691 (IZ)V
+		ARG 1 itemId

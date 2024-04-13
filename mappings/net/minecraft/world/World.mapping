@@ -38,6 +38,13 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 stateClass
 		ARG 2 id
 	METHOD method_178 addParticle (Ljava/lang/String;DDDDDD)V
+		ARG 1 particleName
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 velocityX
+		ARG 10 velocityY
+		ARG 12 velocityZ
 	METHOD method_180 setState (Ljava/lang/String;Lnet/minecraft/class_58;)V
 		ARG 1 id
 		ARG 2 state

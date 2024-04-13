@@ -1,1 +1,6 @@
 CLASS net/minecraft/class_528 net/minecraft/client/particle/ItemParticle
+	METHOD <init> (Lnet/minecraft/class_18;DDDLnet/minecraft/class_124;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
