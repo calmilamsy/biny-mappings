@@ -3,7 +3,7 @@ CLASS net/minecraft/class_426 net/minecraft/server/ServerCommandHandler
 	FIELD field_1687 minecraftServer Lnet/minecraft/server/MinecraftServer;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 minecraftServer
-	METHOD method_1411 ExecuteCommand (Lnet/minecraft/class_38;)V
+	METHOD method_1411 executeCommand (Lnet/minecraft/class_38;)V
 		ARG 1 command
 	METHOD method_1412 parseInt (Ljava/lang/String;I)I
 		ARG 1 intString
