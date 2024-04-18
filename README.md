@@ -9,6 +9,8 @@ The intent of this project is to continue the work of BIN mappings, but this tim
 To use yarn-deobfuscated Minecraft for Minecraft modding or as a dependency in a Java project, you can
 use [loom](https://github.com/babric/fabric-loom) Gradle plugin.
 See [fabric wiki tutorial](https://fabricmc.net/wiki/tutorial:setup) for more information.
+- See [StationAPI Example Mod](https://github.com/calmilamsy/stationapi-example-mod) for an example on how to use BINY in loom.
+- Uses commit hashes for versioning. You *can* use jitpack instead of glass-maven, but unless you're testing a PR, you really shouldn't use it due to potentially long artefact times.
 
 To obtain a deobfuscated Minecraft jar, [`./gradlew mapNamedJar`](#mapNamedJar) will generate a jar named
 like `<minecraft version>-named.jar`, which can be sent to a decompiler for deobfuscated code.
