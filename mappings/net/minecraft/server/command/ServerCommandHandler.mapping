@@ -9,11 +9,11 @@ CLASS net/minecraft/class_426 net/minecraft/server/command/ServerCommandHandler
 		ARG 1 string
 		ARG 2 fallback
 	METHOD method_1413 logCommand (Ljava/lang/String;Ljava/lang/String;)V
-		ARG 1 dispatcherName
+		ARG 1 commandUser
 		ARG 2 message
 	METHOD method_1414 executeWhitelist (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_39;)V
-		ARG 1 dispatcherName
+		ARG 1 commandUser
 		ARG 2 message
-		ARG 3 dispatcher
+		ARG 3 output
 	METHOD method_1415 displayHelp (Lnet/minecraft/class_39;)V
-		ARG 1 dispatcher
+		ARG 1 output

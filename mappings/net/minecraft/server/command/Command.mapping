@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_38 net/minecraft/server/command/Command
 	FIELD field_159 message Ljava/lang/String;
-	FIELD field_160 dispatcher Lnet/minecraft/class_39;
+	FIELD field_160 output Lnet/minecraft/class_39;
 	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_39;)V
 		ARG 1 contents
-		ARG 2 dispatcher
+		ARG 2 output
