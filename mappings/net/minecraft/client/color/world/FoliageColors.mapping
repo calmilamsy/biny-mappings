@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_334 net/minecraft/client/color/world/FoliageColors
+	FIELD field_1243 colorMap [I
+	METHOD method_1079 getSpruceColor ()I
+	METHOD method_1080 getColor (DD)I
+		ARG 0 temperature
+		ARG 2 humidity
+	METHOD method_1081 setColorMap ([I)V
+		ARG 0 colorMap
+	METHOD method_1082 getBirchColor ()I
+	METHOD method_1083 getDefaultColor ()I
