@@ -149,7 +149,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 	METHOD method_447 getAttackDamage (Lnet/minecraft/class_57;)I
 		ARG 1 attackedEntity
 	METHOD method_448 isHandheld ()Z
-	METHOD method_449 isHandheldFishingRod ()Z
+	METHOD method_449 isHandheldRod ()Z
 		COMMENT Determines if an item should be rotated like a fishing rod when held in hand
 	METHOD method_450 isSuitableFor (Lnet/minecraft/class_17;)Z
 		ARG 1 block
@@ -193,5 +193,5 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 	METHOD method_467 getCraftingReturnItem ()Lnet/minecraft/class_124;
 	METHOD method_468 hasCraftingReturnItem ()Z
 	METHOD method_469 getTranslatedName ()Ljava/lang/String;
-	METHOD method_470 getMetadata (I)I
+	METHOD method_470 getPlacementMetadata (I)I
 		ARG 1 meta
