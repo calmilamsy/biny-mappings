@@ -3,3 +3,28 @@ CLASS net/minecraft/class_408 net/minecraft/block/RedstoneWireBlock
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId
+	METHOD method_1286 (Lnet/minecraft/class_18;IIIIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1287 (Lnet/minecraft/class_14;IIII)Z
+		ARG 0 blockView
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1288 (Lnet/minecraft/class_18;IIII)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1289 (Lnet/minecraft/class_18;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1290 (Lnet/minecraft/class_18;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

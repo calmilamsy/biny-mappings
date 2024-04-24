@@ -1,1 +1,11 @@
 CLASS net/minecraft/class_301 net/minecraft/block/CropBlock
+	METHOD method_996 applyFullGrowth (Lnet/minecraft/class_18;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_997 getAvailableMoisture (Lnet/minecraft/class_18;III)F
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
