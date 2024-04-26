@@ -16,7 +16,12 @@ CLASS net/minecraft/class_55 net/minecraft/block/entity/BlockEntity
 	METHOD method_1071 isRemoved ()Z
 	METHOD method_1072 markRemoved ()V
 	METHOD method_1073 cancelRemoval ()V
+	METHOD method_1074 distanceFrom (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_1075 getBlock ()Lnet/minecraft/class_17;
+	METHOD method_1076 tick ()V
 	METHOD method_1077 readNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
 	METHOD method_1078 writeNbt (Lnet/minecraft/class_8;)V
