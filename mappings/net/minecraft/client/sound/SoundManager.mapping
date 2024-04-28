@@ -1,5 +1,46 @@
 CLASS net/minecraft/class_617 net/minecraft/client/sound/SoundManager
 	FIELD field_2667 soundSystem Lpaulscode/sound/SoundSystem;
+	FIELD field_2668 sounds Lnet/minecraft/class_266;
+	FIELD field_2669 streamingSounds Lnet/minecraft/class_266;
+	FIELD field_2670 music Lnet/minecraft/class_266;
+	FIELD field_2671 soundSourceSuffix I
+	FIELD field_2672 gameOptions Lnet/minecraft/class_322;
+	FIELD field_2673 started Z
+	FIELD field_2674 random Ljava/util/Random;
+	FIELD field_2675 timeUntilNextSong I
+	METHOD method_2008 updateMusicVolume ()V
+	METHOD method_2009 playSound (Ljava/lang/String;FF)V
+		ARG 1 id
+		ARG 2 volume
+		ARG 3 pitch
+	METHOD method_2010 playStreaming (Ljava/lang/String;FFFFF)V
+		ARG 1 id
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 volume
+		ARG 6 pitch
 	METHOD method_2011 loadSound (Ljava/lang/String;Ljava/io/File;)V
+		ARG 1 id
+		ARG 2 soundFile
+	METHOD method_2012 loadSounds (Lnet/minecraft/class_322;)V
+		ARG 1 gameOptions
+	METHOD method_2013 updateListenerPosition (Lnet/minecraft/class_127;F)V
+		ARG 1 player
+		ARG 2 scale
+	METHOD method_2014 stop ()V
+	METHOD method_2015 playSound (Ljava/lang/String;FFFFF)V
+		ARG 1 id
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 volume
+		ARG 6 pitch
 	METHOD method_2016 loadStreaming (Ljava/lang/String;Ljava/io/File;)V
+		ARG 1 id
+		ARG 2 soundFile
+	METHOD method_2017 tick ()V
 	METHOD method_2018 loadMusic (Ljava/lang/String;Ljava/io/File;)V
+		ARG 1 id
+		ARG 2 soundFile
+	METHOD method_2019 start ()V

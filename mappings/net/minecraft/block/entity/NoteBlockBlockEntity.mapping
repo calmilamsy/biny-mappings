@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_444 net/minecraft/block/entity/NoteBlockBlockEntity
+	FIELD field_1699 note B
+	FIELD field_1700 powered Z
+	METHOD method_1476 cycleNote ()V
+	METHOD method_1477 playNote (Lnet/minecraft/class_18;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

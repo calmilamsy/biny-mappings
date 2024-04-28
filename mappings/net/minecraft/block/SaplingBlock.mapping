@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_154 net/minecraft/block/SaplingBlock
-	METHOD method_533 (Lnet/minecraft/class_18;IIILjava/util/Random;)V
+	METHOD method_533 generate (Lnet/minecraft/class_18;IIILjava/util/Random;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
