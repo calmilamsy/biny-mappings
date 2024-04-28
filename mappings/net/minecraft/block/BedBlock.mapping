@@ -1,3 +1,13 @@
 CLASS net/minecraft/class_485 net/minecraft/block/BedBlock
 	METHOD <init> (I)V
 		ARG 1 id
+	METHOD method_1657 (Lnet/minecraft/class_18;IIIZ)V
+		ARG 0 world
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1661 (Lnet/minecraft/class_18;IIII)Lnet/minecraft/class_63;
+		ARG 0 world
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

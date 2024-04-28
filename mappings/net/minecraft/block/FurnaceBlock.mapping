@@ -9,7 +9,7 @@ CLASS net/minecraft/class_421 net/minecraft/block/FurnaceBlock
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1404 (Lnet/minecraft/class_18;III)V
+	METHOD method_1404 updateDirection (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
