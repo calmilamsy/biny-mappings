@@ -31,14 +31,15 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1618 inChunk Z
 		COMMENT Is this entity being ticked over by a chunk?
 	FIELD field_1619 chunkX I
-	FIELD field_1620 chunkY I
+	FIELD field_1620 chunkSlice I
 	FIELD field_1621 chunkZ I
+	FIELD field_1622 ignoreFrustumCull Z
 	FIELD field_1623 onGround Z
 	FIELD field_1624 horizontalCollision Z
 		COMMENT This is true if delta X or Z in {@link move} was cut short. Usually caused by bumping into a block.
 	FIELD field_1625 verticalCollision Z
 		COMMENT This is true if delta Y in {@link move} was cut short. Usually caused by bumping into a block.
-	FIELD field_1626 anyCollision Z
+	FIELD field_1626 hasCollided Z
 		COMMENT Will be true if either {@link horizontalCollision} or {@link verticalCollision} is true.
 	FIELD field_1627 velocityModified Z
 		COMMENT This is a weird one. This will be always stuck to true on clients once set to true, but on server, this behaves as described.
@@ -47,8 +48,10 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		COMMENT When false, reset all velocity to 0 on any collision while moving.
 	FIELD field_1630 dead Z
 	FIELD field_1631 standingEyeHeight F
-	FIELD field_1632 spacingXZ F
-	FIELD field_1633 spacingY F
+	FIELD field_1632 width F
+		COMMENT dimensions.width in yarn.
+	FIELD field_1633 height F
+		COMMENT dimensions.height in yarn.\t
 	FIELD field_1634 prevHorizontalSpeed F
 	FIELD field_1635 horizontalSpeed F
 	FIELD field_1636 fallDistance F
@@ -62,19 +65,20 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		COMMENT MCP seems to think this reduces collision, but changing this has no observable difference.
 	FIELD field_1644 random Ljava/util/Random;
 	FIELD field_1645 age I
-	FIELD field_1646 fireTickStep I
+	FIELD field_1646 fireImmunityTicks I
+		COMMENT How many ticks this entity has before it catches alight.
 	FIELD field_1647 fireTicks I
 	FIELD field_1648 maxAir I
 	FIELD field_1649 firstTick Z
-	FIELD field_1650 relativeTargetYaw D
+	FIELD field_1650 vehiclePitchDelta D
 		COMMENT Moves the camera in the specified direction until it's moved by this amount, ignoring other camera movements.
-	FIELD field_1651 relativeTargetPitch D
+	FIELD field_1651 vehicleYawDelta D
 		COMMENT Moves the camera in the specified direction until it's moved by this amount, ignoring other camera movements.
 	FIELD field_1652 skinUrl Ljava/lang/String;
 	FIELD field_1653 capeUrl Ljava/lang/String;
-	FIELD field_1654 remotePosX I
-	FIELD field_1655 remotePosY I
-	FIELD field_1656 remotePosZ I
+	FIELD field_1654 trackedPosX I
+	FIELD field_1655 trackedPosY I
+	FIELD field_1656 trackedPosZ I
 	METHOD <init> (Lnet/minecraft/class_18;)V
 		ARG 1 world
 	METHOD equals (Ljava/lang/Object;)Z
@@ -160,7 +164,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 1 index
 	METHOD method_1346 write (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
-	METHOD method_1347 (DDD)D
+	METHOD method_1347 getSquaredDistance (DDD)D
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
@@ -174,6 +178,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 5 z
 	METHOD method_1351 getDistance (Lnet/minecraft/class_57;)F
 		ARG 1 entity
+	METHOD method_1352 getSquaredDistance (Lnet/minecraft/class_57;)D
 	METHOD method_1353 onCollision (Lnet/minecraft/class_57;)V
 		ARG 1 otherEntity
 	METHOD method_1354 onPlayerInteraction (Lnet/minecraft/class_54;)V
@@ -216,6 +221,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	METHOD method_1376 setRiding (Lnet/minecraft/class_57;)V
 		COMMENT If given null or their existing vehicle, removes the rider from their vehicle. If given a new vehicle, moves them to the new vehicle.
 		ARG 1 entity
+	METHOD method_1377 getEquipment ()[Lnet/minecraft/class_31;
 	METHOD method_1378 getEyeHeight ()F
 	METHOD method_1379 (Lnet/minecraft/class_57;)Lnet/minecraft/class_25;
 		COMMENT Seems to return anything only for minecarts and boats.
