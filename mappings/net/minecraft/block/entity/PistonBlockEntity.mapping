@@ -1,0 +1,31 @@
+CLASS net/minecraft/class_283 net/minecraft/block/entity/PistonBlockEntity
+	FIELD field_1761 pushedBlockId I
+	FIELD field_1762 pushedBlockData I
+	FIELD field_1763 facing I
+	FIELD field_1764 extending Z
+	FIELD field_1765 source Z
+	FIELD field_1766 lastProgress F
+	FIELD field_1767 progress F
+	FIELD field_1768 pushedEntities Ljava/util/List;
+	METHOD <init> (IIIZZ)V
+		ARG 1 pushedBlockId
+		ARG 2 pushedBlockData
+		ARG 3 facing
+		ARG 4 extending
+		ARG 5 source
+	METHOD method_1518 getPushedBlockId ()I
+	METHOD method_1519 getProgress (F)F
+		ARG 1 tickDelta
+	METHOD method_1520 pushEntities (FF)V
+		ARG 1 collisionShapeSizeMultiplier
+		ARG 2 entityMoveMultiplier
+	METHOD method_1521 isExtending ()Z
+	METHOD method_1522 getFacing ()I
+	METHOD method_1523 finish ()V
+	METHOD method_1524 getRenderOffsetX (F)F
+		ARG 1 tickDelta
+	METHOD method_1525 getRenderOffsetY (F)F
+		ARG 1 tickDelta
+	METHOD method_1526 getRenderOffsetZ (F)F
+		ARG 1 tickDelta
+	METHOD method_1527 isSource ()Z
