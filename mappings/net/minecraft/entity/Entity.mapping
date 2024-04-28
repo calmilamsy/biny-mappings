@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_57 net/minecraft/entity/Entity
-	FIELD field_1590 next_id I
+	FIELD field_1590 nextId I
 	FIELD field_1591 id I
 	FIELD field_1592 renderDistanceMultiplier D
 	FIELD field_1593 blocksSameBlockSpawning Z
@@ -121,7 +121,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	METHOD method_1330 toNbtList ([F)Lnet/minecraft/class_202;
 		ARG 1 values
 	METHOD method_1331 getDataTracker ()Lnet/minecraft/class_216;
-	METHOD method_1332 lightOnFire ()V
+	METHOD method_1332 setOnFire ()V
 	METHOD method_1333 isWet ()Z
 	METHOD method_1334 isSubmergedInWater ()Z
 	METHOD method_1335 isTouchingLava ()Z
