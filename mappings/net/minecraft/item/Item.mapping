@@ -129,6 +129,8 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 2 block
 	METHOD method_439 getTextureId (Lnet/minecraft/class_31;)I
 		ARG 1 itemStack
+	METHOD method_440 getColorMultiplier (I)I
+		ARG 1 color
 	METHOD method_441 getTextureId (I)I
 		ARG 1 damage
 	METHOD method_442 getTranslationKey (Lnet/minecraft/class_31;)Ljava/lang/String;
