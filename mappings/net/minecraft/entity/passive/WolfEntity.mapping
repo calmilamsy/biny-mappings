@@ -28,6 +28,6 @@ CLASS net/minecraft/class_121 net/minecraft/entity/passive/WolfEntity
 		ARG 1 angry
 	METHOD method_431 setTamed (Z)V
 		ARG 1 tamed
-	METHOD method_432 getOwner ()Ljava/lang/String;
+	METHOD method_432 getOwnerName ()Ljava/lang/String;
 	METHOD method_433 isInSittingPose ()Z
 	METHOD method_434 isAngry ()Z
