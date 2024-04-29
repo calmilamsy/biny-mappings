@@ -15,7 +15,7 @@ CLASS net/minecraft/class_121 net/minecraft/entity/passive/WolfEntity
 	METHOD method_423 isFurWet ()Z
 	METHOD method_424 getTailAngle ()F
 	METHOD method_425 isTamed ()Z
-	METHOD method_426 setOwner (Ljava/lang/String;)V
+	METHOD method_426 setOwnerName (Ljava/lang/String;)V
 		ARG 1 owner
 	METHOD method_427 showFeedParticles (Z)V
 		ARG 1 hearts
