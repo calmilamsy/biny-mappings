@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_519 net/minecraft/world/biome/source/BiomeSource
+	METHOD method_1786 getTemperature (II)D
+	METHOD method_1787 getBiome (II)Lnet/minecraft/class_153;

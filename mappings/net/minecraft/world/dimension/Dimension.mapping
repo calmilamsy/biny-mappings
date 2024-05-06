@@ -1,5 +1,12 @@
 CLASS net/minecraft/class_50 net/minecraft/world/dimension/Dimension
 	FIELD field_2173 world Lnet/minecraft/class_18;
+	FIELD field_2174 biomeSource Lnet/minecraft/class_519;
+	FIELD field_2177 hasCeiling Z
 	FIELD field_2179 id I
-	METHOD method_1768 (Lnet/minecraft/class_18;)V
+	METHOD method_1762 getFogColor (FF)Lnet/minecraft/class_26;
+	METHOD method_1768 setWorld (Lnet/minecraft/class_18;)V
 		ARG 1 world
+	METHOD method_1770 (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD method_1771 getFogColor (JF)F

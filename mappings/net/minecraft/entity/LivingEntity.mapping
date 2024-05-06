@@ -7,3 +7,4 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	METHOD method_934 canBreatheInWater ()Z
 	METHOD method_935 canSpawn ()Z
 	METHOD method_936 getMinAmbientSoundDelay ()I
+	METHOD method_943 isSleeping ()Z

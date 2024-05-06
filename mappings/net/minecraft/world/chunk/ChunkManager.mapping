@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_51 net/minecraft/world/chunk/ChunkManager
+	METHOD method_1802 hasChunk (II)Z
+	METHOD method_1804 save (ZLnet/minecraft/class_62;)Z
+	METHOD method_1805 canSave ()Z

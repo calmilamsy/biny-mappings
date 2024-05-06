@@ -26,7 +26,7 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_860 setBlockId (IIII)Z
+	METHOD method_860 setBlock (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

@@ -8,7 +8,16 @@ CLASS net/minecraft/class_14 net/minecraft/world/BlockView
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_1779 (III)Lnet/minecraft/class_15;
+	METHOD method_1779 getMaterial (III)Lnet/minecraft/class_15;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1780 isFullCube (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1781 getBiomeSource ()Lnet/minecraft/class_519;
+	METHOD method_1783 isOpaque (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

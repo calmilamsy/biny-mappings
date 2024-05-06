@@ -18,6 +18,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1614 air I
 	FIELD field_1615 fireImmune Z
 	FIELD field_1616 dataTracker Lnet/minecraft/class_216;
+	FIELD field_1618 persistent Z
 	FIELD field_1619 chunkX I
 	FIELD field_1620 chunkY I
 	FIELD field_1621 chunkZ I
@@ -65,6 +66,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 5 z
 	METHOD method_1375 (Lnet/minecraft/class_18;)V
 		ARG 1 world
+	METHOD method_1381 getCollisionBox ()Lnet/minecraft/class_25;
 	METHOD method_1386 markDead ()V
 	METHOD method_1392 damage (I)V
 		ARG 1 amount
