@@ -24,7 +24,7 @@ CLASS net/minecraft/class_7 net/minecraft/world/WorldProperties
 	METHOD method_10 setThundering (Z)V
 		ARG 1 thundering
 	METHOD method_11 getSeed ()J
-	METHOD method_12 getThunderTime (I)V
+	METHOD method_12 setThunderTime (I)V
 		ARG 1 thunderTime
 	METHOD method_13 setSizeOnDisk (J)V
 		ARG 1 sizeOnDisk
