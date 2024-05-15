@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_80 net/minecraft/entity/ai/pathing/PathNodeMap
+	METHOD method_771 clearMap ()V
+	METHOD method_772 putNode (I)Ljava/lang/Object;
+	METHOD method_774 internalPutNode (IILjava/lang/Object;I)V
+	METHOD method_775 putNode (ILjava/lang/Object;)V
+	METHOD method_776 rehash ([Lnet/minecraft/class_232;)V
+	METHOD method_777 containsNode (I)Z
+	METHOD method_778 getInternalNode (I)Lnet/minecraft/class_232;
+	METHOD method_779 removeNode (I)Ljava/lang/Object;
+	METHOD method_780 internalRemoveNode (I)Lnet/minecraft/class_232;
+	METHOD method_781 hashCode (I)I
+	METHOD method_783 resizeMap (I)V

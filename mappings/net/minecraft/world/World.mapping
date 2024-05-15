@@ -38,7 +38,17 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	METHOD method_180 setState (Ljava/lang/String;Lnet/minecraft/class_58;)V
 		ARG 1 id
 		ARG 2 state
+	METHOD method_189 findPathToLocation (Lnet/minecraft/class_57;IIIF)Lnet/minecraft/class_61;
+		ARG 1 entity
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 radius
 	METHOD method_191 playSound (Lnet/minecraft/class_57;Ljava/lang/String;FF)V
+	METHOD method_192 findPathToEntity (Lnet/minecraft/class_57;Lnet/minecraft/class_57;F)Lnet/minecraft/class_61;
+		ARG 1 startEntity
+		ARG 2 endEntity
+		ARG 3 radius
 	METHOD method_200 (IIII)Z
 		ARG 1 x
 		ARG 2 y

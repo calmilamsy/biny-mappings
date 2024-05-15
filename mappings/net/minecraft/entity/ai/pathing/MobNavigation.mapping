@@ -1,0 +1,29 @@
+CLASS net/minecraft/class_108 net/minecraft/entity/ai/pathing/MobNavigation
+	FIELD field_333 blockView Lnet/minecraft/class_14;
+	FIELD field_334 pathNodePriorityQueue Lnet/minecraft/class_109;
+	FIELD field_335 pathNodeMap Lnet/minecraft/class_80;
+	FIELD field_336 nodes [Lnet/minecraft/class_29;
+	METHOD <init> (Lnet/minecraft/class_14;)V
+		ARG 1 blockView
+	METHOD method_400 getPathNode (III)Lnet/minecraft/class_29;
+	METHOD method_401 reconstructPath (Lnet/minecraft/class_29;Lnet/minecraft/class_29;)Lnet/minecraft/class_61;
+	METHOD method_402 findPath (Lnet/minecraft/class_57;DDDF)Lnet/minecraft/class_61;
+		ARG 1 entity
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 radius
+	METHOD method_403 findPathToLocation (Lnet/minecraft/class_57;IIIF)Lnet/minecraft/class_61;
+		ARG 1 entity
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 radius
+	METHOD method_404 checkPassability (Lnet/minecraft/class_57;IIILnet/minecraft/class_29;)I
+	METHOD method_405 getNextNode (Lnet/minecraft/class_57;IIILnet/minecraft/class_29;I)Lnet/minecraft/class_29;
+	METHOD method_406 navigatePath (Lnet/minecraft/class_57;Lnet/minecraft/class_29;Lnet/minecraft/class_29;Lnet/minecraft/class_29;F)Lnet/minecraft/class_61;
+	METHOD method_407 findPathToEntity (Lnet/minecraft/class_57;Lnet/minecraft/class_57;F)Lnet/minecraft/class_61;
+		ARG 1 startEntity
+		ARG 2 endEntity
+		ARG 3 radius
+	METHOD method_408 expandNode (Lnet/minecraft/class_57;Lnet/minecraft/class_29;Lnet/minecraft/class_29;Lnet/minecraft/class_29;F)I

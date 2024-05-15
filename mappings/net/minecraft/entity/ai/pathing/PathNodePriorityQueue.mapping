@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_109 net/minecraft/entity/ai/pathing/PathNodePriorityQueue
+	METHOD method_841 clearQueue ()V
+	METHOD method_842 bubbleUp (I)V
+	METHOD method_843 enqueueNode (Lnet/minecraft/class_29;)Lnet/minecraft/class_29;
+	METHOD method_844 updateNodeCost (Lnet/minecraft/class_29;F)V
+	METHOD method_845 popNode ()Lnet/minecraft/class_29;
+	METHOD method_846 sinkDown (I)V
+	METHOD method_847 isEmpty ()Z
