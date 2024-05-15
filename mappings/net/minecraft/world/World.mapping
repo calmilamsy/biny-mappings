@@ -66,6 +66,10 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 5 z
 		ARG 7 range
 	METHOD method_150 playSound (DDDLjava/lang/String;FF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 sound
 	METHOD method_151 getAmbientDarkness (F)I
 		ARG 1 partialTicks
 	METHOD method_152 getSpawnBlockId (II)I
@@ -102,6 +106,15 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 3 z
 	METHOD method_159 setTime (J)V
 		ARG 1 time
+	METHOD method_160 raycast (Lnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
+		ARG 1 start
+		ARG 2 end
+	METHOD method_161 raycast (Lnet/minecraft/class_26;Lnet/minecraft/class_26;Z)Lnet/minecraft/class_27;
+		ARG 1 start
+		ARG 2 end
+	METHOD method_162 raycast (Lnet/minecraft/class_26;Lnet/minecraft/class_26;ZZ)Lnet/minecraft/class_27;
+		ARG 1 start
+		ARG 2 end
 	METHOD method_164 getBrightness (Lnet/minecraft/class_56;III)I
 		ARG 1 type
 		ARG 2 x
@@ -150,7 +163,12 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 stateClass
 		ARG 2 id
 	METHOD method_178 addParticle (Ljava/lang/String;DDDDDD)V
+		ARG 1 particle
 	METHOD method_179 playMusic (Ljava/lang/String;III)V
+		ARG 1 music
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_180 setState (Ljava/lang/String;Lnet/minecraft/class_58;)V
 		ARG 1 id
 		ARG 2 state
@@ -168,6 +186,10 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 entity
 		ARG 2 box
 	METHOD method_191 playSound (Lnet/minecraft/class_57;Ljava/lang/String;FF)V
+		ARG 1 source
+		ARG 2 sound
+	METHOD method_192 (Lnet/minecraft/class_57;Lnet/minecraft/class_57;F)Lnet/minecraft/class_61;
+		ARG 1 entity
 	METHOD method_193 updateEntity (Lnet/minecraft/class_57;Z)V
 		ARG 1 entity
 	METHOD method_194 processScheduledTicks (Z)Z
@@ -226,6 +248,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 6 sizeZ
 	METHOD method_219 loadEntitySkin (Lnet/minecraft/class_57;)V
 		ARG 1 entity
+	METHOD method_220 canMonsterSpawn ()Z
 	METHOD method_221 getRainGradient (F)F
 		ARG 1 delta
 	METHOD method_222 getTopY (II)I
