@@ -20,6 +20,7 @@ CLASS net/minecraft/class_15 net/minecraft/block/Material
 	FIELD field_991 FIRE Lnet/minecraft/class_15;
 	FIELD field_992 SAND Lnet/minecraft/class_15;
 	FIELD field_995 TNT Lnet/minecraft/class_15;
+	METHOD method_893 isFluid ()Z
 	METHOD method_894 isBurnable ()Z
 	METHOD method_899 getPistonBehavior ()I
 	METHOD method_904 setBurnable ()Lnet/minecraft/class_15;

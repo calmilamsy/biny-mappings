@@ -19,7 +19,7 @@ CLASS net/minecraft/class_121 net/minecraft/entity/passive/WolfEntity
 		ARG 1 owner
 	METHOD method_427 showFeedParticles (Z)V
 		ARG 1 hearts
-	METHOD method_428 setInSittingPose (Z)V
+	METHOD method_428 setSitting (Z)V
 		ARG 1 inSittingPose
 	METHOD method_429 damage (Lnet/minecraft/class_57;F)V
 		ARG 1 source

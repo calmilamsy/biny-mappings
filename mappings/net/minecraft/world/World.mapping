@@ -59,7 +59,8 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 	METHOD method_207 isBoxSubmergedInFluid (Lnet/minecraft/class_25;Lnet/minecraft/class_15;)Z
-		COMMENT Also could be for materials, but updated in later versions to be exclusive to fluids
+		COMMENT Assumes the material is a fluid, and adjusts offsets accordingly to metadata.
+		COMMENT Only checks for the specific material, unlike the other method, which checks for any fluid.
 		ARG 1 boundingBox
 		ARG 2 material
 	METHOD method_208 getIdCount (Ljava/lang/String;)I
@@ -77,7 +78,8 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 4 sizeX
 		ARG 5 sizeY
 		ARG 6 sizeZ
-	METHOD method_218 isWater (Lnet/minecraft/class_25;)Z
+	METHOD method_218 isBoxSubmergedInFluid (Lnet/minecraft/class_25;)Z
+		ARG 1 box
 	METHOD method_222 getTopY (II)I
 	METHOD method_223 (IIII)Z
 		ARG 1 x

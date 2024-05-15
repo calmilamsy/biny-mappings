@@ -218,7 +218,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 3 onGround
 	METHOD method_1375 setWorld (Lnet/minecraft/class_18;)V
 		ARG 1 world
-	METHOD method_1376 setRiding (Lnet/minecraft/class_57;)V
+	METHOD method_1376 setVehicle (Lnet/minecraft/class_57;)V
 		COMMENT If given null or their existing vehicle, removes the rider from their vehicle. If given a new vehicle, moves them to the new vehicle.
 		ARG 1 entity
 	METHOD method_1377 getEquipment ()[Lnet/minecraft/class_31;
