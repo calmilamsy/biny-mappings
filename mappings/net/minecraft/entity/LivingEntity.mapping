@@ -1,9 +1,23 @@
 CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
+	FIELD field_1009 maxHealth I
 	FIELD field_1019 texture Ljava/lang/String;
 	FIELD field_1031 jumping Z
 	FIELD field_1033 movementSpeed F
 	FIELD field_1036 health I
 	FIELD field_1038 hurtTime I
+	FIELD field_1042 attackCooldown I
+	METHOD method_910 tickLiving ()V
+	METHOD method_911 getRandomSound ()Ljava/lang/String;
+	METHOD method_912 getHurtSound ()Ljava/lang/String;
+	METHOD method_913 getDeathSound ()Ljava/lang/String;
+	METHOD method_914 getDroppedId ()I
+	METHOD method_915 getSoundVolume ()F
+	METHOD method_933 drop ()V
 	METHOD method_934 canBreatheInWater ()Z
 	METHOD method_935 canSpawn ()Z
 	METHOD method_936 getMinAmbientSoundDelay ()I
+	METHOD method_937 tickMovement ()V
+	METHOD method_939 heal (I)V
+		ARG 1 amount
+	METHOD method_940 canDespawn ()Z
+	METHOD method_941 getMaxLookPitchChange ()I
