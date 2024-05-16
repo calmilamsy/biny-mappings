@@ -65,7 +65,7 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 		ARG 1 entity
 	METHOD method_869 removeEntity (Lnet/minecraft/class_57;I)V
 		ARG 1 entity
-		ARG 2 chunkY
+		ARG 2 chunkSlice
 	METHOD method_870 collectOtherEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;Ljava/util/List;)V
 		ARG 1 except
 		ARG 2 box
