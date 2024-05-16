@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_417 net/minecraft/world/chunk/light/LightStorage
+	FIELD field_1673 type Lnet/minecraft/class_56;
+	FIELD field_1674 minX I
+	FIELD field_1675 minY I
+	FIELD field_1676 minZ I
+	FIELD field_1677 maxX I
+	FIELD field_1678 maxY I
+	FIELD field_1679 maxZ I
+	METHOD <init> (Lnet/minecraft/class_56;IIIIII)V
+		ARG 1 type
+		ARG 2 minX
+		ARG 3 minY
+		ARG 4 minZ
+		ARG 5 maxX
+		ARG 6 maxY
+		ARG 7 maxZ
+	METHOD method_1402 updateLight (Lnet/minecraft/class_18;)V
+		ARG 1 world

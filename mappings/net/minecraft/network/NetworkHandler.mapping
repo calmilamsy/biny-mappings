@@ -16,6 +16,7 @@ CLASS net/minecraft/class_240 net/minecraft/network/NetworkHandler
 	METHOD method_1437 onGameStateChange (Lnet/minecraft/class_434;)V
 	METHOD method_1438 onItemPickupAnimation (Lnet/minecraft/class_435;)V
 	METHOD method_1439 handleChunkData (Lnet/minecraft/class_6;)V
+		ARG 1 packet
 	METHOD method_1440 onHealthUpdate (Lnet/minecraft/class_36;)V
 	METHOD method_1441 onLightningEntitySpawn (Lnet/minecraft/class_45;)V
 	METHOD method_1442 onWorldEvent (Lnet/minecraft/class_85;)V

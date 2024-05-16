@@ -4,6 +4,9 @@ CLASS net/minecraft/class_14 net/minecraft/world/BlockView
 		ARG 2 y
 		ARG 3 z
 	METHOD method_1777 getBlockEntity (III)Lnet/minecraft/class_55;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_1778 getBlockMeta (III)I
 		ARG 1 x
 		ARG 2 y
@@ -17,7 +20,16 @@ CLASS net/minecraft/class_14 net/minecraft/world/BlockView
 		ARG 2 y
 		ARG 3 z
 	METHOD method_1781 getBiomeSource ()Lnet/minecraft/class_519;
+	METHOD method_1782 getLuminance (III)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_1783 isOpaque (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_1784 getLuminance (IIII)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 ambientLightLevel
