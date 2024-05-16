@@ -12,7 +12,7 @@ CLASS net/minecraft/class_14 net/minecraft/world/BlockView
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_1780 isFullCube (III)Z
+	METHOD method_1780 shouldSuffocate (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
