@@ -1,1 +1,10 @@
 CLASS net/minecraft/class_613 net/minecraft/entity/passive/SheepEntity
+	FIELD field_2698 COLORS [[F
+	METHOD method_2044 generateDefaultColor (Ljava/util/Random;)I
+		ARG 0 random
+	METHOD method_2045 setSheared (Z)V
+		ARG 1 sheared
+	METHOD method_2046 setColor (I)V
+		ARG 1 color
+	METHOD method_2047 getColor ()I
+	METHOD method_2048 isSheared ()Z

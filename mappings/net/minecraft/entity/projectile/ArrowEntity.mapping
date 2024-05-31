@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_410 net/minecraft/entity/projectile/ArrowEntity
+	FIELD field_1576 owner Lnet/minecraft/class_127;

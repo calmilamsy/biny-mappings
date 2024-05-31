@@ -1,1 +1,10 @@
 CLASS net/minecraft/class_226 net/minecraft/entity/FallingBlockEntity
+	FIELD field_847 blockId I
+	FIELD field_848 timeFalling I
+	METHOD <init> (Lnet/minecraft/class_18;DDDI)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 blockId
+	METHOD method_769 getWorld ()Lnet/minecraft/class_18;

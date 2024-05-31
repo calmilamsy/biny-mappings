@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_484 net/minecraft/entity/projectile/thrown/SnowballEntity
+	FIELD field_1996 owner Lnet/minecraft/class_127;

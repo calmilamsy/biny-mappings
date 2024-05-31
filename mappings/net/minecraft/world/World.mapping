@@ -47,6 +47,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	METHOD method_180 setState (Ljava/lang/String;Lnet/minecraft/class_58;)V
 		ARG 1 id
 		ARG 2 state
+	METHOD method_187 createExplosion (Lnet/minecraft/class_57;DDDF)Lnet/minecraft/class_60;
 	METHOD method_190 getEntityCollisions (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
 	METHOD method_191 playSound (Lnet/minecraft/class_57;Ljava/lang/String;FF)V
 	METHOD method_200 (IIII)Z

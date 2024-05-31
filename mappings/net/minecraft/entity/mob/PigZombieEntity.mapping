@@ -1,1 +1,6 @@
 CLASS net/minecraft/class_535 net/minecraft/entity/mob/PigZombieEntity
+	FIELD field_2242 anger I
+	FIELD field_2243 angrySoundDelay I
+	FIELD field_2244 heldItem Lnet/minecraft/class_31;
+	METHOD method_1792 makeAngry (Lnet/minecraft/class_57;)V
+		ARG 1 target

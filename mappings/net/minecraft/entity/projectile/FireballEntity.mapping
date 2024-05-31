@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_372 net/minecraft/entity/projectile/FireballEntity
+	FIELD field_2193 owner Lnet/minecraft/class_127;
