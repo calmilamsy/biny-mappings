@@ -1,3 +1,25 @@
 CLASS net/minecraft/class_135 net/minecraft/entity/projectile/FishingBobberEntity
+	FIELD field_1066 shake I
 	FIELD field_1067 owner Lnet/minecraft/class_54;
 	FIELD field_1068 hookedEntity Lnet/minecraft/class_57;
+	FIELD field_1069 blockX I
+	FIELD field_1070 blockY I
+	FIELD field_1071 blockZ I
+	FIELD field_1072 blockId I
+	FIELD field_1073 inGround Z
+	FIELD field_1074 removalTimer I
+	FIELD field_1077 interpolationSteps I
+	METHOD <init> (Lnet/minecraft/class_18;DDD)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_54;)V
+		ARG 1 world
+		ARG 2 thrower
+	METHOD method_955 setVelocity (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 speed
+		ARG 8 divergence
