@@ -10,7 +10,7 @@ CLASS net/minecraft/class_135 net/minecraft/entity/projectile/FishingBobberEntit
 	FIELD field_1074 removalTimer I
 	FIELD field_1075 inAirTime I
 	FIELD field_1076 hookCountdown I
-	FIELD field_1077 interpolationSteps I
+	FIELD field_1077 clientInterpolationSteps I
 	FIELD field_1078 clientX D
 	FIELD field_1079 clientY D
 	FIELD field_1080 clientZ D

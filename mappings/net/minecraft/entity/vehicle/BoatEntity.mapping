@@ -2,7 +2,7 @@ CLASS net/minecraft/class_113 net/minecraft/entity/vehicle/BoatEntity
 	FIELD field_338 damageWobbleStrength I
 	FIELD field_339 damageWobbleTicks I
 	FIELD field_340 damageWobbleSide I
-	FIELD field_341 interpolationSteps I
+	FIELD field_341 clientInterpolationSteps I
 	FIELD field_342 clientX D
 	FIELD field_343 clientY D
 	FIELD field_344 clientZ D
