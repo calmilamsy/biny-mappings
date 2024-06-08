@@ -8,7 +8,17 @@ CLASS net/minecraft/class_135 net/minecraft/entity/projectile/FishingBobberEntit
 	FIELD field_1072 blockId I
 	FIELD field_1073 inGround Z
 	FIELD field_1074 removalTimer I
+	FIELD field_1075 inAirTime I
+	FIELD field_1076 hookCountdown I
 	FIELD field_1077 interpolationSteps I
+	FIELD field_1078 clientX D
+	FIELD field_1079 clientY D
+	FIELD field_1080 clientZ D
+	FIELD field_1081 clientPitch D
+	FIELD field_1082 clientYaw D
+	FIELD field_1083 clientVelocityX D
+	FIELD field_1084 clientVelocityY D
+	FIELD field_1085 clientVelocityZ D
 	METHOD <init> (Lnet/minecraft/class_18;DDD)V
 		ARG 1 world
 		ARG 2 x
@@ -23,3 +33,4 @@ CLASS net/minecraft/class_135 net/minecraft/entity/projectile/FishingBobberEntit
 		ARG 5 z
 		ARG 7 speed
 		ARG 8 divergence
+	METHOD method_956 use ()I

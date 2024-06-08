@@ -1,1 +1,18 @@
 CLASS net/minecraft/class_113 net/minecraft/entity/vehicle/BoatEntity
+	FIELD field_338 damageWobbleStrength I
+	FIELD field_339 damageWobbleTicks I
+	FIELD field_340 damageWobbleSide I
+	FIELD field_341 interpolationSteps I
+	FIELD field_342 clientX D
+	FIELD field_343 clientY D
+	FIELD field_344 clientZ D
+	FIELD field_345 clientPitch D
+	FIELD field_346 clientYaw D
+	FIELD field_347 clientVelocityX D
+	FIELD field_348 clientVelocityY D
+	FIELD field_349 clientVelocityZ D
+	METHOD <init> (Lnet/minecraft/class_18;DDD)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z

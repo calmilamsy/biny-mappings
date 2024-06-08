@@ -91,6 +91,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 7 pitch
 		ARG 8 yaw
 		ARG 9 interpolationSteps
+	METHOD method_1312 animateHurt ()V
 	METHOD method_1313 processServerEntityStatus (B)V
 		ARG 1 status
 	METHOD method_1314 getTexture ()Ljava/lang/String;
