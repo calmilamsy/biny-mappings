@@ -17,7 +17,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	FIELD field_194 activeChunks Ljava/util/Set;
 	FIELD field_195 ambientSoundCounter I
 	FIELD field_196 tempEntityList Ljava/util/List;
-	FIELD field_197 instantTick Z
+	FIELD field_197 instantBlockUpdateEnabled Z
 	FIELD field_198 entities Ljava/util/List;
 	FIELD field_199 blockEntities Ljava/util/List;
 	FIELD field_200 players Ljava/util/List;
@@ -41,7 +41,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	FIELD field_218 chunkManager Lnet/minecraft/class_51;
 	FIELD field_219 dimensionData Lnet/minecraft/class_52;
 	FIELD field_220 properties Lnet/minecraft/class_7;
-	FIELD field_221 isEventProcessingEnabled Z
+	FIELD field_221 eventProcessingEnabled Z
 	FIELD field_222 persistentStateManager Lnet/minecraft/class_53;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_50;)V
 		ARG 1 world
@@ -151,7 +151,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 7 maxZ
 	METHOD method_168 canSpawnEntity (Lnet/minecraft/class_25;)Z
 		ARG 1 box
-	METHOD method_169 isBoxInMaterial (Lnet/minecraft/class_25;Lnet/minecraft/class_15;)Z
+	METHOD method_169 isMaterialInBox (Lnet/minecraft/class_25;Lnet/minecraft/class_15;)Z
 		ARG 1 boundingBox
 		ARG 2 material
 	METHOD method_170 updateMovementInFluid (Lnet/minecraft/class_25;Lnet/minecraft/class_15;Lnet/minecraft/class_57;)Z
@@ -189,7 +189,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 name
 	METHOD method_178 addParticle (Ljava/lang/String;DDDDDD)V
 		ARG 1 particle
-	METHOD method_179 playMusic (Ljava/lang/String;III)V
+	METHOD method_179 playStreaming (Ljava/lang/String;III)V
 		ARG 1 music
 		ARG 2 x
 		ARG 3 y
@@ -211,13 +211,13 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	METHOD method_186 getClosestPlayer (Lnet/minecraft/class_57;D)Lnet/minecraft/class_54;
 		ARG 1 entity
 		ARG 2 range
-	METHOD method_187 explode (Lnet/minecraft/class_57;DDDF)Lnet/minecraft/class_60;
+	METHOD method_187 createExplosion (Lnet/minecraft/class_57;DDDF)Lnet/minecraft/class_60;
 		ARG 1 source
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
 		ARG 8 power
-	METHOD method_188 explode (Lnet/minecraft/class_57;DDDFZ)Lnet/minecraft/class_60;
+	METHOD method_188 createExplosion (Lnet/minecraft/class_57;DDDFZ)Lnet/minecraft/class_60;
 		ARG 1 source
 		ARG 2 x
 		ARG 4 y
@@ -235,7 +235,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	METHOD method_193 updateEntity (Lnet/minecraft/class_57;Z)V
 		ARG 1 entity
 	METHOD method_194 processScheduledTicks (Z)Z
-	METHOD method_195 saveDisplay (ZLnet/minecraft/class_62;)V
+	METHOD method_195 saveWithLoadingDisplay (ZLnet/minecraft/class_62;)V
 	METHOD method_196 allowSpawning (ZZ)V
 		ARG 1 allowMonsterSpawning
 		ARG 2 allowMobSpawning
@@ -278,11 +278,11 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 5 value
 	METHOD method_206 isAnyBlockInBox (Lnet/minecraft/class_25;)Z
 		ARG 1 box
-	METHOD method_207 isBoxSubmergedInFluid (Lnet/minecraft/class_25;Lnet/minecraft/class_15;)Z
+	METHOD method_207 isFluidInBox (Lnet/minecraft/class_25;Lnet/minecraft/class_15;)Z
 		COMMENT Assumes the material is a fluid, and adjusts offsets accordingly to metadata.
 		COMMENT Only checks for the specific material, unlike the other method, which checks for any fluid.
 		ARG 1 boundingBox
-		ARG 2 material
+		ARG 2 fluid
 	METHOD method_208 getIdCount (Ljava/lang/String;)I
 		ARG 1 id
 	METHOD method_209 unloadEntities (Ljava/util/List;)V
@@ -409,7 +409,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 3 z
 		ARG 4 direction
 	METHOD method_248 manageChunkUpdatesAndEvents ()V
-	METHOD method_249 canPlaceAt (III)Z
+	METHOD method_249 hasSkyLight (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -452,7 +452,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_266 skipNight ()V
+	METHOD method_266 afterSkipNight ()V
 	METHOD method_267 isRaining (III)Z
 		ARG 1 x
 		ARG 2 y

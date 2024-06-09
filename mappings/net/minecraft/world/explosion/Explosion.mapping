@@ -9,7 +9,7 @@ CLASS net/minecraft/class_60 net/minecraft/world/explosion/Explosion
 	FIELD field_1399 world Lnet/minecraft/class_18;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_57;DDDF)V
 		ARG 1 world
-		ARG 2 soruce
+		ARG 2 source
 		ARG 3 x
 		ARG 5 y
 		ARG 7 z

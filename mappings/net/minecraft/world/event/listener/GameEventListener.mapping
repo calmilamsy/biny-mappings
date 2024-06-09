@@ -37,8 +37,8 @@ CLASS net/minecraft/class_59 net/minecraft/world/event/listener/GameEventListene
 		ARG 6 z
 		ARG 8 volume
 		ARG 9 pitch
-	METHOD method_1155 playMusic (Ljava/lang/String;III)V
-		ARG 1 music
+	METHOD method_1155 playStreaming (Ljava/lang/String;III)V
+		ARG 1 stream
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
