@@ -16,6 +16,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	METHOD method_914 getDroppedId ()I
 	METHOD method_915 getSoundVolume ()F
 	METHOD method_916 getLimitPerChunk ()I
+		COMMENT The size of a spawn group for this entity per chunk.
 	METHOD method_933 drop ()V
 	METHOD method_934 canBreatheInWater ()Z
 	METHOD method_935 canSpawn ()Z
