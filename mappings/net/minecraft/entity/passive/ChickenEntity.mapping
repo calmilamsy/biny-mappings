@@ -1,1 +1,8 @@
 CLASS net/minecraft/class_313 net/minecraft/entity/passive/ChickenEntity
+	FIELD field_2159 unused Z
+	FIELD field_2160 flapProgress F
+	FIELD field_2161 maxWingDeviation F
+	FIELD field_2162 prevMaxWingDeviation F
+	FIELD field_2163 prevFlapProgress F
+	FIELD field_2164 flapSpeed F
+	FIELD field_2165 eggLayTime I

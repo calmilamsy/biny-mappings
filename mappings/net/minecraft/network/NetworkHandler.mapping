@@ -42,6 +42,7 @@ CLASS net/minecraft/class_240 net/minecraft/network/NetworkHandler
 	METHOD method_1464 onEntity (Lnet/minecraft/class_437;)V
 	METHOD method_1465 onEntityTrackerUpdate (Lnet/minecraft/class_438;)V
 	METHOD method_1466 onPaintingEntitySpawn (Lnet/minecraft/class_439;)V
+		ARG 1 packet
 	METHOD method_1467 onPlayNoteSound (Lnet/minecraft/class_440;)V
 	METHOD method_1468 onChunkDeltaUpdate (Lnet/minecraft/class_441;)V
 	METHOD method_1469 onMapUpdate (Lnet/minecraft/class_161;)V

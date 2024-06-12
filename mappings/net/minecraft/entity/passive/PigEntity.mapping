@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_443 net/minecraft/entity/passive/PigEntity
+	METHOD method_1723 setSaddled (Z)V
+		ARG 1 saddled
+	METHOD method_1724 isSaddled ()Z

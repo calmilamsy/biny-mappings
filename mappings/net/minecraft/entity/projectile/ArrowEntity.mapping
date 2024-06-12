@@ -1,1 +1,27 @@
 CLASS net/minecraft/class_410 net/minecraft/entity/projectile/ArrowEntity
+	FIELD field_1574 pickupAllowed Z
+		COMMENT This is true if the arrow was shot by an PlayerEntity
+	FIELD field_1575 shake I
+	FIELD field_1576 owner Lnet/minecraft/class_127;
+	FIELD field_1577 blockX I
+	FIELD field_1578 blockY I
+	FIELD field_1579 blockZ I
+	FIELD field_1580 blockId I
+	FIELD field_1581 blockMeta I
+	FIELD field_1582 inGround Z
+	FIELD field_1583 life I
+	FIELD field_1584 inAirTime I
+	METHOD <init> (Lnet/minecraft/class_18;DDD)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_127;)V
+		ARG 1 world
+		ARG 2 owner
+	METHOD method_1291 setVelocity (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 speed
+		ARG 8 divergence

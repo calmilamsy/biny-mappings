@@ -1,1 +1,25 @@
 CLASS net/minecraft/class_107 net/minecraft/entity/decoration/painting/PaintingEntity
+	FIELD field_1384 facing I
+	FIELD field_1385 attachmentX I
+	FIELD field_1386 attachmentY I
+	FIELD field_1387 attachmentZ I
+	FIELD field_1388 variant Lnet/minecraft/class_191;
+	FIELD field_1389 obstructionCheckCounter I
+	METHOD <init> (Lnet/minecraft/class_18;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 facing
+	METHOD <init> (Lnet/minecraft/class_18;IIIILjava/lang/String;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 facing
+		ARG 6 variant
+	METHOD method_1191 setFacing (I)V
+		ARG 1 facing
+	METHOD method_1192 getHorizontalOffset (I)F
+		ARG 1 width
+	METHOD method_1193 canStayAttached ()Z

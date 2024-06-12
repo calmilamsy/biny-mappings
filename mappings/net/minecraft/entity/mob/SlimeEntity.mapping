@@ -1,1 +1,7 @@
 CLASS net/minecraft/class_451 net/minecraft/entity/mob/SlimeEntity
+	FIELD field_1951 stretch F
+	FIELD field_1952 lastStretch F
+	FIELD field_1953 ticksUntilJump I
+	METHOD method_1631 setSize (I)V
+		ARG 1 size
+	METHOD method_1632 getSize ()I
