@@ -9,7 +9,7 @@ CLASS net/minecraft/class_188 net/minecraft/entity/MobEntity
 		ARG 1 path
 	METHOD method_636 setTarget (Lnet/minecraft/class_57;)V
 		ARG 1 target
-	METHOD method_637 tryAttack (Lnet/minecraft/class_57;F)V
+	METHOD method_637 attack (Lnet/minecraft/class_57;F)V
 		ARG 1 other
 		ARG 2 distance
 	METHOD method_638 getTargetInRange ()Lnet/minecraft/class_57;
