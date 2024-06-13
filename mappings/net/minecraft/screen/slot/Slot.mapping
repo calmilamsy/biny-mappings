@@ -9,10 +9,11 @@ CLASS net/minecraft/class_133 net/minecraft/screen/slot/Slot
 		ARG 2 index
 		ARG 3 x
 		ARG 4 y
+	METHOD method_471 getBackgroundTextureId ()I
 	METHOD method_472 getStack ()Lnet/minecraft/class_31;
 	METHOD method_473 takeStack (I)Lnet/minecraft/class_31;
 		ARG 1 amount
-	METHOD method_474 onCrafted (Lnet/minecraft/class_31;)V
+	METHOD method_474 onTakeItem (Lnet/minecraft/class_31;)V
 		ARG 1 stack
 	METHOD method_475 equals (Lnet/minecraft/class_134;I)Z
 		ARG 1 inventory

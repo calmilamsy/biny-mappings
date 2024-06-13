@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_325 net/minecraft/network/packet/play/ScreenHandlerAcknowledgementPacket
+	FIELD field_1222 syncId I
+	FIELD field_1223 actionType S
+	FIELD field_1224 accepted Z
+	METHOD <init> (ISZ)V
+		ARG 1 syncId
+		ARG 2 actionType
+		ARG 3 accepter

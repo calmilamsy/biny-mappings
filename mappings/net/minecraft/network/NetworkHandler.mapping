@@ -6,10 +6,13 @@ CLASS net/minecraft/class_240 net/minecraft/network/NetworkHandler
 	METHOD method_1426 handlePlayerAction (Lnet/minecraft/class_228;)V
 	METHOD method_1427 onCloseScreen (Lnet/minecraft/class_276;)V
 	METHOD method_1428 onEntityAnimation (Lnet/minecraft/class_305;)V
+	METHOD method_1429 onScreenHandlerAcknowledgement (Lnet/minecraft/class_325;)V
+		ARG 1 packet
 	METHOD method_1430 onPlayerRespawn (Lnet/minecraft/class_335;)V
 	METHOD method_1431 onChatMessage (Lnet/minecraft/class_340;)V
 	METHOD method_1432 onPlayerInput (Lnet/minecraft/class_357;)V
 	METHOD method_1433 onClickSlot (Lnet/minecraft/class_363;)V
+		ARG 1 packet
 	METHOD method_1434 handleClientCommand (Lnet/minecraft/class_431;)V
 	METHOD method_1435 handleUpdateSign (Lnet/minecraft/class_432;)V
 	METHOD method_1436 onDisconnect (Lnet/minecraft/class_433;)V
@@ -29,6 +32,7 @@ CLASS net/minecraft/class_240 net/minecraft/network/NetworkHandler
 	METHOD method_1450 onInventory (Lnet/minecraft/class_236;)V
 	METHOD method_1451 onPlayerSpawn (Lnet/minecraft/class_272;)V
 	METHOD method_1452 onScreenHandlerPropertyUpdate (Lnet/minecraft/class_292;)V
+		ARG 1 packet
 	METHOD method_1453 onItemEntitySpawn (Lnet/minecraft/class_295;)V
 	METHOD method_1454 onEntityVehicleSet (Lnet/minecraft/class_308;)V
 	METHOD method_1456 onPlayerSpawnPosition (Lnet/minecraft/class_373;)V
