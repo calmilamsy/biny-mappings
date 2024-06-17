@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_90 net/minecraft/entity/mob/SkeletonEntity
+	FIELD field_302 heldItem Lnet/minecraft/class_31;

@@ -90,6 +90,8 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 5 z
 		ARG 7 pitch
 		ARG 8 yaw
+		ARG 9 interpolationSteps
+	METHOD method_1312 animateHurt ()V
 	METHOD method_1313 processServerEntityStatus (B)V
 		ARG 1 status
 	METHOD method_1314 getTexture ()Ljava/lang/String;
@@ -196,13 +198,16 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 2 cursorDeltaY
 	METHOD method_1363 readNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
-	METHOD method_1365 setVelocity (DDD)V
+	METHOD method_1364 shouldRender (D)Z
+		ARG 1 distance
+	METHOD method_1365 setVelocityClient (DDD)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 	METHOD method_1366 getShadowRadius ()F
 	METHOD method_1368 writeNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
+	METHOD method_1369 getTargetingMargin ()F
 	METHOD method_1370 tick ()V
 	METHOD method_1371 move (DDD)V
 		ARG 1 dx
