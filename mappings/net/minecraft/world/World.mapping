@@ -403,7 +403,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_247 camTransferPowerInDirection (IIII)Z
+	METHOD method_247 canTransferPowerInDirection (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

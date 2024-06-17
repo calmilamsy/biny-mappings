@@ -28,7 +28,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1616 dataTracker Lnet/minecraft/class_216;
 	FIELD field_1617 minBrightness F
 		COMMENT Set to 1 when rendering inside inventory.
-	FIELD field_1618 persistent Z
+	FIELD field_1618 isPersistent Z
 		COMMENT Is this entity being ticked over by a chunk?
 	FIELD field_1619 chunkX I
 	FIELD field_1620 chunkSlice I
