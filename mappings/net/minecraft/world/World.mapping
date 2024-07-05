@@ -188,7 +188,19 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	METHOD method_177 getPlayer (Ljava/lang/String;)Lnet/minecraft/class_54;
 		ARG 1 name
 	METHOD method_178 addParticle (Ljava/lang/String;DDDDDD)V
+		COMMENT For most particles, velocity works as expected.
+		COMMENT For NoteParticle, velocityX is note number divided by 24, resulting in a scalar that affects color between 0 and 1. velocityY and velocityZ are ignored and always set to 0.
+		COMMENT For RedDustParticle, velocityX, velocityY, and velocityZ are multipliers for the particle's color for red, green, and blue respectively.
+		COMMENT
+		COMMENT @see net.minecraft.client.particle.NoteParticle#NoteParticle(World, double, double, double, double, double, double, float)
+		COMMENT @see net.minecraft.client.particle.RedDustParticle#RedDustParticle(World, double, double, double, float, float, float, float)
 		ARG 1 particle
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 velocityX
+		ARG 10 velocityY
+		ARG 12 velocityZ
 	METHOD method_179 playStreaming (Ljava/lang/String;III)V
 		ARG 1 music
 		ARG 2 x
