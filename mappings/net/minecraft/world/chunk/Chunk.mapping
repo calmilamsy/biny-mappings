@@ -10,6 +10,7 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 	FIELD field_963 z I
 	FIELD field_964 blockEntities Ljava/util/Map;
 	FIELD field_965 entities [Ljava/util/List;
+	FIELD field_967 dirty Z
 	METHOD <init> (Lnet/minecraft/class_18;II)V
 		ARG 1 world
 		ARG 2 x
@@ -26,7 +27,7 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_860 setBlockId (IIII)Z
+	METHOD method_860 setBlock (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -106,6 +107,7 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_885 markDirty ()V
 	METHOD method_887 (II)V
 		ARG 1 x
 		ARG 2 z

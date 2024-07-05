@@ -28,3 +28,4 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 		ARG 1 amount
 	METHOD method_940 canDespawn ()Z
 	METHOD method_941 getMaxLookPitchChange ()I
+	METHOD method_943 isSleeping ()Z

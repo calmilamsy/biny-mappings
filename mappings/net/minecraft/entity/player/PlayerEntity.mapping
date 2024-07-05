@@ -13,6 +13,7 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerEntity
 	FIELD field_529 dimensionId I
 	FIELD field_536 sleeping Z
 	METHOD method_481 getScore ()I
+	METHOD method_483 getSleepTimer ()I
 	METHOD method_484 (III)V
 		ARG 1 x
 		ARG 2 y
@@ -28,8 +29,10 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerEntity
 		ARG 2 amount
 	METHOD method_492 respawn ()V
 	METHOD method_493 closeScreen ()V
+	METHOD method_497 wakeUp (ZZZ)V
 	METHOD method_501 dropSelectedItem ()V
 	METHOD method_502 getHand ()Lnet/minecraft/class_31;
+	METHOD method_504 isFullyAsleep ()Z
 	METHOD method_509 dropItem (Lnet/minecraft/class_31;Z)V
 		ARG 1 stack
 		ARG 2 throwRandomly

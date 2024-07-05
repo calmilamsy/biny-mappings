@@ -1,16 +1,57 @@
 CLASS net/minecraft/class_18 net/minecraft/world/World
+	FIELD field_179 lightingQueueCount I
 	FIELD field_180 isRemote Z
+	FIELD field_181 lightingQueue Ljava/util/List;
+	FIELD field_182 entitiesToUnload Ljava/util/List;
+	FIELD field_183 scheduledUpdates Ljava/util/TreeSet;
+	FIELD field_184 scheduledUpdateSet Ljava/util/Set;
+	FIELD field_185 blockEntityUpdateQueue Ljava/util/List;
+	FIELD field_186 worldTimeMask J
+	FIELD field_187 timeLoaded J
+	FIELD field_188 allPlayersSleeping Z
+	FIELD field_189 tempCollisionBoxes Ljava/util/ArrayList;
+	FIELD field_190 processingDeferred Z
+	FIELD field_191 lightingUpdateCount I
+	FIELD field_192 allowMonsterSpawning Z
+	FIELD field_193 allowMobSpawning Z
+	FIELD field_194 activeChunks Ljava/util/Set;
+	FIELD field_195 ambientSoundCounter I
+	FIELD field_196 tempEntityList Ljava/util/List;
+	FIELD field_197 instantBlockUpdateEnabled Z
+	FIELD field_198 entities Ljava/util/List;
+	FIELD field_199 blockEntities Ljava/util/List;
+	FIELD field_200 players Ljava/util/List;
+	FIELD field_201 globalEntities Ljava/util/List;
+	FIELD field_202 ambientDarkness I
+	FIELD field_203 lcgBlockSeed I
+	FIELD field_204 lcgBlockSeedIncrement I
+	FIELD field_205 rainGradientPrev F
+	FIELD field_206 rainGradient F
+	FIELD field_207 thunderGradientPrev F
+	FIELD field_208 thunderGradient F
+	FIELD field_209 ticksSinceLightning I
+	FIELD field_210 lightningTicksLeft I
+	FIELD field_211 pauseTicking Z
+	FIELD field_212 saveInterval I
+	FIELD field_213 difficulty I
+	FIELD field_214 random Ljava/util/Random;
+	FIELD field_215 newWorld Z
 	FIELD field_216 dimension Lnet/minecraft/class_50;
+	FIELD field_217 eventListeners Ljava/util/List;
+	FIELD field_218 chunkManager Lnet/minecraft/class_51;
 	FIELD field_219 dimensionData Lnet/minecraft/class_52;
 	FIELD field_220 properties Lnet/minecraft/class_7;
+	FIELD field_221 eventProcessingEnabled Z
 	FIELD field_222 persistentStateManager Lnet/minecraft/class_53;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_50;)V
 		ARG 1 world
 		ARG 2 dimension
 	METHOD <init> (Lnet/minecraft/class_52;Ljava/lang/String;J)V
+		ARG 1 dimensionData
 		ARG 2 name
 		ARG 3 seed
 	METHOD <init> (Lnet/minecraft/class_52;Ljava/lang/String;JLnet/minecraft/class_50;)V
+		ARG 1 dimensionData
 		ARG 2 name
 		ARG 3 seed
 		ARG 5 dimension
@@ -20,15 +61,97 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 3 dimension
 		ARG 4 seed
 	METHOD method_149 getClosestPlayer (DDDD)Lnet/minecraft/class_54;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 range
 	METHOD method_150 playSound (DDDLjava/lang/String;FF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 sound
+	METHOD method_151 getAmbientDarkness (F)I
+		ARG 1 partialTicks
+	METHOD method_152 getSpawnBlockId (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD method_153 isRegionLoaded (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 range
+	METHOD method_154 setBlockWithoutNotifyingNeighbors (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockId
+		ARG 5 meta
 	METHOD method_155 isRegionLoaded (IIIIII)Z
-	METHOD method_156 (IIIIZI)Z
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
+	METHOD method_156 canPlace (IIIIZI)Z
+		ARG 1 blockId
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 fallingBlock
 		ARG 6 side
+	METHOD method_157 setBlockEntity (IIILnet/minecraft/class_55;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockEntity
+	METHOD method_158 getLightLevel (IIIZ)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_159 setTime (J)V
 		ARG 1 time
+	METHOD method_160 raycast (Lnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
+		ARG 1 start
+		ARG 2 end
+	METHOD method_161 raycast (Lnet/minecraft/class_26;Lnet/minecraft/class_26;Z)Lnet/minecraft/class_27;
+		ARG 1 start
+		ARG 2 end
+	METHOD method_162 raycast (Lnet/minecraft/class_26;Lnet/minecraft/class_26;ZZ)Lnet/minecraft/class_27;
+		ARG 1 start
+		ARG 2 end
+	METHOD method_163 getVisibilityRatio (Lnet/minecraft/class_26;Lnet/minecraft/class_25;)F
+		ARG 1 vec
+		ARG 2 box
+	METHOD method_164 getBrightness (Lnet/minecraft/class_56;III)I
+		ARG 1 type
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_165 updateLight (Lnet/minecraft/class_56;IIII)V
+		ARG 1 lightType
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_166 queueLightUpdate (Lnet/minecraft/class_56;IIIIII)V
+		ARG 1 type
+		ARG 2 minX
+		ARG 3 minY
+		ARG 4 minZ
+		ARG 5 maxX
+		ARG 6 maxY
+		ARG 7 maxZ
+	METHOD method_167 queueLightUpdate (Lnet/minecraft/class_56;IIIIIIZ)V
+		ARG 1 type
+		ARG 2 minX
+		ARG 3 minY
+		ARG 4 minZ
+		ARG 5 maxX
+		ARG 6 maxY
+		ARG 7 maxZ
 	METHOD method_168 canSpawnEntity (Lnet/minecraft/class_25;)Z
 		ARG 1 box
-	METHOD method_169 isBoxInMaterial (Lnet/minecraft/class_25;Lnet/minecraft/class_15;)Z
+	METHOD method_169 isMaterialInBox (Lnet/minecraft/class_25;Lnet/minecraft/class_15;)Z
 		ARG 1 boundingBox
 		ARG 2 material
 	METHOD method_170 updateMovementInFluid (Lnet/minecraft/class_25;Lnet/minecraft/class_15;Lnet/minecraft/class_57;)Z
@@ -36,42 +159,168 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 entityBoundingBox
 		ARG 2 fluidMaterial
 		ARG 3 entity
-	METHOD method_172 (Lnet/minecraft/class_54;IIII)V
+	METHOD method_171 canInteract (Lnet/minecraft/class_54;III)Z
+		ARG 1 player
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_172 extinguishFire (Lnet/minecraft/class_54;IIII)V
+		ARG 1 player
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction
+	METHOD method_173 worldEvent (Lnet/minecraft/class_54;IIIII)V
+		ARG 1 player
+		ARG 2 event
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 data
+	METHOD method_174 countEntities (Ljava/lang/Class;)I
+		ARG 1 entityClass
+	METHOD method_175 collectEntitiesByClass (Ljava/lang/Class;Lnet/minecraft/class_25;)Ljava/util/List;
+		ARG 1 entityClass
+		ARG 2 box
 	METHOD method_176 getOrCreateState (Ljava/lang/Class;Ljava/lang/String;)Lnet/minecraft/class_58;
 		ARG 1 stateClass
 		ARG 2 id
+	METHOD method_177 getPlayer (Ljava/lang/String;)Lnet/minecraft/class_54;
+		ARG 1 name
 	METHOD method_178 addParticle (Ljava/lang/String;DDDDDD)V
+		COMMENT For most particles, velocity works as expected.
+		COMMENT For NoteParticle, velocityX is note number divided by 24, resulting in a scalar that affects color between 0 and 1. velocityY and velocityZ are ignored and always set to 0.
+		COMMENT For RedDustParticle, velocityX, velocityY, and velocityZ are multipliers for the particle's color for red, green, and blue respectively.
+		COMMENT
+		COMMENT @see net.minecraft.client.particle.NoteParticle#NoteParticle(World, double, double, double, double, double, double, float)
+		COMMENT @see net.minecraft.client.particle.RedDustParticle#RedDustParticle(World, double, double, double, float, float, float, float)
+		ARG 1 particle
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 velocityX
+		ARG 10 velocityY
+		ARG 12 velocityZ
+	METHOD method_179 playStreaming (Ljava/lang/String;III)V
+		ARG 1 music
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_180 setState (Ljava/lang/String;Lnet/minecraft/class_58;)V
 		ARG 1 id
 		ARG 2 state
+	METHOD method_181 processBlockUpdates (Ljava/util/Collection;)V
+		ARG 1 blockUpdates
+	METHOD method_182 addEntities (Ljava/util/List;)V
+		ARG 1 entities
+	METHOD method_183 addEventListener (Lnet/minecraft/class_59;)V
+		ARG 1 eventListener
+	METHOD method_184 spawnGlobalEntity (Lnet/minecraft/class_57;)Z
+		ARG 1 entity
+	METHOD method_185 broadcastEntityEvent (Lnet/minecraft/class_57;B)V
+		ARG 1 entity
+		ARG 2 event
+	METHOD method_186 getClosestPlayer (Lnet/minecraft/class_57;D)Lnet/minecraft/class_54;
+		ARG 1 entity
+		ARG 2 range
 	METHOD method_187 createExplosion (Lnet/minecraft/class_57;DDDF)Lnet/minecraft/class_60;
+		ARG 1 source
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 power
+	METHOD method_188 createExplosion (Lnet/minecraft/class_57;DDDFZ)Lnet/minecraft/class_60;
+		ARG 1 source
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 power
+		ARG 9 fire
 	METHOD method_190 getEntityCollisions (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
+		ARG 1 entity
+		ARG 2 box
 	METHOD method_191 playSound (Lnet/minecraft/class_57;Ljava/lang/String;FF)V
-	METHOD method_200 (IIII)Z
+		ARG 1 source
+		ARG 2 sound
+	METHOD method_192 (Lnet/minecraft/class_57;Lnet/minecraft/class_57;F)Lnet/minecraft/class_61;
+		ARG 1 entity
+	METHOD method_193 updateEntity (Lnet/minecraft/class_57;Z)V
+		ARG 1 entity
+	METHOD method_194 processScheduledTicks (Z)Z
+	METHOD method_195 saveWithLoadingDisplay (ZLnet/minecraft/class_62;)V
+	METHOD method_196 allowSpawning (ZZ)V
+		ARG 1 allowMonsterSpawning
+		ARG 2 allowMobSpawning
+	METHOD method_197 createChunkManager ()Lnet/minecraft/class_51;
+	METHOD method_198 getTime (F)F
+		ARG 1 partialTicks
+	METHOD method_199 getChunkFromPos (II)Lnet/minecraft/class_43;
+		ARG 1 x
+		ARG 2 z
+	METHOD method_200 setBlockWithoutNotifyingNeighbors (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockId
+	METHOD method_201 setBlock (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockId
+		ARG 5 meta
+	METHOD method_202 setBlocksDirty (IIIIII)V
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
+	METHOD method_203 updateBlockEntity (IIILnet/minecraft/class_55;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockEntity
+	METHOD method_204 synchronizeTimeAndUpdates (J)V
+		ARG 1 time
+	METHOD method_205 setLight (Lnet/minecraft/class_56;IIII)V
+		ARG 1 lightType
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 value
+	METHOD method_206 isAnyBlockInBox (Lnet/minecraft/class_25;)Z
+		ARG 1 box
+	METHOD method_207 isFluidInBox (Lnet/minecraft/class_25;Lnet/minecraft/class_15;)Z
+		COMMENT Assumes the material is a fluid, and adjusts offsets accordingly to metadata.
+		COMMENT Only checks for the specific material, unlike the other method, which checks for any fluid.
+		ARG 1 boundingBox
+		ARG 2 fluid
+	METHOD method_208 getIdCount (Ljava/lang/String;)I
+		ARG 1 id
+	METHOD method_209 unloadEntities (Ljava/util/List;)V
+		ARG 1 entities
+	METHOD method_210 spawnEntity (Lnet/minecraft/class_57;)Z
+		ARG 1 entity
+	METHOD method_211 getEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
+		ARG 1 entity
+		ARG 2 box
+	METHOD method_212 initializeSpawnPoint ()V
+	METHOD method_213 getThunderGradient (F)F
+		ARG 1 delta
+	METHOD method_214 getChunk (II)Lnet/minecraft/class_43;
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD method_215 setBlockMeta (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 meta
+	METHOD method_216 scheduleBlockUpdate (IIIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 id
-	METHOD method_201 (IIIII)Z
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-	METHOD method_207 isBoxSubmergedInFluid (Lnet/minecraft/class_25;Lnet/minecraft/class_15;)Z
-		COMMENT Assumes the material is a fluid, and adjusts offsets accordingly to metadata.
-		COMMENT Only checks for the specific material, unlike the other method, which checks for any fluid.
-		ARG 1 boundingBox
-		ARG 2 material
-	METHOD method_208 getIdCount (Ljava/lang/String;)I
-		ARG 1 id
-	METHOD method_210 spawnEntity (Lnet/minecraft/class_57;)Z
-	METHOD method_211 getEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
-	METHOD method_215 (IIII)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
+		ARG 5 tickRate
 	METHOD method_217 getChunkData (IIIIII)[B
 		ARG 1 x
 		ARG 2 y
@@ -81,30 +330,192 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 6 sizeZ
 	METHOD method_218 isBoxSubmergedInFluid (Lnet/minecraft/class_25;)Z
 		ARG 1 box
+	METHOD method_219 loadEntitySkin (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_220 canMonsterSpawn ()Z
+	METHOD method_221 getRainGradient (F)F
+		ARG 1 delta
 	METHOD method_222 getTopY (II)I
-	METHOD method_223 (IIII)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD method_223 setBlockMetaWithoutNotifyingNeighbors (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 meta
+	METHOD method_224 playNoteBlockActionAt (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 soundType
+		ARG 5 pitch
+	METHOD method_225 isFireOrLavaInBox (Lnet/minecraft/class_25;)Z
+		ARG 1 box
+	METHOD method_226 unloadEntitySkin (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_227 tickEntities ()V
+	METHOD method_228 getTopSolidBlockY (II)I
+		ARG 1 x
+		ARG 2 z
 	METHOD method_229 setBlock (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 id
-	METHOD method_235 (IIII)V
+		ARG 4 blockId
+	METHOD method_230 worldEvent (IIIII)V
+		ARG 1 event
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD method_231 remove (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_232 doLightingUpdates ()Z
+	METHOD method_233 getSpawnPositionValidityY (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD method_234 isAir (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_243 (III)V
+	METHOD method_235 blockUpdate (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_253 (IIII)V
+		ARG 4 blockId
+	METHOD method_236 serverRemove (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_237 updateSkyBrightness ()V
+	METHOD method_238 hasChunk (II)Z
 		ARG 1 x
-		ARG 2 t
+		ARG 2 z
+	METHOD method_239 isPosLoaded (III)Z
+		ARG 1 x
+		ARG 2 y
 		ARG 3 z
+	METHOD method_240 setBlocksDirty (IIII)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 minY
+		ARG 4 maxY
+	METHOD method_241 updateEntity (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_242 tick ()V
+	METHOD method_243 blockUpdateEvent (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_244 notifyNeighbors (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockId
+	METHOD method_245 updateWeatherCycles ()V
+	METHOD method_246 setBlockDirty (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_247 canTransferPowerInDirection (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 direction
+	METHOD method_248 manageChunkUpdatesAndEvents ()V
+	METHOD method_249 hasSkyLight (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_250 isEmittingRedstonePowerInDirection (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 direction
+	METHOD method_251 saveDimensionData ()V
+	METHOD method_252 getBrightness (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_253 neighborUpdate (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockId
 	METHOD method_254 getSeed ()J
+	METHOD method_255 getLightLevel (III)I
 	METHOD method_256 getTime ()J
+	METHOD method_257 isTopY (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_258 getSpawnPos ()Lnet/minecraft/class_63;
+	METHOD method_259 getChunkManager ()Lnet/minecraft/class_51;
+	METHOD method_260 removeBlockEntity (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_261 getDimensionData ()Lnet/minecraft/class_52;
+	METHOD method_262 getProperties ()Lnet/minecraft/class_7;
+	METHOD method_263 canTransferPower (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_264 updateSleepingPlayers ()V
+	METHOD method_265 isEmittingRedstonePower (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_266 afterSkipNight ()V
+	METHOD method_267 isRaining (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_268 canSkipNight ()Z
+	METHOD method_269 isThundering ()Z
+	METHOD method_270 isRaining ()Z
+	METHOD method_271 save ()V
+	METHOD method_272 prepareWeather ()V
+	METHOD method_273 clearWeather ()V
+	METHOD method_274 attemptSaving (I)Z
+	METHOD method_275 handleChunkDataUpdate (IIIIII[B)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 sizeX
+		ARG 5 sizeY
+		ARG 6 sizeZ
+		ARG 7 chunkData
 	METHOD method_276 setSpawnPos (Lnet/minecraft/class_63;)V
 		ARG 1 pos
+	METHOD method_277 addPlayer (Lnet/minecraft/class_54;)V
+		ARG 1 player
+	METHOD method_278 getPlayerForProxy (Ljava/lang/Class;)Lnet/minecraft/class_57;
+		ARG 1 playerClass
+	METHOD method_279 getSkyColor (Lnet/minecraft/class_57;F)Lnet/minecraft/class_26;
+		ARG 1 entity
+		ARG 2 partialTicks
+	METHOD method_280 savingProgress (Lnet/minecraft/class_62;)V
+		ARG 1 display
+	METHOD method_281 removeEventListener (Lnet/minecraft/class_59;)V
+		ARG 1 eventListener
+	METHOD method_282 getCloudColor (F)Lnet/minecraft/class_26;
+		ARG 1 partialTicks
+	METHOD method_283 updateSpawnPosition ()V
+	METHOD method_284 getFogColor (F)Lnet/minecraft/class_26;
+		ARG 1 partialTicks
+	METHOD method_285 saveWorldData ()V
+	METHOD method_286 calculateSkyLightIntensity (F)F
+		ARG 1 partialTicks
+	METHOD method_287 loadChunksNearEntity (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_288 getEntityCount ()Ljava/lang/String;
+	METHOD method_289 setRainGradient (F)V
+		ARG 1 rainGradient
+	METHOD method_290 getDebugInfo ()Ljava/lang/String;
+	METHOD method_291 getEntities ()Ljava/util/List;
+	METHOD method_292 tickChunks ()V
+	METHOD method_293 disconnect ()V
+	METHOD method_294 displayTick (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_295 updateEntityLists ()V
