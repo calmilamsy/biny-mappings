@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_3 net/minecraft/block/WoolBlock
+	METHOD method_1 getBlockMeta (I)I
+		ARG 0 itemMeta
+	METHOD method_2 getItemMeta (I)I
+		ARG 0 blockMeta
