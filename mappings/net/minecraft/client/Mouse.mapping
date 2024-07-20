@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_596 net/minecraft/client/Mouse
+	FIELD field_2586 deltaX I
+	FIELD field_2587 deltaY I
+	FIELD field_2588 parent Ljava/awt/Component;
+	FIELD field_2589 cursor Lorg/lwjgl/input/Cursor;
+	FIELD field_2590 unused I
+	METHOD <init> (Ljava/awt/Component;)V
+		ARG 1 parent
+	METHOD method_1970 lockCursor ()V
+	METHOD method_1971 unlockCursor ()V
+	METHOD method_1972 poll ()V
