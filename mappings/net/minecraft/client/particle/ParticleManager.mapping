@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_75 net/minecraft/particle/ParticleManager
+CLASS net/minecraft/class_75 net/minecraft/client/particle/ParticleManager
 	FIELD field_269 world Lnet/minecraft/class_18;
 	FIELD field_270 particles [Ljava/util/List;
 	FIELD field_271 textureManager Lnet/minecraft/class_76;
