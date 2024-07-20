@@ -1,0 +1,55 @@
+CLASS net/minecraft/class_108 net/minecraft/entity/ai/pathing/PathNodeNavigator
+	FIELD field_333 blockView Lnet/minecraft/class_14;
+	FIELD field_334 minHeap Lnet/minecraft/class_109;
+	FIELD field_335 pathNodeCache Lnet/minecraft/class_80;
+	FIELD field_336 successors [Lnet/minecraft/class_29;
+	METHOD <init> (Lnet/minecraft/class_14;)V
+		ARG 1 blockView
+	METHOD method_400 getNode (III)Lnet/minecraft/class_29;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_401 createPath (Lnet/minecraft/class_29;Lnet/minecraft/class_29;)Lnet/minecraft/class_61;
+		ARG 1 unused
+		ARG 2 startNode
+	METHOD method_402 findPath (Lnet/minecraft/class_57;DDDF)Lnet/minecraft/class_61;
+		ARG 1 startEntity
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 distance
+	METHOD method_403 findPath (Lnet/minecraft/class_57;IIIF)Lnet/minecraft/class_61;
+		ARG 1 startEntity
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 distance
+	METHOD method_404 isPassable (Lnet/minecraft/class_57;IIILnet/minecraft/class_29;)I
+		ARG 1 entity
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 node
+	METHOD method_405 getNode (Lnet/minecraft/class_57;IIILnet/minecraft/class_29;I)Lnet/minecraft/class_29;
+		ARG 1 entity
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 endNode
+		ARG 6 stepHeight
+	METHOD method_406 findPath (Lnet/minecraft/class_57;Lnet/minecraft/class_29;Lnet/minecraft/class_29;Lnet/minecraft/class_29;F)Lnet/minecraft/class_61;
+		ARG 1 startEntity
+		ARG 2 startNode
+		ARG 3 endNode
+		ARG 4 position
+		ARG 5 distance
+	METHOD method_407 findPath (Lnet/minecraft/class_57;Lnet/minecraft/class_57;F)Lnet/minecraft/class_61;
+		ARG 1 startEntity
+		ARG 2 endEntity
+		ARG 3 distance
+	METHOD method_408 getSuccessors (Lnet/minecraft/class_57;Lnet/minecraft/class_29;Lnet/minecraft/class_29;Lnet/minecraft/class_29;F)I
+		ARG 1 startEntity
+		ARG 2 startNode
+		ARG 3 endNode
+		ARG 4 position
+		ARG 5 distance
