@@ -1,1 +1,8 @@
 CLASS net/minecraft/class_520 net/minecraft/SingleplayerInteractionManager
+	FIELD field_2181 breakX I
+	FIELD field_2182 breakY I
+	FIELD field_2183 breakZ I
+	FIELD field_2184 breakProgress F
+	FIELD field_2185 lastBreakProgress F
+	FIELD field_2186 breakSoundDelayTicks F
+	FIELD field_2187 breakDelayTicks I
