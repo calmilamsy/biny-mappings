@@ -1,0 +1,33 @@
+CLASS net/minecraft/class_369 net/minecraft/util/math/noise/PerlinNoiseSampler
+	FIELD field_1407 perm [I
+	FIELD field_1408 offsetX D
+	FIELD field_1409 offsetY D
+	FIELD field_1410 offsetZ D
+	METHOD <init> (Ljava/util/Random;)V
+		ARG 1 random
+	METHOD method_1199 sample (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1200 gradCoord (IDD)D
+		ARG 2 x
+		ARG 4 y
+	METHOD method_1201 gradCoord (IDDD)D
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD method_1202 create ([DDDDIIIDDDD)V
+		ARG 1 map
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 width
+		ARG 9 height
+		ARG 10 depth
+	METHOD method_1203 lerp (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 t
+	METHOD method_1204 sample (DD)D
+		ARG 1 x
+		ARG 3 y

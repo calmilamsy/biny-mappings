@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_458 net/minecraft/util/math/noise/OctaveSimplexNoiseSampler
+	FIELD field_1746 octaveSamplers [Lnet/minecraft/class_459;
+	FIELD field_1747 octaves I
+	METHOD <init> (Ljava/util/Random;I)V
+		ARG 1 random
+		ARG 2 octaves
+	METHOD method_1516 sample ([DDDIIDDD)[D
+		ARG 1 map
+		ARG 2 x
+		ARG 4 y
+		ARG 6 width
+		ARG 7 height
+	METHOD method_1517 sample ([DDDIIDDDD)[D
+		ARG 1 map
+		ARG 2 x
+		ARG 4 y
+		ARG 6 width
+		ARG 7 height

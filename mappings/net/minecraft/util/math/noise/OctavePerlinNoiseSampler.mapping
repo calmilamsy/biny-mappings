@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_209 net/minecraft/util/math/noise/OctavePerlinNoiseSampler
+	FIELD field_1744 octaveSamplers [Lnet/minecraft/class_369;
+	FIELD field_1745 octaves I
+	METHOD <init> (Ljava/util/Random;I)V
+		ARG 1 random
+		ARG 2 i
+	METHOD method_1513 sample (DD)D
+		ARG 1 x
+		ARG 3 y
+	METHOD method_1514 create ([DDDDIIIDDD)[D
+		ARG 1 map
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 width
+		ARG 9 height
+		ARG 10 depth
+	METHOD method_1515 create ([DIIIIDDD)[D
+		ARG 1 map
+		ARG 2 x
+		ARG 3 z
+		ARG 4 width
+		ARG 5 depth
