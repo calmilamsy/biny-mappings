@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_633
-	METHOD method_2100 (Lnet/minecraft/class_71;ILnet/minecraft/class_31;)V
-		ARG 1 container
-		ARG 3 itemStack
