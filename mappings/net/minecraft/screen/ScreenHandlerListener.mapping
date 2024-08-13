@@ -2,7 +2,7 @@ CLASS net/minecraft/class_633 net/minecraft/screen/ScreenHandlerListener
 	METHOD method_2099 onPropertyUpdate (Lnet/minecraft/class_71;II)V
 		COMMENT Passes integers from Server Screen Handler to Client Screen Handler so that animations can be visible, e.g. Smelting Progress, Fuel left for rendering
 		ARG 1 handler
-		ARG 2 trackedId
+		ARG 2 syncId
 			COMMENT Arbitrary integer specific to this screenHandler, used as an identifier for a specific property. Set this to any int, as long as it is consistent. Normally starts at 0 going up.
 		ARG 3 trackedValue
 			COMMENT This integer is synced to the client.
