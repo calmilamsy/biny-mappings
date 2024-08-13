@@ -3,21 +3,21 @@ CLASS net/minecraft/class_504 net/minecraft/client/InteractionManager
 	FIELD field_2105 noTick Z
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
-	METHOD method_1705 resetBlockBreaking ()V
+	METHOD method_1705 cancelBlockBreaking ()V
 	METHOD method_1706 update (F)V
-	METHOD method_1707 interactBlock (IIII)V
+	METHOD method_1707 attackBlock (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 direction
 	METHOD method_1708 clickSlot (IIIZLnet/minecraft/class_54;)Lnet/minecraft/class_31;
-		ARG 1 windowId
+		ARG 1 syncId
 		ARG 2 slotId
 		ARG 3 button
 		ARG 4 shift
 		ARG 5 player
-	METHOD method_1709 onContainerRemove (ILnet/minecraft/class_54;)V
-		ARG 1 containerId
+	METHOD method_1709 onScreenRemoved (ILnet/minecraft/class_54;)V
+		ARG 1 syncId
 		ARG 2 player
 	METHOD method_1710 setWorld (Lnet/minecraft/class_18;)V
 		ARG 1 world
@@ -27,7 +27,7 @@ CLASS net/minecraft/class_504 net/minecraft/client/InteractionManager
 		ARG 1 player
 		ARG 2 world
 		ARG 3 item
-	METHOD method_1713 interactBlockWithItem (Lnet/minecraft/class_54;Lnet/minecraft/class_18;Lnet/minecraft/class_31;IIII)Z
+	METHOD method_1713 interactBlock (Lnet/minecraft/class_54;Lnet/minecraft/class_18;Lnet/minecraft/class_31;IIII)Z
 		ARG 1 player
 		ARG 2 world
 		ARG 3 item
@@ -52,7 +52,7 @@ CLASS net/minecraft/class_504 net/minecraft/client/InteractionManager
 		ARG 1 player
 		ARG 2 target
 	METHOD method_1720 tick ()V
-	METHOD method_1721 onBlockBreakingAction (IIII)V
+	METHOD method_1721 processBlockBreakingAction (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

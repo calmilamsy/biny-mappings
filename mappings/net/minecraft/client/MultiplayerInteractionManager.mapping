@@ -1,12 +1,12 @@
-CLASS net/minecraft/class_608 net/minecraft/MultiplayerInteractionManager
-	FIELD field_2608 miningPosX I
-	FIELD field_2609 miningPosY I
-	FIELD field_2610 miningPosZ I
+CLASS net/minecraft/class_608 net/minecraft/client/MultiplayerInteractionManager
+	FIELD field_2608 breakingPosX I
+	FIELD field_2609 breakingPosY I
+	FIELD field_2610 breakingPosZ I
 	FIELD field_2611 blockBreakingProgress F
 	FIELD field_2612 lastBlockBreakingProgress F
-	FIELD field_2613 miningSoundDelayTicks F
-	FIELD field_2614 miningDelayTicks I
-	FIELD field_2615 mining Z
+	FIELD field_2613 breakingSoundDelayTicks F
+	FIELD field_2614 breakingDelayTicks I
+	FIELD field_2615 breakingBlock Z
 	FIELD field_2616 networkHandler Lnet/minecraft/class_219;
 	FIELD field_2617 selectedSlot I
 	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/class_219;)V
