@@ -3,7 +3,7 @@ CLASS net/minecraft/class_77 net/minecraft/client/particle/Particle
 	FIELD field_2636 prevU F
 	FIELD field_2637 prevV F
 	FIELD field_2638 particleAge I
-	FIELD field_2639 maxAge I
+	FIELD field_2639 maxParticleAge I
 	FIELD field_2640 scale F
 	FIELD field_2641 gravity F
 	FIELD field_2642 red F

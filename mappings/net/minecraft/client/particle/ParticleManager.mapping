@@ -7,16 +7,17 @@ CLASS net/minecraft/class_75 net/minecraft/client/particle/ParticleManager
 		ARG 1 world
 		ARG 2 textureManager
 	METHOD method_320 removeDeadParticles ()V
-	METHOD method_321 spawnBlockBreakingParticles (IIII)V
+	METHOD method_321 addBlockBreakingParticles (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 side
-	METHOD method_322 spawnBlockRemoveParticles (IIIII)V
+	METHOD method_322 addBlockBreakParticles (IIIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
+		ARG 5 blockMeta
 	METHOD method_323 setWorld (Lnet/minecraft/class_18;)V
 		ARG 1 world
 	METHOD method_324 render (Lnet/minecraft/class_57;F)V
