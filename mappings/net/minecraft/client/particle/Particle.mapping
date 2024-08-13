@@ -5,7 +5,7 @@ CLASS net/minecraft/class_77 net/minecraft/client/particle/Particle
 	FIELD field_2638 particleAge I
 	FIELD field_2639 maxParticleAge I
 	FIELD field_2640 scale F
-	FIELD field_2641 gravity F
+	FIELD field_2641 gravityStrength F
 	FIELD field_2642 red F
 	FIELD field_2643 green F
 	FIELD field_2644 blue F
