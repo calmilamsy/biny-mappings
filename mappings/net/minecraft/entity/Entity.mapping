@@ -143,7 +143,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		COMMENT
 		ARG 1 id
 		ARG 2 amount
-	METHOD method_1340 setPos (DDD)V
+	METHOD method_1340 setPosition (DDD)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
