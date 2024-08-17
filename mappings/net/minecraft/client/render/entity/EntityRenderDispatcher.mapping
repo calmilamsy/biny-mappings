@@ -6,7 +6,7 @@ CLASS net/minecraft/class_578 net/minecraft/client/render/entity/EntityRenderDis
 	FIELD field_2493 textureManager Lnet/minecraft/class_76;
 	FIELD field_2494 heldItemRenderer Lnet/minecraft/class_556;
 	FIELD field_2495 world Lnet/minecraft/class_18;
-	FIELD field_2496 livingEntity Lnet/minecraft/class_127;
+	FIELD field_2496 cameraEntity Lnet/minecraft/class_127;
 	FIELD field_2497 yaw F
 	FIELD field_2498 pitch F
 	FIELD field_2499 options Lnet/minecraft/class_322;

@@ -12,4 +12,4 @@ CLASS net/minecraft/class_579 net/minecraft/client/render/entity/EntityRenderer
 	METHOD method_2026 bindTexture (Ljava/lang/String;)V
 		ARG 1 texturePath
 	METHOD method_2029 setDispatcher (Lnet/minecraft/class_578;)V
-	METHOD method_2032 cleanUp (Lnet/minecraft/class_57;DDDFF)V
+	METHOD method_2032 postRender (Lnet/minecraft/class_57;DDDFF)V
