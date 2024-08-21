@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_467 net/minecraft/world/dimension/PortalForcer
+	FIELD field_1772 random Ljava/util/Random;
+	METHOD method_1530 moveToPortal (Lnet/minecraft/class_18;Lnet/minecraft/class_57;)V
+		COMMENT Called when an entity's dimension changes so that their position is forced to a portal position.
+		ARG 1 world
+		ARG 2 entity
+	METHOD method_1531 teleportToValidPortal (Lnet/minecraft/class_18;Lnet/minecraft/class_57;)Z
+		ARG 1 world
+		ARG 2 entity
+	METHOD method_1532 createPortal (Lnet/minecraft/class_18;Lnet/minecraft/class_57;)Z
+		ARG 1 world
+		ARG 2 entity
