@@ -1,8 +1,8 @@
-CLASS net/minecraft/class_342 net/minecraft/block/DetectorRailBlock
+CLASS net/minecraft/unmapped/C_7495097 net/minecraft/block/DetectorRailBlock
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId
-	METHOD method_1144 (Lnet/minecraft/class_18;IIII)V
+	METHOD m_8645079 (Lnet/minecraft/class_18;IIII)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

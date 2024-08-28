@@ -1,8 +1,8 @@
-CLASS net/minecraft/class_232 net/minecraft/util/IntHashMapEntry
-	FIELD field_2113 key I
-	FIELD field_2114 value Ljava/lang/Object;
-	FIELD field_2115 next Lnet/minecraft/class_232;
-	FIELD field_2116 hash I
+CLASS net/minecraft/unmapped/C_6094996 net/minecraft/util/IntHashMapEntry
+	FIELD f_2671247 key I
+	FIELD f_5251941 value Ljava/lang/Object;
+	FIELD f_4594041 next Lnet/minecraft/class_232;
+	FIELD f_7077493 hash I
 	METHOD <init> (IILjava/lang/Object;Lnet/minecraft/class_232;)V
 		ARG 1 hash
 		ARG 2 key
@@ -10,5 +10,5 @@ CLASS net/minecraft/class_232 net/minecraft/util/IntHashMapEntry
 		ARG 4 next
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 object
-	METHOD method_1726 getKey ()I
-	METHOD method_1727 getValue ()Ljava/lang/Object;
+	METHOD m_4224545 getKey ()I
+	METHOD m_1690012 getValue ()Ljava/lang/Object;

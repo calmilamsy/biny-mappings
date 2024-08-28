@@ -1,24 +1,24 @@
-CLASS net/minecraft/class_29 net/minecraft/entity/ai/pathing/PathNode
-	FIELD field_140 x I
-	FIELD field_141 y I
-	FIELD field_142 z I
-	FIELD field_143 heapIndex I
-	FIELD field_144 penalizedPathLength F
-	FIELD field_145 distanceToNearestTarget F
-	FIELD field_146 heapWeight F
-	FIELD field_147 previous Lnet/minecraft/class_29;
-	FIELD field_148 visited Z
-	FIELD field_149 hashCode I
+CLASS net/minecraft/unmapped/C_7694617 net/minecraft/entity/ai/pathing/PathNode
+	FIELD f_5955928 x I
+	FIELD f_7969639 y I
+	FIELD f_3255150 z I
+	FIELD f_3575590 heapIndex I
+	FIELD f_4267572 penalizedPathLength F
+	FIELD f_3922753 distanceToNearestTarget F
+	FIELD f_8380124 heapWeight F
+	FIELD f_8938222 previous Lnet/minecraft/class_29;
+	FIELD f_8910354 visited Z
+	FIELD f_4759142 hashCode I
 	METHOD <init> (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 object
-	METHOD method_112 isInHeap ()Z
-	METHOD method_113 hash (III)I
+	METHOD m_3762096 isInHeap ()Z
+	METHOD m_3329969 hash (III)I
 		ARG 0 x
 		ARG 1 y
 		ARG 2 z
-	METHOD method_114 getDistance (Lnet/minecraft/class_29;)F
+	METHOD m_6408222 getDistance (Lnet/minecraft/class_29;)F
 		ARG 1 node

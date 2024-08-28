@@ -1,8 +1,8 @@
-CLASS net/minecraft/class_328 net/minecraft/block/TrapdoorBlock
-	METHOD method_1059 (Lnet/minecraft/class_18;IIIZ)V
+CLASS net/minecraft/unmapped/C_0728298 net/minecraft/block/TrapdoorBlock
+	METHOD m_0775996 (Lnet/minecraft/class_18;IIIZ)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1060 (I)V
+	METHOD m_3409934 (I)V
 		ARG 1 meta

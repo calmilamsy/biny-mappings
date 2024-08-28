@@ -1,13 +1,13 @@
-CLASS net/minecraft/class_123 net/minecraft/block/SandBlock
+CLASS net/minecraft/unmapped/C_3724278 net/minecraft/block/SandBlock
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId
-	METHOD method_435 (Lnet/minecraft/class_18;III)Z
+	METHOD m_3677674 (Lnet/minecraft/class_18;III)Z
 		ARG 0 world
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_436 (Lnet/minecraft/class_18;III)V
+	METHOD m_8908711 (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

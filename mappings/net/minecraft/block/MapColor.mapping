@@ -1,36 +1,36 @@
-CLASS net/minecraft/class_259 net/minecraft/block/MapColor
-	FIELD field_2737 COLORS [Lnet/minecraft/class_259;
-	FIELD field_2738 CLEAR Lnet/minecraft/class_259;
+CLASS net/minecraft/unmapped/C_1160655 net/minecraft/block/MapColor
+	FIELD f_7914971 COLORS [Lnet/minecraft/class_259;
+	FIELD f_8034631 CLEAR Lnet/minecraft/class_259;
 		COMMENT RGB: 0, 0, 0
-	FIELD field_2739 PALE_GREEN Lnet/minecraft/class_259;
+	FIELD f_4174589 PALE_GREEN Lnet/minecraft/class_259;
 		COMMENT RGB: 127, 178, 56
-	FIELD field_2740 PALE_YELLOW Lnet/minecraft/class_259;
+	FIELD f_5390462 PALE_YELLOW Lnet/minecraft/class_259;
 		COMMENT RGB: 247, 233, 163
-	FIELD field_2741 LIGHT_GRAY Lnet/minecraft/class_259;
+	FIELD f_5715630 LIGHT_GRAY Lnet/minecraft/class_259;
 		COMMENT RGB: 167, 167, 167
-	FIELD field_2742 RED Lnet/minecraft/class_259;
+	FIELD f_0316277 RED Lnet/minecraft/class_259;
 		COMMENT RGB: 255, 0, 0
-	FIELD field_2743 LIGHT_BLUE Lnet/minecraft/class_259;
+	FIELD f_5872574 LIGHT_BLUE Lnet/minecraft/class_259;
 		COMMENT RGB: 160, 160, 255
-	FIELD field_2744 LIGHT_GRAY2 Lnet/minecraft/class_259;
+	FIELD f_4215120 LIGHT_GRAY2 Lnet/minecraft/class_259;
 		COMMENT RGB: 167, 167, 167
 		COMMENT Duplicate of LIGHT_GRAY
-	FIELD field_2745 GREEN Lnet/minecraft/class_259;
+	FIELD f_0698588 GREEN Lnet/minecraft/class_259;
 		COMMENT RGB: 0, 124, 0
-	FIELD field_2746 WHITE Lnet/minecraft/class_259;
+	FIELD f_9211502 WHITE Lnet/minecraft/class_259;
 		COMMENT RGB: 255, 255, 255
-	FIELD field_2747 SILVER Lnet/minecraft/class_259;
+	FIELD f_9056539 SILVER Lnet/minecraft/class_259;
 		COMMENT RGB: 164, 168, 184
-	FIELD field_2748 ORANGE Lnet/minecraft/class_259;
+	FIELD f_4329859 ORANGE Lnet/minecraft/class_259;
 		COMMENT RGB: 183, 106, 47
-	FIELD field_2749 GRAY Lnet/minecraft/class_259;
+	FIELD f_4797633 GRAY Lnet/minecraft/class_259;
 		COMMENT RGB: 112, 112, 112
-	FIELD field_2750 BLUE Lnet/minecraft/class_259;
+	FIELD f_3957938 BLUE Lnet/minecraft/class_259;
 		COMMENT RGB: 64, 64, 255
-	FIELD field_2751 BROWN Lnet/minecraft/class_259;
+	FIELD f_8705067 BROWN Lnet/minecraft/class_259;
 		COMMENT RGB: 104, 83, 50
-	FIELD field_2752 color I
-	FIELD field_2753 id I
+	FIELD f_0228618 color I
+	FIELD f_9489515 id I
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 color

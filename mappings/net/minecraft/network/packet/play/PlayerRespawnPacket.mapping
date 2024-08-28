@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_335 net/minecraft/network/packet/play/PlayerRespawnPacket
-	FIELD field_1244 dimensionRawId B
+CLASS net/minecraft/unmapped/C_4177687 net/minecraft/network/packet/play/PlayerRespawnPacket
+	FIELD f_1021426 dimensionRawId B
 	METHOD <init> (B)V
 		ARG 1 dimension

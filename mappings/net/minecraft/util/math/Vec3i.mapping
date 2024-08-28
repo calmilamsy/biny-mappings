@@ -1,7 +1,7 @@
-CLASS net/minecraft/class_63 net/minecraft/util/math/Vec3i
-	FIELD field_1482 x I
-	FIELD field_1483 y I
-	FIELD field_1484 z I
+CLASS net/minecraft/unmapped/C_6707278 net/minecraft/util/math/Vec3i
+	FIELD f_4765832 x I
+	FIELD f_7472241 y I
+	FIELD f_2523753 z I
 	METHOD <init> (III)V
 		ARG 1 x
 		ARG 2 y
@@ -12,7 +12,7 @@ CLASS net/minecraft/class_63 net/minecraft/util/math/Vec3i
 		ARG 1 vec
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
-	METHOD method_1235 distanceTo (III)D
+	METHOD m_1863000 distanceTo (III)D
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

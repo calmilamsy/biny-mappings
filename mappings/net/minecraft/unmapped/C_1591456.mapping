@@ -1,0 +1,5 @@
+CLASS net/minecraft/unmapped/C_1591456
+	FIELD f_4712395 LOGGER Ljava/util/logging/Logger;
+	FIELD f_0958071 server Lnet/minecraft/server/MinecraftServer;
+	FIELD f_2249420 socket Ljava/net/ServerSocket;
+	FIELD f_6787912 thread Ljava/lang/Thread;

@@ -1,10 +1,10 @@
-CLASS net/minecraft/class_441 net/minecraft/network/packet/s2c/play/ChunkDeltaUpdateS2CPacket
-	FIELD field_2153 x I
-	FIELD field_2154 z I
-	FIELD field_2155 positions [S
-	FIELD field_2156 blockRawIds [B
-	FIELD field_2157 blockMetadata [B
-	FIELD field_2158 size I
+CLASS net/minecraft/unmapped/C_2012603 net/minecraft/network/packet/s2c/play/ChunkDeltaUpdateS2CPacket
+	FIELD f_2345080 x I
+	FIELD f_6207328 z I
+	FIELD f_2357418 positions [S
+	FIELD f_7382311 blockRawIds [B
+	FIELD f_4902528 blockMetadata [B
+	FIELD f_8446350 size I
 	METHOD <init> (II[SILnet/minecraft/class_18;)V
 		ARG 1 x
 		ARG 2 z

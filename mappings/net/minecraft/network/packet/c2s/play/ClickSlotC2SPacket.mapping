@@ -1,10 +1,10 @@
-CLASS net/minecraft/class_363 net/minecraft/network/packet/c2s/play/ClickSlotC2SPacket
-	FIELD field_1362 syncId I
-	FIELD field_1363 slot I
-	FIELD field_1364 button I
-	FIELD field_1365 actionType S
-	FIELD field_1366 stack Lnet/minecraft/class_31;
-	FIELD field_1367 holdingShift Z
+CLASS net/minecraft/unmapped/C_4883920 net/minecraft/network/packet/c2s/play/ClickSlotC2SPacket
+	FIELD f_6121970 syncId I
+	FIELD f_3666510 slot I
+	FIELD f_0831181 button I
+	FIELD f_9311766 actionType S
+	FIELD f_8411303 stack Lnet/minecraft/class_31;
+	FIELD f_0122511 holdingShift Z
 	METHOD <init> (IIIZLnet/minecraft/class_31;S)V
 		ARG 1 syncId
 		ARG 2 slot

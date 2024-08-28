@@ -1,9 +1,9 @@
-CLASS net/minecraft/class_234 net/minecraft/network/packet/s2c/play/PlayerSleepUpdateS2CPacket
-	FIELD field_864 id I
-	FIELD field_865 x I
-	FIELD field_866 y I
-	FIELD field_867 z I
-	FIELD field_868 status I
+CLASS net/minecraft/unmapped/C_1059954 net/minecraft/network/packet/s2c/play/PlayerSleepUpdateS2CPacket
+	FIELD f_3180710 id I
+	FIELD f_9343671 x I
+	FIELD f_1453688 y I
+	FIELD f_2023054 z I
+	FIELD f_5335734 status I
 	METHOD <init> (Lnet/minecraft/class_57;IIII)V
 		ARG 1 player
 		ARG 2 status

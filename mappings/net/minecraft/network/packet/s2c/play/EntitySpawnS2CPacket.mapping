@@ -1,13 +1,13 @@
-CLASS net/minecraft/class_414 net/minecraft/network/packet/s2c/play/EntitySpawnS2CPacket
-	FIELD field_1663 id I
-	FIELD field_1664 x I
-	FIELD field_1665 y I
-	FIELD field_1666 z I
-	FIELD field_1667 velocityX I
-	FIELD field_1668 velocityY I
-	FIELD field_1669 velocityZ I
-	FIELD field_1670 entityType I
-	FIELD field_1671 entityData I
+CLASS net/minecraft/unmapped/C_1019530 net/minecraft/network/packet/s2c/play/EntitySpawnS2CPacket
+	FIELD f_8085681 id I
+	FIELD f_8697579 x I
+	FIELD f_7157195 y I
+	FIELD f_7561968 z I
+	FIELD f_4847739 velocityX I
+	FIELD f_7706329 velocityY I
+	FIELD f_7425756 velocityZ I
+	FIELD f_9782340 entityType I
+	FIELD f_9643733 entityData I
 	METHOD <init> (Lnet/minecraft/class_57;I)V
 		ARG 1 entity
 		ARG 2 entityType

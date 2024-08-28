@@ -1,2 +1,2 @@
-CLASS net/minecraft/class_533 net/minecraft/item/BlockItem
-	FIELD field_2216 itemId I
+CLASS net/minecraft/unmapped/C_3682532 net/minecraft/item/BlockItem
+	FIELD f_9522161 itemId I

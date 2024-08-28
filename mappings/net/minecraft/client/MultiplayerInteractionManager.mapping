@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_608 net/minecraft/client/MultiplayerInteractionManager
+CLASS net/minecraft/unmapped/C_6794191 net/minecraft/client/MultiplayerInteractionManager
 	FIELD field_2608 breakingPosX I
 	FIELD field_2609 breakingPosY I
 	FIELD field_2610 breakingPosZ I

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_246 net/minecraft/world/gen/feature/DeadBushPatchFeature
-	FIELD field_911 deadBushBlockId I
+CLASS net/minecraft/unmapped/C_9760469 net/minecraft/world/gen/feature/DeadBushPatchFeature
+	FIELD f_3624158 deadBushBlockId I
 	METHOD <init> (I)V
 		ARG 1 deadBushBlockId

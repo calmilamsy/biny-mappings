@@ -1,15 +1,15 @@
-CLASS net/minecraft/class_619 net/minecraft/block/RedstoneTorchBlock
-	FIELD field_2685 lit Z
+CLASS net/minecraft/unmapped/C_7146036 net/minecraft/block/RedstoneTorchBlock
+	FIELD f_2911022 lit Z
 	METHOD <init> (IIZ)V
 		ARG 1 id
 		ARG 2 textureId
 		ARG 3 lit
-	METHOD method_2038 (Lnet/minecraft/class_18;IIIZ)Z
+	METHOD m_8322223 (Lnet/minecraft/class_18;IIIZ)Z
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_2039 (Lnet/minecraft/class_18;III)Z
+	METHOD m_7964929 (Lnet/minecraft/class_18;III)Z
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

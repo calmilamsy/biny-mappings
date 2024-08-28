@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_214 net/minecraft/client/util/GlAllocationUtils
+CLASS net/minecraft/unmapped/C_8592380 net/minecraft/client/util/GlAllocationUtils
 	FIELD field_795 DISPLAY_LISTS Ljava/util/List;
 	FIELD field_796 TEXTURE_NAMES Ljava/util/List;
 	METHOD method_740 clear ()V

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_577 net/minecraft/client/render/entity/model/ChickenEntityModel
+CLASS net/minecraft/unmapped/C_3583747 net/minecraft/client/render/entity/model/ChickenEntityModel
 	FIELD field_2472 head Lnet/minecraft/class_163;
 	FIELD field_2473 body Lnet/minecraft/class_163;
 	FIELD field_2474 rightLeg Lnet/minecraft/class_163;

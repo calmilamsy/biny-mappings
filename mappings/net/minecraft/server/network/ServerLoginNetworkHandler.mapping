@@ -1,23 +1,23 @@
-CLASS net/minecraft/class_10 net/minecraft/server/network/ServerLoginNetworkHandler
-	FIELD field_353 LOGGER Ljava/util/logging/Logger;
-	FIELD field_354 connection Lnet/minecraft/class_117;
-	FIELD field_355 closed Z
-	FIELD field_356 random Ljava/util/Random;
-	FIELD field_357 server Lnet/minecraft/server/MinecraftServer;
-	FIELD field_358 loginTicks I
-	FIELD field_359 username Ljava/lang/String;
-	FIELD field_360 loginPacket Lnet/minecraft/class_118;
-	FIELD field_361 serverId Ljava/lang/String;
+CLASS net/minecraft/unmapped/C_0386427 net/minecraft/server/network/ServerLoginNetworkHandler
+	FIELD f_7882156 LOGGER Ljava/util/logging/Logger;
+	FIELD f_1982174 connection Lnet/minecraft/class_117;
+	FIELD f_5558406 closed Z
+	FIELD f_6184966 random Ljava/util/Random;
+	FIELD f_3749495 server Lnet/minecraft/server/MinecraftServer;
+	FIELD f_3075914 loginTicks I
+	FIELD f_6557449 username Ljava/lang/String;
+	FIELD f_0220793 loginPacket Lnet/minecraft/class_118;
+	FIELD f_9792477 serverId Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/net/Socket;Ljava/lang/String;)V
 		ARG 1 server
 		ARG 2 socket
-	METHOD method_414 tick ()V
-	METHOD method_417 disconnect (Ljava/lang/String;)V
+	METHOD m_2105523 tick ()V
+	METHOD m_2166157 disconnect (Ljava/lang/String;)V
 		ARG 1 reason
-	METHOD method_418 getConnectionInfo ()Ljava/lang/String;
-	METHOD method_419 accept (Lnet/minecraft/class_118;)V
+	METHOD m_8143315 getConnectionInfo ()Ljava/lang/String;
+	METHOD m_7298942 accept (Lnet/minecraft/class_118;)V
 		ARG 1 packet
-	CLASS 1 AuthThread
-		FIELD field_362 loginPacket Lnet/minecraft/class_118;
-		FIELD field_363 networkHandler Lnet/minecraft/class_10;
-		METHOD run run ()V
+CLASS net/minecraft/unmapped/C_6918176 net/minecraft/server/network/ServerLoginNetworkHandler
+	FIELD f_8916610 loginPacket Lnet/minecraft/class_118;
+	FIELD f_1097099 networkHandler Lnet/minecraft/class_10;
+	METHOD run run ()V

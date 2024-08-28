@@ -1,4 +1,4 @@
-CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
+CLASS net/minecraft/client/Minecraft
 	FIELD field_2765 applet Lnet/minecraft/client/MinecraftApplet;
 	FIELD field_2766 soundManager Lnet/minecraft/class_617;
 	FIELD field_2772 failedSessionCheckTime J
@@ -57,6 +57,6 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	METHOD method_2138 isWorldRemote ()Z
 	METHOD method_2145 getNetworkHandler ()Lnet/minecraft/class_219;
 	METHOD method_2151 getOperatingSystem ()Lnet/minecraft/class_531;
-	CLASS class_636 TimerHackThread
-	CLASS class_639 SessionCheckThread
-		METHOD run run ()V
+CLASS net/minecraft/unmapped/C_7968884 net/minecraft/client/Minecraft
+CLASS net/minecraft/unmapped/C_3057228 net/minecraft/client/Minecraft
+	METHOD run run ()V

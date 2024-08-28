@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_287 net/minecraft/client/color/world/GrassColors
+CLASS net/minecraft/unmapped/C_2310106 net/minecraft/client/color/world/GrassColors
 	FIELD field_1141 colorMap [I
 	METHOD method_981 getColor (DD)I
 		ARG 0 temperature

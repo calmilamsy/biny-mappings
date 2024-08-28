@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderManager
+CLASS net/minecraft/unmapped/C_3466301 net/minecraft/client/render/block/BlockRenderManager
 	FIELD field_100 northEastBottomBrightness F
 	FIELD field_101 northBottomBrightness F
 	FIELD field_102 northWestBottomBrightness F

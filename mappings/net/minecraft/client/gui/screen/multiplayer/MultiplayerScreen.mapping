@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_412 net/minecraft/client/gui/screen/multiplayer/MultiplayerScreen
+CLASS net/minecraft/unmapped/C_4331994 net/minecraft/client/gui/screen/multiplayer/MultiplayerScreen
 	FIELD field_1657 parent Lnet/minecraft/class_32;
 	METHOD <init> (Lnet/minecraft/class_32;)V
 		ARG 1 parent

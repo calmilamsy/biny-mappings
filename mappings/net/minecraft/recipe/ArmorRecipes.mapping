@@ -1,5 +1,5 @@
-CLASS net/minecraft/class_470 net/minecraft/recipe/ArmorRecipes
-	FIELD field_1773 patterns [[Ljava/lang/String;
-	FIELD field_1774 items [[Ljava/lang/Object;
-	METHOD method_1536 add (Lnet/minecraft/class_148;)V
+CLASS net/minecraft/unmapped/C_4450135 net/minecraft/recipe/ArmorRecipes
+	FIELD f_1218964 patterns [[Ljava/lang/String;
+	FIELD f_5493481 items [[Ljava/lang/Object;
+	METHOD m_2511719 add (Lnet/minecraft/class_148;)V
 		ARG 1 recipeManager

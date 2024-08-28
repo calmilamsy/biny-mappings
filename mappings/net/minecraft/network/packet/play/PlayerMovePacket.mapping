@@ -1,12 +1,12 @@
-CLASS net/minecraft/class_184 net/minecraft/network/packet/play/PlayerMovePacket
-	FIELD field_636 x D
-	FIELD field_637 y D
-	FIELD field_638 z D
-	FIELD field_639 eyeHeight D
-	FIELD field_640 yaw F
-	FIELD field_641 pitch F
-	FIELD field_642 onGround Z
-	FIELD field_643 changePosition Z
-	FIELD field_644 changeLook Z
+CLASS net/minecraft/unmapped/C_8837730 net/minecraft/network/packet/play/PlayerMovePacket
+	FIELD f_9050789 x D
+	FIELD f_9264577 y D
+	FIELD f_9101465 z D
+	FIELD f_3672987 eyeHeight D
+	FIELD f_9058329 yaw F
+	FIELD f_3796521 pitch F
+	FIELD f_5588516 onGround Z
+	FIELD f_7075376 changePosition Z
+	FIELD f_1797803 changeLook Z
 	METHOD <init> (Z)V
 		ARG 1 onGround

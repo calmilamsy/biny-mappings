@@ -1,2 +1,2 @@
-CLASS net/minecraft/class_496 net/minecraft/client/render/entity/model/MinecartEntityModel
+CLASS net/minecraft/unmapped/C_4839087 net/minecraft/client/render/entity/model/MinecartEntityModel
 	FIELD field_2020 parts [Lnet/minecraft/class_163;

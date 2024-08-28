@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_170 net/minecraft/network/packet/c2s/play/UpdateSelectedSlotC2SPacket
-	FIELD field_592 selectedSlot I
+CLASS net/minecraft/unmapped/C_1613050 net/minecraft/network/packet/c2s/play/UpdateSelectedSlotC2SPacket
+	FIELD f_6843471 selectedSlot I
 	METHOD <init> (I)V
 		ARG 1 selectedSlot

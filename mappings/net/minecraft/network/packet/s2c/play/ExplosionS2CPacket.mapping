@@ -1,9 +1,9 @@
-CLASS net/minecraft/class_382 net/minecraft/network/packet/s2c/play/ExplosionS2CPacket
-	FIELD field_1432 x D
-	FIELD field_1433 y D
-	FIELD field_1434 z D
-	FIELD field_1435 radius F
-	FIELD field_1436 affectedBlocks Ljava/util/Set;
+CLASS net/minecraft/unmapped/C_7389876 net/minecraft/network/packet/s2c/play/ExplosionS2CPacket
+	FIELD f_1500074 x D
+	FIELD f_7773404 y D
+	FIELD f_1009294 z D
+	FIELD f_9410898 radius F
+	FIELD f_3354226 affectedBlocks Ljava/util/Set;
 	METHOD <init> (DDDFLjava/util/Set;)V
 		ARG 1 x
 		ARG 3 y

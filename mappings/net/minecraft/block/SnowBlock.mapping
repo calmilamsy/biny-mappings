@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_606 net/minecraft/block/SnowBlock
+CLASS net/minecraft/unmapped/C_6295037 net/minecraft/block/SnowBlock
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId

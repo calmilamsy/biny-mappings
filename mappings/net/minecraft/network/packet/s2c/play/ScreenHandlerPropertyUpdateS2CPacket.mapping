@@ -1,7 +1,7 @@
-CLASS net/minecraft/class_292 net/minecraft/network/packet/s2c/play/ScreenHandlerPropertyUpdateS2CPacket
-	FIELD field_1149 syncId I
-	FIELD field_1150 propertyId I
-	FIELD field_1151 value I
+CLASS net/minecraft/unmapped/C_0990852 net/minecraft/network/packet/s2c/play/ScreenHandlerPropertyUpdateS2CPacket
+	FIELD f_5783324 syncId I
+	FIELD f_3235295 propertyId I
+	FIELD f_9750040 value I
 	METHOD <init> (III)V
 		ARG 1 syncId
 		ARG 2 propertyId

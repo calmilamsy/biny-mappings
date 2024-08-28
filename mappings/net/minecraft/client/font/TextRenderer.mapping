@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_34 net/minecraft/client/font/TextRenderer
+CLASS net/minecraft/unmapped/C_4766485 net/minecraft/client/font/TextRenderer
 	METHOD method_1901 getWidth (Ljava/lang/String;)I
 		ARG 1 text
 	METHOD method_1903 drawWithShadow (Ljava/lang/String;III)V

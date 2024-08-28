@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_571 net/minecraft/client/render/entity/model/SpiderEntityModel
+CLASS net/minecraft/unmapped/C_8947510 net/minecraft/client/render/entity/model/SpiderEntityModel
 	FIELD field_2448 head Lnet/minecraft/class_163;
 	FIELD field_2449 body0 Lnet/minecraft/class_163;
 	FIELD field_2450 body1 Lnet/minecraft/class_163;

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_579 net/minecraft/client/render/entity/EntityRenderer
+CLASS net/minecraft/unmapped/C_9302567 net/minecraft/client/render/entity/EntityRenderer
 	FIELD field_2676 model Lnet/minecraft/class_173;
 	FIELD field_2677 dispatcher Lnet/minecraft/class_578;
 	FIELD field_2678 shadowRadius F

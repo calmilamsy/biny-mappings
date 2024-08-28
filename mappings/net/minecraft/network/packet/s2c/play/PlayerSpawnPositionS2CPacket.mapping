@@ -1,7 +1,7 @@
-CLASS net/minecraft/class_373 net/minecraft/network/packet/s2c/play/PlayerSpawnPositionS2CPacket
-	FIELD field_1417 x I
-	FIELD field_1418 y I
-	FIELD field_1419 z I
+CLASS net/minecraft/unmapped/C_5315820 net/minecraft/network/packet/s2c/play/PlayerSpawnPositionS2CPacket
+	FIELD f_0000859 x I
+	FIELD f_0344812 y I
+	FIELD f_4362081 z I
 	METHOD <init> (III)V
 		ARG 1 x
 		ARG 2 y

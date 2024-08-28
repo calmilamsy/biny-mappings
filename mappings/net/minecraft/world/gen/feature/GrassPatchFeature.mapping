@@ -1,6 +1,6 @@
-CLASS net/minecraft/class_623 net/minecraft/world/gen/feature/GrassPatchFeature
-	FIELD field_2693 tallGrassBlockId I
-	FIELD field_2694 tallGrassBlockMeta I
+CLASS net/minecraft/unmapped/C_6791672 net/minecraft/world/gen/feature/GrassPatchFeature
+	FIELD f_4678774 tallGrassBlockId I
+	FIELD f_1114560 tallGrassBlockMeta I
 	METHOD <init> (II)V
 		ARG 1 tallGrassBlockId
 		ARG 2 tallGrassBlockMeta

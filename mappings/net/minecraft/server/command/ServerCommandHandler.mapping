@@ -1,19 +1,19 @@
-CLASS net/minecraft/class_426 net/minecraft/server/command/ServerCommandHandler
-	FIELD field_1686 logger Ljava/util/logging/Logger;
-	FIELD field_1687 server Lnet/minecraft/server/MinecraftServer;
+CLASS net/minecraft/unmapped/C_6015078 net/minecraft/server/command/ServerCommandHandler
+	FIELD f_0495650 logger Ljava/util/logging/Logger;
+	FIELD f_0419001 server Lnet/minecraft/server/MinecraftServer;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 server
-	METHOD method_1411 executeCommand (Lnet/minecraft/class_38;)V
+	METHOD m_2940712 executeCommand (Lnet/minecraft/class_38;)V
 		ARG 1 command
-	METHOD method_1412 parseInt (Ljava/lang/String;I)I
+	METHOD m_5855929 parseInt (Ljava/lang/String;I)I
 		ARG 1 string
 		ARG 2 fallback
-	METHOD method_1413 logCommand (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD m_3838308 logCommand (Ljava/lang/String;Ljava/lang/String;)V
 		ARG 1 commandUser
 		ARG 2 message
-	METHOD method_1414 executeWhitelist (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_39;)V
+	METHOD m_2414756 executeWhitelist (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_39;)V
 		ARG 1 commandUser
 		ARG 2 message
 		ARG 3 output
-	METHOD method_1415 displayHelp (Lnet/minecraft/class_39;)V
+	METHOD m_0756731 displayHelp (Lnet/minecraft/class_39;)V
 		ARG 1 output

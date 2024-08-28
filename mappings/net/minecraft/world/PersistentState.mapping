@@ -1,13 +1,13 @@
-CLASS net/minecraft/class_58 net/minecraft/world/PersistentState
-	FIELD field_574 id Ljava/lang/String;
-	FIELD field_575 dirty Z
+CLASS net/minecraft/unmapped/C_2678057 net/minecraft/world/PersistentState
+	FIELD f_0510873 id Ljava/lang/String;
+	FIELD f_0384748 dirty Z
 	METHOD <init> (Ljava/lang/String;)V
 		ARG 1 id
-	METHOD method_544 markDirty ()V
-	METHOD method_545 readNbt (Lnet/minecraft/class_8;)V
+	METHOD m_9926525 markDirty ()V
+	METHOD m_4638650 readNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
-	METHOD method_546 setDirty (Z)V
+	METHOD m_2296233 setDirty (Z)V
 		ARG 1 dirty
-	METHOD method_547 isDirty ()Z
-	METHOD method_548 writeNbt (Lnet/minecraft/class_8;)V
+	METHOD m_2891911 isDirty ()Z
+	METHOD m_1489858 writeNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_504 net/minecraft/client/InteractionManager
+CLASS net/minecraft/unmapped/C_4237166 net/minecraft/client/InteractionManager
 	FIELD field_2104 minecraft Lnet/minecraft/client/Minecraft;
 	FIELD field_2105 noTick Z
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V

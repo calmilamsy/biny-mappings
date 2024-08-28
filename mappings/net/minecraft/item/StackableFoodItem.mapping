@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_355 net/minecraft/item/StackableFoodItem
+CLASS net/minecraft/unmapped/C_4567170 net/minecraft/item/StackableFoodItem
 	METHOD <init> (IIZI)V
 		ARG 1 id
 		ARG 2 healthRestored

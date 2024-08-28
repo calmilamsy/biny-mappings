@@ -1,16 +1,16 @@
-CLASS net/minecraft/class_372 net/minecraft/entity/projectile/FireballEntity
-	FIELD field_2192 shake I
-	FIELD field_2193 owner Lnet/minecraft/class_127;
-	FIELD field_2194 powerX D
-	FIELD field_2195 powerY D
-	FIELD field_2196 powerZ D
-	FIELD field_2197 blockX I
-	FIELD field_2198 blockY I
-	FIELD field_2199 blockZ I
-	FIELD field_2200 blockId I
-	FIELD field_2201 inGround Z
-	FIELD field_2202 removalTimer I
-	FIELD field_2203 inAirTime I
+CLASS net/minecraft/unmapped/C_9746149 net/minecraft/entity/projectile/FireballEntity
+	FIELD f_3569898 shake I
+	FIELD f_1876924 owner Lnet/minecraft/class_127;
+	FIELD f_0208208 powerX D
+	FIELD f_9351519 powerY D
+	FIELD f_0841978 powerZ D
+	FIELD f_5261890 blockX I
+	FIELD f_8683119 blockY I
+	FIELD f_9025604 blockZ I
+	FIELD f_0779124 blockId I
+	FIELD f_7939323 inGround Z
+	FIELD f_0962297 removalTimer I
+	FIELD f_5534530 inAirTime I
 	METHOD <init> (Lnet/minecraft/class_18;DDDDDD)V
 		ARG 1 world
 		ARG 2 x

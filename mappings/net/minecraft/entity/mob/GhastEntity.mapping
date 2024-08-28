@@ -1,14 +1,14 @@
-CLASS net/minecraft/class_364 net/minecraft/entity/mob/GhastEntity
-	FIELD field_1376 floatDuration I
+CLASS net/minecraft/unmapped/C_2984832 net/minecraft/entity/mob/GhastEntity
+	FIELD f_6172306 floatDuration I
 		COMMENT Time before the Ghast will pick a new target location to float to
-	FIELD field_1377 targetX D
-	FIELD field_1378 targetY D
-	FIELD field_1379 targetZ D
-	FIELD field_1380 lastChargeTime I
-	FIELD field_1381 chargeTime I
-	FIELD field_1382 target Lnet/minecraft/class_57;
-	FIELD field_1383 angerCooldown I
-	METHOD method_1190 canReach (DDDD)Z
+	FIELD f_3368863 targetX D
+	FIELD f_1530599 targetY D
+	FIELD f_6127400 targetZ D
+	FIELD f_5498320 lastChargeTime I
+	FIELD f_2663354 chargeTime I
+	FIELD f_4129132 target Lnet/minecraft/class_57;
+	FIELD f_5618038 angerCooldown I
+	METHOD m_5848632 canReach (DDDD)Z
 		COMMENT @return Returns true if the entity can reach destination without collision
 		ARG 1 x
 		ARG 3 y

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_33 net/minecraft/client/gui/widget/ButtonWidget
+CLASS net/minecraft/unmapped/C_2621421 net/minecraft/client/gui/widget/ButtonWidget
 	FIELD field_1368 width I
 	FIELD field_1369 height I
 	FIELD field_1370 x I

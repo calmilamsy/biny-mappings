@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_564 net/minecraft/client/util/ScreenScaler
+CLASS net/minecraft/unmapped/C_2293006 net/minecraft/client/util/ScreenScaler
 	FIELD field_2389 rawScaledWidth D
 		COMMENT scaledWidth before rounding to whole numbers
 	FIELD field_2390 rawScaledHeight D

@@ -1,5 +1,5 @@
-CLASS net/minecraft/class_381 net/minecraft/item/MinecartItem
-	FIELD field_1431 type I
+CLASS net/minecraft/unmapped/C_0121370 net/minecraft/item/MinecartItem
+	FIELD f_0882396 type I
 		COMMENT Determines the type of the minecart
 		COMMENT 0 : Normal
 		COMMENT 1 : Chest

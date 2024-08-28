@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_584 net/minecraft/client/gui/DrawContext
+CLASS net/minecraft/unmapped/C_0043270 net/minecraft/client/gui/DrawContext
 	FIELD field_2522 zOffset F
 	METHOD method_1931 drawHorizontalLine (IIII)V
 		ARG 1 x1

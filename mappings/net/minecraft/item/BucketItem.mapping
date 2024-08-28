@@ -1,5 +1,5 @@
-CLASS net/minecraft/class_220 net/minecraft/item/BucketItem
-	FIELD field_842 fluidBlockId I
+CLASS net/minecraft/unmapped/C_0267988 net/minecraft/item/BucketItem
+	FIELD f_9019516 fluidBlockId I
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 fluidBlockId

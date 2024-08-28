@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_615 net/minecraft/client/gui/screen/ingame/SignEditScreen
+CLASS net/minecraft/unmapped/C_9315908 net/minecraft/client/gui/screen/ingame/SignEditScreen
 	FIELD field_2655 title Ljava/lang/String;
 	FIELD field_2656 sign Lnet/minecraft/class_140;
 	FIELD field_2657 ticksSinceOpened I

@@ -1,2 +1,2 @@
-CLASS net/minecraft/class_146 net/minecraft/entity/mob/MonsterEntity
-	FIELD field_547 attackDamage I
+CLASS net/minecraft/unmapped/C_4718187 net/minecraft/entity/mob/MonsterEntity
+	FIELD f_2338118 attackDamage I

@@ -1,8 +1,8 @@
-CLASS net/minecraft/class_313 net/minecraft/entity/passive/ChickenEntity
-	FIELD field_2159 unused Z
-	FIELD field_2160 flapProgress F
-	FIELD field_2161 maxWingDeviation F
-	FIELD field_2162 prevMaxWingDeviation F
-	FIELD field_2163 prevFlapProgress F
-	FIELD field_2164 flapSpeed F
-	FIELD field_2165 eggLayTime I
+CLASS net/minecraft/unmapped/C_2426381 net/minecraft/entity/passive/ChickenEntity
+	FIELD f_3610051 unused Z
+	FIELD f_4961533 flapProgress F
+	FIELD f_3179847 maxWingDeviation F
+	FIELD f_2689643 prevMaxWingDeviation F
+	FIELD f_1515647 prevFlapProgress F
+	FIELD f_5318520 flapSpeed F
+	FIELD f_4999110 eggLayTime I

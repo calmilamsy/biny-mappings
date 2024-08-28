@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_462 net/minecraft/nbt/NbtShort
-	FIELD field_1770 value S
+CLASS net/minecraft/unmapped/C_4826976 net/minecraft/nbt/NbtShort
+	FIELD f_1148728 value S
 	METHOD <init> (S)V
 		ARG 1 value

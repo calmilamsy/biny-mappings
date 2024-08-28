@@ -1,21 +1,21 @@
-CLASS net/minecraft/class_14 net/minecraft/world/BlockView
-	METHOD method_1776 getBlockId (III)I
+CLASS net/minecraft/unmapped/C_2627205 net/minecraft/world/BlockView
+	METHOD m_9052708 getBlockId (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_1777 getBlockEntity (III)Lnet/minecraft/class_55;
+	METHOD m_0209603 getBlockEntity (III)Lnet/minecraft/class_55;
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_1778 getBlockMeta (III)I
+	METHOD m_8183909 getBlockMeta (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_1779 getMaterial (III)Lnet/minecraft/class_15;
+	METHOD m_7904701 getMaterial (III)Lnet/minecraft/class_15;
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_1780 shouldSuffocate (III)Z
+	METHOD m_3624759 shouldSuffocate (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

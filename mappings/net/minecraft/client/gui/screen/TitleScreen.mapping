@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_197 net/minecraft/client/gui/screen/TitleScreen
+CLASS net/minecraft/unmapped/C_0309511 net/minecraft/client/gui/screen/TitleScreen
 	FIELD field_716 RANDOM Ljava/util/Random;
 	FIELD field_717 ticks F
 	FIELD field_718 splashText Ljava/lang/String;

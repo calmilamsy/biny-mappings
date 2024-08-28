@@ -1,6 +1,6 @@
-CLASS net/minecraft/class_308 net/minecraft/network/packet/s2c/play/EntityVehicleSetS2CPacket
-	FIELD field_1193 id I
-	FIELD field_1194 vehicleId I
+CLASS net/minecraft/unmapped/C_8321936 net/minecraft/network/packet/s2c/play/EntityVehicleSetS2CPacket
+	FIELD f_2782606 id I
+	FIELD f_6278313 vehicleId I
 	METHOD <init> (Lnet/minecraft/class_57;Lnet/minecraft/class_57;)V
 		ARG 1 entity
 		ARG 2 vehicle

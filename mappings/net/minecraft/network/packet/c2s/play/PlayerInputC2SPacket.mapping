@@ -1,13 +1,13 @@
-CLASS net/minecraft/class_357 net/minecraft/network/packet/c2s/play/PlayerInputC2SPacket
-	FIELD field_1330 forward F
-	FIELD field_1331 sideways F
-	FIELD field_1332 jumping Z
-	FIELD field_1333 sneaking Z
-	FIELD field_1334 pitch F
-	FIELD field_1335 yaw F
-	METHOD method_1174 getForward ()F
-	METHOD method_1175 getPitch ()F
-	METHOD method_1176 getSideways ()F
-	METHOD method_1177 getYaw ()F
-	METHOD method_1178 isJumping ()Z
-	METHOD method_1179 isSneaking ()Z
+CLASS net/minecraft/unmapped/C_8338563 net/minecraft/network/packet/c2s/play/PlayerInputC2SPacket
+	FIELD f_5816359 forward F
+	FIELD f_9091710 sideways F
+	FIELD f_2997580 jumping Z
+	FIELD f_8167722 sneaking Z
+	FIELD f_2441004 pitch F
+	FIELD f_2454450 yaw F
+	METHOD m_8122368 getForward ()F
+	METHOD m_9504974 getPitch ()F
+	METHOD m_3435232 getSideways ()F
+	METHOD m_4697145 getYaw ()F
+	METHOD m_4213360 isJumping ()Z
+	METHOD m_5797863 isSneaking ()Z

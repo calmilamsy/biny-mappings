@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_47 net/minecraft/client/render/entity/ProjectileEntityRenderer
+CLASS net/minecraft/unmapped/C_5506499 net/minecraft/client/render/entity/ProjectileEntityRenderer
 	FIELD field_177 itemTextureId I
 	METHOD <init> (I)V
 		ARG 1 itemTextureId

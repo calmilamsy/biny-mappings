@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_290 net/minecraft/client/model/Vertex
+CLASS net/minecraft/unmapped/C_9856888 net/minecraft/client/model/Vertex
 	FIELD field_1146 pos Lnet/minecraft/class_26;
 	FIELD field_1147 u F
 	FIELD field_1148 v F

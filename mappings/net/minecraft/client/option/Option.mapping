@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_271 net/minecraft/client/option/Option
+CLASS net/minecraft/unmapped/C_0457152 net/minecraft/client/option/Option
 	FIELD field_1097 MUSIC Lnet/minecraft/class_271;
 	FIELD field_1098 SOUND Lnet/minecraft/class_271;
 	FIELD field_1099 INVERT_MOUSE Lnet/minecraft/class_271;

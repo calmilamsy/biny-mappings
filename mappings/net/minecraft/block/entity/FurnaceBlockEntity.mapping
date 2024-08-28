@@ -1,13 +1,13 @@
-CLASS net/minecraft/class_138 net/minecraft/block/entity/FurnaceBlockEntity
-	FIELD field_1566 burnTime I
-	FIELD field_1567 fuelTime I
-	FIELD field_1568 cookTime I
-	FIELD field_1569 inventory [Lnet/minecraft/class_31;
-	METHOD method_1280 getFuelTime (Lnet/minecraft/class_31;)I
+CLASS net/minecraft/unmapped/C_1196485 net/minecraft/block/entity/FurnaceBlockEntity
+	FIELD f_0938009 burnTime I
+	FIELD f_9569100 fuelTime I
+	FIELD f_4876613 cookTime I
+	FIELD f_6183045 inventory [Lnet/minecraft/class_31;
+	METHOD m_4423171 getFuelTime (Lnet/minecraft/class_31;)I
 		ARG 1 itemStack
-	METHOD method_1281 isBurning ()Z
-	METHOD method_1282 craftRecipe ()V
-	METHOD method_1283 canAcceptRecipeOutput ()Z
+	METHOD m_6813347 isBurning ()Z
+	METHOD m_5125947 craftRecipe ()V
+	METHOD m_2777642 canAcceptRecipeOutput ()Z
 	METHOD method_1284 getCookTimeDelta (I)I
 		ARG 1 multiplier
 	METHOD method_1285 getFuelTimeDelta (I)I

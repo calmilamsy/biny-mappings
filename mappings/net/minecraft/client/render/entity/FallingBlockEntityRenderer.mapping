@@ -1,2 +1,2 @@
-CLASS net/minecraft/class_230 net/minecraft/client/render/entity/FallingBlockEntityRenderer
+CLASS net/minecraft/unmapped/C_3906881 net/minecraft/client/render/entity/FallingBlockEntityRenderer
 	FIELD field_857 blockRenderManager Lnet/minecraft/class_13;

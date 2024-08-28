@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_40 net/minecraft/entity/player/ClientPlayerEntity
+CLASS net/minecraft/unmapped/C_5367636 net/minecraft/entity/player/ClientPlayerEntity
 	FIELD field_162 minecraft Lnet/minecraft/client/Minecraft;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/class_18;Lnet/minecraft/class_237;I)V
 		ARG 1 minecraft

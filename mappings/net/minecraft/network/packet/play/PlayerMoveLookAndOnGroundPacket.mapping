@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_489 net/minecraft/network/packet/play/PlayerMoveLookAndOnGroundPacket
+CLASS net/minecraft/unmapped/C_7170474 net/minecraft/network/packet/play/PlayerMoveLookAndOnGroundPacket
 	METHOD <init> (FFZ)V
 		ARG 1 yaw
 		ARG 2 pitch

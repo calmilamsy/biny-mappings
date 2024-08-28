@@ -1,10 +1,10 @@
-CLASS net/minecraft/class_196 net/minecraft/screen/CraftingScreenHandler
-	FIELD field_708 input Lnet/minecraft/class_159;
-	FIELD field_709 result Lnet/minecraft/class_134;
-	FIELD field_710 world Lnet/minecraft/class_18;
-	FIELD field_711 x I
-	FIELD field_712 y I
-	FIELD field_713 z I
+CLASS net/minecraft/unmapped/C_0873063 net/minecraft/screen/CraftingScreenHandler
+	FIELD f_8748895 input Lnet/minecraft/class_159;
+	FIELD f_5994796 result Lnet/minecraft/class_134;
+	FIELD f_6819332 world Lnet/minecraft/class_18;
+	FIELD f_5328027 x I
+	FIELD f_1919702 y I
+	FIELD f_3164208 z I
 	METHOD <init> (Lnet/minecraft/class_136;Lnet/minecraft/class_18;III)V
 		ARG 1 playerInventory
 		ARG 2 world

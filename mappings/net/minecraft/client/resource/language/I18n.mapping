@@ -1,7 +1,7 @@
-CLASS net/minecraft/class_629 net/minecraft/client/resource/language/I18n
-	FIELD field_2705 translations Lnet/minecraft/class_300;
-	METHOD method_2049 getTranslation (Ljava/lang/String;)Ljava/lang/String;
+CLASS net/minecraft/unmapped/C_5956135 net/minecraft/client/resource/language/I18n
+	FIELD f_7786510 translations Lnet/minecraft/class_300;
+	METHOD m_5720234 getTranslation (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 name
-	METHOD method_2050 getTranslation (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+	METHOD m_7170418 getTranslation (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 		ARG 0 name
 		ARG 1 args

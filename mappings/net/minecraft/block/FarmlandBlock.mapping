@@ -1,12 +1,12 @@
-CLASS net/minecraft/class_492 net/minecraft/block/FarmlandBlock
+CLASS net/minecraft/unmapped/C_8986452 net/minecraft/block/FarmlandBlock
 	METHOD <init> (I)V
 		ARG 1 id
-	METHOD method_1672 hasCrop (Lnet/minecraft/class_18;III)Z
+	METHOD m_2451971 hasCrop (Lnet/minecraft/class_18;III)Z
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1673 isWaterNearby (Lnet/minecraft/class_18;III)Z
+	METHOD m_5571018 isWaterNearby (Lnet/minecraft/class_18;III)Z
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

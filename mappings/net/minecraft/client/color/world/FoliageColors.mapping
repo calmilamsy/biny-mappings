@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_334 net/minecraft/client/color/world/FoliageColors
+CLASS net/minecraft/unmapped/C_2695821 net/minecraft/client/color/world/FoliageColors
 	FIELD field_1243 colorMap [I
 	METHOD method_1079 getSpruceColor ()I
 	METHOD method_1080 getColor (DD)I

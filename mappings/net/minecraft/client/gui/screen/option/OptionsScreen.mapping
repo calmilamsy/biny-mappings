@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_635 net/minecraft/client/gui/screen/option/OptionsScreen
+CLASS net/minecraft/unmapped/C_3777975 net/minecraft/client/gui/screen/option/OptionsScreen
 	FIELD field_2761 title Ljava/lang/String;
 	FIELD field_2762 parent Lnet/minecraft/class_32;
 	FIELD field_2763 options Lnet/minecraft/class_322;

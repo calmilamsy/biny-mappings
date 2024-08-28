@@ -1,2 +1,2 @@
-CLASS net/minecraft/class_507 net/minecraft/inventory/CraftingResultInventory
-	FIELD field_2112 stacks [Lnet/minecraft/class_31;
+CLASS net/minecraft/unmapped/C_6095546 net/minecraft/inventory/CraftingResultInventory
+	FIELD f_8023306 stacks [Lnet/minecraft/class_31;

@@ -1,15 +1,15 @@
-CLASS net/minecraft/class_396 net/minecraft/block/RedstoneOreBlock
-	FIELD field_1527 lit Z
+CLASS net/minecraft/unmapped/C_3040973 net/minecraft/block/RedstoneOreBlock
+	FIELD f_2298911 lit Z
 	METHOD <init> (IIZ)V
 		ARG 1 id
 		ARG 2 textureId
 		ARG 3 lit
-	METHOD method_1252 light (Lnet/minecraft/class_18;III)V
+	METHOD m_9666283 light (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1253 spawnParticles (Lnet/minecraft/class_18;III)V
+	METHOD m_6596724 spawnParticles (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

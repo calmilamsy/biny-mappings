@@ -1,5 +1,5 @@
-CLASS net/minecraft/class_380 net/minecraft/item/SeedsItem
-	FIELD field_1430 cropBlockId I
+CLASS net/minecraft/unmapped/C_0878570 net/minecraft/item/SeedsItem
+	FIELD f_1421800 cropBlockId I
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 cropBlockId

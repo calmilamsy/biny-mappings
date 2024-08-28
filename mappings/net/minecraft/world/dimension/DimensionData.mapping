@@ -1,6 +1,6 @@
-CLASS net/minecraft/class_52 net/minecraft/world/dimension/DimensionData
-	METHOD method_1733 save (Lnet/minecraft/class_7;Ljava/util/List;)V
-	METHOD method_1734 (Lnet/minecraft/class_50;)Lnet/minecraft/class_243;
+CLASS net/minecraft/unmapped/C_9147018 net/minecraft/world/dimension/DimensionData
+	METHOD m_5729738 save (Lnet/minecraft/class_7;Ljava/util/List;)V
+	METHOD m_7189836 (Lnet/minecraft/class_50;)Lnet/minecraft/class_243;
 		ARG 1 dimension
-	METHOD method_1735 save ()V
-	METHOD method_1737 properties ()Lnet/minecraft/class_7;
+	METHOD m_5366092 save ()V
+	METHOD m_7690166 properties ()Lnet/minecraft/class_7;

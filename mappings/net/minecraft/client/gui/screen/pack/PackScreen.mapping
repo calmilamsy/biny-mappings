@@ -1,5 +1,5 @@
-CLASS net/minecraft/class_194 net/minecraft/client/gui/screen/pack/PackScreen
+CLASS net/minecraft/unmapped/C_4784123 net/minecraft/client/gui/screen/pack/PackScreen
 	FIELD field_703 parent Lnet/minecraft/class_32;
 	METHOD <init> (Lnet/minecraft/class_32;)V
 		ARG 1 parent
-	CLASS class_195 PackListWidget
+CLASS net/minecraft/unmapped/C_1067325 net/minecraft/client/gui/screen/pack/PackScreen

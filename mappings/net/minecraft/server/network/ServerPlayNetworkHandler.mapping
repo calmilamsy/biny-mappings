@@ -1,14 +1,14 @@
-CLASS net/minecraft/class_11 net/minecraft/server/network/ServerPlayNetworkHandler
-	FIELD field_916 logger Ljava/util/logging/Logger;
-	FIELD field_917 connection Lnet/minecraft/class_117;
-	FIELD field_919 server Lnet/minecraft/server/MinecraftServer;
-	FIELD field_920 player Lnet/minecraft/class_69;
+CLASS net/minecraft/unmapped/C_8752044 net/minecraft/server/network/ServerPlayNetworkHandler
+	FIELD f_2099216 logger Ljava/util/logging/Logger;
+	FIELD f_7027179 connection Lnet/minecraft/class_117;
+	FIELD f_6079856 server Lnet/minecraft/server/MinecraftServer;
+	FIELD f_6944263 player Lnet/minecraft/class_69;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_117;Lnet/minecraft/class_69;)V
 		ARG 1 server
 		ARG 2 connection
 		ARG 3 player
-	METHOD method_833 disconnect (Ljava/lang/String;)V
+	METHOD m_2623405 disconnect (Ljava/lang/String;)V
 		ARG 1 reason
-	METHOD method_835 sendPacket (Lnet/minecraft/class_169;)V
-	METHOD method_836 handleCommand (Ljava/lang/String;)V
+	METHOD m_9468564 sendPacket (Lnet/minecraft/class_169;)V
+	METHOD m_7082885 handleCommand (Ljava/lang/String;)V
 		ARG 1 message

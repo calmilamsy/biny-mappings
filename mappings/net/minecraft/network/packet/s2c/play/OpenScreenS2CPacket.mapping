@@ -1,8 +1,8 @@
-CLASS net/minecraft/class_201 net/minecraft/network/packet/s2c/play/OpenScreenS2CPacket
-	FIELD field_741 syncId I
-	FIELD field_742 screenHandlerId I
-	FIELD field_743 name Ljava/lang/String;
-	FIELD field_744 size I
+CLASS net/minecraft/unmapped/C_7207746 net/minecraft/network/packet/s2c/play/OpenScreenS2CPacket
+	FIELD f_3190559 syncId I
+	FIELD f_4159206 screenHandlerId I
+	FIELD f_4804152 name Ljava/lang/String;
+	FIELD f_1617531 size I
 	METHOD <init> (IILjava/lang/String;I)V
 		ARG 1 syncId
 		ARG 2 screenHandlerId

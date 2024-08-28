@@ -1,13 +1,13 @@
-CLASS net/minecraft/class_113 net/minecraft/entity/vehicle/BoatEntity
-	FIELD field_338 damageWobbleStrength I
-	FIELD field_339 damageWobbleTicks I
-	FIELD field_340 damageWobbleSide I
-	FIELD field_341 clientInterpolationSteps I
-	FIELD field_342 clientX D
-	FIELD field_343 clientY D
-	FIELD field_344 clientZ D
-	FIELD field_345 clientPitch D
-	FIELD field_346 clientYaw D
+CLASS net/minecraft/unmapped/C_9958683 net/minecraft/entity/vehicle/BoatEntity
+	FIELD f_3318676 damageWobbleStrength I
+	FIELD f_4105400 damageWobbleTicks I
+	FIELD f_6372840 damageWobbleSide I
+	FIELD f_7786009 clientInterpolationSteps I
+	FIELD f_4059206 clientX D
+	FIELD f_8511095 clientY D
+	FIELD f_3148583 clientZ D
+	FIELD f_7638169 clientPitch D
+	FIELD f_6219779 clientYaw D
 	FIELD field_347 clientVelocityX D
 	FIELD field_348 clientVelocityY D
 	FIELD field_349 clientVelocityZ D

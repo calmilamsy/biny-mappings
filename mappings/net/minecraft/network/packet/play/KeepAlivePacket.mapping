@@ -1,1 +1,1 @@
-CLASS net/minecraft/class_268 net/minecraft/network/packet/play/KeepAlivePacket
+CLASS net/minecraft/unmapped/C_4522670 net/minecraft/network/packet/play/KeepAlivePacket

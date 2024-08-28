@@ -1,13 +1,13 @@
-CLASS net/minecraft/class_88 net/minecraft/block/JukeboxBlock
+CLASS net/minecraft/unmapped/C_1851525 net/minecraft/block/JukeboxBlock
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId
-	METHOD method_348 tryEjectRecord (Lnet/minecraft/class_18;III)V
+	METHOD m_2061530 tryEjectRecord (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_349 insertRecord (Lnet/minecraft/class_18;IIII)V
+	METHOD m_2394048 insertRecord (Lnet/minecraft/class_18;IIII)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

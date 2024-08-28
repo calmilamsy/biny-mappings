@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_588 net/minecraft/client/gui/hud/InGameHud
+CLASS net/minecraft/unmapped/C_3699792 net/minecraft/client/gui/hud/InGameHud
 	FIELD field_2543 vignetteDarkness F
 	FIELD field_2545 messages Ljava/util/List;
 	FIELD field_2546 random Ljava/util/Random;

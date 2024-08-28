@@ -1,20 +1,20 @@
-CLASS net/minecraft/class_549 net/minecraft/entity/vehicle/MinecartEntity
-	FIELD field_2272 damageWobbleStrength I
-	FIELD field_2273 damageWobbleTicks I
-	FIELD field_2274 damageWobbleSide I
-	FIELD field_2275 type I
-	FIELD field_2276 fuel I
-	FIELD field_2277 pushX D
-	FIELD field_2278 pushZ D
-	FIELD field_2279 inventory [Lnet/minecraft/class_31;
-	FIELD field_2280 yawFlipped Z
-	FIELD field_2281 ADJACENT_RAIL_POSITIONS_BY_SHAPE [[[I
-	FIELD field_2282 clientInterpolationSteps I
-	FIELD field_2283 clientX D
-	FIELD field_2284 clientY D
-	FIELD field_2285 clientZ D
-	FIELD field_2286 clientPitch D
-	FIELD field_2287 clientYaw D
+CLASS net/minecraft/unmapped/C_7256819 net/minecraft/entity/vehicle/MinecartEntity
+	FIELD f_7374961 damageWobbleStrength I
+	FIELD f_0909332 damageWobbleTicks I
+	FIELD f_4325208 damageWobbleSide I
+	FIELD f_9398433 type I
+	FIELD f_4613326 fuel I
+	FIELD f_6857484 pushX D
+	FIELD f_2130559 pushZ D
+	FIELD f_3409902 inventory [Lnet/minecraft/class_31;
+	FIELD f_1713085 yawFlipped Z
+	FIELD f_9538999 ADJACENT_RAIL_POSITIONS_BY_SHAPE [[[I
+	FIELD f_3954520 clientInterpolationSteps I
+	FIELD f_4751392 clientX D
+	FIELD f_3243069 clientY D
+	FIELD f_8513357 clientZ D
+	FIELD f_8117971 clientPitch D
+	FIELD f_7089388 clientYaw D
 	FIELD field_2288 clientVelocityX D
 	FIELD field_2289 clientVelocityY D
 	FIELD field_2290 clientVelocityZ D
@@ -24,7 +24,7 @@ CLASS net/minecraft/class_549 net/minecraft/entity/vehicle/MinecartEntity
 		ARG 4 y
 		ARG 6 z
 		ARG 8 type
-	METHOD method_1813 snapPositionToRail (DDD)Lnet/minecraft/class_26;
+	METHOD m_8801659 snapPositionToRail (DDD)Lnet/minecraft/class_26;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z

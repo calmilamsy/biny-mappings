@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_304 net/minecraft/client/render/entity/model/CreeperEntityModel
+CLASS net/minecraft/unmapped/C_1090332 net/minecraft/client/render/entity/model/CreeperEntityModel
 	FIELD field_1182 head Lnet/minecraft/class_163;
 	FIELD field_1184 body Lnet/minecraft/class_163;
 	FIELD field_1185 rightHindLeg Lnet/minecraft/class_163;

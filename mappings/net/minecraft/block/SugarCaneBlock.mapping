@@ -1,8 +1,8 @@
-CLASS net/minecraft/class_376 net/minecraft/block/SugarCaneBlock
+CLASS net/minecraft/unmapped/C_6391166 net/minecraft/block/SugarCaneBlock
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId
-	METHOD method_1208 breakIfCannotGrow (Lnet/minecraft/class_18;III)V
+	METHOD m_1246951 breakIfCannotGrow (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

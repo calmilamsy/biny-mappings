@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_64 net/minecraft/network/packet/play/PlayerMovePositionAndOnGroundPacket
+CLASS net/minecraft/unmapped/C_4004004 net/minecraft/network/packet/play/PlayerMovePositionAndOnGroundPacket
 	METHOD <init> (DDDDZ)V
 		ARG 1 x
 		ARG 3 y

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_66 net/minecraft/client/render/chunk/ChunkBuilder
+CLASS net/minecraft/unmapped/C_5283200 net/minecraft/client/render/chunk/ChunkBuilder
 	FIELD field_224 blockEntities Ljava/util/List;
 	FIELD field_225 baseRenderList I
 	FIELD field_226 tessellator Lnet/minecraft/class_67;

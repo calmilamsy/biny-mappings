@@ -1,6 +1,6 @@
-CLASS net/minecraft/class_226 net/minecraft/entity/FallingBlockEntity
-	FIELD field_847 blockId I
-	FIELD field_848 timeFalling I
+CLASS net/minecraft/unmapped/C_7221329 net/minecraft/entity/FallingBlockEntity
+	FIELD f_2774789 blockId I
+	FIELD f_3768277 timeFalling I
 	METHOD <init> (Lnet/minecraft/class_18;DDDI)V
 		ARG 1 world
 		ARG 2 x

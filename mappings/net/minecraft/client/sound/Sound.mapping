@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_267 net/minecraft/client/sound/Sound
+CLASS net/minecraft/unmapped/C_0488196 net/minecraft/client/sound/Sound
 	FIELD field_2126 id Ljava/lang/String;
 	FIELD field_2127 soundFile Ljava/net/URL;
 	METHOD <init> (Ljava/lang/String;Ljava/net/URL;)V

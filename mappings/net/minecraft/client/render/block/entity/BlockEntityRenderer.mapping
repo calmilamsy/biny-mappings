@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_330 net/minecraft/client/render/block/entity/BlockEntityRenderer
+CLASS net/minecraft/unmapped/C_3831356 net/minecraft/client/render/block/entity/BlockEntityRenderer
 	FIELD field_1235 dispatcher Lnet/minecraft/class_331;
 	METHOD method_1062 setWorld (Lnet/minecraft/class_18;)V
 		ARG 1 world

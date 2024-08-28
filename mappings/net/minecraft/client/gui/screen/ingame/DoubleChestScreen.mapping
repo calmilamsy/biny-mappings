@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_264 net/minecraft/client/gui/screen/ingame/DoubleChestScreen
+CLASS net/minecraft/unmapped/C_5752680 net/minecraft/client/gui/screen/ingame/DoubleChestScreen
 	FIELD field_1063 playerInventory Lnet/minecraft/class_134;
 	FIELD field_1064 inventory Lnet/minecraft/class_134;
 	FIELD field_1065 rows I

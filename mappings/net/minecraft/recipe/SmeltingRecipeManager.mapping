@@ -1,10 +1,10 @@
-CLASS net/minecraft/class_44 net/minecraft/recipe/SmeltingRecipeManager
-	FIELD field_170 INSTANCE Lnet/minecraft/class_44;
-	FIELD field_171 recipes Ljava/util/Map;
-	METHOD method_144 getInstance ()Lnet/minecraft/class_44;
-	METHOD method_145 craft (I)Lnet/minecraft/class_31;
+CLASS net/minecraft/unmapped/C_8447387 net/minecraft/recipe/SmeltingRecipeManager
+	FIELD f_2554769 INSTANCE Lnet/minecraft/class_44;
+	FIELD f_0657304 recipes Ljava/util/Map;
+	METHOD m_4125855 getInstance ()Lnet/minecraft/class_44;
+	METHOD m_2615337 craft (I)Lnet/minecraft/class_31;
 		ARG 1 inputId
-	METHOD method_146 addRecipe (ILnet/minecraft/class_31;)V
+	METHOD m_7256119 addRecipe (ILnet/minecraft/class_31;)V
 		ARG 1 inputId
 		ARG 2 output
-	METHOD method_147 getRecipes ()Ljava/util/Map;
+	METHOD m_5367658 getRecipes ()Ljava/util/Map;

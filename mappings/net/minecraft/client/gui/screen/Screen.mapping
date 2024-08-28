@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_32 net/minecraft/client/gui/screen/Screen
+CLASS net/minecraft/unmapped/C_0786431 net/minecraft/client/gui/screen/Screen
 	FIELD field_150 selectedButton Lnet/minecraft/class_33;
 	FIELD field_151 minecraft Lnet/minecraft/client/Minecraft;
 	FIELD field_152 width I

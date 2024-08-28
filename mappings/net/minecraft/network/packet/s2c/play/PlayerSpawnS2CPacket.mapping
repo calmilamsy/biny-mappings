@@ -1,11 +1,11 @@
-CLASS net/minecraft/class_272 net/minecraft/network/packet/s2c/play/PlayerSpawnS2CPacket
-	FIELD field_1114 id I
-	FIELD field_1115 name Ljava/lang/String;
-	FIELD field_1116 x I
-	FIELD field_1117 y I
-	FIELD field_1118 z I
-	FIELD field_1119 yaw B
-	FIELD field_1120 pitch B
-	FIELD field_1121 itemRawId I
+CLASS net/minecraft/unmapped/C_5314135 net/minecraft/network/packet/s2c/play/PlayerSpawnS2CPacket
+	FIELD f_5804039 id I
+	FIELD f_3884486 name Ljava/lang/String;
+	FIELD f_3707592 x I
+	FIELD f_5012922 y I
+	FIELD f_2567078 z I
+	FIELD f_2075811 yaw B
+	FIELD f_7689065 pitch B
+	FIELD f_9427202 itemRawId I
 	METHOD <init> (Lnet/minecraft/class_54;)V
 		ARG 1 player

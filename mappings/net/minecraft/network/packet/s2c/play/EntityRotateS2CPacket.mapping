@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_402 net/minecraft/network/packet/s2c/play/EntityRotateS2CPacket
+CLASS net/minecraft/unmapped/C_4858115 net/minecraft/network/packet/s2c/play/EntityRotateS2CPacket
 	METHOD <init> (IBB)V
 		ARG 1 entityId
 		ARG 2 yaw

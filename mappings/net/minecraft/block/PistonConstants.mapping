@@ -1,5 +1,5 @@
-CLASS net/minecraft/class_505 net/minecraft/block/PistonConstants
-	FIELD field_2106 TEXTURE_SIDES [I
-	FIELD field_2107 HEAD_OFFSET_X [I
-	FIELD field_2108 HEAD_OFFSET_Y [I
-	FIELD field_2109 HEAD_OFFSET_Z [I
+CLASS net/minecraft/unmapped/C_9476077 net/minecraft/block/PistonConstants
+	FIELD f_2094170 TEXTURE_SIDES [I
+	FIELD f_2254348 HEAD_OFFSET_X [I
+	FIELD f_0794843 HEAD_OFFSET_Y [I
+	FIELD f_6159839 HEAD_OFFSET_Z [I

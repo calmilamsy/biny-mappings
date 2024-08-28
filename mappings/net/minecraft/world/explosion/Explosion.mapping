@@ -1,12 +1,12 @@
-CLASS net/minecraft/class_60 net/minecraft/world/explosion/Explosion
-	FIELD field_1391 fire Z
-	FIELD field_1392 x D
-	FIELD field_1393 y D
-	FIELD field_1394 z D
-	FIELD field_1395 source Lnet/minecraft/class_57;
-	FIELD field_1396 power F
-	FIELD field_1398 random Ljava/util/Random;
-	FIELD field_1399 world Lnet/minecraft/class_18;
+CLASS net/minecraft/unmapped/C_3632207 net/minecraft/world/explosion/Explosion
+	FIELD f_7936240 fire Z
+	FIELD f_4557509 x D
+	FIELD f_6754452 y D
+	FIELD f_3784812 z D
+	FIELD f_6174389 source Lnet/minecraft/class_57;
+	FIELD f_2733835 power F
+	FIELD f_4346293 random Ljava/util/Random;
+	FIELD f_6800006 world Lnet/minecraft/class_18;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_57;DDDF)V
 		ARG 1 world
 		ARG 2 source
@@ -14,6 +14,6 @@ CLASS net/minecraft/class_60 net/minecraft/world/explosion/Explosion
 		ARG 5 y
 		ARG 7 z
 		ARG 9 power
-	METHOD method_1195 explode ()V
-	METHOD method_1196 playExplosionSound (Z)V
+	METHOD m_2400494 explode ()V
+	METHOD m_6729974 playExplosionSound (Z)V
 		ARG 1 addParticles

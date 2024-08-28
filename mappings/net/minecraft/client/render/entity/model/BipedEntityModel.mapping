@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_87 net/minecraft/client/render/entity/model/BipedEntityModel
+CLASS net/minecraft/unmapped/C_4590573 net/minecraft/client/render/entity/model/BipedEntityModel
 	FIELD field_619 head Lnet/minecraft/class_163;
 	FIELD field_620 hat Lnet/minecraft/class_163;
 	FIELD field_621 body Lnet/minecraft/class_163;

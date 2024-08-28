@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_520 net/minecraft/client/SingleplayerInteractionManager
+CLASS net/minecraft/unmapped/C_3271339 net/minecraft/client/SingleplayerInteractionManager
 	FIELD field_2181 breakingPosX I
 	FIELD field_2182 breakingPosY I
 	FIELD field_2183 breakingPosZ I

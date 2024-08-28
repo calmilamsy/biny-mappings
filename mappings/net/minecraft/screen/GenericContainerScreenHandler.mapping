@@ -1,6 +1,6 @@
-CLASS net/minecraft/class_506 net/minecraft/screen/GenericContainerScreenHandler
-	FIELD field_2110 inventory Lnet/minecraft/class_134;
-	FIELD field_2111 rows I
+CLASS net/minecraft/unmapped/C_2314868 net/minecraft/screen/GenericContainerScreenHandler
+	FIELD f_6309132 inventory Lnet/minecraft/class_134;
+	FIELD f_0152257 rows I
 	METHOD <init> (Lnet/minecraft/class_134;Lnet/minecraft/class_134;)V
 		ARG 1 playerInventory
 		ARG 2 inventory

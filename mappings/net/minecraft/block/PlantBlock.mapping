@@ -1,10 +1,10 @@
-CLASS net/minecraft/class_473 net/minecraft/block/PlantBlock
+CLASS net/minecraft/unmapped/C_1124552 net/minecraft/block/PlantBlock
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId
-	METHOD method_1683 canPlantOnTop (I)Z
+	METHOD m_9338725 canPlantOnTop (I)Z
 		ARG 1 id
-	METHOD method_1684 breakIfCannotGrow (Lnet/minecraft/class_18;III)V
+	METHOD m_0533259 breakIfCannotGrow (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

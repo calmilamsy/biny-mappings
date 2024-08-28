@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_28 net/minecraft/client/resource/ResourceDownloadThread
+CLASS net/minecraft/unmapped/C_0139979 net/minecraft/client/resource/ResourceDownloadThread
 	FIELD field_137 resourcesDirectory Ljava/io/File;
 	FIELD field_138 minecraft Lnet/minecraft/client/Minecraft;
 	FIELD field_139 cancelled Z

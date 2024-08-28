@@ -1,9 +1,9 @@
-CLASS net/minecraft/class_85 net/minecraft/network/packet/s2c/play/WorldEventS2CPacket
-	FIELD field_289 eventId I
-	FIELD field_290 data I
-	FIELD field_291 x I
-	FIELD field_292 y I
-	FIELD field_293 z I
+CLASS net/minecraft/unmapped/C_9055414 net/minecraft/network/packet/s2c/play/WorldEventS2CPacket
+	FIELD f_5851963 eventId I
+	FIELD f_7065189 data I
+	FIELD f_0117026 x I
+	FIELD f_3240227 y I
+	FIELD f_4293827 z I
 	METHOD <init> (IIIII)V
 		ARG 1 eventId
 		ARG 2 x

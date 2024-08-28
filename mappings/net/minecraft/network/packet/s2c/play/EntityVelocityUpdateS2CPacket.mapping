@@ -1,8 +1,8 @@
-CLASS net/minecraft/class_119 net/minecraft/network/packet/s2c/play/EntityVelocityUpdateS2CPacket
-	FIELD field_364 id I
-	FIELD field_365 velocityX I
-	FIELD field_366 velocityY I
-	FIELD field_367 velocityZ I
+CLASS net/minecraft/unmapped/C_9155522 net/minecraft/network/packet/s2c/play/EntityVelocityUpdateS2CPacket
+	FIELD f_6680708 id I
+	FIELD f_2713693 velocityX I
+	FIELD f_9775242 velocityY I
+	FIELD f_8907190 velocityZ I
 	METHOD <init> (IDDD)V
 		ARG 1 id
 		ARG 2 velocityX

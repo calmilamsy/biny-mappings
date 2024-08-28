@@ -1,7 +1,7 @@
-CLASS net/minecraft/class_411 net/minecraft/entity/LightningEntity
-	FIELD field_2687 seed J
-	FIELD field_2688 ambientTick I
-	FIELD field_2689 remainingActions I
+CLASS net/minecraft/unmapped/C_1992549 net/minecraft/entity/LightningEntity
+	FIELD f_9204538 seed J
+	FIELD f_5303682 ambientTick I
+	FIELD f_9691372 remainingActions I
 	METHOD <init> (Lnet/minecraft/class_18;DDD)V
 		ARG 1 world
 		ARG 2 x

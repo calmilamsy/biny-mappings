@@ -1,12 +1,12 @@
-CLASS net/minecraft/class_6 net/minecraft/network/packet/s2c/play/ChunkDataS2CPacket
-	FIELD field_10 sizeZ I
-	FIELD field_11 chunkData [B
-	FIELD field_12 chunkDataSize I
-	FIELD field_5 x I
-	FIELD field_6 y I
-	FIELD field_7 z I
-	FIELD field_8 sizeX I
-	FIELD field_9 sizeY I
+CLASS net/minecraft/unmapped/C_1111347 net/minecraft/network/packet/s2c/play/ChunkDataS2CPacket
+	FIELD f_5179910 sizeZ I
+	FIELD f_7758712 chunkData [B
+	FIELD f_3848686 chunkDataSize I
+	FIELD f_2800214 x I
+	FIELD f_5206650 y I
+	FIELD f_1261934 z I
+	FIELD f_4305062 sizeX I
+	FIELD f_8610533 sizeY I
 	METHOD <init> (IIIIIILnet/minecraft/class_18;)V
 		ARG 1 x
 		ARG 2 y

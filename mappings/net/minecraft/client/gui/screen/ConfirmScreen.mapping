@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_565 net/minecraft/client/gui/screen/ConfirmScreen
+CLASS net/minecraft/unmapped/C_5441464 net/minecraft/client/gui/screen/ConfirmScreen
 	FIELD field_2394 parent Lnet/minecraft/class_32;
 	FIELD field_2395 message1 Ljava/lang/String;
 	FIELD field_2396 message2 Ljava/lang/String;

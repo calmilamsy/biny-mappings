@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_76 net/minecraft/client/texture/TextureManager
+CLASS net/minecraft/unmapped/C_3385278 net/minecraft/client/texture/TextureManager
 	FIELD field_1246 textures Ljava/util/HashMap;
 	FIELD field_1248 images Ljava/util/HashMap;
 	FIELD field_1252 downloadedImages Ljava/util/Map;

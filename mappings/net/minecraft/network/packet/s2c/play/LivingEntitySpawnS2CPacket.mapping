@@ -1,13 +1,13 @@
-CLASS net/minecraft/class_215 net/minecraft/network/packet/s2c/play/LivingEntitySpawnS2CPacket
-	FIELD field_797 pitch B
-	FIELD field_798 dataTracker Lnet/minecraft/class_216;
-	FIELD field_799 trackedValues Ljava/util/List;
-	FIELD field_800 id I
-	FIELD field_801 entityType B
-	FIELD field_802 x I
-	FIELD field_803 y I
-	FIELD field_804 z I
-	FIELD field_805 yaw B
+CLASS net/minecraft/unmapped/C_8754653 net/minecraft/network/packet/s2c/play/LivingEntitySpawnS2CPacket
+	FIELD f_8264641 pitch B
+	FIELD f_2939300 dataTracker Lnet/minecraft/class_216;
+	FIELD f_7324534 trackedValues Ljava/util/List;
+	FIELD f_6009052 id I
+	FIELD f_7658854 entityType B
+	FIELD f_8602505 x I
+	FIELD f_2009838 y I
+	FIELD f_3832379 z I
+	FIELD f_2609396 yaw B
 	METHOD <init> (Lnet/minecraft/class_127;)V
 		ARG 1 livingEntity
 	METHOD method_747 getTrackedValues ()Ljava/util/List;

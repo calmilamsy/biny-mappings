@@ -1,60 +1,60 @@
-CLASS net/minecraft/class_8 net/minecraft/nbt/NbtCompound
-	FIELD field_1199 entries Ljava/util/Map;
-	METHOD method_1012 putByte (Ljava/lang/String;B)V
+CLASS net/minecraft/unmapped/C_2800860 net/minecraft/nbt/NbtCompound
+	FIELD f_8388935 entries Ljava/util/Map;
+	METHOD m_9761426 putByte (Ljava/lang/String;B)V
 		ARG 1 key
 		ARG 2 value
-	METHOD method_1013 putDouble (Ljava/lang/String;D)V
+	METHOD m_8572706 putDouble (Ljava/lang/String;D)V
 		ARG 1 key
 		ARG 2 value
-	METHOD method_1014 putFloat (Ljava/lang/String;F)V
+	METHOD m_8330045 putFloat (Ljava/lang/String;F)V
 		ARG 1 key
 		ARG 2 value
-	METHOD method_1015 putInt (Ljava/lang/String;I)V
+	METHOD m_5823787 putInt (Ljava/lang/String;I)V
 		ARG 1 key
 		ARG 2 value
-	METHOD method_1016 putLong (Ljava/lang/String;J)V
+	METHOD m_4328391 putLong (Ljava/lang/String;J)V
 		ARG 1 key
 		ARG 2 value
-	METHOD method_1017 put (Ljava/lang/String;Lnet/minecraft/class_187;)V
+	METHOD m_5613155 put (Ljava/lang/String;Lnet/minecraft/class_187;)V
 		ARG 1 key
 		ARG 2 value
-	METHOD method_1018 put (Ljava/lang/String;Lnet/minecraft/class_8;)V
+	METHOD m_0473535 put (Ljava/lang/String;Lnet/minecraft/class_8;)V
 		ARG 1 key
 		ARG 2 value
-	METHOD method_1019 putString (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD m_9620099 putString (Ljava/lang/String;Ljava/lang/String;)V
 		ARG 1 key
 		ARG 2 value
-	METHOD method_1020 putShort (Ljava/lang/String;S)V
+	METHOD m_9248208 putShort (Ljava/lang/String;S)V
 		ARG 1 key
 		ARG 2 value
-	METHOD method_1021 putBoolean (Ljava/lang/String;Z)V
+	METHOD m_0629925 putBoolean (Ljava/lang/String;Z)V
 		ARG 1 key
 		ARG 2 value
-	METHOD method_1022 putByteArray (Ljava/lang/String;[B)V
+	METHOD m_2943525 putByteArray (Ljava/lang/String;[B)V
 		ARG 1 key
 		ARG 2 value
-	METHOD method_1023 contains (Ljava/lang/String;)Z
+	METHOD m_0712415 contains (Ljava/lang/String;)Z
 		ARG 1 key
-	METHOD method_1024 values ()Ljava/util/Collection;
-	METHOD method_1025 getByte (Ljava/lang/String;)B
+	METHOD m_1358802 values ()Ljava/util/Collection;
+	METHOD m_3779221 getByte (Ljava/lang/String;)B
 		ARG 1 key
-	METHOD method_1026 getShort (Ljava/lang/String;)S
+	METHOD m_4775098 getShort (Ljava/lang/String;)S
 		ARG 1 key
-	METHOD method_1027 getInt (Ljava/lang/String;)I
+	METHOD m_3454648 getInt (Ljava/lang/String;)I
 		ARG 1 key
-	METHOD method_1028 getLong (Ljava/lang/String;)J
+	METHOD m_2460861 getLong (Ljava/lang/String;)J
 		ARG 1 key
-	METHOD method_1029 getFloat (Ljava/lang/String;)F
+	METHOD m_6863029 getFloat (Ljava/lang/String;)F
 		ARG 1 key
-	METHOD method_1030 getDouble (Ljava/lang/String;)D
+	METHOD m_3116414 getDouble (Ljava/lang/String;)D
 		ARG 1 key
-	METHOD method_1031 getString (Ljava/lang/String;)Ljava/lang/String;
+	METHOD m_6507390 getString (Ljava/lang/String;)Ljava/lang/String;
 		ARG 1 key
-	METHOD method_1032 getByteArray (Ljava/lang/String;)[B
+	METHOD m_7055550 getByteArray (Ljava/lang/String;)[B
 		ARG 1 key
-	METHOD method_1033 getCompound (Ljava/lang/String;)Lnet/minecraft/class_8;
+	METHOD m_9758710 getCompound (Ljava/lang/String;)Lnet/minecraft/class_8;
 		ARG 1 key
-	METHOD method_1034 getList (Ljava/lang/String;)Lnet/minecraft/class_202;
+	METHOD m_0955051 getList (Ljava/lang/String;)Lnet/minecraft/class_202;
 		ARG 1 key
-	METHOD method_1035 getBoolean (Ljava/lang/String;)Z
+	METHOD m_3284014 getBoolean (Ljava/lang/String;)Z
 		ARG 1 key

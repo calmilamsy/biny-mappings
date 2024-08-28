@@ -1,11 +1,11 @@
-CLASS net/minecraft/class_27 net/minecraft/util/hit/HitResult
-	FIELD field_1983 type Lnet/minecraft/class_212;
-	FIELD field_1984 blockX I
-	FIELD field_1985 blockY I
-	FIELD field_1986 blockZ I
-	FIELD field_1987 side I
-	FIELD field_1988 pos Lnet/minecraft/class_26;
-	FIELD field_1989 entity Lnet/minecraft/class_57;
+CLASS net/minecraft/unmapped/C_5853518 net/minecraft/util/hit/HitResult
+	FIELD f_6529375 type Lnet/minecraft/class_212;
+	FIELD f_0070115 blockX I
+	FIELD f_6536619 blockY I
+	FIELD f_6309744 blockZ I
+	FIELD f_5340853 side I
+	FIELD f_3444455 pos Lnet/minecraft/class_26;
+	FIELD f_7133526 entity Lnet/minecraft/class_57;
 	METHOD <init> (IIIILnet/minecraft/class_26;)V
 		ARG 1 blockX
 		ARG 2 blockY

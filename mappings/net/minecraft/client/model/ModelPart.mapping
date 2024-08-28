@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_163 net/minecraft/client/model/ModelPart
+CLASS net/minecraft/unmapped/C_0289174 net/minecraft/client/model/ModelPart
 	FIELD field_2292 pivotX F
 	FIELD field_2293 pivotY F
 	FIELD field_2294 pivotZ F

@@ -1,10 +1,10 @@
-CLASS net/minecraft/class_104 net/minecraft/block/entity/MobSpawnerBlockEntity
-	FIELD field_2681 spawnDelay I
-	FIELD field_2682 rotation D
-	FIELD field_2683 lastRotation D
-	FIELD field_2684 spawnedEntityId Ljava/lang/String;
-	METHOD method_2034 isPlayerInRange ()Z
-	METHOD method_2035 setSpawnedEntityId (Ljava/lang/String;)V
+CLASS net/minecraft/unmapped/C_6108840 net/minecraft/block/entity/MobSpawnerBlockEntity
+	FIELD f_0012020 spawnDelay I
+	FIELD f_3914055 rotation D
+	FIELD f_9967056 lastRotation D
+	FIELD f_6675972 spawnedEntityId Ljava/lang/String;
+	METHOD m_4501027 isPlayerInRange ()Z
+	METHOD m_5028143 setSpawnedEntityId (Ljava/lang/String;)V
 		ARG 1 spawnedEntityId
-	METHOD method_2036 resetDelay ()V
+	METHOD m_6124646 resetDelay ()V
 	METHOD method_2037 getSpawnedEntityId ()Ljava/lang/String;

@@ -1,2 +1,2 @@
-CLASS net/minecraft/class_603 net/minecraft/client/gui/screen/OutOfMemoryScreen
+CLASS net/minecraft/unmapped/C_8934374 net/minecraft/client/gui/screen/OutOfMemoryScreen
 	FIELD field_2603 ticksRan I

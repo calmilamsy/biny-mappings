@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_486 net/minecraft/client/gui/screen/option/VideoOptionsScreen
+CLASS net/minecraft/unmapped/C_0107205 net/minecraft/client/gui/screen/option/VideoOptionsScreen
 	FIELD field_2000 title Ljava/lang/String;
 	FIELD field_2001 parent Lnet/minecraft/class_32;
 	FIELD field_2002 options Lnet/minecraft/class_322;

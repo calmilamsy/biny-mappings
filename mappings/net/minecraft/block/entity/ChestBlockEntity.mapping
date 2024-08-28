@@ -1,2 +1,2 @@
-CLASS net/minecraft/class_225 net/minecraft/block/entity/ChestBlockEntity
-	FIELD field_846 inventory [Lnet/minecraft/class_31;
+CLASS net/minecraft/unmapped/C_1233611 net/minecraft/block/entity/ChestBlockEntity
+	FIELD f_4205669 inventory [Lnet/minecraft/class_31;

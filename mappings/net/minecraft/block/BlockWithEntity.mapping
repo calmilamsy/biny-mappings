@@ -1,2 +1,2 @@
-CLASS net/minecraft/class_395 net/minecraft/block/BlockWithEntity
-	METHOD method_1251 createBlockEntity ()Lnet/minecraft/class_55;
+CLASS net/minecraft/unmapped/C_6664676 net/minecraft/block/BlockWithEntity
+	METHOD m_0502820 createBlockEntity ()Lnet/minecraft/class_55;

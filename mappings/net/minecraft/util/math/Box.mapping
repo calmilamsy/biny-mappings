@@ -1,12 +1,12 @@
-CLASS net/minecraft/class_25 net/minecraft/util/math/Box
-	FIELD field_129 minX D
-	FIELD field_130 minY D
-	FIELD field_131 minZ D
-	FIELD field_132 maxX D
-	FIELD field_133 maxY D
-	FIELD field_134 maxZ D
-	FIELD field_135 cache Ljava/util/List;
-	FIELD field_136 cacheCount I
+CLASS net/minecraft/unmapped/C_1414550 net/minecraft/util/math/Box
+	FIELD f_9162863 minX D
+	FIELD f_2662376 minY D
+	FIELD f_8292781 minZ D
+	FIELD f_4861340 maxX D
+	FIELD f_8677721 maxY D
+	FIELD f_6972664 maxZ D
+	FIELD f_0724943 cache Ljava/util/List;
+	FIELD f_5073000 cacheCount I
 	METHOD <init> (DDDDDD)V
 		ARG 1 x1
 		ARG 3 y1
@@ -14,69 +14,69 @@ CLASS net/minecraft/class_25 net/minecraft/util/math/Box
 		ARG 7 x2
 		ARG 9 y2
 		ARG 11 z2
-	METHOD method_100 containsInXZPlane (Lnet/minecraft/class_26;)Z
+	METHOD m_6211599 containsInXZPlane (Lnet/minecraft/class_26;)Z
 		ARG 1 pos
-	METHOD method_101 getZOffset (Lnet/minecraft/class_25;D)D
+	METHOD m_4691507 getZOffset (Lnet/minecraft/class_25;D)D
 		ARG 1 box
 		ARG 2 z
-	METHOD method_102 translate (DDD)Lnet/minecraft/class_25;
+	METHOD m_6640618 translate (DDD)Lnet/minecraft/class_25;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD method_103 containsInXYPlane (Lnet/minecraft/class_26;)Z
+	METHOD m_5467595 containsInXYPlane (Lnet/minecraft/class_26;)Z
 		ARG 1 pos
-	METHOD method_104 contract (DDD)Lnet/minecraft/class_25;
+	METHOD m_7441731 contract (DDD)Lnet/minecraft/class_25;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 	METHOD method_105 clearCache ()V
 	METHOD method_106 getAverageSideLength ()D
-	METHOD method_85 resetCacheCount ()V
-	METHOD method_86 stretch (DDD)Lnet/minecraft/class_25;
+	METHOD m_6304238 resetCacheCount ()V
+	METHOD m_3310866 stretch (DDD)Lnet/minecraft/class_25;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD method_87 create (DDDDDD)Lnet/minecraft/class_25;
+	METHOD m_9603301 create (DDDDDD)Lnet/minecraft/class_25;
 		ARG 0 x1
 		ARG 2 y1
 		ARG 4 z1
 		ARG 6 x2
 		ARG 8 y2
 		ARG 10 z2
-	METHOD method_88 contains (Lnet/minecraft/class_26;)Z
+	METHOD m_2591538 contains (Lnet/minecraft/class_26;)Z
 		ARG 1 pos
-	METHOD method_89 raycast (Lnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
+	METHOD m_9111227 raycast (Lnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
 		ARG 1 min
 		ARG 2 max
-	METHOD method_90 intersects (Lnet/minecraft/class_25;)Z
+	METHOD m_7506025 intersects (Lnet/minecraft/class_25;)Z
 		ARG 1 box
-	METHOD method_91 getXOffset (Lnet/minecraft/class_25;D)D
+	METHOD m_1629908 getXOffset (Lnet/minecraft/class_25;D)D
 		ARG 1 box
 		ARG 2 x
-	METHOD method_92 copy ()Lnet/minecraft/class_25;
-	METHOD method_93 expand (DDD)Lnet/minecraft/class_25;
+	METHOD m_5238772 copy ()Lnet/minecraft/class_25;
+	METHOD m_6186501 expand (DDD)Lnet/minecraft/class_25;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD method_94 createCached (DDDDDD)Lnet/minecraft/class_25;
+	METHOD m_8516426 createCached (DDDDDD)Lnet/minecraft/class_25;
 		ARG 0 x1
 		ARG 2 y1
 		ARG 4 z1
 		ARG 6 x2
 		ARG 8 y2
 		ARG 10 z2
-	METHOD method_95 containsInYZPlane (Lnet/minecraft/class_26;)Z
+	METHOD m_8467880 containsInYZPlane (Lnet/minecraft/class_26;)Z
 		ARG 1 pos
-	METHOD method_96 clone (Lnet/minecraft/class_25;)V
+	METHOD m_9066646 clone (Lnet/minecraft/class_25;)V
 		ARG 1 other
-	METHOD method_97 getYOffset (Lnet/minecraft/class_25;D)D
+	METHOD m_3985442 getYOffset (Lnet/minecraft/class_25;D)D
 		ARG 1 box
 		ARG 2 y
-	METHOD method_98 offset (DDD)Lnet/minecraft/class_25;
+	METHOD m_9497799 offset (DDD)Lnet/minecraft/class_25;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD method_99 set (DDDDDD)Lnet/minecraft/class_25;
+	METHOD m_6322332 set (DDDDDD)Lnet/minecraft/class_25;
 		ARG 1 x1
 		ARG 3 y1
 		ARG 5 z1

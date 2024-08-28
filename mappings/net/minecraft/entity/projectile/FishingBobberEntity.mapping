@@ -1,21 +1,21 @@
-CLASS net/minecraft/class_135 net/minecraft/entity/projectile/FishingBobberEntity
-	FIELD field_1066 shake I
-	FIELD field_1067 owner Lnet/minecraft/class_54;
-	FIELD field_1068 hookedEntity Lnet/minecraft/class_57;
-	FIELD field_1069 blockX I
-	FIELD field_1070 blockY I
-	FIELD field_1071 blockZ I
-	FIELD field_1072 blockId I
-	FIELD field_1073 inGround Z
-	FIELD field_1074 removalTimer I
-	FIELD field_1075 inAirTime I
-	FIELD field_1076 hookCountdown I
-	FIELD field_1077 clientInterpolationSteps I
-	FIELD field_1078 clientX D
-	FIELD field_1079 clientY D
-	FIELD field_1080 clientZ D
-	FIELD field_1081 clientPitch D
-	FIELD field_1082 clientYaw D
+CLASS net/minecraft/unmapped/C_0820158 net/minecraft/entity/projectile/FishingBobberEntity
+	FIELD f_5571922 shake I
+	FIELD f_7387845 owner Lnet/minecraft/class_54;
+	FIELD f_5803629 hookedEntity Lnet/minecraft/class_57;
+	FIELD f_3221150 blockX I
+	FIELD f_0588981 blockY I
+	FIELD f_0755679 blockZ I
+	FIELD f_3268047 blockId I
+	FIELD f_0460142 inGround Z
+	FIELD f_4655045 removalTimer I
+	FIELD f_1510309 inAirTime I
+	FIELD f_5447474 hookCountdown I
+	FIELD f_9060912 clientInterpolationSteps I
+	FIELD f_1135637 clientX D
+	FIELD f_8713870 clientY D
+	FIELD f_5312736 clientZ D
+	FIELD f_2301503 clientPitch D
+	FIELD f_8063037 clientYaw D
 	FIELD field_1083 clientVelocityX D
 	FIELD field_1084 clientVelocityY D
 	FIELD field_1085 clientVelocityZ D
@@ -27,10 +27,10 @@ CLASS net/minecraft/class_135 net/minecraft/entity/projectile/FishingBobberEntit
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_54;)V
 		ARG 1 world
 		ARG 2 thrower
-	METHOD method_955 setVelocity (DDDFF)V
+	METHOD m_5213498 setVelocity (DDDFF)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 		ARG 7 speed
 		ARG 8 divergence
-	METHOD method_956 use ()I
+	METHOD m_2336811 use ()I

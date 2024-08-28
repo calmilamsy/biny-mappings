@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_266 net/minecraft/client/sound/SoundEntry
+CLASS net/minecraft/unmapped/C_4560329 net/minecraft/client/sound/SoundEntry
 	FIELD field_1086 loadedSoundCount I
 	FIELD field_1087 isRandom Z
 	FIELD field_1088 random Ljava/util/Random;

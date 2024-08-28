@@ -1,63 +1,63 @@
-CLASS net/minecraft/class_240 net/minecraft/network/NetworkHandler
-	METHOD method_1422 handleInteractEntity (Lnet/minecraft/class_1;)V
-	METHOD method_1423 onPlayerInteractBlock (Lnet/minecraft/class_145;)V
-	METHOD method_1424 onUpdateSelectedSlot (Lnet/minecraft/class_170;)V
-	METHOD method_1425 onPlayerMove (Lnet/minecraft/class_184;)V
-	METHOD method_1426 handlePlayerAction (Lnet/minecraft/class_228;)V
-	METHOD method_1427 onCloseScreen (Lnet/minecraft/class_276;)V
-	METHOD method_1428 onEntityAnimation (Lnet/minecraft/class_305;)V
-	METHOD method_1429 onScreenHandlerAcknowledgement (Lnet/minecraft/class_325;)V
+CLASS net/minecraft/unmapped/C_4443804 net/minecraft/network/NetworkHandler
+	METHOD m_9704705 handleInteractEntity (Lnet/minecraft/class_1;)V
+	METHOD m_9630448 onPlayerInteractBlock (Lnet/minecraft/class_145;)V
+	METHOD m_2007899 onUpdateSelectedSlot (Lnet/minecraft/class_170;)V
+	METHOD m_5976093 onPlayerMove (Lnet/minecraft/class_184;)V
+	METHOD m_9586297 handlePlayerAction (Lnet/minecraft/class_228;)V
+	METHOD m_0055249 onCloseScreen (Lnet/minecraft/class_276;)V
+	METHOD m_8028679 onEntityAnimation (Lnet/minecraft/class_305;)V
+	METHOD m_2705851 onScreenHandlerAcknowledgement (Lnet/minecraft/class_325;)V
 		ARG 1 packet
-	METHOD method_1430 onPlayerRespawn (Lnet/minecraft/class_335;)V
-	METHOD method_1431 onChatMessage (Lnet/minecraft/class_340;)V
-	METHOD method_1432 onPlayerInput (Lnet/minecraft/class_357;)V
-	METHOD method_1433 onClickSlot (Lnet/minecraft/class_363;)V
+	METHOD m_5512038 onPlayerRespawn (Lnet/minecraft/class_335;)V
+	METHOD m_4655710 onChatMessage (Lnet/minecraft/class_340;)V
+	METHOD m_8696746 onPlayerInput (Lnet/minecraft/class_357;)V
+	METHOD m_7886761 onClickSlot (Lnet/minecraft/class_363;)V
 		ARG 1 packet
-	METHOD method_1434 handleClientCommand (Lnet/minecraft/class_431;)V
-	METHOD method_1435 handleUpdateSign (Lnet/minecraft/class_432;)V
-	METHOD method_1436 onDisconnect (Lnet/minecraft/class_433;)V
-	METHOD method_1437 onGameStateChange (Lnet/minecraft/class_434;)V
-	METHOD method_1438 onItemPickupAnimation (Lnet/minecraft/class_435;)V
-	METHOD method_1439 handleChunkData (Lnet/minecraft/class_6;)V
+	METHOD m_5326655 handleClientCommand (Lnet/minecraft/class_431;)V
+	METHOD m_2257094 handleUpdateSign (Lnet/minecraft/class_432;)V
+	METHOD m_9447373 onDisconnect (Lnet/minecraft/class_433;)V
+	METHOD m_6088859 onGameStateChange (Lnet/minecraft/class_434;)V
+	METHOD m_6839457 onItemPickupAnimation (Lnet/minecraft/class_435;)V
+	METHOD m_6026836 handleChunkData (Lnet/minecraft/class_6;)V
 		ARG 1 packet
-	METHOD method_1440 onHealthUpdate (Lnet/minecraft/class_36;)V
-	METHOD method_1441 onLightningEntitySpawn (Lnet/minecraft/class_45;)V
-	METHOD method_1442 onWorldEvent (Lnet/minecraft/class_85;)V
-	METHOD method_1443 onEntityVelocityUpdate (Lnet/minecraft/class_119;)V
-	METHOD method_1444 onWorldTimeUpdate (Lnet/minecraft/class_156;)V
-	METHOD method_1445 onScreenHandlerSlotUpdate (Lnet/minecraft/class_171;)V
-	METHOD method_1446 onOpenScreen (Lnet/minecraft/class_201;)V
-	METHOD method_1447 onEntityStatus (Lnet/minecraft/class_210;)V
-	METHOD method_1448 onLivingEntitySpawn (Lnet/minecraft/class_215;)V
-	METHOD method_1449 onPlayerSleepUpdate (Lnet/minecraft/class_234;)V
-	METHOD method_1450 onInventory (Lnet/minecraft/class_236;)V
-	METHOD method_1451 onPlayerSpawn (Lnet/minecraft/class_272;)V
-	METHOD method_1452 onScreenHandlerPropertyUpdate (Lnet/minecraft/class_292;)V
+	METHOD m_3368680 onHealthUpdate (Lnet/minecraft/class_36;)V
+	METHOD m_9379911 onLightningEntitySpawn (Lnet/minecraft/class_45;)V
+	METHOD m_9919709 onWorldEvent (Lnet/minecraft/class_85;)V
+	METHOD m_7533607 onEntityVelocityUpdate (Lnet/minecraft/class_119;)V
+	METHOD m_2818796 onWorldTimeUpdate (Lnet/minecraft/class_156;)V
+	METHOD m_8132923 onScreenHandlerSlotUpdate (Lnet/minecraft/class_171;)V
+	METHOD m_3130911 onOpenScreen (Lnet/minecraft/class_201;)V
+	METHOD m_5537422 onEntityStatus (Lnet/minecraft/class_210;)V
+	METHOD m_6263595 onLivingEntitySpawn (Lnet/minecraft/class_215;)V
+	METHOD m_5525434 onPlayerSleepUpdate (Lnet/minecraft/class_234;)V
+	METHOD m_1665597 onInventory (Lnet/minecraft/class_236;)V
+	METHOD m_6827504 onPlayerSpawn (Lnet/minecraft/class_272;)V
+	METHOD m_4099261 onScreenHandlerPropertyUpdate (Lnet/minecraft/class_292;)V
 		ARG 1 packet
-	METHOD method_1453 onItemEntitySpawn (Lnet/minecraft/class_295;)V
-	METHOD method_1454 onEntityVehicleSet (Lnet/minecraft/class_308;)V
-	METHOD method_1456 onPlayerSpawnPosition (Lnet/minecraft/class_373;)V
-	METHOD method_1457 onEntityPosition (Lnet/minecraft/class_374;)V
-	METHOD method_1458 onExplosion (Lnet/minecraft/class_382;)V
-	METHOD method_1459 onEntityEquipmentUpdate (Lnet/minecraft/class_393;)V
-	METHOD method_1460 onEntityDestroy (Lnet/minecraft/class_394;)V
-	METHOD method_1461 onChunkStatusUpdate (Lnet/minecraft/class_403;)V
-	METHOD method_1462 onEntitySpawn (Lnet/minecraft/class_414;)V
-	METHOD method_1463 onBlockUpdate (Lnet/minecraft/class_436;)V
-	METHOD method_1464 onEntity (Lnet/minecraft/class_437;)V
-	METHOD method_1465 onEntityTrackerUpdate (Lnet/minecraft/class_438;)V
-	METHOD method_1466 onPaintingEntitySpawn (Lnet/minecraft/class_439;)V
+	METHOD m_6688635 onItemEntitySpawn (Lnet/minecraft/class_295;)V
+	METHOD m_9367334 onEntityVehicleSet (Lnet/minecraft/class_308;)V
+	METHOD m_0126626 onPlayerSpawnPosition (Lnet/minecraft/class_373;)V
+	METHOD m_6311187 onEntityPosition (Lnet/minecraft/class_374;)V
+	METHOD m_5032075 onExplosion (Lnet/minecraft/class_382;)V
+	METHOD m_4701596 onEntityEquipmentUpdate (Lnet/minecraft/class_393;)V
+	METHOD m_6600243 onEntityDestroy (Lnet/minecraft/class_394;)V
+	METHOD m_7931068 onChunkStatusUpdate (Lnet/minecraft/class_403;)V
+	METHOD m_5306311 onEntitySpawn (Lnet/minecraft/class_414;)V
+	METHOD m_0458296 onBlockUpdate (Lnet/minecraft/class_436;)V
+	METHOD m_3789068 onEntity (Lnet/minecraft/class_437;)V
+	METHOD m_3670506 onEntityTrackerUpdate (Lnet/minecraft/class_438;)V
+	METHOD m_5551286 onPaintingEntitySpawn (Lnet/minecraft/class_439;)V
 		ARG 1 packet
-	METHOD method_1467 onPlayNoteSound (Lnet/minecraft/class_440;)V
-	METHOD method_1468 onChunkDeltaUpdate (Lnet/minecraft/class_441;)V
-	METHOD method_1469 onMapUpdate (Lnet/minecraft/class_161;)V
-	METHOD method_1470 handle (Lnet/minecraft/class_169;)V
+	METHOD m_4966276 onPlayNoteSound (Lnet/minecraft/class_440;)V
+	METHOD m_7974174 onChunkDeltaUpdate (Lnet/minecraft/class_441;)V
+	METHOD m_4179569 onMapUpdate (Lnet/minecraft/class_161;)V
+	METHOD m_9070467 handle (Lnet/minecraft/class_169;)V
 		ARG 1 packet
-	METHOD method_1471 onHandshake (Lnet/minecraft/class_281;)V
+	METHOD m_4520484 onHandshake (Lnet/minecraft/class_281;)V
 		ARG 1 packet
-	METHOD method_1472 onHello (Lnet/minecraft/class_118;)V
+	METHOD m_1349212 onHello (Lnet/minecraft/class_118;)V
 		ARG 1 packet
-	METHOD method_1473 onDisconnected (Ljava/lang/String;[Ljava/lang/Object;)V
+	METHOD m_4990967 onDisconnected (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 1 reason
 		ARG 2 objects
-	METHOD method_1474 isServerSide ()Z
+	METHOD m_8611371 isServerSide ()Z

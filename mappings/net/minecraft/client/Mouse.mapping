@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_596 net/minecraft/client/Mouse
+CLASS net/minecraft/unmapped/C_9846877 net/minecraft/client/Mouse
 	FIELD field_2586 deltaX I
 	FIELD field_2587 deltaY I
 	FIELD field_2588 parent Ljava/awt/Component;

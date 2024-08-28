@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_97 net/minecraft/client/gui/widget/EntryListWidget
+CLASS net/minecraft/unmapped/C_4179150 net/minecraft/client/gui/widget/EntryListWidget
 	FIELD field_1528 minecraft Lnet/minecraft/client/Minecraft;
 	FIELD field_1529 width I
 	FIELD field_1530 height I

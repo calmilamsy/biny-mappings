@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_570 net/minecraft/client/texture/SkinImageProcessor
+CLASS net/minecraft/unmapped/C_1021050 net/minecraft/client/texture/SkinImageProcessor
 	FIELD field_2445 data [I
 	FIELD field_2446 width I
 	FIELD field_2447 height I

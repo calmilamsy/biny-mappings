@@ -1,15 +1,15 @@
-CLASS net/minecraft/class_193 net/minecraft/ShapedRecipe
-	FIELD field_698 outputId I
-	FIELD field_699 width I
-	FIELD field_700 height I
-	FIELD field_701 input [Lnet/minecraft/class_31;
-	FIELD field_702 output Lnet/minecraft/class_31;
+CLASS net/minecraft/unmapped/C_7213435 net/minecraft/ShapedRecipe
+	FIELD f_3431472 outputId I
+	FIELD f_6886100 width I
+	FIELD f_6833129 height I
+	FIELD f_5794450 input [Lnet/minecraft/class_31;
+	FIELD f_4221171 output Lnet/minecraft/class_31;
 	METHOD <init> (II[Lnet/minecraft/class_31;Lnet/minecraft/class_31;)V
 		ARG 1 width
 		ARG 2 height
 		ARG 3 input
 		ARG 4 output
-	METHOD method_652 matchesPattern (Lnet/minecraft/class_159;IIZ)Z
+	METHOD m_7169649 matchesPattern (Lnet/minecraft/class_159;IIZ)Z
 		ARG 1 inv
 		ARG 2 offsetX
 		ARG 3 offsetY

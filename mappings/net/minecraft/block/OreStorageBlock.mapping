@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_324 net/minecraft/block/OreStorageBlock
+CLASS net/minecraft/unmapped/C_3414480 net/minecraft/block/OreStorageBlock
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId

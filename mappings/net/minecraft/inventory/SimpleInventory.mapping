@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_275 net/minecraft/inventory/SimpleInventory
+CLASS net/minecraft/unmapped/C_2488469 net/minecraft/inventory/SimpleInventory
 	FIELD field_2385 name Ljava/lang/String;
 	FIELD field_2386 size I
 	FIELD field_2387 stacks [Lnet/minecraft/class_31;

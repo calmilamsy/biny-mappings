@@ -1,21 +1,21 @@
-CLASS net/minecraft/class_189 net/minecraft/util/math/MathHelper
-	FIELD field_664 SINE_TABLE [F
-	METHOD method_642 sqrt (D)F
+CLASS net/minecraft/unmapped/C_7185906 net/minecraft/util/math/MathHelper
+	FIELD f_1103932 SINE_TABLE [F
+	METHOD m_9916755 sqrt (D)F
 		ARG 0 value
-	METHOD method_643 absMax (DD)D
+	METHOD m_3234629 absMax (DD)D
 		ARG 0 a
 		ARG 2 b
-	METHOD method_644 sin (F)F
+	METHOD m_1654586 sin (F)F
 		ARG 0 value
-	METHOD method_645 floor (D)I
+	METHOD m_8269116 floor (D)I
 		ARG 0 value
-	METHOD method_646 cos (F)F
+	METHOD m_7301336 cos (F)F
 		ARG 0 value
-	METHOD method_647 sqrt (F)F
+	METHOD m_0270358 sqrt (F)F
 		ARG 0 value
-	METHOD method_648 floor (F)I
+	METHOD m_3758157 floor (F)I
 		ARG 0 value
-	METHOD method_649 abs (F)F
+	METHOD m_0143976 abs (F)F
 		ARG 0 value
 	METHOD method_650 floorDiv (II)I
 		ARG 0 dividend

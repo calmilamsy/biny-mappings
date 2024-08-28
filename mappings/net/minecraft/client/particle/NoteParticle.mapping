@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_20 net/minecraft/client/particle/NoteParticle
+CLASS net/minecraft/unmapped/C_1461754 net/minecraft/client/particle/NoteParticle
 	FIELD field_106 startScale F
 	METHOD <init> (Lnet/minecraft/class_18;DDDDDDF)V
 		ARG 1 world

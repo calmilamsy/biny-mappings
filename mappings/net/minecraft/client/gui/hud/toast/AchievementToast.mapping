@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_594 net/minecraft/client/gui/hud/toast/AchievementToast
+CLASS net/minecraft/unmapped/C_8599705 net/minecraft/client/gui/hud/toast/AchievementToast
 	FIELD field_2571 client Lnet/minecraft/client/Minecraft;
 	FIELD field_2574 title Ljava/lang/String;
 	FIELD field_2575 description Ljava/lang/String;

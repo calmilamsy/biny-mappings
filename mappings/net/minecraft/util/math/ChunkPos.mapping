@@ -1,11 +1,11 @@
-CLASS net/minecraft/class_515 net/minecraft/util/math/ChunkPos
-	FIELD field_2378 x I
-	FIELD field_2379 z I
+CLASS net/minecraft/unmapped/C_9386942 net/minecraft/util/math/ChunkPos
+	FIELD f_4417974 x I
+	FIELD f_1086643 z I
 	METHOD <init> (II)V
 		ARG 1 x
 		ARG 2 z
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
-	METHOD method_1854 hashCode (II)I
+	METHOD m_3278400 hashCode (II)I
 		ARG 0 x
 		ARG 1 z

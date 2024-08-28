@@ -1,10 +1,10 @@
-CLASS net/minecraft/class_24 net/minecraft/achievement/Achievement
-	FIELD field_1202 column I
-	FIELD field_1203 row I
-	FIELD field_1204 parent Lnet/minecraft/class_24;
-	FIELD field_1205 icon Lnet/minecraft/class_31;
-	FIELD field_1206 translationKey Ljava/lang/String;
-	FIELD field_1207 isChallenge Z
+CLASS net/minecraft/unmapped/C_7281219 net/minecraft/achievement/Achievement
+	FIELD f_1395049 column I
+	FIELD f_3458783 row I
+	FIELD f_3055604 parent Lnet/minecraft/class_24;
+	FIELD f_5998011 icon Lnet/minecraft/class_31;
+	FIELD f_5833725 translationKey Ljava/lang/String;
+	FIELD f_1102336 isChallenge Z
 	FIELD field_1208 translationHelper Lnet/minecraft/class_241;
 	METHOD <init> (ILjava/lang/String;IILnet/minecraft/class_124;Lnet/minecraft/class_24;)V
 		ARG 1 id
@@ -27,7 +27,7 @@ CLASS net/minecraft/class_24 net/minecraft/achievement/Achievement
 		ARG 4 row
 		ARG 5 icon
 		ARG 6 parent
-	METHOD method_1040 challenge ()Lnet/minecraft/class_24;
+	METHOD m_1632348 challenge ()Lnet/minecraft/class_24;
 	METHOD method_1042 setTranslationHelper (Lnet/minecraft/class_241;)Lnet/minecraft/class_24;
 	METHOD method_1043 getTranslatedDescription ()Ljava/lang/String;
 	METHOD method_1044 isChallenge ()Z

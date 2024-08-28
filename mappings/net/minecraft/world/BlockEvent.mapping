@@ -1,11 +1,11 @@
-CLASS net/minecraft/class_366 net/minecraft/world/BlockEvent
-	FIELD field_1400 x I
-	FIELD field_1401 y I
-	FIELD field_1402 z I
-	FIELD field_1403 blockId I
-	FIELD field_1404 ticks J
-	FIELD field_1405 counter J
-	FIELD field_1406 globalId J
+CLASS net/minecraft/unmapped/C_6605607 net/minecraft/world/BlockEvent
+	FIELD f_2422648 x I
+	FIELD f_1940824 y I
+	FIELD f_9535124 z I
+	FIELD f_3861669 blockId I
+	FIELD f_2942309 ticks J
+	FIELD f_6312156 counter J
+	FIELD f_6701453 globalId J
 	METHOD <init> (IIII)V
 		ARG 1 x
 		ARG 2 y
@@ -15,5 +15,5 @@ CLASS net/minecraft/class_366 net/minecraft/world/BlockEvent
 		ARG 1 other
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 other
-	METHOD method_1197 get (J)Lnet/minecraft/class_366;
+	METHOD m_0385720 get (J)Lnet/minecraft/class_366;
 		ARG 1 ticks

@@ -1,8 +1,8 @@
-CLASS net/minecraft/class_337 net/minecraft/screen/FurnaceScreenHandler
-	FIELD field_1258 furnaceBlockEntity Lnet/minecraft/class_138;
-	FIELD field_1259 cookTime I
-	FIELD field_1260 burnTime I
-	FIELD field_1261 fuelTime I
+CLASS net/minecraft/unmapped/C_5294331 net/minecraft/screen/FurnaceScreenHandler
+	FIELD f_9535907 furnaceBlockEntity Lnet/minecraft/class_138;
+	FIELD f_6887001 cookTime I
+	FIELD f_7995041 burnTime I
+	FIELD f_7492441 fuelTime I
 	METHOD <init> (Lnet/minecraft/class_136;Lnet/minecraft/class_138;)V
 		ARG 1 playerInventory
 		ARG 2 furnaceBlockEntity

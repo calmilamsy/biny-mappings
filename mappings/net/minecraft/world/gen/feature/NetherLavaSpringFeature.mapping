@@ -1,2 +1,2 @@
-CLASS net/minecraft/class_351 net/minecraft/world/gen/feature/NetherLavaSpringFeature
-	FIELD field_1313 lavaBlockId I
+CLASS net/minecraft/unmapped/C_6761734 net/minecraft/world/gen/feature/NetherLavaSpringFeature
+	FIELD f_1090544 lavaBlockId I

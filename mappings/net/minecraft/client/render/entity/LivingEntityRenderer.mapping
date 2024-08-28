@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_245 net/minecraft/client/render/entity/LivingEntityRenderer
+CLASS net/minecraft/unmapped/C_8191584 net/minecraft/client/render/entity/LivingEntityRenderer
 	FIELD field_909 model Lnet/minecraft/class_173;
 	METHOD <init> (Lnet/minecraft/class_173;F)V
 		ARG 1 entityModel

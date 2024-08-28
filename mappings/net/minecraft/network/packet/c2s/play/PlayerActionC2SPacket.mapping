@@ -1,9 +1,9 @@
-CLASS net/minecraft/class_228 net/minecraft/network/packet/c2s/play/PlayerActionC2SPacket
-	FIELD field_852 x I
-	FIELD field_853 y I
-	FIELD field_854 z I
-	FIELD field_855 direction I
-	FIELD field_856 action I
+CLASS net/minecraft/unmapped/C_7790186 net/minecraft/network/packet/c2s/play/PlayerActionC2SPacket
+	FIELD f_9070467 x I
+	FIELD f_1362151 y I
+	FIELD f_3259292 z I
+	FIELD f_9653661 direction I
+	FIELD f_3053181 action I
 	METHOD <init> (IIIII)V
 		ARG 1 action
 		ARG 2 x

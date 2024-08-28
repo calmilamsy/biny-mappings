@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_86 net/minecraft/client/render/entity/PlayerEntityRenderer
+CLASS net/minecraft/unmapped/C_3604011 net/minecraft/client/render/entity/PlayerEntityRenderer
 	FIELD field_294 bipedModel Lnet/minecraft/class_87;
 	FIELD field_297 armorTextureNames [Ljava/lang/String;
 	METHOD method_345 renderHand ()V

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_36 net/minecraft/network/packet/s2c/play/HealthUpdateS2CPacket
-	FIELD field_158 health I
+CLASS net/minecraft/unmapped/C_6020368 net/minecraft/network/packet/s2c/play/HealthUpdateS2CPacket
+	FIELD f_4054824 health I
 	METHOD <init> (I)V
 		ARG 1 health

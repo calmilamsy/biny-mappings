@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_181 net/minecraft/client/gui/widget/TextFieldWidget
+CLASS net/minecraft/unmapped/C_8078594 net/minecraft/client/gui/widget/TextFieldWidget
 	FIELD field_2420 focused Z
 	FIELD field_2421 enabled Z
 	FIELD field_2422 textRenderer Lnet/minecraft/class_34;

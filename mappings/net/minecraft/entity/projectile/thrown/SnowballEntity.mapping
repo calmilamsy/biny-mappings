@@ -1,13 +1,13 @@
-CLASS net/minecraft/class_484 net/minecraft/entity/projectile/thrown/SnowballEntity
-	FIELD field_1990 shake I
-	FIELD field_1991 blockX I
-	FIELD field_1992 blockY I
-	FIELD field_1993 blockZ I
-	FIELD field_1994 blockId I
-	FIELD field_1995 inGround Z
-	FIELD field_1996 owner Lnet/minecraft/class_127;
-	FIELD field_1997 removalTimer I
-	FIELD field_1998 inAirTime I
+CLASS net/minecraft/unmapped/C_5687818 net/minecraft/entity/projectile/thrown/SnowballEntity
+	FIELD f_0701008 shake I
+	FIELD f_9492341 blockX I
+	FIELD f_9929462 blockY I
+	FIELD f_0294932 blockZ I
+	FIELD f_9873827 blockId I
+	FIELD f_0115303 inGround Z
+	FIELD f_4255286 owner Lnet/minecraft/class_127;
+	FIELD f_4451214 removalTimer I
+	FIELD f_2349227 inAirTime I
 	METHOD <init> (Lnet/minecraft/class_18;DDD)V
 		ARG 1 world
 		ARG 2 x
@@ -16,7 +16,7 @@ CLASS net/minecraft/class_484 net/minecraft/entity/projectile/thrown/SnowballEnt
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_127;)V
 		ARG 1 world
 		ARG 2 owner
-	METHOD method_1656 setVelocity (DDDFF)V
+	METHOD m_0060836 setVelocity (DDDFF)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z

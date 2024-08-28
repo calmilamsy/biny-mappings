@@ -1,2 +1,2 @@
-CLASS net/minecraft/class_172 net/minecraft/client/render/entity/BoatEntityRenderer
+CLASS net/minecraft/unmapped/C_6441735 net/minecraft/client/render/entity/BoatEntityRenderer
 	FIELD field_596 model Lnet/minecraft/class_173;

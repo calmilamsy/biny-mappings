@@ -1,13 +1,13 @@
-CLASS net/minecraft/class_295 net/minecraft/network/packet/s2c/play/ItemEntitySpawnS2CPacket
-	FIELD field_1156 id I
-	FIELD field_1157 x I
-	FIELD field_1158 y I
-	FIELD field_1159 z I
-	FIELD field_1160 velocityX B
-	FIELD field_1161 velocityY B
-	FIELD field_1162 velocityZ B
-	FIELD field_1163 itemRawId I
-	FIELD field_1164 itemCount I
-	FIELD field_1165 itemDamage I
+CLASS net/minecraft/unmapped/C_4561926 net/minecraft/network/packet/s2c/play/ItemEntitySpawnS2CPacket
+	FIELD f_6746775 id I
+	FIELD f_9929693 x I
+	FIELD f_1329864 y I
+	FIELD f_0647642 z I
+	FIELD f_2441967 velocityX B
+	FIELD f_4783345 velocityY B
+	FIELD f_8541085 velocityZ B
+	FIELD f_6062964 itemRawId I
+	FIELD f_3624851 itemCount I
+	FIELD f_0474217 itemDamage I
 	METHOD <init> (Lnet/minecraft/class_142;)V
 		ARG 1 itemEntity

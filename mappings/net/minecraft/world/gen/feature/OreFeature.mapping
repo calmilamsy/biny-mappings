@@ -1,6 +1,6 @@
-CLASS net/minecraft/class_82 net/minecraft/world/gen/feature/OreFeature
-	FIELD field_283 oreBlockId I
-	FIELD field_284 oreCount I
+CLASS net/minecraft/unmapped/C_4658369 net/minecraft/world/gen/feature/OreFeature
+	FIELD f_5395758 oreBlockId I
+	FIELD f_6619249 oreCount I
 	METHOD <init> (II)V
 		ARG 1 oreBlockId
 		ARG 2 oreCount

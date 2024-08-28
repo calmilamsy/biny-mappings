@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_341 net/minecraft/client/gui/screen/world/EditWorldScreen
+CLASS net/minecraft/unmapped/C_9574073 net/minecraft/client/gui/screen/world/EditWorldScreen
 	FIELD field_1271 parent Lnet/minecraft/class_32;
 	FIELD field_1272 levelNameTextField Lnet/minecraft/class_181;
 	METHOD <init> (Lnet/minecraft/class_32;Ljava/lang/String;)V

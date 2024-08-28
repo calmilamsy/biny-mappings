@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_77 net/minecraft/client/particle/Particle
+CLASS net/minecraft/unmapped/C_8905061 net/minecraft/client/particle/Particle
 	FIELD field_2639 maxAge I
 	FIELD field_2640 scale F
 	FIELD field_2642 red F

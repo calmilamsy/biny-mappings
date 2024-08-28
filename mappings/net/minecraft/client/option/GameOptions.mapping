@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_322 net/minecraft/client/option/GameOptions
+CLASS net/minecraft/unmapped/C_7688744 net/minecraft/client/option/GameOptions
 	FIELD field_1442 thirdPerson Z
 	FIELD field_1443 debugHud Z
 	FIELD field_1444 lastServer Ljava/lang/String;

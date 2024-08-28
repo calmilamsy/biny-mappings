@@ -1,39 +1,39 @@
-CLASS net/minecraft/class_153 net/minecraft/world/biome/Biome
-	FIELD field_875 RAINFOREST Lnet/minecraft/class_153;
-	FIELD field_876 SWAMPLAND Lnet/minecraft/class_153;
-	FIELD field_877 SEASONAL_FOREST Lnet/minecraft/class_153;
-	FIELD field_878 FOREST Lnet/minecraft/class_153;
-	FIELD field_879 SAVANNA Lnet/minecraft/class_153;
-	FIELD field_880 SHRUBLAND Lnet/minecraft/class_153;
-	FIELD field_881 TAIGA Lnet/minecraft/class_153;
-	FIELD field_882 DESERT Lnet/minecraft/class_153;
-	FIELD field_883 PLAINS Lnet/minecraft/class_153;
-	FIELD field_884 ICE_DESERT Lnet/minecraft/class_153;
-	FIELD field_885 TUNDRA Lnet/minecraft/class_153;
-	FIELD field_886 HELL Lnet/minecraft/class_153;
-	FIELD field_887 SKY Lnet/minecraft/class_153;
-	FIELD field_888 name Ljava/lang/String;
-	FIELD field_889 grassColor I
-	FIELD field_890 topBlockId B
-	FIELD field_891 soilBlockId B
-	FIELD field_892 foliageColor I
-	FIELD field_893 spawnableMonsters Ljava/util/List;
-	FIELD field_894 spawnablePassive Ljava/util/List;
-	FIELD field_895 spawnableWaterCreatures Ljava/util/List;
-	FIELD field_896 hasSnow Z
-	FIELD field_897 hasRain Z
-	FIELD field_898 BIOMES [Lnet/minecraft/class_153;
-	METHOD method_785 init ()V
-	METHOD method_788 setFoliageColor (I)Lnet/minecraft/class_153;
+CLASS net/minecraft/unmapped/C_4636105 net/minecraft/world/biome/Biome
+	FIELD f_9961984 RAINFOREST Lnet/minecraft/class_153;
+	FIELD f_5381638 SWAMPLAND Lnet/minecraft/class_153;
+	FIELD f_0899678 SEASONAL_FOREST Lnet/minecraft/class_153;
+	FIELD f_5842443 FOREST Lnet/minecraft/class_153;
+	FIELD f_7815643 SAVANNA Lnet/minecraft/class_153;
+	FIELD f_9420305 SHRUBLAND Lnet/minecraft/class_153;
+	FIELD f_2236173 TAIGA Lnet/minecraft/class_153;
+	FIELD f_0359476 DESERT Lnet/minecraft/class_153;
+	FIELD f_8243635 PLAINS Lnet/minecraft/class_153;
+	FIELD f_7226811 ICE_DESERT Lnet/minecraft/class_153;
+	FIELD f_9026466 TUNDRA Lnet/minecraft/class_153;
+	FIELD f_0467620 HELL Lnet/minecraft/class_153;
+	FIELD f_6847613 SKY Lnet/minecraft/class_153;
+	FIELD f_1274684 name Ljava/lang/String;
+	FIELD f_1895912 grassColor I
+	FIELD f_1916586 topBlockId B
+	FIELD f_6006915 soilBlockId B
+	FIELD f_3675268 foliageColor I
+	FIELD f_0345530 spawnableMonsters Ljava/util/List;
+	FIELD f_3862425 spawnablePassive Ljava/util/List;
+	FIELD f_4244926 spawnableWaterCreatures Ljava/util/List;
+	FIELD f_3227518 hasSnow Z
+	FIELD f_3264428 hasRain Z
+	FIELD f_3006990 BIOMES [Lnet/minecraft/class_153;
+	METHOD m_8703345 init ()V
+	METHOD m_6305092 setFoliageColor (I)Lnet/minecraft/class_153;
 		ARG 1 foliageColor
-	METHOD method_790 setName (Ljava/lang/String;)Lnet/minecraft/class_153;
+	METHOD m_7713250 setName (Ljava/lang/String;)Lnet/minecraft/class_153;
 		ARG 1 name
-	METHOD method_791 enableSnow ()Lnet/minecraft/class_153;
-	METHOD method_792 setGrassColor (I)Lnet/minecraft/class_153;
+	METHOD m_5999602 enableSnow ()Lnet/minecraft/class_153;
+	METHOD m_1454200 setGrassColor (I)Lnet/minecraft/class_153;
 		ARG 1 grassColor
-	METHOD method_793 canSnow ()Z
-	METHOD method_794 canRain ()Z
-	METHOD method_795 disableRain ()Lnet/minecraft/class_153;
+	METHOD m_4952577 canSnow ()Z
+	METHOD m_8287143 canRain ()Z
+	METHOD m_6267136 disableRain ()Lnet/minecraft/class_153;
 	METHOD method_796 getSkyColor (F)I
-	METHOD method_797 getRandomTreeFeature (Ljava/util/Random;)Lnet/minecraft/class_239;
+	METHOD m_0608438 getRandomTreeFeature (Ljava/util/Random;)Lnet/minecraft/class_239;
 		ARG 1 random

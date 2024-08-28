@@ -1,7 +1,7 @@
-CLASS net/minecraft/class_45 net/minecraft/network/packet/s2c/play/LightningEntitySpawnS2CPacket
-	FIELD field_172 id I
-	FIELD field_173 x I
-	FIELD field_174 y I
-	FIELD field_175 z I
+CLASS net/minecraft/unmapped/C_8871379 net/minecraft/network/packet/s2c/play/LightningEntitySpawnS2CPacket
+	FIELD f_1474086 id I
+	FIELD f_6619686 x I
+	FIELD f_0127017 y I
+	FIELD f_5660906 z I
 	METHOD <init> (Lnet/minecraft/class_57;)V
 		ARG 1 entity

@@ -1,15 +1,15 @@
-CLASS net/minecraft/class_421 net/minecraft/block/FurnaceBlock
-	FIELD field_1682 random Ljava/util/Random;
-	FIELD field_1683 lit Z
+CLASS net/minecraft/unmapped/C_8125832 net/minecraft/block/FurnaceBlock
+	FIELD f_3014464 random Ljava/util/Random;
+	FIELD f_1480746 lit Z
 	METHOD <init> (IZ)V
 		ARG 1 id
 		ARG 2 lit
-	METHOD method_1403 (ZLnet/minecraft/class_18;III)V
+	METHOD m_9854814 (ZLnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1404 updateDirection (Lnet/minecraft/class_18;III)V
+	METHOD m_7556299 updateDirection (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

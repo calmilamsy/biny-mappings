@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_273 net/minecraft/nbt/NbtLong
-	FIELD field_1122 value J
+CLASS net/minecraft/unmapped/C_8965972 net/minecraft/nbt/NbtLong
+	FIELD f_7001525 value J
 	METHOD <init> (J)V
 		ARG 1 value

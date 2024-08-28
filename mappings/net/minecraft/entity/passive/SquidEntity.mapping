@@ -1,15 +1,15 @@
-CLASS net/minecraft/class_151 net/minecraft/entity/passive/SquidEntity
-	FIELD field_2217 tiltAngle F
-	FIELD field_2218 lastTiltAngle F
-	FIELD field_2219 rollAngle F
-	FIELD field_2220 lastRollAngle F
-	FIELD field_2221 thrustTimer F
-	FIELD field_2222 lastThrustTimer F
-	FIELD field_2223 tentacleAngle F
-	FIELD field_2224 lastTentacleAngle F
-	FIELD field_2225 swimVelocityScale F
-	FIELD field_2226 thrustTimerSpeed F
-	FIELD field_2227 turningSpeed F
-	FIELD field_2228 swimX F
-	FIELD field_2229 swimY F
-	FIELD field_2230 swimZ F
+CLASS net/minecraft/unmapped/C_5475923 net/minecraft/entity/passive/SquidEntity
+	FIELD f_0820024 tiltAngle F
+	FIELD f_6480491 lastTiltAngle F
+	FIELD f_3940086 rollAngle F
+	FIELD f_0733684 lastRollAngle F
+	FIELD f_0511165 thrustTimer F
+	FIELD f_7214595 lastThrustTimer F
+	FIELD f_4428222 tentacleAngle F
+	FIELD f_8948535 lastTentacleAngle F
+	FIELD f_8220613 swimVelocityScale F
+	FIELD f_9107999 thrustTimerSpeed F
+	FIELD f_2594883 turningSpeed F
+	FIELD f_6105442 swimX F
+	FIELD f_7423670 swimY F
+	FIELD f_4149860 swimZ F

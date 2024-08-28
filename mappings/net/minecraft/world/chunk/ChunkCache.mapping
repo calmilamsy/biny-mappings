@@ -1,8 +1,8 @@
-CLASS net/minecraft/class_42 net/minecraft/world/chunk/ChunkCache
-	FIELD field_166 minX I
-	FIELD field_167 minZ I
-	FIELD field_168 chunks [[Lnet/minecraft/class_43;
-	FIELD field_169 world Lnet/minecraft/class_18;
+CLASS net/minecraft/unmapped/C_3134254 net/minecraft/world/chunk/ChunkCache
+	FIELD f_3666145 minX I
+	FIELD f_9035617 minZ I
+	FIELD f_2446217 chunks [[Lnet/minecraft/class_43;
+	FIELD f_8669340 world Lnet/minecraft/class_18;
 	METHOD <init> (Lnet/minecraft/class_18;IIIIII)V
 		ARG 1 world
 		ARG 2 minX

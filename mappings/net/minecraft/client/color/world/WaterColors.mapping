@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_279 net/minecraft/client/color/world/WaterColors
+CLASS net/minecraft/unmapped/C_3254405 net/minecraft/client/color/world/WaterColors
 	FIELD field_1129 colorMap [I
 	METHOD method_972 setColorMap ([I)V
 		ARG 0 colorMap

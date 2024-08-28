@@ -1,10 +1,10 @@
-CLASS net/minecraft/class_374 net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket
-	FIELD field_1420 id I
-	FIELD field_1421 x I
-	FIELD field_1422 y I
-	FIELD field_1423 z I
-	FIELD field_1424 yaw B
-	FIELD field_1425 pitch B
+CLASS net/minecraft/unmapped/C_9814383 net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket
+	FIELD f_7253358 id I
+	FIELD f_3395263 x I
+	FIELD f_7518806 y I
+	FIELD f_2629919 z I
+	FIELD f_4644989 yaw B
+	FIELD f_5720818 pitch B
 	METHOD <init> (IIIIBB)V
 		ARG 1 entityId
 		ARG 2 x

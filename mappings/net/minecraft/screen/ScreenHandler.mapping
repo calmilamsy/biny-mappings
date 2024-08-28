@@ -1,46 +1,46 @@
-CLASS net/minecraft/class_71 net/minecraft/screen/ScreenHandler
-	FIELD field_2731 revision S
-	FIELD field_2732 players Ljava/util/Set;
+CLASS net/minecraft/unmapped/C_7699185 net/minecraft/screen/ScreenHandler
+	FIELD f_0988453 revision S
+	FIELD f_3107819 players Ljava/util/Set;
 		COMMENT Players which have this screen open
 		COMMENT Used in Multiplayer
-	FIELD field_2733 trackedStacks Ljava/util/List;
-	FIELD field_2734 slots Ljava/util/List;
-	FIELD field_2735 syncId I
-	FIELD field_2736 listeners Ljava/util/List;
-	METHOD method_2075 sendContentUpdates ()V
-	METHOD method_2076 addListener (Lnet/minecraft/class_633;)V
+	FIELD f_6134689 trackedStacks Ljava/util/List;
+	FIELD f_7045129 slots Ljava/util/List;
+	FIELD f_5550830 syncId I
+	FIELD f_3969160 listeners Ljava/util/List;
+	METHOD m_5555892 sendContentUpdates ()V
+	METHOD m_4023501 addListener (Lnet/minecraft/class_633;)V
 		ARG 1 listener
 	METHOD method_2077 setProperty (II)V
 		ARG 1 id
 		ARG 2 value
-	METHOD method_2078 onSlotClick (IIZLnet/minecraft/class_54;)Lnet/minecraft/class_31;
+	METHOD m_0676143 onSlotClick (IIZLnet/minecraft/class_54;)Lnet/minecraft/class_31;
 		ARG 1 index
 		ARG 2 button
 		ARG 3 shift
 		ARG 4 player
-	METHOD method_2079 addSlot (Lnet/minecraft/class_133;)V
+	METHOD m_6017734 addSlot (Lnet/minecraft/class_133;)V
 		ARG 1 slot
-	METHOD method_2080 updatePlayerList (Lnet/minecraft/class_54;Z)V
+	METHOD m_0697184 updatePlayerList (Lnet/minecraft/class_54;Z)V
 		ARG 1 player
 		ARG 2 remove
-	METHOD method_2081 insertItem (Lnet/minecraft/class_31;IIZ)V
+	METHOD m_6892140 insertItem (Lnet/minecraft/class_31;IIZ)V
 		ARG 1 stack
 		ARG 2 startIndex
 		ARG 3 endIndex
 		ARG 4 fromLast
-	METHOD method_2082 getSlot (Lnet/minecraft/class_134;I)Lnet/minecraft/class_133;
+	METHOD m_1887764 getSlot (Lnet/minecraft/class_134;I)Lnet/minecraft/class_133;
 		ARG 1 inventory
 		ARG 2 index
-	METHOD method_2083 getStacks ()Ljava/util/List;
-	METHOD method_2084 getSlot (I)Lnet/minecraft/class_133;
+	METHOD m_6211562 getStacks ()Ljava/util/List;
+	METHOD m_8529408 getSlot (I)Lnet/minecraft/class_133;
 		ARG 1 index
-	METHOD method_2085 canOpen (Lnet/minecraft/class_54;)Z
+	METHOD m_8141771 canOpen (Lnet/minecraft/class_54;)Z
 		ARG 1 player
-	METHOD method_2086 quickMove (I)Lnet/minecraft/class_31;
+	METHOD m_6350238 quickMove (I)Lnet/minecraft/class_31;
 		ARG 1 slot
-	METHOD method_2087 onClosed (Lnet/minecraft/class_54;)V
+	METHOD m_5612215 onClosed (Lnet/minecraft/class_54;)V
 		ARG 1 player
-	METHOD method_2088 onSlotUpdate (Lnet/minecraft/class_134;)V
+	METHOD m_8603973 onSlotUpdate (Lnet/minecraft/class_134;)V
 		ARG 1 inventory
 	METHOD method_2089 setStackInSlot (ILnet/minecraft/class_31;)V
 		ARG 1 index
@@ -53,5 +53,5 @@ CLASS net/minecraft/class_71 net/minecraft/screen/ScreenHandler
 		ARG 1 stacks
 	METHOD method_2093 onAcknowledgementDenied (S)V
 		ARG 1 actionType
-	METHOD method_2094 canUse (Lnet/minecraft/class_54;)Z
+	METHOD m_2163003 canUse (Lnet/minecraft/class_54;)Z
 		ARG 1 player

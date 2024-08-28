@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_67 net/minecraft/client/render/Tessellator
+CLASS net/minecraft/unmapped/C_2334550 net/minecraft/client/render/Tessellator
 	FIELD field_2053 bufferSize I
 	FIELD field_2054 INSTANCE Lnet/minecraft/class_67;
 	FIELD field_2055 useTriangles Z
