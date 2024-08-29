@@ -1,5 +1,0 @@
-CLASS net/minecraft/unmapped/C_6983897 net/minecraft/network/packet/s2c/play/GameStateChangeS2CPacket
-	FIELD f_8781375 REASONS [Ljava/lang/String;
-	FIELD f_5186055 reason I
-	METHOD <init> (I)V
-		ARG 1 reason

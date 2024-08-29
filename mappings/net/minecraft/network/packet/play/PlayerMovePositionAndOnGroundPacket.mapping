@@ -1,7 +1,0 @@
-CLASS net/minecraft/unmapped/C_4004004 net/minecraft/network/packet/play/PlayerMovePositionAndOnGroundPacket
-	METHOD <init> (DDDDZ)V
-		ARG 1 x
-		ARG 3 y
-		ARG 5 eyeHeight
-		ARG 7 z
-		ARG 9 onGround

@@ -1,3 +1,0 @@
-CLASS net/minecraft/unmapped/C_4558465 net/minecraft/block/LiquidBlock
-	METHOD m_8965794 getFluidHeightFromMeta (I)F
-		ARG 0 meta

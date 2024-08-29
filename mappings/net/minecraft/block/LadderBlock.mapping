@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_5178573 net/minecraft/block/LadderBlock
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 textureId

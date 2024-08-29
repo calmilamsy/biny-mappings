@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_7029902 net/minecraft/block/FenceBlock
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 textureId

@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_8547814 net/minecraft/item/MushroomStewItem
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 healthRestored

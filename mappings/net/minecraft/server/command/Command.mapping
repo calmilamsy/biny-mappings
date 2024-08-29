@@ -1,6 +1,0 @@
-CLASS net/minecraft/unmapped/C_0535659 net/minecraft/server/command/Command
-	FIELD f_5102708 commandAndArgs Ljava/lang/String;
-	FIELD f_4647043 output Lnet/minecraft/class_39;
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_39;)V
-		ARG 1 contents
-		ARG 2 output

@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_9079950 net/minecraft/nbt/NbtByte
-	FIELD f_2581611 value B
-	METHOD <init> (B)V
-		ARG 1 value

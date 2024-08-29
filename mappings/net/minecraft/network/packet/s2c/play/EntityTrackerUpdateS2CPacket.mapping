@@ -1,7 +1,0 @@
-CLASS net/minecraft/unmapped/C_2842873 net/minecraft/network/packet/s2c/play/EntityTrackerUpdateS2CPacket
-	FIELD f_1231075 id I
-	FIELD f_3454014 trackedValues Ljava/util/List;
-	METHOD <init> (ILnet/minecraft/class_216;)V
-		ARG 1 entityId
-		ARG 2 dataTracker
-	METHOD method_1649 getTrackedValues ()Ljava/util/List;

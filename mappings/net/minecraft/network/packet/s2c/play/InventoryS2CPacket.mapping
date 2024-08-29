@@ -1,6 +1,0 @@
-CLASS net/minecraft/unmapped/C_1249120 net/minecraft/network/packet/s2c/play/InventoryS2CPacket
-	FIELD f_9501271 syncId I
-	FIELD f_8204238 contents [Lnet/minecraft/class_31;
-	METHOD <init> (ILjava/util/List;)V
-		ARG 1 syncId
-		ARG 2 contents

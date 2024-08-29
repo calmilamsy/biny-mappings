@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_2250623 net/minecraft/nbt/NbtDouble
-	FIELD f_9990243 value D
-	METHOD <init> (D)V
-		ARG 1 value

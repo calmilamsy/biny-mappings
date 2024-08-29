@@ -1,7 +1,0 @@
-CLASS net/minecraft/unmapped/C_8215726 net/minecraft/block/entity/SignBlockEntity
-	FIELD f_5769441 texts [Ljava/lang/String;
-	FIELD f_8249914 currentRow I
-	FIELD f_7808717 editable Z
-	METHOD m_1185573 isEditable ()Z
-	METHOD m_1639989 setEditable (Z)V
-		ARG 1 editable

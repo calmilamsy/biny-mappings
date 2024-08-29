@@ -1,7 +1,0 @@
-CLASS net/minecraft/unmapped/C_5371184 net/minecraft/entity/mob/SlimeEntity
-	FIELD f_0694011 stretch F
-	FIELD f_8888018 lastStretch F
-	FIELD f_1856136 ticksUntilJump I
-	METHOD m_8366419 setSize (I)V
-		ARG 1 size
-	METHOD m_5292745 getSize ()I

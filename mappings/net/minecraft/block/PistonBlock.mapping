@@ -1,6 +1,0 @@
-CLASS net/minecraft/unmapped/C_0956869 net/minecraft/block/PistonBlock
-	FIELD f_7069625 sticky Z
-	METHOD <init> (IIZ)V
-		ARG 1 id
-		ARG 2 textureId
-		ARG 3 sticky

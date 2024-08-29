@@ -1,3 +1,0 @@
-CLASS net/minecraft/unmapped/C_7646636 net/minecraft/stat/StatFormatter
-	METHOD method_1725 format (I)Ljava/lang/String;
-		ARG 1 value

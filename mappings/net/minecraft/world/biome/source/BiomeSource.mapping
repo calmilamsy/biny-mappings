@@ -1,3 +1,0 @@
-CLASS net/minecraft/unmapped/C_9143244 net/minecraft/world/biome/source/BiomeSource
-	METHOD method_1786 getTemperature (II)D
-	METHOD m_4232370 getBiome (II)Lnet/minecraft/class_153;

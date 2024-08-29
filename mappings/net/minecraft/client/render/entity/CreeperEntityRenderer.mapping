@@ -1,2 +1,0 @@
-CLASS net/minecraft/unmapped/C_8075208 net/minecraft/client/render/entity/CreeperEntityRenderer
-	FIELD field_1685 model Lnet/minecraft/class_173;

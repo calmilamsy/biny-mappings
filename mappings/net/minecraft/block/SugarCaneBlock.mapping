@@ -1,9 +1,0 @@
-CLASS net/minecraft/unmapped/C_6391166 net/minecraft/block/SugarCaneBlock
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 textureId
-	METHOD m_1246951 breakIfCannotGrow (Lnet/minecraft/class_18;III)V
-		ARG 1 world
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z

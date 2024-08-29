@@ -1,6 +1,0 @@
-CLASS net/minecraft/unmapped/C_4948697 net/minecraft/entity/mob/PigZombieEntity
-	FIELD f_0802335 anger I
-	FIELD f_5697420 angrySoundDelay I
-	FIELD f_6918503 heldItem Lnet/minecraft/class_31;
-	METHOD m_0759902 makeAngry (Lnet/minecraft/class_57;)V
-		ARG 1 target

@@ -1,3 +1,0 @@
-CLASS net/minecraft/unmapped/C_1176458 net/minecraft/item/DyeItem
-	FIELD f_3732636 names [Ljava/lang/String;
-	FIELD f_8357976 colors [I

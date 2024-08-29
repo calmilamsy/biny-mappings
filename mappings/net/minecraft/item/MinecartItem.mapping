@@ -1,9 +1,0 @@
-CLASS net/minecraft/unmapped/C_0121370 net/minecraft/item/MinecartItem
-	FIELD f_0882396 type I
-		COMMENT Determines the type of the minecart
-		COMMENT 0 : Normal
-		COMMENT 1 : Chest
-		COMMENT 2 : Furnace
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 type

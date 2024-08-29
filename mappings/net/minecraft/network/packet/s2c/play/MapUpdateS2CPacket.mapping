@@ -1,8 +1,0 @@
-CLASS net/minecraft/unmapped/C_6134274 net/minecraft/network/packet/s2c/play/MapUpdateS2CPacket
-	FIELD f_8381442 itemRawId S
-	FIELD f_7178362 id S
-	FIELD f_0927975 updateData [B
-	METHOD <init> (SS[B)V
-		ARG 1 itemRawId
-		ARG 2 id
-		ARG 3 updateData

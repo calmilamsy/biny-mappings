@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_7137679 net/minecraft/item/HoeItem
-	METHOD <init> (ILnet/minecraft/class_428;)V
-		ARG 1 id
-		ARG 2 toolMaterial

@@ -1,2 +1,0 @@
-CLASS net/minecraft/unmapped/C_0258789 net/minecraft/entity/mob/SkeletonEntity
-	FIELD f_0795879 heldItem Lnet/minecraft/class_31;

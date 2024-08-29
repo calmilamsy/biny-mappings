@@ -1,5 +1,0 @@
-CLASS net/minecraft/unmapped/C_6240881 net/minecraft/item/MusicDiscItem
-	FIELD f_6711937 sound Ljava/lang/String;
-	METHOD <init> (ILjava/lang/String;)V
-		ARG 1 id
-		ARG 2 sound

@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_7961743 net/minecraft/world/gen/feature/SpringFeature
-	FIELD f_5954518 liquidBlockId I
-	METHOD <init> (I)V
-		ARG 1 liquidBlockId

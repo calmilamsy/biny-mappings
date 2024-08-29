@@ -1,5 +1,0 @@
-CLASS net/minecraft/unmapped/C_2101178 net/minecraft/world/gen/feature/ClayOreFeature
-	FIELD f_2272449 clayBlockId I
-	FIELD f_3156385 blockCount I
-	METHOD <init> (I)V
-		ARG 1 blockCount

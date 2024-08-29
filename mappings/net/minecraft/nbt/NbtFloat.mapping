@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_3544017 net/minecraft/nbt/NbtFloat
-	FIELD f_3894563 value F
-	METHOD <init> (F)V
-		ARG 1 value

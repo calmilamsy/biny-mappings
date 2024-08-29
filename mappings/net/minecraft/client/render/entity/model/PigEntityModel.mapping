@@ -1,3 +1,0 @@
-CLASS net/minecraft/unmapped/C_2280850 net/minecraft/client/render/entity/model/PigEntityModel
-	METHOD <init> (F)V
-		ARG 1 dilation

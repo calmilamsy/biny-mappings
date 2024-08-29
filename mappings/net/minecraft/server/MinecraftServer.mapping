@@ -1,3 +1,0 @@
-CLASS net/minecraft/server/MinecraftServer
-	FIELD f_2598215 onlineMode Z
-	METHOD m_9071158 tick ()V

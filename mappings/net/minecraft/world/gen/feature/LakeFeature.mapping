@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_9317299 net/minecraft/world/gen/feature/LakeFeature
-	FIELD f_4173313 waterBlockId I
-	METHOD <init> (I)V
-		ARG 1 waterBlockId

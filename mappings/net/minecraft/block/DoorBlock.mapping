@@ -1,8 +1,0 @@
-CLASS net/minecraft/unmapped/C_3484604 net/minecraft/block/DoorBlock
-	METHOD m_7732019 (Lnet/minecraft/class_18;IIIZ)V
-		ARG 1 world
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-	METHOD m_8094268 (I)I
-		ARG 1 meta

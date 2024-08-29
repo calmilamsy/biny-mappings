@@ -1,3 +1,0 @@
-CLASS net/minecraft/unmapped/C_9022523 net/minecraft/block/WorkbenchBlock
-	METHOD <init> (I)V
-		ARG 1 id

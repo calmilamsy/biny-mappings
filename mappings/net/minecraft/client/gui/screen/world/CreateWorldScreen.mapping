@@ -1,6 +1,0 @@
-CLASS net/minecraft/unmapped/C_2947053 net/minecraft/client/gui/screen/world/CreateWorldScreen
-	FIELD field_631 parent Lnet/minecraft/class_32;
-	FIELD field_632 worldNameField Lnet/minecraft/class_181;
-	FIELD field_633 seedField Lnet/minecraft/class_181;
-	METHOD <init> (Lnet/minecraft/class_32;)V
-		ARG 1 parent

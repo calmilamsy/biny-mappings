@@ -1,6 +1,0 @@
-CLASS net/minecraft/unmapped/C_6698663 net/minecraft/client/gui/screen/world/SelectWorldScreen
-	FIELD field_2431 parent Lnet/minecraft/class_32;
-	FIELD field_2432 title Ljava/lang/String;
-	METHOD <init> (Lnet/minecraft/class_32;)V
-		ARG 1 parent
-CLASS net/minecraft/unmapped/C_4167019 net/minecraft/client/gui/screen/world/SelectWorldScreen

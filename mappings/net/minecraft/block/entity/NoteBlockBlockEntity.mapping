@@ -1,9 +1,0 @@
-CLASS net/minecraft/unmapped/C_6433447 net/minecraft/block/entity/NoteBlockBlockEntity
-	FIELD f_5518830 note B
-	FIELD f_6503772 powered Z
-	METHOD m_6541570 cycleNote ()V
-	METHOD m_3405279 playNote (Lnet/minecraft/class_18;III)V
-		ARG 1 world
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z

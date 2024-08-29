@@ -1,6 +1,0 @@
-CLASS net/minecraft/unmapped/C_9331929 net/minecraft/block/SlabBlock
-	FIELD f_8326671 names [Ljava/lang/String;
-	FIELD f_3052589 doubleSlab Z
-	METHOD <init> (IZ)V
-		ARG 1 id
-		ARG 2 doubleSlab

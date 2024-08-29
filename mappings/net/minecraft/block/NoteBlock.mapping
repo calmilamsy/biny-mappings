@@ -1,3 +1,0 @@
-CLASS net/minecraft/unmapped/C_1139046 net/minecraft/block/NoteBlock
-	METHOD <init> (I)V
-		ARG 1 id

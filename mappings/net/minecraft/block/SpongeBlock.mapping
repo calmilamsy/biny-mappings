@@ -1,3 +1,0 @@
-CLASS net/minecraft/unmapped/C_7450537 net/minecraft/block/SpongeBlock
-	METHOD <init> (I)V
-		ARG 1 id

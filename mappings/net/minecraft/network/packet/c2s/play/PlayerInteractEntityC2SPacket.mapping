@@ -1,8 +1,0 @@
-CLASS net/minecraft/unmapped/C_4946369 net/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket
-	FIELD f_5530546 playerId I
-	FIELD f_8073765 entityId I
-	FIELD f_2696260 isLeftClick I
-	METHOD <init> (III)V
-		ARG 1 playerId
-		ARG 2 entityId
-		ARG 3 isLeftClick

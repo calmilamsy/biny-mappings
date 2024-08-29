@@ -1,2 +1,0 @@
-CLASS net/minecraft/unmapped/C_5756990 net/minecraft/client/render/entity/PaintingEntityRenderer
-	FIELD field_332 random Ljava/util/Random;

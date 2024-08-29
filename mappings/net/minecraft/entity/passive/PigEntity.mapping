@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_8958653 net/minecraft/entity/passive/PigEntity
-	METHOD m_8202851 setSaddled (Z)V
-		ARG 1 saddled
-	METHOD m_5075627 isSaddled ()Z

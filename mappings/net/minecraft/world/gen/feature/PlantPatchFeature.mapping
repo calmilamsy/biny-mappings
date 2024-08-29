@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_8400487 net/minecraft/world/gen/feature/PlantPatchFeature
-	FIELD f_3075418 plantBlockId I
-	METHOD <init> (I)V
-		ARG 1 plantBlockId

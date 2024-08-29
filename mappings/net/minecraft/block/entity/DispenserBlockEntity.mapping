@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_0356559 net/minecraft/block/entity/DispenserBlockEntity
-	FIELD f_6916487 inventory [Lnet/minecraft/class_31;
-	FIELD f_6719673 random Ljava/util/Random;
-	METHOD m_7904056 getItemToDispense ()Lnet/minecraft/class_31;

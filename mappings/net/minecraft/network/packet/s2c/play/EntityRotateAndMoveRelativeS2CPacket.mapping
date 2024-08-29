@@ -1,8 +1,0 @@
-CLASS net/minecraft/unmapped/C_4614408 net/minecraft/network/packet/s2c/play/EntityRotateAndMoveRelativeS2CPacket
-	METHOD <init> (IBBBBB)V
-		ARG 1 entityId
-		ARG 2 deltaX
-		ARG 3 deltaY
-		ARG 4 deltaZ
-		ARG 5 yaw
-		ARG 6 pitch

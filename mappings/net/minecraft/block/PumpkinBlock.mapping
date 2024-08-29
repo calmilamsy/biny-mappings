@@ -1,6 +1,0 @@
-CLASS net/minecraft/unmapped/C_6062736 net/minecraft/block/PumpkinBlock
-	FIELD f_8824495 lit Z
-	METHOD <init> (IIZ)V
-		ARG 1 id
-		ARG 2 textureId
-		ARG 3 lit

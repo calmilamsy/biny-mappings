@@ -1,3 +1,0 @@
-CLASS net/minecraft/unmapped/C_6786653 net/minecraft/item/MapItem
-	METHOD method_1731 (SLnet/minecraft/class_18;)Lnet/minecraft/class_198;
-		ARG 1 world

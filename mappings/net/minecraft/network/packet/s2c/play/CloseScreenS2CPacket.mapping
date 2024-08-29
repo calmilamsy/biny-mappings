@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_0661894 net/minecraft/network/packet/s2c/play/CloseScreenS2CPacket
-	FIELD f_1384830 syncId I
-	METHOD <init> (I)V
-		ARG 1 syncId

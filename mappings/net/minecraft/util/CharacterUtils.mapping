@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_6214100 net/minecraft/util/CharacterUtils
-	FIELD f_3708498 VALID_CHARACTERS Ljava/lang/String;
-	FIELD f_8808271 INVALID_CHARS_WORLD_NAME [C
-	METHOD m_5485211 loadValidCharacters ()Ljava/lang/String;

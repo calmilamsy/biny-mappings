@@ -1,9 +1,0 @@
-CLASS net/minecraft/unmapped/C_1992549 net/minecraft/entity/LightningEntity
-	FIELD f_9204538 seed J
-	FIELD f_5303682 ambientTick I
-	FIELD f_9691372 remainingActions I
-	METHOD <init> (Lnet/minecraft/class_18;DDD)V
-		ARG 1 world
-		ARG 2 x
-		ARG 4 y
-		ARG 6 z

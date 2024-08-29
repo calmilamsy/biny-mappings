@@ -1,7 +1,0 @@
-CLASS net/minecraft/unmapped/C_0994230 net/minecraft/stat/ItemOrBlockStat
-	FIELD f_8508754 itemOrBlockid I
-	METHOD <init> (ILjava/lang/String;I)V
-		ARG 1 statId
-		ARG 2 translationKey
-		ARG 3 itemIdOrBlockId
-	METHOD method_1493 getItemOrBlockId ()I

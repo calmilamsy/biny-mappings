@@ -1,6 +1,0 @@
-CLASS net/minecraft/unmapped/C_7964332 net/minecraft/network/packet/play/EntityAnimationPacket
-	FIELD f_9409452 id I
-	FIELD f_4250134 animationId I
-	METHOD <init> (Lnet/minecraft/class_57;I)V
-		ARG 1 entity
-		ARG 2 animationId

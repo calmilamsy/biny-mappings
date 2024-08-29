@@ -1,9 +1,0 @@
-CLASS net/minecraft/unmapped/C_9072802 net/minecraft/block/ChestBlock
-	FIELD f_7769275 random Ljava/util/Random;
-	METHOD <init> (I)V
-		ARG 1 id
-	METHOD m_0641248 (Lnet/minecraft/class_18;III)Z
-		ARG 1 world
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z

@@ -1,5 +1,0 @@
-CLASS net/minecraft/unmapped/C_8443484 net/minecraft/block/TransparentBlock
-	METHOD <init> (IILnet/minecraft/class_15;Z)V
-		ARG 1 id
-		ARG 2 textureId
-		ARG 3 material

@@ -1,8 +1,0 @@
-CLASS net/minecraft/unmapped/C_4136842 net/minecraft/network/packet/s2c/play/ChunkStatusUpdateS2CPacket
-	FIELD f_8021129 x I
-	FIELD f_9992431 z I
-	FIELD f_8043100 load Z
-	METHOD <init> (IIZ)V
-		ARG 1 x
-		ARG 2 z
-		ARG 3 load

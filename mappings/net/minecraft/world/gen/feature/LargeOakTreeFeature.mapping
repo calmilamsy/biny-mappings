@@ -1,3 +1,0 @@
-CLASS net/minecraft/unmapped/C_0546437 net/minecraft/world/gen/feature/LargeOakTreeFeature
-	FIELD f_3429981 random Ljava/util/Random;
-	FIELD f_1516070 world Lnet/minecraft/class_18;

@@ -1,5 +1,0 @@
-CLASS net/minecraft/unmapped/C_4784123 net/minecraft/client/gui/screen/pack/PackScreen
-	FIELD field_703 parent Lnet/minecraft/class_32;
-	METHOD <init> (Lnet/minecraft/class_32;)V
-		ARG 1 parent
-CLASS net/minecraft/unmapped/C_1067325 net/minecraft/client/gui/screen/pack/PackScreen

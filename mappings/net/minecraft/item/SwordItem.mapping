@@ -1,5 +1,0 @@
-CLASS net/minecraft/unmapped/C_5434245 net/minecraft/item/SwordItem
-	FIELD f_5737317 damage I
-	METHOD <init> (ILnet/minecraft/class_428;)V
-		ARG 1 id
-		ARG 2 toolMaterial

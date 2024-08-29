@@ -1,6 +1,0 @@
-CLASS net/minecraft/unmapped/C_2422346 net/minecraft/network/packet/s2c/play/EntityStatusS2CPacket
-	FIELD f_4063259 id I
-	FIELD f_4986110 status B
-	METHOD <init> (IB)V
-		ARG 1 entityId
-		ARG 2 status

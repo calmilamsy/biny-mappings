@@ -1,2 +1,0 @@
-CLASS net/minecraft/unmapped/C_7210749 net/minecraft/client/gui/screen/SleepingChatScreen
-	METHOD method_758 stopSleeping ()V

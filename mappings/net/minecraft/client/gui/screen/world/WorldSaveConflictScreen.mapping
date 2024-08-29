@@ -1,2 +1,0 @@
-CLASS net/minecraft/unmapped/C_6193699 net/minecraft/client/gui/screen/world/WorldSaveConflictScreen
-	FIELD field_2382 ticksRan I

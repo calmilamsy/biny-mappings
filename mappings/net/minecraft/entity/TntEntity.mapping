@@ -1,8 +1,0 @@
-CLASS net/minecraft/unmapped/C_5584362 net/minecraft/entity/TntEntity
-	FIELD f_2228310 fuse I
-	METHOD <init> (Lnet/minecraft/class_18;DDD)V
-		ARG 1 world
-		ARG 2 x
-		ARG 4 y
-		ARG 6 z
-	METHOD m_0588451 explode ()V

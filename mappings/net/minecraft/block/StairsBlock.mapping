@@ -1,5 +1,0 @@
-CLASS net/minecraft/unmapped/C_7261559 net/minecraft/block/StairsBlock
-	FIELD f_7571790 baseBlock Lnet/minecraft/class_17;
-	METHOD <init> (ILnet/minecraft/class_17;)V
-		ARG 1 id
-		ARG 2 block

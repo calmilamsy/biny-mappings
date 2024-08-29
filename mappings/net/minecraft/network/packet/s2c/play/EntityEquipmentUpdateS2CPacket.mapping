@@ -1,9 +1,0 @@
-CLASS net/minecraft/unmapped/C_9701483 net/minecraft/network/packet/s2c/play/EntityEquipmentUpdateS2CPacket
-	FIELD f_4098672 id I
-	FIELD f_3987841 slot I
-	FIELD f_9882385 itemRawId I
-	FIELD f_9270018 itemDamage I
-	METHOD <init> (IILnet/minecraft/class_31;)V
-		ARG 1 id
-		ARG 2 slot
-		ARG 3 itemStack

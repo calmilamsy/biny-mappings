@@ -1,8 +1,0 @@
-CLASS net/minecraft/unmapped/C_9381557 net/minecraft/network/packet/s2c/play/ScreenHandlerSlotUpdateS2CPacket
-	FIELD f_4500872 syncId I
-	FIELD f_5237566 slot I
-	FIELD f_1730459 stack Lnet/minecraft/class_31;
-	METHOD <init> (IILnet/minecraft/class_31;)V
-		ARG 1 syncId
-		ARG 2 slot
-		ARG 3 stack

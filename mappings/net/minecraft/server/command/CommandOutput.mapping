@@ -1,4 +1,0 @@
-CLASS net/minecraft/unmapped/C_2182707 net/minecraft/server/command/CommandOutput
-	METHOD m_7400010 sendMessage (Ljava/lang/String;)V
-		ARG 1 message
-	METHOD m_7291241 getName ()Ljava/lang/String;

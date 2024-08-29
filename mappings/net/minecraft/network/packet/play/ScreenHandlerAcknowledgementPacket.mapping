@@ -1,8 +1,0 @@
-CLASS net/minecraft/unmapped/C_6290900 net/minecraft/network/packet/play/ScreenHandlerAcknowledgementPacket
-	FIELD f_8886338 syncId I
-	FIELD f_8225997 actionType S
-	FIELD f_4549317 accepted Z
-	METHOD <init> (ISZ)V
-		ARG 1 syncId
-		ARG 2 actionType
-		ARG 3 accepter

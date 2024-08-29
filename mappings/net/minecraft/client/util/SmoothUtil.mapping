@@ -1,7 +1,0 @@
-CLASS net/minecraft/unmapped/C_1115384 net/minecraft/client/util/SmoothUtil
-	FIELD field_38 actualSum F
-	FIELD field_39 smoothSum F
-	FIELD field_40 movementLatency F
-	METHOD method_40 smooth (FF)F
-		ARG 1 original
-		ARG 2 smoother

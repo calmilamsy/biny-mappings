@@ -1,9 +1,0 @@
-CLASS net/minecraft/unmapped/C_1826831 net/minecraft/entity/mob/CreeperEntity
-	FIELD f_1207512 fuseTime I
-	FIELD f_9963903 lastFuseTime I
-	METHOD method_410 getScale (F)F
-		ARG 1 delta
-	METHOD m_9521487 setFuseSpeed (I)V
-		ARG 1 fuseSpeed
-	METHOD m_8245419 isCharged ()Z
-	METHOD m_8415008 getFuseSpeed ()I

@@ -1,8 +1,0 @@
-CLASS net/minecraft/unmapped/C_1011144 net/minecraft/nbt/NbtList
-	FIELD f_1269963 value Ljava/util/List;
-	FIELD f_4066756 type B
-	METHOD m_5362870 get (I)Lnet/minecraft/class_187;
-		ARG 1 index
-	METHOD m_3902117 add (Lnet/minecraft/class_187;)V
-		ARG 1 element
-	METHOD m_5249790 size ()I
