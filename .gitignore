@@ -5,6 +5,10 @@
 *.DS_Store
 build/
 out/
+run/
+mappings_official/
+enigma.jar
+/src/
 namedSrc/
 
 # idea
@@ -19,7 +23,11 @@ namedSrc/
 .classpath
 .project
 .settings/
+.pydevproject
 
 # vscode
-.vscode/
-bin/
+*.code-workspace
+enigma.sh
+
+/mappings.zip
+/bin/
