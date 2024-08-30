@@ -1,9 +1,11 @@
 CLASS net/minecraft/class_457 net/minecraft/block/PressurePlateBlock
+	FIELD field_1743 activationRule Lnet/minecraft/class_389;
 	METHOD <init> (IILnet/minecraft/class_389;Lnet/minecraft/class_15;)V
 		ARG 1 id
 		ARG 2 textureId
+		ARG 3 activationRule
 		ARG 4 material
-	METHOD method_1512 (Lnet/minecraft/class_18;III)V
+	METHOD method_1512 updatePlateState (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

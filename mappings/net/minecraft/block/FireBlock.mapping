@@ -16,22 +16,23 @@ CLASS net/minecraft/class_474 net/minecraft/block/FireBlock
 		ARG 5 spreadFactor
 		ARG 6 random
 		ARG 7 currentAge
-	METHOD method_1824 isBlockFlammable (Lnet/minecraft/class_14;III)Z
+	METHOD method_1824 isFlammable (Lnet/minecraft/class_14;III)Z
 		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1825 (Lnet/minecraft/class_18;IIII)I
+	METHOD method_1825 getBurnChance (Lnet/minecraft/class_18;IIII)I
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 currentChance
 	METHOD method_1826 areBlocksAroundFlammable (Lnet/minecraft/class_18;III)Z
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1827 (Lnet/minecraft/class_18;III)I
+	METHOD method_1827 getBurnChance (Lnet/minecraft/class_18;III)I
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
