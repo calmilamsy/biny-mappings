@@ -5,3 +5,6 @@ CLASS net/minecraft/class_580 net/minecraft/client/network/MultiplayerClientPlay
 		ARG 2 world
 		ARG 3 session
 		ARG 4 networkHandler
+	METHOD method_1924 handleIncreaseStat (Lnet/minecraft/class_139;I)V
+		ARG 1 stat
+		ARG 2 amount

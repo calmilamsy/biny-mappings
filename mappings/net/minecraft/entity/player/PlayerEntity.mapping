@@ -1,46 +1,114 @@
 CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerEntity
 	FIELD field_506 playerCapeUrl Ljava/lang/String;
-	FIELD field_508 spawnPos Lnet/minecraft/class_63;
+	FIELD field_507 sleepOffsetY F
+	FIELD field_508 sleepingPos Lnet/minecraft/class_63;
+	FIELD field_509 sleepOffsetX F
+	FIELD field_510 sleepOffsetZ F
+	FIELD field_511 portalCooldown I
+	FIELD field_512 inTeleportationState Z
 	FIELD field_514 fishHook Lnet/minecraft/class_135;
 	FIELD field_515 sleepTimer I
+	FIELD field_516 spawnPos Lnet/minecraft/class_63;
+	FIELD field_517 ridingStartPos Lnet/minecraft/class_63;
+		COMMENT Used for the "On A Rail" Achievement
 	FIELD field_519 inventory Lnet/minecraft/class_136;
-	FIELD field_520 playerContainer Lnet/minecraft/class_71;
-	FIELD field_521 container Lnet/minecraft/class_71;
+	FIELD field_520 playerScreenHandler Lnet/minecraft/class_71;
+	FIELD field_521 currentScreenHandler Lnet/minecraft/class_71;
+	FIELD field_522 unused B
 	FIELD field_523 score I
+	FIELD field_524 prevStepBobbingAmount F
+	FIELD field_525 stepBobbingAmount F
 	FIELD field_526 handSwinging Z
 	FIELD field_527 handSwingTicks I
 	FIELD field_528 name Ljava/lang/String;
 	FIELD field_529 dimensionId I
+	FIELD field_530 prevCapeX D
+	FIELD field_531 prevCapeY D
+	FIELD field_532 prevCapeZ D
+	FIELD field_533 capeX D
+	FIELD field_534 capeY D
+	FIELD field_535 capeZ D
 	FIELD field_536 sleeping Z
 	METHOD method_481 getScore ()I
+	METHOD method_482 getSleepingRotation ()F
+		COMMENT Gets the player's rotation in bed in degrees from the bed's rotation
 	METHOD method_483 getSleepTimer ()I
-	METHOD method_484 (III)V
+	METHOD method_484 openCraftingScreen (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_485 (Lnet/minecraft/class_137;)V
-		ARG 1 dispenserBlockEntity
-	METHOD method_486 (Lnet/minecraft/class_134;)V
+	METHOD method_485 openDispenserScreen (Lnet/minecraft/class_137;)V
+		ARG 1 dispenser
+	METHOD method_486 openDoubleChestScreen (Lnet/minecraft/class_134;)V
 		ARG 1 inventory
-	METHOD method_487 (Lnet/minecraft/class_138;)V
-		ARG 1 furnaceBlockEntity
+	METHOD method_487 openFurnaceScreen (Lnet/minecraft/class_138;)V
+		ARG 1 furnace
 	METHOD method_488 increaseStat (Lnet/minecraft/class_139;I)V
 		ARG 1 stat
 		ARG 2 amount
+	METHOD method_489 openEditSignScreen (Lnet/minecraft/class_140;)V
+		ARG 1 sign
+	METHOD method_490 sendMessage (Ljava/lang/String;)V
+		ARG 1 message
+	METHOD method_491 sendPickup (Lnet/minecraft/class_57;I)V
+		ARG 1 item
+		ARG 2 count
 	METHOD method_492 respawn ()V
-	METHOD method_493 closeScreen ()V
+	METHOD method_493 closeHandledScreen ()V
+	METHOD method_495 trySleep (III)Lnet/minecraft/class_141;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_497 wakeUp (ZZZ)V
+		ARG 1 resetSleepTimer
+		ARG 2 updateSleepingPlayers
+		ARG 3 setSpawnPos
+	METHOD method_498 isPvpEnabled ()Z
+	METHOD method_499 resetEyeHeight ()V
+		COMMENT Used when the player wakes up
+	METHOD method_500 swingHand ()V
 	METHOD method_501 dropSelectedItem ()V
 	METHOD method_502 getHand ()Lnet/minecraft/class_31;
+	METHOD method_503 clearStackInHand ()V
 	METHOD method_504 isFullyAsleep ()Z
+	METHOD method_505 getSpawnPos ()Lnet/minecraft/class_63;
+	METHOD method_506 setSpawnPos (Lnet/minecraft/class_63;)V
+		ARG 1 spawnPos
+	METHOD method_507 findRespawnPosition (Lnet/minecraft/class_18;Lnet/minecraft/class_63;)Lnet/minecraft/class_63;
+		COMMENT Checks if the player can respawn at their spawn position.
+		COMMENT
+		COMMENT If YES, finds a valid wake up position next to bed and returns it.
+		COMMENT If NO, returns null.
+		ARG 0 world
+		ARG 1 spawnPos
+	METHOD method_508 spawnItem (Lnet/minecraft/class_142;)V
+		ARG 1 itemEntity
 	METHOD method_509 dropItem (Lnet/minecraft/class_31;Z)V
 		ARG 1 stack
 		ARG 2 throwRandomly
+	METHOD method_511 getBlockBreakingSpeed (Lnet/minecraft/class_17;)F
+		ARG 1 block
 	METHOD method_512 incrementStat (Lnet/minecraft/class_139;)V
 		ARG 1 stat
 	METHOD method_513 dropItem (Lnet/minecraft/class_31;)V
 		ARG 1 stack
+	METHOD method_514 canHarvest (Lnet/minecraft/class_17;)Z
+		ARG 1 block
 	METHOD method_515 interact (Lnet/minecraft/class_57;)V
+		ARG 1 entity
 	METHOD method_516 attack (Lnet/minecraft/class_57;)V
+		ARG 1 target
+	METHOD method_517 calculateSleepOffset (I)V
+		COMMENT Calculates the offset that will beused when rendering the player in bed
+		ARG 1 bedDirection
+	METHOD method_518 updateMovementStats (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_519 increaseRidingMotionStats (DDD)V
+		ARG 1 deltaX
+		ARG 3 deltaY
+		ARG 5 deltaZ
 	METHOD method_520 collideWithEntity (Lnet/minecraft/class_57;)V
 		ARG 1 entity
+	METHOD method_521 isSleepingInBed ()Z

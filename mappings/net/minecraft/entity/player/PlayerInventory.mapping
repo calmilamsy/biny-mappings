@@ -44,7 +44,10 @@ CLASS net/minecraft/class_136 net/minecraft/entity/player/PlayerInventory
 	METHOD method_690 getEmptySlot ()I
 	METHOD method_691 setHeldItem (IZ)V
 		COMMENT Will replace currently held item, removing it
+		COMMENT
+		COMMENT unused parameter is true if interaction manager is instanceof TestInteractionManager
 		ARG 1 itemId
+		ARG 2 unused
 	METHOD method_692 scrollInHotbar (I)V
 		ARG 1 direction
 	METHOD method_693 getArmorStack (I)Lnet/minecraft/class_31;
