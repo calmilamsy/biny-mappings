@@ -1,9 +1,17 @@
 CLASS net/minecraft/class_77 net/minecraft/client/particle/Particle
-	FIELD field_2639 maxAge I
+	FIELD field_2635 textureId I
+	FIELD field_2636 prevU F
+	FIELD field_2637 prevV F
+	FIELD field_2638 particleAge I
+	FIELD field_2639 maxParticleAge I
 	FIELD field_2640 scale F
+	FIELD field_2641 gravityStrength F
 	FIELD field_2642 red F
 	FIELD field_2643 green F
 	FIELD field_2644 blue F
+	FIELD field_2645 xOffset D
+	FIELD field_2646 yOffset D
+	FIELD field_2647 zOffset D
 	METHOD <init> (Lnet/minecraft/class_18;DDDDDD)V
 		ARG 1 world
 		ARG 2 x
@@ -12,3 +20,16 @@ CLASS net/minecraft/class_77 net/minecraft/client/particle/Particle
 		ARG 8 velocityX
 		ARG 10 velocityY
 		ARG 12 velocityZ
+	METHOD method_2000 multiplyVelocity (F)Lnet/minecraft/class_77;
+		ARG 1 factor
+	METHOD method_2001 setScale (F)Lnet/minecraft/class_77;
+		ARG 1 scale
+	METHOD method_2002 render (Lnet/minecraft/class_67;FFFFFF)V
+		ARG 1 tesselator
+		ARG 2 partialTicks
+		ARG 3 horizontalSize
+		ARG 4 verticalSize
+		ARG 5 depthSize
+		ARG 6 widthOffset
+		ARG 7 heightOffset
+	METHOD method_2003 getGroup ()I
