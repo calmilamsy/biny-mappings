@@ -10,12 +10,12 @@ CLASS net/minecraft/class_69 net/minecraft/entity/player/ServerPlayerEntity
 		ARG 2 world
 		ARG 3 name
 		ARG 4 interactionManager
-	METHOD method_307 onHandledScreenClosed ()V
+	METHOD method_307 onClosedHandledScreen ()V
 	METHOD method_308 onDisconnect ()V
 		COMMENT Called before the player is disconnected from server
 	METHOD method_310 updateInput (FFZZFF)V
-		ARG 1 forward
-		ARG 2 sideways
+		ARG 1 forwardSpeed
+		ARG 2 sidewaysSpeed
 		ARG 3 jumping
 		ARG 4 sneaking
 		ARG 5 pitch

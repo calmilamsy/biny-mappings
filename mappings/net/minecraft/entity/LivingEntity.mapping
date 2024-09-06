@@ -2,7 +2,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	FIELD field_1009 maxHealth I
 	FIELD field_1019 texture Ljava/lang/String;
 	FIELD field_1024 scoreAmount I
-	FIELD field_1029 sideways F
+	FIELD field_1029 sidewaysSpeed F
 	FIELD field_1031 jumping Z
 	FIELD field_1033 movementSpeed F
 	FIELD field_1036 health I
@@ -13,7 +13,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	FIELD field_1051 bodyTrackingIncrements I
 		COMMENT Used for lerp in the tickMovement method
 	FIELD field_1059 despawnCounter I
-	FIELD field_1060 forward F
+	FIELD field_1060 forwardSpeed F
 	METHOD method_909 getHeldItem ()Lnet/minecraft/class_31;
 	METHOD method_910 tickLiving ()V
 	METHOD method_911 getRandomSound ()Ljava/lang/String;
