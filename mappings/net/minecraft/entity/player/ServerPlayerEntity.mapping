@@ -1,9 +1,12 @@
 CLASS net/minecraft/class_69 net/minecraft/entity/player/ServerPlayerEntity
+	FIELD field_255 networkHandler Lnet/minecraft/class_11;
 	FIELD field_256 server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_261 interactionManager Lnet/minecraft/class_70;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_18;Ljava/lang/String;Lnet/minecraft/class_70;)V
 		ARG 1 server
 		ARG 2 world
 		ARG 3 name
+		ARG 4 interactionManager
 	METHOD method_310 (FFZZFF)V
 		ARG 3 jumping
 		ARG 5 pitch
