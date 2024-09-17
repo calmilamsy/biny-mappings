@@ -3,14 +3,14 @@ CLASS net/minecraft/class_70 net/minecraft/server/network/ServerPlayerInteractio
 	FIELD field_2310 world Lnet/minecraft/class_73;
 	FIELD field_2311 blockBreakProgress F
 	FIELD field_2312 failedMiningStartTime I
-	FIELD field_2313 failedMiningPosX I
-	FIELD field_2314 failedMiningPosY I
-	FIELD field_2315 failedMiningPosZ I
+	FIELD field_2313 failedMiningX I
+	FIELD field_2314 failedMiningY I
+	FIELD field_2315 failedMiningZ I
 	FIELD field_2316 tickCounter I
 	FIELD field_2317 mining Z
-	FIELD field_2318 miningPosX I
-	FIELD field_2319 miningPosY I
-	FIELD field_2320 miningPosZ I
+	FIELD field_2318 miningX I
+	FIELD field_2319 miningY I
+	FIELD field_2320 miningZ I
 	FIELD field_2321 startMiningTime I
 	METHOD <init> (Lnet/minecraft/class_73;)V
 		ARG 1 world
@@ -24,7 +24,7 @@ CLASS net/minecraft/class_70 net/minecraft/server/network/ServerPlayerInteractio
 		ARG 2 y
 		ARG 3 z
 		ARG 4 direction
-	METHOD method_1831 iteractItem (Lnet/minecraft/class_54;Lnet/minecraft/class_18;Lnet/minecraft/class_31;)Z
+	METHOD method_1831 interactItem (Lnet/minecraft/class_54;Lnet/minecraft/class_18;Lnet/minecraft/class_31;)Z
 		ARG 1 player
 		ARG 2 world
 		ARG 3 stack
