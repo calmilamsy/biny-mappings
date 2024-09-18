@@ -6,3 +6,4 @@ CLASS net/minecraft/class_40 net/minecraft/entity/player/ClientPlayerEntity
 		ARG 3 session
 		ARG 4 dimensionId
 	METHOD method_137 sendChatMessage (Ljava/lang/String;)V
+		ARG 1 message

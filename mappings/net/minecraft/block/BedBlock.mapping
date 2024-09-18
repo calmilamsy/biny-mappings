@@ -6,7 +6,9 @@ CLASS net/minecraft/class_485 net/minecraft/block/BedBlock
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_1661 (Lnet/minecraft/class_18;IIII)Lnet/minecraft/class_63;
+	METHOD method_1658 getDirection (I)I
+		ARG 0 meta
+	METHOD method_1661 findWakeUpPosition (Lnet/minecraft/class_18;IIII)Lnet/minecraft/class_63;
 		ARG 0 world
 		ARG 1 x
 		ARG 2 y

@@ -9,5 +9,9 @@ CLASS net/minecraft/class_69 net/minecraft/entity/player/ServerPlayerEntity
 		ARG 4 interactionManager
 	METHOD method_310 (FFZZFF)V
 		ARG 3 jumping
+		ARG 4 sneaking
 		ARG 5 pitch
 		ARG 6 yaw
+	METHOD method_316 getEquipment (I)Lnet/minecraft/class_31;
+		ARG 1 slot
+	METHOD method_319 updateCursorStack ()V
