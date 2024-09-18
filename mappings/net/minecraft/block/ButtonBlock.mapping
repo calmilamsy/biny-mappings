@@ -2,7 +2,7 @@ CLASS net/minecraft/class_323 net/minecraft/block/ButtonBlock
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId
-	METHOD method_1047 (Lnet/minecraft/class_18;III)I
+	METHOD method_1047 getPlacementSide (Lnet/minecraft/class_18;III)I
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

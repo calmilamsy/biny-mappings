@@ -19,6 +19,7 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	FIELD field_2804 world Lnet/minecraft/class_18;
 	FIELD field_2805 worldRenderer Lnet/minecraft/class_471;
 	FIELD field_2806 player Lnet/minecraft/class_40;
+	FIELD field_2808 particleManager Lnet/minecraft/class_75;
 	FIELD field_2809 session Lnet/minecraft/class_237;
 	FIELD field_2811 canvas Ljava/awt/Canvas;
 	FIELD field_2812 isApplet Z

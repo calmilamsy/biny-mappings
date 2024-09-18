@@ -24,8 +24,16 @@ CLASS net/minecraft/class_153 net/minecraft/world/biome/Biome
 	FIELD field_897 hasRain Z
 	FIELD field_898 BIOMES [Lnet/minecraft/class_153;
 	METHOD method_785 init ()V
+	METHOD method_786 getBiome (DD)Lnet/minecraft/class_153;
+		ARG 0 temperature
+		ARG 2 downfall
+	METHOD method_787 locateBiome (FF)Lnet/minecraft/class_153;
+		ARG 0 temperature
+		ARG 1 downfall
 	METHOD method_788 setFoliageColor (I)Lnet/minecraft/class_153;
 		ARG 1 foliageColor
+	METHOD method_789 getSpawnableEntities (Lnet/minecraft/class_238;)Ljava/util/List;
+		ARG 1 group
 	METHOD method_790 setName (Ljava/lang/String;)Lnet/minecraft/class_153;
 		ARG 1 name
 	METHOD method_791 enableSnow ()Lnet/minecraft/class_153;

@@ -1,21 +1,13 @@
 CLASS net/minecraft/class_69 net/minecraft/entity/player/ServerPlayerEntity
 	FIELD field_255 networkHandler Lnet/minecraft/class_11;
 	FIELD field_256 server Lnet/minecraft/server/MinecraftServer;
-	FIELD field_258 joinInvulnerabilityTicks I
-	FIELD field_259 equipment [Lnet/minecraft/class_31;
 	FIELD field_261 interactionManager Lnet/minecraft/class_70;
-	FIELD field_266 ignoreSlotUpdate Z
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_18;Ljava/lang/String;Lnet/minecraft/class_70;)V
 		ARG 1 server
 		ARG 2 world
 		ARG 3 name
 		ARG 4 interactionManager
-	METHOD method_307 onClosedHandledScreen ()V
-	METHOD method_308 onDisconnect ()V
-		COMMENT Called before the player is disconnected from server
-	METHOD method_310 updateInput (FFZZFF)V
-		ARG 1 forwardSpeed
-		ARG 2 sidewaysSpeed
+	METHOD method_310 (FFZZFF)V
 		ARG 3 jumping
 		ARG 4 sneaking
 		ARG 5 pitch

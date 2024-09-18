@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_459 net/minecraft/util/math/noise/SimplexNoiseSampler
+	FIELD field_2166 offsetX D
+	FIELD field_2167 offsetY D
+	FIELD field_2169 grads [[I
+	FIELD field_2170 perm [I
+	FIELD field_2171 F2 D
+	FIELD field_2172 G2 D
+	METHOD <init> (Ljava/util/Random;)V
+		ARG 1 random
+	METHOD method_1758 fastFloor (D)I
+		ARG 0 x
+	METHOD method_1759 create ([DDDIIDDD)V
+		ARG 1 map
+		ARG 2 x
+		ARG 4 z
+		ARG 6 width
+		ARG 7 depth
+	METHOD method_1760 dot ([IDD)D
+		ARG 0 grad
+		ARG 1 x
+		ARG 3 y

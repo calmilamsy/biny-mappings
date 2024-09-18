@@ -7,6 +7,9 @@ CLASS net/minecraft/class_579 net/minecraft/client/render/entity/EntityRenderer
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
+		ARG 8 yaw
+		ARG 9 pitch
 	METHOD method_2026 bindTexture (Ljava/lang/String;)V
 		ARG 1 texturePath
 	METHOD method_2029 setDispatcher (Lnet/minecraft/class_578;)V
+	METHOD method_2032 postRender (Lnet/minecraft/class_57;DDDFF)V

@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_288 net/minecraft/world/biome/EntitySpawnGroup
+	FIELD field_1142 clazz Ljava/lang/Class;
+		COMMENT Class of the {@code Entity} assigned to this {@code EntitySpawnGroup}
+	FIELD field_1143 amount I
+	METHOD <init> (Ljava/lang/Class;I)V
+		ARG 1 clazz
+		ARG 2 amount

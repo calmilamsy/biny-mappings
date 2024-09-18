@@ -1,0 +1,31 @@
+CLASS net/minecraft/class_75 net/minecraft/client/particle/ParticleManager
+	FIELD field_269 world Lnet/minecraft/class_18;
+	FIELD field_270 particles [Ljava/util/List;
+	FIELD field_271 textureManager Lnet/minecraft/class_76;
+	FIELD field_272 random Ljava/util/Random;
+	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_76;)V
+		ARG 1 world
+		ARG 2 textureManager
+	METHOD method_320 removeDeadParticles ()V
+	METHOD method_321 addBlockBreakingParticles (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 side
+	METHOD method_322 addBlockBreakParticles (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockId
+		ARG 5 blockMeta
+	METHOD method_323 setWorld (Lnet/minecraft/class_18;)V
+		ARG 1 world
+	METHOD method_324 render (Lnet/minecraft/class_57;F)V
+		ARG 1 entity
+		ARG 2 partialTicks
+	METHOD method_325 addParticle (Lnet/minecraft/class_77;)V
+		ARG 1 particle
+	METHOD method_326 toString ()Ljava/lang/String;
+	METHOD method_327 renderLit (Lnet/minecraft/class_57;F)V
+		ARG 1 entity
+		ARG 2 partialTicks

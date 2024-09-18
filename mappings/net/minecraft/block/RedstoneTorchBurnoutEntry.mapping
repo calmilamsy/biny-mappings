@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_534 net/minecraft/block/class_534
+CLASS net/minecraft/class_534 net/minecraft/block/RedstoneTorchBurnoutEntry
 	FIELD field_2231 x I
 	FIELD field_2232 y I
 	FIELD field_2233 z I
