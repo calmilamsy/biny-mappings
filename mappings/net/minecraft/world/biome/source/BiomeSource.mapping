@@ -1,3 +1,35 @@
 CLASS net/minecraft/class_519 net/minecraft/world/biome/source/BiomeSource
+	FIELD field_2235 temperatureMap [D
+	FIELD field_2236 downfallMap [D
+	FIELD field_2237 weirdnessMap [D
+	FIELD field_2238 biomes [Lnet/minecraft/class_153;
+	FIELD field_2239 temperatureSampler Lnet/minecraft/class_458;
+	FIELD field_2240 downfallSampler Lnet/minecraft/class_458;
+	FIELD field_2241 weirdnessSampler Lnet/minecraft/class_458;
+	METHOD <init> (Lnet/minecraft/class_18;)V
+		ARG 1 world
 	METHOD method_1786 getTemperature (II)D
+		ARG 1 x
+		ARG 2 z
 	METHOD method_1787 getBiome (II)Lnet/minecraft/class_153;
+		ARG 1 x
+		ARG 2 z
+	METHOD method_1788 getBiomesInArea (IIII)[Lnet/minecraft/class_153;
+		ARG 1 x
+		ARG 2 z
+		ARG 3 width
+		ARG 4 depth
+	METHOD method_1789 getBiome (Lnet/minecraft/class_515;)Lnet/minecraft/class_153;
+		ARG 1 chunkPos
+	METHOD method_1790 create ([DIIII)[D
+		ARG 1 map
+		ARG 2 x
+		ARG 3 z
+		ARG 4 width
+		ARG 5 depth
+	METHOD method_1791 getBiomesInArea ([Lnet/minecraft/class_153;IIII)[Lnet/minecraft/class_153;
+		ARG 1 biomes
+		ARG 2 x
+		ARG 3 z
+		ARG 4 width
+		ARG 5 depth
