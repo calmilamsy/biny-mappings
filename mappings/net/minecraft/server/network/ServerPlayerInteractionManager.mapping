@@ -1,0 +1,48 @@
+CLASS net/minecraft/class_70 net/minecraft/server/network/ServerPlayerInteractionManager
+	FIELD field_2309 player Lnet/minecraft/class_54;
+	FIELD field_2310 world Lnet/minecraft/class_73;
+	FIELD field_2311 blockBreakProgress F
+	FIELD field_2312 failedMiningStartTime I
+	FIELD field_2313 failedMiningX I
+	FIELD field_2314 failedMiningY I
+	FIELD field_2315 failedMiningZ I
+	FIELD field_2316 tickCounter I
+	FIELD field_2317 mining Z
+	FIELD field_2318 miningX I
+	FIELD field_2319 miningY I
+	FIELD field_2320 miningZ I
+	FIELD field_2321 startMiningTime I
+	METHOD <init> (Lnet/minecraft/class_73;)V
+		ARG 1 world
+	METHOD method_1828 update ()V
+	METHOD method_1829 continueMining (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1830 onBlockBreakingAction (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 direction
+	METHOD method_1831 interactItem (Lnet/minecraft/class_54;Lnet/minecraft/class_18;Lnet/minecraft/class_31;)Z
+		ARG 1 player
+		ARG 2 world
+		ARG 3 stack
+	METHOD method_1832 interactBlock (Lnet/minecraft/class_54;Lnet/minecraft/class_18;Lnet/minecraft/class_31;IIII)Z
+		ARG 1 player
+		ARG 2 world
+		ARG 3 stack
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 side
+	METHOD method_1833 finishMining (III)Z
+		COMMENT @return if block successfully mined
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1834 tryBreakBlock (III)Z
+		COMMENT @return if block successfully broke
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
