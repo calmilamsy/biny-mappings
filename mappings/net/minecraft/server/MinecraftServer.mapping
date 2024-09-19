@@ -1,3 +1,5 @@
 CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
+	FIELD field_2840 properties Lnet/minecraft/class_391;
+	FIELD field_2842 playerManager Lnet/minecraft/class_166;
 	FIELD field_2848 onlineMode Z
 	METHOD method_2171 tick ()V
