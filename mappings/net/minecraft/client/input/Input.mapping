@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_41 net/minecraft/client/input/Input
+	FIELD field_2532 movementSideways F
+	FIELD field_2533 movementForward F
+	FIELD field_2534 unused Z
+	FIELD field_2535 jumping Z
+	FIELD field_2536 sneaking Z
+	METHOD method_1940 reset ()V
+	METHOD method_1941 updateKey (IZ)V
+		ARG 1 key
+		ARG 2 keyDown
+	METHOD method_1942 update (Lnet/minecraft/class_54;)V
+		ARG 1 player
