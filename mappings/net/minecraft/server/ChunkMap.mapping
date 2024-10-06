@@ -4,7 +4,7 @@ CLASS net/minecraft/class_167 net/minecraft/server/ChunkMap
 	FIELD field_2131 chunksToUpdate Ljava/util/List;
 	FIELD field_2132 server Lnet/minecraft/server/MinecraftServer;
 	FIELD field_2133 dimensionId I
-	FIELD field_2134 viewRadius I
+	FIELD field_2134 viewDistance I
 	FIELD field_2135 DIRECTIONS [[I
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;II)V
 		ARG 1 server
