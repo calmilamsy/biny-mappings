@@ -1,0 +1,63 @@
+CLASS net/minecraft/class_167 net/minecraft/server/ChunkMap
+	FIELD field_2129 players Ljava/util/List;
+	FIELD field_2130 chunkMapping Lnet/minecraft/class_101;
+	FIELD field_2131 chunksToUpdate Ljava/util/List;
+	FIELD field_2132 server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_2133 dimensionId I
+	FIELD field_2134 viewDistance I
+	FIELD field_2135 DIRECTIONS [[I
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;II)V
+		ARG 1 server
+		ARG 2 dimensionId
+		ARG 3 viewRadius
+	METHOD method_1741 getWorld ()Lnet/minecraft/class_73;
+	METHOD method_1742 markBlockForUpdate (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1743 isWithinViewDistance (IIII)Z
+		ARG 1 chunkX
+		ARG 2 chunkZ
+		ARG 3 centerX
+		ARG 4 centerZ
+	METHOD method_1744 getOrCreateChunk (IIZ)Lnet/minecraft/class_167$class_514;
+		ARG 1 chunkX
+		ARG 2 chunkZ
+		ARG 3 createIfAbsent
+	METHOD method_1745 addPlayer (Lnet/minecraft/class_69;)V
+		ARG 1 player
+	METHOD method_1747 updateChunks ()V
+	METHOD method_1748 removePlayer (Lnet/minecraft/class_69;)V
+		ARG 1 player
+	METHOD method_1750 getBlockViewDistance ()I
+	METHOD method_1751 updatePlayerChunks (Lnet/minecraft/class_69;)V
+		ARG 1 player
+	CLASS class_514 TrackedChunk
+		FIELD field_2137 players Ljava/util/List;
+		FIELD field_2138 chunkX I
+		FIELD field_2139 chunkZ I
+		FIELD field_2140 chunkPos Lnet/minecraft/class_515;
+		FIELD field_2141 dirtyBlocks [S
+		FIELD field_2142 dirtyBlockCount I
+		FIELD field_2143 minX I
+		FIELD field_2144 minY I
+		FIELD field_2145 minZ I
+		FIELD field_2146 maxX I
+		FIELD field_2147 maxY I
+		FIELD field_2148 maxZ I
+		METHOD <init> (Lnet/minecraft/class_167;II)V
+			ARG 2 chunkX
+			ARG 3 chunkY
+		METHOD method_1752 updateChunk ()V
+		METHOD method_1753 updatePlayerChunks (III)V
+			ARG 1 x
+			ARG 2 y
+			ARG 3 z
+		METHOD method_1754 addPlayer (Lnet/minecraft/class_69;)V
+			ARG 1 player
+		METHOD method_1755 sendPacketToPlayers (Lnet/minecraft/class_169;)V
+			ARG 1 packet
+		METHOD method_1756 sendBlockEntityUpdate (Lnet/minecraft/class_55;)V
+			ARG 1 blockentity
+		METHOD method_1757 removePlayer (Lnet/minecraft/class_69;)V
+			ARG 1 player

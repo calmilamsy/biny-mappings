@@ -1,0 +1,32 @@
+CLASS net/minecraft/class_101 net/minecraft/util/LongObjectHashMap
+	FIELD field_324 entries [Lnet/minecraft/class_102;
+	FIELD field_325 size I
+	FIELD field_326 capacity I
+	FIELD field_327 loadFactor F
+	FIELD field_328 modCount I
+	METHOD method_383 hash (I)I
+		ARG 0 key
+	METHOD method_384 indexOf (II)I
+		ARG 0 hash
+		ARG 1 arrayLength
+	METHOD method_385 addEntry (IJLjava/lang/Object;I)V
+		ARG 1 hash
+		ARG 2 key
+		ARG 4 value
+		ARG 5 index
+	METHOD method_386 get (J)Ljava/lang/Object;
+		ARG 1 key
+	METHOD method_387 put (JLjava/lang/Object;)V
+		ARG 1 key
+		ARG 3 value
+	METHOD method_388 transfer ([Lnet/minecraft/class_102;)V
+		ARG 1 entryArray
+	METHOD method_389 resize (I)V
+		ARG 1 size
+	METHOD method_390 remove (J)Ljava/lang/Object;
+		ARG 1 key
+	METHOD method_391 removeEntry (J)Lnet/minecraft/class_102;
+		ARG 1 key
+	METHOD method_392 synthHash (J)I
+	METHOD method_393 hash (J)I
+		ARG 0 key
