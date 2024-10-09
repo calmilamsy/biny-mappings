@@ -2,7 +2,7 @@ CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
 	FIELD field_2327 prevCameraRoll F
 	FIELD field_2328 cameraRollAmount F
 	FIELD field_2329 prevCameraRollAmount F
-	FIELD field_2330 renderClouds Z
+	FIELD field_2330 renderFog Z
 	FIELD field_2331 zoom D
 	FIELD field_2332 zoomX D
 	FIELD field_2333 zoomY D
@@ -62,7 +62,7 @@ CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
 	METHOD method_1846 renderRain ()V
 	METHOD method_1847 renderSnow (F)V
 		ARG 1 tickDelta
-	METHOD method_1848 getFieldOfView (F)F
+	METHOD method_1848 getFov (F)F
 		ARG 1 tickDelta
 	METHOD method_1849 applyDamageTiltEffect (F)V
 		ARG 1 tickDelta
