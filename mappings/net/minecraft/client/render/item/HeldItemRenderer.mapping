@@ -4,8 +4,10 @@ CLASS net/minecraft/class_556 net/minecraft/client/render/item/HeldItemRenderer
 	FIELD field_2403 height F
 	FIELD field_2404 prevHeight F
 	FIELD field_2405 blockRenderManager Lnet/minecraft/class_13;
-	FIELD field_2406 itemRenderer Lnet/minecraft/class_321;
+	FIELD field_2406 mapRenderer Lnet/minecraft/class_321;
 	FIELD field_2407 slot I
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
 	METHOD method_1859 tick ()V
 	METHOD method_1860 render (F)V
 		ARG 1 tickDelta
