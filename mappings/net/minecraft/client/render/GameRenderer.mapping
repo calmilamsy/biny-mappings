@@ -1,0 +1,74 @@
+CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
+	FIELD field_2327 prevCameraRoll F
+	FIELD field_2328 cameraRollAmount F
+	FIELD field_2329 prevCameraRollAmount F
+	FIELD field_2330 renderFog Z
+	FIELD field_2331 zoom D
+	FIELD field_2332 zoomX D
+	FIELD field_2333 zoomY D
+	FIELD field_2334 lastInactiveTime J
+	FIELD field_2335 lastFrameTime J
+	FIELD field_2336 random Ljava/util/Random;
+	FIELD field_2337 rainSoundCounter I
+	FIELD field_2338 lastViewBob F
+	FIELD field_2339 viewBob F
+	FIELD field_2340 anaglyph3d Z
+	FIELD field_2341 activeEye I
+	FIELD field_2342 heldItemRenderer Lnet/minecraft/class_556;
+	FIELD field_2343 leftEyeRenderPass I
+	FIELD field_2344 rightEyeRenderPass I
+	FIELD field_2345 fogColorBuffer Ljava/nio/FloatBuffer;
+	FIELD field_2346 fogRed F
+	FIELD field_2347 fogGreen F
+	FIELD field_2348 fogBlue F
+	FIELD field_2349 client Lnet/minecraft/client/Minecraft;
+	FIELD field_2350 viewDistance F
+	FIELD field_2351 ticks I
+	FIELD field_2352 targetedEntity Lnet/minecraft/class_57;
+	FIELD field_2353 cinematicCameraYawSmoother Lnet/minecraft/class_12;
+	FIELD field_2354 cinematicCameraPitchSmoother Lnet/minecraft/class_12;
+	FIELD field_2359 thirdPersonDistance F
+	FIELD field_2360 prevThirdPersonDistance F
+	FIELD field_2361 thirdPersonYaw F
+	FIELD field_2362 prevThirdPersonYaw F
+	FIELD field_2363 thirdPersonPitch F
+	FIELD field_2364 prevThirdPersonPitch F
+	FIELD field_2365 cameraRoll F
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 client
+	METHOD method_1837 updateCamera ()V
+	METHOD method_1838 updateTargetedEntity (F)V
+		ARG 1 tickDelta
+	METHOD method_1839 updateFogColorBuffer (FFFF)Ljava/nio/FloatBuffer;
+		ARG 1 red
+		ARG 2 green
+		ARG 3 blue
+		ARG 4 alpha
+	METHOD method_1840 renderWorld (FI)V
+		ARG 1 tickDelta
+		ARG 2 eye
+	METHOD method_1841 renderFrame (FJ)V
+		ARG 1 tickDelta
+		ARG 2 time
+	METHOD method_1842 applyFog (IF)V
+		ARG 1 mode
+		ARG 2 tickDelta
+	METHOD method_1843 setupHudRender ()V
+	METHOD method_1844 onFrameUpdate (F)V
+		ARG 1 tickDelta
+	METHOD method_1845 renderFirstPersonHand (FI)V
+		ARG 1 tickDelta
+		ARG 2 eye
+	METHOD method_1846 renderRain ()V
+	METHOD method_1847 renderSnow (F)V
+		ARG 1 tickDelta
+	METHOD method_1848 getFov (F)F
+		ARG 1 tickDelta
+	METHOD method_1849 applyDamageTiltEffect (F)V
+		ARG 1 tickDelta
+	METHOD method_1850 applyViewBobbing (F)V
+		ARG 1 tickDelta
+	METHOD method_1851 applyCameraTransform (F)V
+		ARG 1 tickDelta
+	METHOD method_1852 updateSkyAndFogColors (F)V
+		ARG 1 tickDelta
