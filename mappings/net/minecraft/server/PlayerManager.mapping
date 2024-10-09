@@ -12,12 +12,12 @@ CLASS net/minecraft/class_166 net/minecraft/server/PlayerManager
 	FIELD field_587 BANNED_IPS_FILE Ljava/io/File;
 	FIELD field_588 OPERATORS_FILE Ljava/io/File;
 	FIELD field_589 WHITELIST_FILE Ljava/io/File;
-	FIELD field_590 playerSaveHandler Lnet/minecraft/class_168;
+	FIELD field_590 saveHandler Lnet/minecraft/class_168;
 	FIELD field_591 whitelistEnabled Z
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 server
 	METHOD method_549 getBlockViewDistance ()I
-	METHOD method_550 sendPacketAtPos (DDDDILnet/minecraft/class_169;)V
+	METHOD method_550 sendToAround (DDDDILnet/minecraft/class_169;)V
 		COMMENT Send packet to all players in the specified range of the given position
 		ARG 1 x
 		ARG 3 y
@@ -27,7 +27,7 @@ CLASS net/minecraft/class_166 net/minecraft/server/PlayerManager
 		ARG 10 packet
 	METHOD method_551 getChunkMap (I)Lnet/minecraft/class_167;
 		ARG 1 dimensionId
-	METHOD method_552 markBlockForUpdate (IIII)V
+	METHOD method_552 markDirty (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -39,16 +39,16 @@ CLASS net/minecraft/class_166 net/minecraft/server/PlayerManager
 		ARG 4 blockentity
 	METHOD method_554 updatePlayerAfterDimensionChange (Lnet/minecraft/class_69;)V
 		ARG 1 player
-	METHOD method_555 respawnPlayerEntity (Lnet/minecraft/class_69;I)Lnet/minecraft/class_69;
+	METHOD method_555 respawnPlayer (Lnet/minecraft/class_69;I)Lnet/minecraft/class_69;
 		ARG 1 player
 		ARG 2 dimensionId
-	METHOD method_556 sendTimeWeatherPacket (Lnet/minecraft/class_69;Lnet/minecraft/class_73;)V
+	METHOD method_556 sendWorldInfo (Lnet/minecraft/class_69;Lnet/minecraft/class_73;)V
 		ARG 1 player
 		ARG 2 world
 	METHOD method_557 connectPlayer (Lnet/minecraft/class_10;Ljava/lang/String;)Lnet/minecraft/class_69;
 		ARG 1 loginNetworkHandler
 		ARG 2 name
-	METHOD method_558 sendPacketAroundPlayer (Lnet/minecraft/class_54;DDDDILnet/minecraft/class_169;)V
+	METHOD method_558 sendToAround (Lnet/minecraft/class_54;DDDDILnet/minecraft/class_169;)V
 		COMMENT Send packet to all players in the specified range of the given player
 		ARG 1 player
 		ARG 2 x
@@ -57,9 +57,9 @@ CLASS net/minecraft/class_166 net/minecraft/server/PlayerManager
 		ARG 8 range
 		ARG 10 dimensionId
 		ARG 11 packet
-	METHOD method_559 broadcastPacket (Lnet/minecraft/class_169;)V
+	METHOD method_559 sendToAll (Lnet/minecraft/class_169;)V
 		ARG 1 packet
-	METHOD method_560 broadcastPacketInDimension (Lnet/minecraft/class_169;I)V
+	METHOD method_560 sendToDimension (Lnet/minecraft/class_169;I)V
 		ARG 1 packet
 		ARG 2 dimensionId
 	METHOD method_561 banPlayer (Ljava/lang/String;)V
