@@ -1,17 +1,42 @@
 CLASS net/minecraft/class_69 net/minecraft/entity/player/ServerPlayerEntity
 	FIELD field_255 networkHandler Lnet/minecraft/class_11;
 	FIELD field_256 server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_257 lastHealthScore I
+	FIELD field_258 joinInvulnerabilityTicks I
+	FIELD field_259 equipment [Lnet/minecraft/class_31;
+	FIELD field_260 screenHandlerSyncId I
 	FIELD field_261 interactionManager Lnet/minecraft/class_70;
+	FIELD field_262 lastX D
+	FIELD field_263 lastZ D
+	FIELD field_264 pendingChunkUpdates Ljava/util/List;
+	FIELD field_265 activeChunks Ljava/util/Set;
+	FIELD field_266 skipPacketSlotUpdates Z
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_18;Ljava/lang/String;Lnet/minecraft/class_70;)V
 		ARG 1 server
 		ARG 2 world
 		ARG 3 name
 		ARG 4 interactionManager
-	METHOD method_310 (FFZZFF)V
+	METHOD method_307 onHandledScreenClosed ()V
+	METHOD method_308 onDisconnect ()V
+	METHOD method_309 markHealthDirty ()V
+	METHOD method_310 updateInput (FFZZFF)V
+		ARG 1 forwardSpeed
+		ARG 2 sidewaysSpeed
 		ARG 3 jumping
 		ARG 4 sneaking
 		ARG 5 pitch
 		ARG 6 yaw
+	METHOD method_311 onContentsUpdate (Lnet/minecraft/class_71;)V
+		ARG 1 screenHandler
+	METHOD method_312 updateBlockEntity (Lnet/minecraft/class_55;)V
+		ARG 1 blockentity
+	METHOD method_313 playerTick (Z)V
+		ARG 1 shouldSendChunkUpdates
+	METHOD method_314 incrementScreenHandlerSyncId ()V
+	METHOD method_315 handleFall (DZ)V
+		ARG 1 heightDifference
+		ARG 3 onGround
 	METHOD method_316 getEquipment (I)Lnet/minecraft/class_31;
 		ARG 1 slot
+	METHOD method_317 initScreenHandler ()V
 	METHOD method_319 updateCursorStack ()V
