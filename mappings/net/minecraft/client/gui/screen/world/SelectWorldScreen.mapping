@@ -1,6 +1,25 @@
 CLASS net/minecraft/class_568 net/minecraft/client/gui/screen/world/SelectWorldScreen
 	FIELD field_2431 parent Lnet/minecraft/class_32;
 	FIELD field_2432 title Ljava/lang/String;
+	FIELD field_2433 dateFormat Ljava/text/DateFormat;
+	FIELD field_2434 selected Z
+	FIELD field_2435 selectedWorldId I
+	FIELD field_2436 saves Ljava/util/List;
+	FIELD field_2437 worldList Lnet/minecraft/class_568$class_569;
+	FIELD field_2438 worldText Ljava/lang/String;
+	FIELD field_2439 conversionText Ljava/lang/String;
+	FIELD field_2440 isInChildScreen Z
+	FIELD field_2441 renameWorldButton Lnet/minecraft/class_33;
+	FIELD field_2442 playSelectedWorldButton Lnet/minecraft/class_33;
+	FIELD field_2443 deleteWorldButton Lnet/minecraft/class_33;
 	METHOD <init> (Lnet/minecraft/class_32;)V
 		ARG 1 parent
+	METHOD method_1887 getSaveFileNames (I)Ljava/lang/String;
+		ARG 1 index
+	METHOD method_1889 getWorldName (I)Ljava/lang/String;
+		ARG 1 index
+	METHOD method_1891 selectWorld (I)V
+		ARG 1 id
+	METHOD method_1896 addButton ()V
+	METHOD method_1897 getSaves ()V
 	CLASS class_569 WorldListWidget

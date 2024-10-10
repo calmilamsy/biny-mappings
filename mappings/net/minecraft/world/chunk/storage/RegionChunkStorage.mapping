@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_251 net/minecraft/world/chunk/storage/RegionChunkStorage
+	FIELD field_930 dir Ljava/io/File;
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 dir

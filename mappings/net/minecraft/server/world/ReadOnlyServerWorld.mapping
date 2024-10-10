@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_120 net/minecraft/server/world/ReadOnlyServerWorld
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_52;Ljava/lang/String;IJLnet/minecraft/class_73;)V
+		ARG 1 server
+		ARG 2 storage
+		ARG 3 saveName
+		ARG 4 dimension
+		ARG 5 seed
+		ARG 7 delegate

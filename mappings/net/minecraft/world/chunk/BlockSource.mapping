@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_490 net/minecraft/world/chunk/BlockSource
+	FIELD field_2009 BLOCKS [B
+	METHOD method_1671 fill ([B)V
+		ARG 0 blocks

@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_247 net/minecraft/server/dedicated/gui/PlayerStatsGui
+	FIELD field_912 memoryUsePercentage [I
+	FIELD field_913 memoryUsage I
+	FIELD field_914 lines [Ljava/lang/String;
+	METHOD method_829 update ()V
+	METHOD paint paint (Ljava/awt/Graphics;)V
+		ARG 1 graphics
+	CLASS 1
+		METHOD actionPerformed actionPerformed (Ljava/awt/event/ActionEvent;)V
+			ARG 1 actionEvent

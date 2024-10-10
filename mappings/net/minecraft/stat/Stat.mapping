@@ -5,6 +5,7 @@ CLASS net/minecraft/class_139 net/minecraft/stat/Stat
 	FIELD field_2025 id I
 	FIELD field_2026 stringId Ljava/lang/String;
 	FIELD field_2027 localOnly Z
+	FIELD field_2028 uuid Ljava/lang/String;
 	FIELD field_2029 INTEGER_FORMAT Lnet/minecraft/class_498;
 	FIELD field_2030 TIME_PROVIDER Lnet/minecraft/class_498;
 	FIELD field_2031 DISTANCE_PROVIDER Lnet/minecraft/class_498;
@@ -19,3 +20,6 @@ CLASS net/minecraft/class_139 net/minecraft/stat/Stat
 	METHOD method_1677 localOnly ()Lnet/minecraft/class_139;
 	METHOD method_1678 isAchievement ()Z
 	METHOD method_1679 format (I)Ljava/lang/String;
+		ARG 1 value
+	METHOD method_1680 getNumberFormat ()Ljava/text/NumberFormat;
+	METHOD method_1681 getDecimalFormat ()Ljava/text/DecimalFormat;

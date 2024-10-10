@@ -1,9 +1,21 @@
 CLASS net/minecraft/class_40 net/minecraft/entity/player/ClientPlayerEntity
+	FIELD field_161 input Lnet/minecraft/class_41;
 	FIELD field_162 minecraft Lnet/minecraft/client/Minecraft;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/class_18;Lnet/minecraft/class_237;I)V
 		ARG 1 minecraft
 		ARG 2 world
 		ARG 3 session
 		ARG 4 dimensionId
+	METHOD method_136 updateKey (IZ)V
+		ARG 1 key
+		ARG 2 state
 	METHOD method_137 sendChatMessage (Ljava/lang/String;)V
 		ARG 1 message
+	METHOD method_138 shouldSuffocate (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_139 damageTo (I)V
+		ARG 1 health
+	METHOD method_140 releaseAllKeys ()V
+	METHOD method_141 getTotalArmorDurability ()I

@@ -1,2 +1,12 @@
 CLASS net/minecraft/class_106 net/minecraft/client/render/entity/PaintingEntityRenderer
 	FIELD field_332 random Ljava/util/Random;
+	METHOD method_398 applyBrightness (Lnet/minecraft/class_107;FF)V
+		ARG 1 painting
+		ARG 2 u
+		ARG 3 v
+	METHOD method_399 renderPainting (Lnet/minecraft/class_107;IIII)V
+		ARG 1 painting
+		ARG 2 width
+		ARG 3 height
+		ARG 4 u
+		ARG 5 v

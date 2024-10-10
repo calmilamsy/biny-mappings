@@ -34,12 +34,21 @@ CLASS net/minecraft/class_217 net/minecraft/stat/Stats
 	FIELD field_838 DEATHS Lnet/minecraft/class_139;
 	FIELD field_839 MOB_KILLS Lnet/minecraft/class_139;
 	METHOD method_748 initialize ()V
+	METHOD method_749 initBlocksMined (Ljava/lang/String;I)[Lnet/minecraft/class_139;
+		ARG 0 name
+		ARG 1 id
 	METHOD method_750 linkAlternateBlockStats ([Lnet/minecraft/class_139;)V
 		ARG 0 statsArray
 	METHOD method_751 linkBlocks ([Lnet/minecraft/class_139;II)V
 		ARG 0 statsArray
 		ARG 1 sourceId
 		ARG 2 targetId
+	METHOD method_752 initItemsUsedStats ([Lnet/minecraft/class_139;Ljava/lang/String;III)[Lnet/minecraft/class_139;
+		ARG 0 stats
+		ARG 1 name
+		ARG 2 id
+		ARG 3 minId
+		ARG 4 maxId
 	METHOD method_753 initializeItemStats ()V
 	METHOD method_754 initializeBrokenItemStats ([Lnet/minecraft/class_139;Ljava/lang/String;III)[Lnet/minecraft/class_139;
 		ARG 0 statsArray

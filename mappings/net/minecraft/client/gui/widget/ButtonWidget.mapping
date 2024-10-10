@@ -26,7 +26,9 @@ CLASS net/minecraft/class_33 net/minecraft/client/gui/widget/ButtonWidget
 		ARG 1 minecraft
 		ARG 2 mouseX
 		ARG 3 mouseY
-	METHOD method_1188 (Lnet/minecraft/client/Minecraft;II)V
+	METHOD method_1187 getYImage (Z)I
+		ARG 1 hovered
+	METHOD method_1188 renderBackground (Lnet/minecraft/client/Minecraft;II)V
 		ARG 1 minecraft
 		ARG 2 mouseX
 		ARG 3 mouseY

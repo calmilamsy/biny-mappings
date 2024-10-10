@@ -1,0 +1,25 @@
+CLASS net/minecraft/class_472 net/minecraft/client/render/world/ChunkRenderer
+	FIELD field_2480 x I
+	FIELD field_2481 y I
+	FIELD field_2482 z I
+	FIELD field_2483 offsetX F
+	FIELD field_2484 offsetY F
+	FIELD field_2485 offsetZ F
+	FIELD field_2486 glListBuffer Ljava/nio/IntBuffer;
+	FIELD field_2487 initialized Z
+	FIELD field_2488 rendered Z
+	METHOD method_1909 render ()V
+	METHOD method_1910 addGlList (I)V
+		ARG 1 glList
+	METHOD method_1911 isAt (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1912 init (IIIDDD)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 offsetX
+		ARG 6 offsetY
+		ARG 8 offsetZ
+	METHOD method_1913 clear ()V

@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_203 net/minecraft/client/LogoCanvas
+	FIELD field_755 logo Ljava/awt/image/BufferedImage;
+	METHOD paint paint (Ljava/awt/Graphics;)V
+		ARG 1 graphics

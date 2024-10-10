@@ -20,8 +20,8 @@ CLASS net/minecraft/class_69 net/minecraft/entity/player/ServerPlayerEntity
 	METHOD method_308 onDisconnect ()V
 	METHOD method_309 markHealthDirty ()V
 	METHOD method_310 updateInput (FFZZFF)V
-		ARG 1 forwardSpeed
-		ARG 2 sidewaysSpeed
+		ARG 1 sidewaysSpeed
+		ARG 2 forwardSpeed
 		ARG 3 jumping
 		ARG 4 sneaking
 		ARG 5 pitch

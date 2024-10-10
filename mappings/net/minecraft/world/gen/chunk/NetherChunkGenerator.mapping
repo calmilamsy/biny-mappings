@@ -1,0 +1,39 @@
+CLASS net/minecraft/class_359 net/minecraft/world/gen/chunk/NetherChunkGenerator
+	FIELD field_1337 scaleNoise Lnet/minecraft/class_209;
+	FIELD field_1338 depthNoise Lnet/minecraft/class_209;
+	FIELD field_1339 perlinNoiseBuffer [D
+	FIELD field_1340 minLimitPerlinNoiseBuffer [D
+	FIELD field_1341 maxLimitPerlinNoiseBuffer [D
+	FIELD field_1342 scaleNoiseBuffer [D
+	FIELD field_1343 depthNoiseBuffer [D
+	FIELD field_1344 random Ljava/util/Random;
+	FIELD field_1345 minLimitPerlinNoise Lnet/minecraft/class_209;
+	FIELD field_1346 maxLimitPerlinNoise Lnet/minecraft/class_209;
+	FIELD field_1347 perlinNoise1 Lnet/minecraft/class_209;
+	FIELD field_1348 perlinNoise2 Lnet/minecraft/class_209;
+	FIELD field_1349 perlinNoise3 Lnet/minecraft/class_209;
+	FIELD field_1350 world Lnet/minecraft/class_18;
+	FIELD field_1351 heightMap [D
+	FIELD field_1352 sandBuffer [D
+	FIELD field_1353 gravelBuffer [D
+	FIELD field_1354 depthBuffer [D
+	FIELD field_1355 cave Lnet/minecraft/class_105;
+	METHOD <init> (Lnet/minecraft/class_18;J)V
+		ARG 1 world
+		ARG 2 seed
+	METHOD method_1180 buildTerrain (II[B)V
+		ARG 1 chunkX
+		ARG 2 chunkZ
+		ARG 3 blocks
+	METHOD method_1181 generateHeightMap ([DIIIIII)[D
+		ARG 1 heightMap
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 sizeX
+		ARG 6 sizeY
+		ARG 7 sizeZ
+	METHOD method_1182 buildSurfaces (II[B)V
+		ARG 1 chunkX
+		ARG 2 chunkY
+		ARG 3 blocks

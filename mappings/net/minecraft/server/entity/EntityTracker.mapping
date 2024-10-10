@@ -1,0 +1,31 @@
+CLASS net/minecraft/class_488 net/minecraft/server/entity/EntityTracker
+	FIELD field_2004 entries Ljava/util/Set;
+	FIELD field_2005 entriesById Lnet/minecraft/class_80;
+	FIELD field_2006 world Lnet/minecraft/server/MinecraftServer;
+	FIELD field_2007 viewDistance I
+	FIELD field_2008 dimensionId I
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;I)V
+		ARG 1 server
+		ARG 2 dimensionId
+	METHOD method_1663 tick ()V
+	METHOD method_1664 removeListener (Lnet/minecraft/class_69;)V
+		ARG 1 player
+	METHOD method_1665 onEntityAdded (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_1666 startTracking (Lnet/minecraft/class_57;II)V
+		ARG 1 entity
+		ARG 2 trackedDistance
+		ARG 3 tracingFrequency
+	METHOD method_1667 startTracking (Lnet/minecraft/class_57;IIZ)V
+		ARG 1 entity
+		ARG 2 trackedDistance
+		ARG 3 tracingFrequency
+		ARG 4 alwaysUpdateVelocity
+	METHOD method_1668 sendToListeners (Lnet/minecraft/class_57;Lnet/minecraft/class_169;)V
+		ARG 1 entity
+		ARG 2 packet
+	METHOD method_1669 onEntityRemoved (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_1670 sendToAround (Lnet/minecraft/class_57;Lnet/minecraft/class_169;)V
+		ARG 1 entity
+		ARG 2 packet

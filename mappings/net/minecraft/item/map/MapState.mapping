@@ -35,6 +35,7 @@ CLASS net/minecraft/class_198 net/minecraft/item/map/MapState
 		FIELD field_734 player Lnet/minecraft/class_54;
 		FIELD field_735 startZ [I
 		FIELD field_736 endZ [I
+		FIELD field_738 nextDirtyPixel I
 		FIELD field_739 colorsUpdateInterval I
 		FIELD field_740 iconsData [B
 		METHOD <init> (Lnet/minecraft/class_198;Lnet/minecraft/class_54;)V

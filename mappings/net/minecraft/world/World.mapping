@@ -38,7 +38,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	FIELD field_215 newWorld Z
 	FIELD field_216 dimension Lnet/minecraft/class_50;
 	FIELD field_217 eventListeners Ljava/util/List;
-	FIELD field_218 chunkManager Lnet/minecraft/class_51;
+	FIELD field_218 chunkSource Lnet/minecraft/class_51;
 	FIELD field_219 dimensionData Lnet/minecraft/class_52;
 	FIELD field_220 properties Lnet/minecraft/class_7;
 	FIELD field_221 eventProcessingEnabled Z
@@ -236,22 +236,32 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 6 z
 		ARG 8 power
 		ARG 9 fire
+	METHOD method_189 findPath (Lnet/minecraft/class_57;IIIF)Lnet/minecraft/class_61;
+		ARG 1 entity
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 range
 	METHOD method_190 getEntityCollisions (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
 		ARG 1 entity
 		ARG 2 box
 	METHOD method_191 playSound (Lnet/minecraft/class_57;Ljava/lang/String;FF)V
 		ARG 1 source
 		ARG 2 sound
-	METHOD method_192 (Lnet/minecraft/class_57;Lnet/minecraft/class_57;F)Lnet/minecraft/class_61;
+	METHOD method_192 findPath (Lnet/minecraft/class_57;Lnet/minecraft/class_57;F)Lnet/minecraft/class_61;
 		ARG 1 entity
+		ARG 2 target
+		ARG 3 range
 	METHOD method_193 updateEntity (Lnet/minecraft/class_57;Z)V
 		ARG 1 entity
+		ARG 2 requireLoaded
 	METHOD method_194 processScheduledTicks (Z)Z
+		ARG 1 flush
 	METHOD method_195 saveWithLoadingDisplay (ZLnet/minecraft/class_62;)V
 	METHOD method_196 allowSpawning (ZZ)V
 		ARG 1 allowMonsterSpawning
 		ARG 2 allowMobSpawning
-	METHOD method_197 createChunkManager ()Lnet/minecraft/class_51;
+	METHOD method_197 createChunkCache ()Lnet/minecraft/class_51;
 	METHOD method_198 getTime (F)F
 		ARG 1 partialTicks
 	METHOD method_199 getChunkFromPos (II)Lnet/minecraft/class_43;
@@ -330,7 +340,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 6 sizeZ
 	METHOD method_218 isBoxSubmergedInFluid (Lnet/minecraft/class_25;)Z
 		ARG 1 box
-	METHOD method_219 loadEntitySkin (Lnet/minecraft/class_57;)V
+	METHOD method_219 notifyEntityAdded (Lnet/minecraft/class_57;)V
 		ARG 1 entity
 	METHOD method_220 canMonsterSpawn ()Z
 	METHOD method_221 getRainGradient (F)F
@@ -351,7 +361,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 5 pitch
 	METHOD method_225 isFireOrLavaInBox (Lnet/minecraft/class_25;)Z
 		ARG 1 box
-	METHOD method_226 unloadEntitySkin (Lnet/minecraft/class_57;)V
+	METHOD method_226 notifiyEntityRemoved (Lnet/minecraft/class_57;)V
 		ARG 1 entity
 	METHOD method_227 tickEntities ()V
 	METHOD method_228 getTopSolidBlockY (II)I
@@ -430,7 +440,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 		ARG 4 direction
-	METHOD method_251 saveDimensionData ()V
+	METHOD method_251 checkSessionLock ()V
 	METHOD method_252 getBrightness (III)I
 		ARG 1 x
 		ARG 2 y
@@ -448,7 +458,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 	METHOD method_258 getSpawnPos ()Lnet/minecraft/class_63;
-	METHOD method_259 getChunkManager ()Lnet/minecraft/class_51;
+	METHOD method_259 getChunkSource ()Lnet/minecraft/class_51;
 	METHOD method_260 removeBlockEntity (III)V
 		ARG 1 x
 		ARG 2 y

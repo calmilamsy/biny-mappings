@@ -5,6 +5,8 @@ CLASS net/minecraft/class_60 net/minecraft/world/explosion/Explosion
 	FIELD field_1394 z D
 	FIELD field_1395 source Lnet/minecraft/class_57;
 	FIELD field_1396 power F
+	FIELD field_1397 damagedBlocks Ljava/util/Set;
+		COMMENT Set of Vec3i
 	FIELD field_1398 random Ljava/util/Random;
 	FIELD field_1399 world Lnet/minecraft/class_18;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_57;DDDF)V

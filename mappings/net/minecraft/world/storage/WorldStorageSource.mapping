@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_182 net/minecraft/world/storage/WorldStorageSource
+	METHOD method_1001 getName ()Ljava/lang/String;
+	METHOD method_1002 getAll ()Ljava/util/List;
+	METHOD method_1003 flush ()V
+	METHOD method_1004 (Ljava/lang/String;)Lnet/minecraft/class_7;
+		COMMENT getProperty
+		ARG 1 saveName
+	METHOD method_1005 rename (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 saveName
+		ARG 2 newName
+	METHOD method_1006 delete (Ljava/lang/String;)V
+		ARG 1 saveName
+	METHOD method_1007 needsConversion (Ljava/lang/String;)Z
+		ARG 1 saveName
+	METHOD method_1008 convert (Ljava/lang/String;Lnet/minecraft/class_62;)Z
+		ARG 1 saveName
+		ARG 2 display
+	METHOD method_1009 (Ljava/lang/String;Z)Lnet/minecraft/class_52;
+		COMMENT get
+		ARG 1 saveName
+		ARG 2 createPlayerDataDir

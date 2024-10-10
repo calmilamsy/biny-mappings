@@ -1,29 +1,35 @@
 CLASS net/minecraft/class_408 net/minecraft/block/RedstoneWireBlock
 	FIELD field_1570 powered Z
+	FIELD field_1571 neighborsToUpdate Ljava/util/Set;
+		COMMENT Set of Vec3i
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId
-	METHOD method_1286 (Lnet/minecraft/class_18;IIIIII)V
+	METHOD method_1286 doUpdatePower (Lnet/minecraft/class_18;IIIIII)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1287 (Lnet/minecraft/class_14;IIII)Z
+		ARG 5 sourceX
+		ARG 6 sourceY
+		ARG 7 sourceZ
+	METHOD method_1287 shouldConnectTo (Lnet/minecraft/class_14;IIII)Z
 		ARG 0 blockView
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_1288 (Lnet/minecraft/class_18;IIII)I
+	METHOD method_1288 getHighestPowerWire (Lnet/minecraft/class_18;IIII)I
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1289 (Lnet/minecraft/class_18;III)V
+		ARG 5 power
+	METHOD method_1289 updatePower (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1290 (Lnet/minecraft/class_18;III)V
+	METHOD method_1290 updateNeighborsOfWire (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_269 net/minecraft/client/render/texture/NetherPortalSprite
+	FIELD field_1091 ticks I
+	FIELD field_1092 frames [[B

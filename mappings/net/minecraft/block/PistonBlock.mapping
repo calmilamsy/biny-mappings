@@ -1,6 +1,48 @@
 CLASS net/minecraft/class_223 net/minecraft/block/PistonBlock
 	FIELD field_844 sticky Z
+	FIELD field_845 deaf Z
 	METHOD <init> (IIZ)V
 		ARG 1 id
 		ARG 2 textureId
 		ARG 3 sticky
+	METHOD method_759 canMoveBlock (ILnet/minecraft/class_18;IIIZ)Z
+		ARG 0 id
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 allowBreaking
+	METHOD method_760 getFacing (I)I
+		ARG 0 meta
+	METHOD method_761 getFacingForPlacement (Lnet/minecraft/class_18;IIILnet/minecraft/class_54;)I
+		ARG 0 world
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 player
+	METHOD method_762 isExtended (I)Z
+		ARG 0 meta
+	METHOD method_763 shouldExtend (Lnet/minecraft/class_18;IIII)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 facing
+	METHOD method_764 checkExtended (Lnet/minecraft/class_18;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_765 canExtend (Lnet/minecraft/class_18;IIII)Z
+		ARG 0 world
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 dir
+	METHOD method_766 push (Lnet/minecraft/class_18;IIII)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 dir
+	METHOD method_767 getTopTexture ()I

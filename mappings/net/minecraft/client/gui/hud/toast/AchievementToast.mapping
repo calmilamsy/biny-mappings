@@ -1,11 +1,18 @@
 CLASS net/minecraft/class_594 net/minecraft/client/gui/hud/toast/AchievementToast
 	FIELD field_2571 client Lnet/minecraft/client/Minecraft;
+	FIELD field_2572 width I
+	FIELD field_2573 height I
 	FIELD field_2574 title Ljava/lang/String;
 	FIELD field_2575 description Ljava/lang/String;
 	FIELD field_2576 achievement Lnet/minecraft/class_24;
+	FIELD field_2577 startTime J
+	FIELD field_2578 itemRenderer Lnet/minecraft/class_92;
+	FIELD field_2579 tutorial Z
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 client
-	METHOD method_1964 (Lnet/minecraft/class_24;)V
+	METHOD method_1963 tick ()V
+	METHOD method_1964 set (Lnet/minecraft/class_24;)V
 		ARG 1 achievement
-	METHOD method_1966 (Lnet/minecraft/class_24;)V
+	METHOD method_1965 render ()V
+	METHOD method_1966 setTutorial (Lnet/minecraft/class_24;)V
 		ARG 1 achievement

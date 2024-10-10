@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_589 net/minecraft/client/render/entity/UndeadEntityRenderer
+	FIELD field_2556 entityModel Lnet/minecraft/class_87;
+	METHOD <init> (Lnet/minecraft/class_87;F)V
+		ARG 1 model
+		ARG 2 shadowSize

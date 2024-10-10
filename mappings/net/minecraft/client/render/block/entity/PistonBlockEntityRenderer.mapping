@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_282 net/minecraft/client/render/block/entity/PistonBlockEntityRenderer
+	FIELD field_1131 blockRenderManager Lnet/minecraft/class_13;

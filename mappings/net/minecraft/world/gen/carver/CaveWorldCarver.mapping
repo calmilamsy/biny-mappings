@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_415 net/minecraft/world/gen/carver/CaveWorldCarver
+	METHOD method_1399 place (II[BDDD)V
+		ARG 1 chunkX
+		ARG 2 chunkZ
+		ARG 3 blocks
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+	METHOD method_1400 placeTunnels (II[BDDDFFFIID)V
+		ARG 1 chunkX
+		ARG 2 chunkZ
+		ARG 3 blocks
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 baseWidth
+		ARG 11 yaw
+		ARG 12 pitch
+		ARG 13 tunnel
+		ARG 14 tunnelCount
+		ARG 15 widthHeightRatio

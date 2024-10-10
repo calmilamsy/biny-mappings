@@ -5,3 +5,7 @@ CLASS net/minecraft/class_239 net/minecraft/world/gen/feature/Feature
 		ARG 3 x
 		ARG 4 y
 		ARG 5 z
+	METHOD method_1143 prepare (DDD)V
+		ARG 1 d0
+		ARG 3 d1
+		ARG 5 d2

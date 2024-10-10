@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_634 net/minecraft/world/chunk/storage/DataFile
+	FIELD field_2754 file Ljava/io/File;
+	FIELD field_2755 chunkX I
+	FIELD field_2756 chunkZ I
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 file
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
+		ARG 1 file
+	METHOD method_2095 getFile ()Ljava/io/File;
+	METHOD method_2097 getChunkX ()I
+	METHOD method_2098 getChunkZ ()I

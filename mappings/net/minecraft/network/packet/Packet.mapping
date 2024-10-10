@@ -1,8 +1,12 @@
 CLASS net/minecraft/class_169 net/minecraft/network/packet/Packet
-	FIELD field_899 rawIdToType Ljava/util/Map;
-	FIELD field_900 typeToRawId Ljava/util/Map;
-	FIELD field_901 clientBoundPackets Ljava/util/Set;
-	FIELD field_902 serverBoundPackets Ljava/util/Set;
+	FIELD field_899 ID_TO_TYPE Ljava/util/Map;
+	FIELD field_900 TYPE_TO_ID Ljava/util/Map;
+	FIELD field_901 S2C Ljava/util/Set;
+	FIELD field_902 C2S Ljava/util/Set;
+	FIELD field_903 trackers Ljava/util/HashMap;
+		COMMENT HashMap of Integer, PacketTracker
+	FIELD field_904 incomingCount I
+	FIELD field_905 creationTime J
 	FIELD field_906 worldPacket Z
 	METHOD method_798 size ()I
 	METHOD method_799 create (I)Lnet/minecraft/class_169;
@@ -20,6 +24,7 @@ CLASS net/minecraft/class_169 net/minecraft/network/packet/Packet
 		ARG 1 maxLength
 	METHOD method_803 read (Ljava/io/DataInputStream;Z)Lnet/minecraft/class_169;
 		ARG 0 stream
+		ARG 1 server
 	METHOD method_804 writeString (Ljava/lang/String;Ljava/io/DataOutputStream;)V
 		ARG 0 string
 		ARG 1 stream

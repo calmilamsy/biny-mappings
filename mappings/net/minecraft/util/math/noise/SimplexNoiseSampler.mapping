@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_459 net/minecraft/util/math/noise/SimplexNoiseSampler
 	FIELD field_2166 offsetX D
 	FIELD field_2167 offsetY D
+	FIELD field_2168 offsetZ D
 	FIELD field_2169 grads [[I
 	FIELD field_2170 perm [I
 	FIELD field_2171 F2 D

@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_103 net/minecraft/client/render/block/entity/MobSpawnerBlockEntityRenderer
+	FIELD field_329 models Ljava/util/Map;
+		COMMENT Map of String, Entity

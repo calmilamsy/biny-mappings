@@ -2,7 +2,10 @@ CLASS net/minecraft/class_322 net/minecraft/client/option/GameOptions
 	FIELD field_1442 thirdPerson Z
 	FIELD field_1443 debugHud Z
 	FIELD field_1444 lastServer Ljava/lang/String;
+	FIELD field_1445 discreteScroll Z
 	FIELD field_1446 cinematicMode Z
+	FIELD field_1447 debugCamera Z
+	FIELD field_1448 totalDiscreteScroll F
 	FIELD field_1450 guiScale I
 	FIELD field_1451 RENDER_DISTANCE_KEYS [Ljava/lang/String;
 	FIELD field_1452 DIFFICULTY_KEYS [Ljava/lang/String;
@@ -59,5 +62,5 @@ CLASS net/minecraft/class_322 net/minecraft/client/option/GameOptions
 		ARG 1 index
 	METHOD method_1233 getBoolean (Lnet/minecraft/class_271;)Z
 		ARG 1 option
-	METHOD method_1234 (Lnet/minecraft/class_271;)Ljava/lang/String;
+	METHOD method_1234 getString (Lnet/minecraft/class_271;)Ljava/lang/String;
 		ARG 1 option

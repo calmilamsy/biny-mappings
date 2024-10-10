@@ -1,0 +1,46 @@
+CLASS net/minecraft/class_208 net/minecraft/world/gen/chunk/SkyChunkGenerator
+	FIELD field_761 floatingIslandScale Lnet/minecraft/class_209;
+	FIELD field_762 floatingIslandNoise Lnet/minecraft/class_209;
+	FIELD field_763 forestNoise Lnet/minecraft/class_209;
+	FIELD field_764 perlinNoiseBuffer [D
+	FIELD field_765 minLimitPerlinNoiseBuffer [D
+	FIELD field_766 maxLimitPerlinNoiseBuffer [D
+	FIELD field_767 scaleNoiseBuffer [D
+	FIELD field_768 depthNoiseBuffer [D
+	FIELD field_769 waterDepths [[I
+	FIELD field_770 random Ljava/util/Random;
+	FIELD field_771 minLimitPerlinNoise Lnet/minecraft/class_209;
+	FIELD field_772 maxLimitPerlinNoise Lnet/minecraft/class_209;
+	FIELD field_773 perlinNoise1 Lnet/minecraft/class_209;
+	FIELD field_774 perlinNoise2 Lnet/minecraft/class_209;
+	FIELD field_775 perlinNoise3 Lnet/minecraft/class_209;
+	FIELD field_776 world Lnet/minecraft/class_18;
+	FIELD field_777 heightMap [D
+	FIELD field_778 sandBuffer [D
+	FIELD field_779 gravelBuffer [D
+	FIELD field_780 depthBuffer [D
+	FIELD field_781 cave Lnet/minecraft/class_105;
+	FIELD field_782 biomes [Lnet/minecraft/class_153;
+	FIELD field_783 temperatures [D
+	METHOD <init> (Lnet/minecraft/class_18;J)V
+		ARG 1 world
+		ARG 2 seed
+	METHOD method_737 buildSurfaces (II[B[Lnet/minecraft/class_153;)V
+		ARG 1 chunkX
+		ARG 2 chunkZ
+		ARG 3 blocks
+		ARG 4 biomes
+	METHOD method_738 buildTerrain (II[B[Lnet/minecraft/class_153;[D)V
+		ARG 1 chunkX
+		ARG 2 chunkZ
+		ARG 3 blocks
+		ARG 4 biomes
+		ARG 5 temperatures
+	METHOD method_739 generateHeightMap ([DIIIIII)[D
+		ARG 1 heightMap
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 sizeX
+		ARG 6 sizeY
+		ARG 7 sizeZ

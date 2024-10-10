@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_284 net/minecraft/server/dedicated/gui/PlayerListGui
+	FIELD field_1135 server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_1136 tick I
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server

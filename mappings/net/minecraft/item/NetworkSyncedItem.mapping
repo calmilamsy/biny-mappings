@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_561 net/minecraft/item/NetworkSyncedItem
+	METHOD method_1855 getUpdatePacket (Lnet/minecraft/class_31;Lnet/minecraft/class_18;Lnet/minecraft/class_54;)Lnet/minecraft/class_169;
+		ARG 1 stack
+		ARG 2 world
+		ARG 3 player

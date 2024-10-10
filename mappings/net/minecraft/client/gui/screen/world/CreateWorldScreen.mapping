@@ -2,5 +2,11 @@ CLASS net/minecraft/class_180 net/minecraft/client/gui/screen/world/CreateWorldS
 	FIELD field_631 parent Lnet/minecraft/class_32;
 	FIELD field_632 worldNameField Lnet/minecraft/class_181;
 	FIELD field_633 seedField Lnet/minecraft/class_181;
+	FIELD field_634 worldSaveName Ljava/lang/String;
+	FIELD field_635 creatingLevel Z
 	METHOD <init> (Lnet/minecraft/class_32;)V
 		ARG 1 parent
+	METHOD method_607 getWorldSaveName (Lnet/minecraft/class_182;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 storageSource
+		ARG 1 worldName
+	METHOD method_608 getSaveDirectoryNames ()V

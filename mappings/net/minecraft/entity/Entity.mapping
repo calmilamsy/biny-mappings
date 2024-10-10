@@ -61,8 +61,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1640 cameraOffset F
 	FIELD field_1641 stepHeight F
 	FIELD field_1642 noClip Z
-	FIELD field_1643 F
-		COMMENT MCP seems to think this reduces collision, but changing this has no observable difference.
+	FIELD field_1643 pushSpeedReduction F
 	FIELD field_1644 random Ljava/util/Random;
 	FIELD field_1645 age I
 	FIELD field_1646 fireImmunityTicks I
@@ -100,6 +99,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	METHOD method_1317 baseTick ()V
 	METHOD method_1318 isAlive ()Z
 	METHOD method_1319 tickInVoid ()V
+	METHOD method_1320 getLookVector ()Lnet/minecraft/class_26;
 	METHOD method_1321 setBoundingBoxSpacing (FF)V
 		ARG 1 spacingXZ
 		ARG 2 spacingY
@@ -181,6 +181,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	METHOD method_1351 getDistance (Lnet/minecraft/class_57;)F
 		ARG 1 entity
 	METHOD method_1352 getSquaredDistance (Lnet/minecraft/class_57;)D
+		ARG 1 entity
 	METHOD method_1353 onCollision (Lnet/minecraft/class_57;)V
 		ARG 1 otherEntity
 	METHOD method_1354 onPlayerInteraction (Lnet/minecraft/class_54;)V
@@ -193,6 +194,10 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	METHOD method_1358 bypassesSteppingEffects ()Z
 	METHOD method_1359 isOnFire ()Z
 	METHOD method_1360 hasVehicle ()Z
+	METHOD method_1361 setEquipmentStack (III)V
+		ARG 1 armorSlot
+		ARG 2 itemId
+		ARG 3 meta
 	METHOD method_1362 changeLookDirection (FF)V
 		ARG 1 cursorDeltaX
 		ARG 2 cursorDeltaY
@@ -205,6 +210,8 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 3 y
 		ARG 5 z
 	METHOD method_1366 getShadowRadius ()F
+	METHOD method_1367 shouldRender (Lnet/minecraft/class_26;)Z
+		ARG 1 pos
 	METHOD method_1368 writeNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
 	METHOD method_1369 getTargetingMargin ()F
@@ -228,8 +235,9 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 1 entity
 	METHOD method_1377 getEquipment ()[Lnet/minecraft/class_31;
 	METHOD method_1378 getEyeHeight ()F
-	METHOD method_1379 (Lnet/minecraft/class_57;)Lnet/minecraft/class_25;
+	METHOD method_1379 getCollisionAgainstShape (Lnet/minecraft/class_57;)Lnet/minecraft/class_25;
 		COMMENT Seems to return anything only for minecarts and boats.
+		ARG 1 other
 	METHOD method_1380 isPushable ()Z
 	METHOD method_1381 getBoundingBox ()Lnet/minecraft/class_25;
 	METHOD method_1382 updatePassengerPosition ()V
@@ -249,7 +257,8 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 2 score
 	METHOD method_1392 damage (I)V
 		ARG 1 amount
-	METHOD method_1393 ()Z
+	METHOD method_1393 checkWaterCollisions ()Z
 		COMMENT
 	METHOD method_1394 getBrightnessAtEyes (F)F
 		COMMENT The float here seems to be randomly used for seemingly random things.
+		ARG 1 tickDelta

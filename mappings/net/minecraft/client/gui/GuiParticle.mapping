@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_388 net/minecraft/client/gui/GuiParticle
+	FIELD field_1486 x D
+	FIELD field_1487 y D
+	FIELD field_1488 lastX D
+	FIELD field_1489 lastY D
+	FIELD field_1490 velocityX D
+	FIELD field_1491 velocityY D
+	FIELD field_1492 velocityChange D
+	FIELD field_1493 removed Z
+	FIELD field_1494 age I
+	FIELD field_1495 lifetime I
+	FIELD field_1496 r D
+	FIELD field_1497 g D
+	FIELD field_1498 b D
+	FIELD field_1499 a D
+	FIELD field_1500 lastR D
+	FIELD field_1501 lastG D
+	FIELD field_1502 lastB D
+	FIELD field_1503 lastA D
+	FIELD field_1504 RANDOM Ljava/util/Random;
+	METHOD method_1237 tickColor ()V
+	METHOD method_1238 tickPosition (Lnet/minecraft/class_35;)V
+		ARG 1 gui
+	METHOD method_1239 remove ()V

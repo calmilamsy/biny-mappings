@@ -1,9 +1,12 @@
 CLASS net/minecraft/class_299 net/minecraft/block/LeavesBlock
+	FIELD field_1171 decayRegion [I
+	FIELD field_1172 spriteIndex I
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 textureId
-	METHOD method_990 (Lnet/minecraft/class_18;III)V
+	METHOD method_990 breakLeaves (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_991 setFancyGraphics (Z)V

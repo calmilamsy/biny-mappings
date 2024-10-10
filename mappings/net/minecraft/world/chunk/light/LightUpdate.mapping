@@ -14,5 +14,12 @@ CLASS net/minecraft/class_417 net/minecraft/world/chunk/light/LightUpdate
 		ARG 5 maxX
 		ARG 6 maxY
 		ARG 7 maxZ
+	METHOD method_1401 expand (IIIIII)Z
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
 	METHOD method_1402 updateLight (Lnet/minecraft/class_18;)V
 		ARG 1 world

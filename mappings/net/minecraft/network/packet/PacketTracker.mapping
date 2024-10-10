@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_314 net/minecraft/network/packet/PacketTracker
+	FIELD field_1200 count I
+	FIELD field_1201 size J
+	METHOD <init> (Lnet/minecraft/class_144;)V
+		ARG 1 subPacketTracker
+	METHOD method_1036 update (I)V
+		ARG 1 size

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_254 net/minecraft/util/MD5MessageDigest
+	FIELD field_941 salt Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 salt
+	METHOD method_852 digest (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 s

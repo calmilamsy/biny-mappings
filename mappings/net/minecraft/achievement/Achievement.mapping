@@ -29,5 +29,6 @@ CLASS net/minecraft/class_24 net/minecraft/achievement/Achievement
 		ARG 6 parent
 	METHOD method_1040 challenge ()Lnet/minecraft/class_24;
 	METHOD method_1042 setTranslationHelper (Lnet/minecraft/class_241;)Lnet/minecraft/class_24;
+		ARG 1 translationHelper
 	METHOD method_1043 getTranslatedDescription ()Ljava/lang/String;
 	METHOD method_1044 isChallenge ()Z

@@ -1,3 +1,11 @@
 CLASS net/minecraft/class_125 net/minecraft/item/MapItem
-	METHOD method_1731 (SLnet/minecraft/class_18;)Lnet/minecraft/class_198;
+	METHOD method_1729 update (Lnet/minecraft/class_18;Lnet/minecraft/class_57;Lnet/minecraft/class_198;)V
+		ARG 1 world
+		ARG 2 entity
+		ARG 3 map
+	METHOD method_1730 getSavedMapState (Lnet/minecraft/class_31;Lnet/minecraft/class_18;)Lnet/minecraft/class_198;
+		ARG 1 stack
+		ARG 2 world
+	METHOD method_1731 getMapState (SLnet/minecraft/class_18;)Lnet/minecraft/class_198;
+		ARG 0 mapId
 		ARG 1 world

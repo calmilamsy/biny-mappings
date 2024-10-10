@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_345 net/minecraft/client/render/world/DistanceChunkSorter
+	FIELD field_1309 cameraX D
+	FIELD field_1310 cameraY D
+	FIELD field_1311 cameraZ D
+	METHOD <init> (Lnet/minecraft/class_57;)V
+		ARG 1 camera
+	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I
+		ARG 1 chunkBuilder1
+		ARG 2 chunkBuilder2

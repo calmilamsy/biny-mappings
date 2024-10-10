@@ -19,7 +19,20 @@ CLASS net/minecraft/class_14 net/minecraft/world/BlockView
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_1781 ()Lnet/minecraft/class_519;
+		COMMENT getBiomeSource
+	METHOD method_1782 (III)F
+		COMMENT getLuminance
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1783 (III)Z
+		COMMENT isOpaque
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_1784 getNaturalBrightness (IIII)F
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 blockLight

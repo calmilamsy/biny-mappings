@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_86 net/minecraft/client/render/entity/PlayerEntityRenderer
 	FIELD field_294 bipedModel Lnet/minecraft/class_87;
+	FIELD field_295 armor1 Lnet/minecraft/class_87;
+	FIELD field_296 armor2 Lnet/minecraft/class_87;
 	FIELD field_297 armorTextureNames [Ljava/lang/String;
 	METHOD method_345 renderHand ()V
