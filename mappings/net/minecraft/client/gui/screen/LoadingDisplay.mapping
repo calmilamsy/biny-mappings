@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_62 net/minecraft/client/gui/screen/LoadingDisplay
-	METHOD method_1794 progresStagePercentage (I)V
+	METHOD method_1794 progressStagePercentage (I)V
 		ARG 1 percentage
 	METHOD method_1795 progressStartNoAbort (Ljava/lang/String;)V
 		ARG 1 title

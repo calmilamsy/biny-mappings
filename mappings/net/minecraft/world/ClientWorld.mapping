@@ -27,7 +27,7 @@ CLASS net/minecraft/class_454 net/minecraft/world/ClientWorld
 		ARG 4 maxX
 		ARG 5 maxY
 		ARG 6 maxZ
-	METHOD method_1499 setBlkockWithMetaFromPacket (IIIII)Z
+	METHOD method_1499 setBlockWithMetaFromPacket (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

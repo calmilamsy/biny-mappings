@@ -15,7 +15,7 @@ CLASS net/minecraft/class_186 net/minecraft/world/gen/feature/LargeOakTreeFeatur
 	FIELD field_658 foliageClusterHeight I
 	FIELD field_659 branches [[I
 	METHOD method_611 canPlace ()Z
-	METHOD method_612 makebranches ()V
+	METHOD method_612 makeBranches ()V
 	METHOD method_613 getTreeShape (I)F
 		ARG 1 height
 	METHOD method_614 placeFoliageCluster (III)V

@@ -146,4 +146,4 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 		ARG 6 maxY
 		ARG 7 maxZ
 		ARG 8 offset
-	METHOD method_892 populateHeightmapOnly ()V
+	METHOD method_892 populateHeightMapOnly ()V

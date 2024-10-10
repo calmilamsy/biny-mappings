@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_469 net/minecraft/block/PistonExtensionBlock
 	METHOD <init> (I)V
 		ARG 1 id
-	METHOD method_1533 createMovingBlockEntity (IIIZZ)Lnet/minecraft/class_55;
+	METHOD method_1533 createPistonBlockEntity (IIIZZ)Lnet/minecraft/class_55;
 		ARG 0 blockId
 		ARG 1 blockMeta
 		ARG 2 facing

@@ -62,7 +62,6 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1641 stepHeight F
 	FIELD field_1642 noClip Z
 	FIELD field_1643 pushSpeedReduction F
-		COMMENT MCP seems to think this reduces collision, but changing this has no observable difference.
 	FIELD field_1644 random Ljava/util/Random;
 	FIELD field_1645 age I
 	FIELD field_1646 fireImmunityTicks I

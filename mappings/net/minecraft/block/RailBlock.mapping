@@ -58,7 +58,7 @@ CLASS net/minecraft/class_16 net/minecraft/block/RailBlock
 		METHOD method_1115 updateState (ZZ)V
 			ARG 1 powered
 			ARG 2 force
-		METHOD method_1116 countConnectons ()I
+		METHOD method_1116 countConnections ()I
 		METHOD method_1117 hasConnection (III)Z
 			ARG 1 x
 			ARG 2 y

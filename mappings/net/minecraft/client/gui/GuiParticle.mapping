@@ -9,10 +9,10 @@ CLASS net/minecraft/class_388 net/minecraft/client/gui/GuiParticle
 	FIELD field_1493 removed Z
 	FIELD field_1494 age I
 	FIELD field_1495 lifetime I
-	FIELD field_1496 g D
-	FIELD field_1497 b D
-	FIELD field_1498 a D
-	FIELD field_1499 r D
+	FIELD field_1496 r D
+	FIELD field_1497 g D
+	FIELD field_1498 b D
+	FIELD field_1499 a D
 	FIELD field_1500 lastR D
 	FIELD field_1501 lastG D
 	FIELD field_1502 lastB D

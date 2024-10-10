@@ -12,7 +12,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	FIELD field_1026 interpolateOnly Z
 	FIELD field_1027 lastSwingAnimationProgress F
 	FIELD field_1028 ambientSoundTimer I
-	FIELD field_1029 sidewaysSpeed F
+	FIELD field_1029 forwardSpeed F
 	FIELD field_1030 rotationSpeed F
 	FIELD field_1031 jumping Z
 	FIELD field_1032 defaultPitch F
@@ -41,7 +41,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	FIELD field_1056 lerpPitch D
 	FIELD field_1058 prevHealth I
 	FIELD field_1059 despawnCounter I
-	FIELD field_1060 forwardSpeed F
+	FIELD field_1060 sidewaysSpeed F
 	FIELD field_1061 lookTarget Lnet/minecraft/class_57;
 	METHOD method_909 getHeldItem ()Lnet/minecraft/class_31;
 	METHOD method_910 tickLiving ()V
