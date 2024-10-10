@@ -1,8 +1,11 @@
 CLASS net/minecraft/class_328 net/minecraft/block/TrapdoorBlock
-	METHOD method_1059 (Lnet/minecraft/class_18;IIIZ)V
+	METHOD method_1059 setOpen (Lnet/minecraft/class_18;IIIZ)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1060 (I)V
+		ARG 5 open
+	METHOD method_1060 updateBoundingBox (I)V
 		ARG 1 meta
+	METHOD method_1061 isOpen (I)Z
+		ARG 0 meta

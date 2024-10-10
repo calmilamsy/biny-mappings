@@ -1,16 +1,65 @@
 CLASS net/minecraft/class_76 net/minecraft/client/texture/TextureManager
+	FIELD field_1245 MIPMAP Z
 	FIELD field_1246 textures Ljava/util/HashMap;
+		COMMENT HashMap of String, Integer
+	FIELD field_1247 colors Ljava/util/HashMap;
+		COMMENT HashMap of String, Integer Array
 	FIELD field_1248 images Ljava/util/HashMap;
+		COMMENT HashMap of Integer, BufferedImage
+	FIELD field_1249 idBuffer Ljava/nio/IntBuffer;
+	FIELD field_1250 imageBuffer Ljava/nio/ByteBuffer;
+	FIELD field_1251 dynamicTextures Ljava/util/List;
 	FIELD field_1252 downloadedImages Ljava/util/Map;
 	FIELD field_1253 gameOptions Lnet/minecraft/class_322;
+	FIELD field_1254 clamp Z
+	FIELD field_1255 blur Z
+	FIELD field_1256 texturePacks Lnet/minecraft/class_303;
+	FIELD field_1257 image Ljava/awt/image/BufferedImage;
+	METHOD <init> (Lnet/minecraft/class_303;Lnet/minecraft/class_322;)V
+		ARG 1 texturePacks
+		ARG 2 options
+	METHOD method_1084 tick ()V
 	METHOD method_1085 delete (I)V
 		ARG 1 textureId
+	METHOD method_1086 smoothBlend (II)I
+		ARG 1 color1
+		ARG 2 color2
+	METHOD method_1087 addDynamicTexture (Lnet/minecraft/class_336;)V
+		ARG 1 texture
+	METHOD method_1088 load (Ljava/awt/image/BufferedImage;)I
+		ARG 1 image
+	METHOD method_1089 load (Ljava/awt/image/BufferedImage;I)V
+		ARG 1 image
+		ARG 2 id
+	METHOD method_1090 readColors (Ljava/awt/image/BufferedImage;[I)[I
+		ARG 1 image
+		ARG 2 colors
+	METHOD method_1091 readImage (Ljava/io/InputStream;)Ljava/awt/image/BufferedImage;
+		ARG 1 stream
+	METHOD method_1092 getColors (Ljava/lang/String;)[I
+		ARG 1 path
+	METHOD method_1093 downloadTexture (Ljava/lang/String;Ljava/lang/String;)I
+		ARG 1 url
+		ARG 2 backup
 	METHOD method_1094 downloadImage (Ljava/lang/String;Lnet/minecraft/class_131;)Lnet/minecraft/class_130;
 		ARG 1 url
 		ARG 2 processor
+	METHOD method_1095 bind ([IIII)V
+		ARG 1 colors
+		ARG 2 width
+		ARG 3 height
+		ARG 4 id
+	METHOD method_1096 reload ()V
 	METHOD method_1097 bindTexture (I)V
 		ARG 1 id
+	METHOD method_1098 crispBlend (II)I
+		ARG 1 color1
+		ARG 2 color2
+	METHOD method_1099 readColors (Ljava/awt/image/BufferedImage;)[I
+		ARG 1 image
 	METHOD method_1100 getTextureId (Ljava/lang/String;)I
 		ARG 1 path
+	METHOD method_1101 rescale (Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage;
+		ARG 1 image
 	METHOD method_1102 releaseImage (Ljava/lang/String;)V
 		ARG 1 url

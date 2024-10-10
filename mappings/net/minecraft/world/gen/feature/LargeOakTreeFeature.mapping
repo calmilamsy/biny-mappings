@@ -1,3 +1,45 @@
 CLASS net/minecraft/class_186 net/minecraft/world/gen/feature/LargeOakTreeFeature
+	FIELD field_645 MINOR_AXES [B
 	FIELD field_646 random Ljava/util/Random;
 	FIELD field_647 world Lnet/minecraft/class_18;
+	FIELD field_648 origin [I
+	FIELD field_649 height I
+	FIELD field_650 trunkHeight I
+	FIELD field_651 trunkScale D
+	FIELD field_652 branchDensity D
+	FIELD field_653 branchSlope D
+	FIELD field_654 branchLengthScale D
+	FIELD field_655 foliageDensity D
+	FIELD field_656 trunkWidth I
+	FIELD field_657 maxTrunkHeight I
+	FIELD field_658 foliageClusterHeight I
+	FIELD field_659 branches [[I
+	METHOD method_611 canPlace ()Z
+	METHOD method_612 makebranches ()V
+	METHOD method_613 getTreeShape (I)F
+		ARG 1 height
+	METHOD method_614 placeFoliageCluster (III)V
+		ARG 1 x
+		ARG 2 baseY
+		ARG 3 z
+	METHOD method_615 placeCluster (IIIFBI)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 shape
+		ARG 5 majorAxis
+		ARG 6 clusterBlock
+	METHOD method_616 tryBranch ([I[I)I
+		ARG 1 from
+		ARG 2 to
+	METHOD method_617 placeBranch ([I[II)V
+		ARG 1 from
+		ARG 2 to
+		ARG 3 log
+	METHOD method_618 placeFoilage ()V
+	METHOD method_619 getClusterShape (I)F
+		ARG 1 layer
+	METHOD method_620 PlaceTrunk ()V
+	METHOD method_621 shouldPlaceBranch (I)Z
+		ARG 1 height
+	METHOD method_622 placeBranches ()V

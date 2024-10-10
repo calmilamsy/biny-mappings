@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_390 net/minecraft/world/chunk/LegacyChunkCache
+	FIELD field_1509 cachedChunkX I
+	FIELD field_1510 cachedChunkZ I
+	FIELD field_1511 empty Lnet/minecraft/class_43;
+	FIELD field_1512 generator Lnet/minecraft/class_51;
+	FIELD field_1513 storage Lnet/minecraft/class_243;
+	FIELD field_1514 chunks [Lnet/minecraft/class_43;
+	FIELD field_1515 world Lnet/minecraft/class_18;
+	FIELD field_1516 cachedChunk Lnet/minecraft/class_43;
+	FIELD field_1517 spawnChunkX I
+	FIELD field_1518 spawnChunkZ I
+	METHOD method_1240 saveEntities (Lnet/minecraft/class_43;)V
+		ARG 1 chunk
+	METHOD method_1241 saveChunk (Lnet/minecraft/class_43;)V
+		ARG 1 chunk
+	METHOD method_1242 setSpawnPoint (II)V
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD method_1243 isSpawnChunk (II)Z
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD method_1244 loadChunkFromStorage (II)Lnet/minecraft/class_43;
+		ARG 1 chunkX
+		ARG 2 chunkZ

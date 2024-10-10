@@ -35,6 +35,18 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderManage
 	FIELD field_66 thirdVertexBlue F
 	FIELD field_67 fancyGraphics Z
 	FIELD field_68 fourthVertexBlue F
+	FIELD field_69 topNorthEdgeTranslucent Z
+	FIELD field_70 topEastEdgeTranslucent Z
+	FIELD field_71 topWestEdgeTranslucent Z
+	FIELD field_72 topSouthEdgeTranslucent Z
+	FIELD field_73 northWestEdgeTranslucent Z
+	FIELD field_74 southEastEdgeTranslucent Z
+	FIELD field_75 southWestEdgeTranslucent Z
+	FIELD field_76 northEastEdgeTranslucent Z
+	FIELD field_77 bottomNorthEdgeTranslucent Z
+	FIELD field_78 bottomEastEdgeTranslucent Z
+	FIELD field_79 bottomWestEdgeTranslucent Z
+	FIELD field_80 bottomSouthEdgeTranslucent Z
 	FIELD field_81 inventoryColorEnabled Z
 	FIELD field_82 blockView Lnet/minecraft/class_14;
 	FIELD field_83 textureOverride I

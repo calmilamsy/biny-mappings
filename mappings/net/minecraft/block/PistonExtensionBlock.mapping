@@ -1,6 +1,12 @@
 CLASS net/minecraft/class_469 net/minecraft/block/PistonExtensionBlock
 	METHOD <init> (I)V
 		ARG 1 id
+	METHOD method_1533 createMovingBlockEntity (IIIZZ)Lnet/minecraft/class_55;
+		ARG 0 blockId
+		ARG 1 blockMeta
+		ARG 2 facing
+		ARG 3 extending
+		ARG 4 source
 	METHOD method_1534 getPushedBlockCollisionShape (Lnet/minecraft/class_18;IIIIFI)Lnet/minecraft/class_25;
 		ARG 1 world
 		ARG 2 x
@@ -9,7 +15,7 @@ CLASS net/minecraft/class_469 net/minecraft/block/PistonExtensionBlock
 		ARG 5 blockId
 		ARG 6 sizeMultiplier
 		ARG 7 facing
-	METHOD method_1535 (Lnet/minecraft/class_14;III)Lnet/minecraft/class_283;
+	METHOD method_1535 getPistonBlockEntity (Lnet/minecraft/class_14;III)Lnet/minecraft/class_283;
 		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_155 net/minecraft/server/ServerLog
+	METHOD method_534 init ()V

@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_213 net/minecraft/util/math/Facings
+	FIELD field_792 TO_DIR [I
+	FIELD field_793 OPPOSITE [I
+	FIELD field_794 BED_FACINGS [[I

@@ -12,3 +12,4 @@ CLASS net/minecraft/class_330 net/minecraft/client/render/block/entity/BlockEnti
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
+		ARG 8 tickDelta

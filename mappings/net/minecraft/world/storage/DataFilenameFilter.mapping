@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_387 net/minecraft/world/storage/DataFilenameFilter
+	FIELD field_1485 PATTERN Ljava/util/regex/Pattern;
+	METHOD <init> (Lnet/minecraft/class_179;)V
+		ARG 1 subclass
+	METHOD accept accept (Ljava/io/File;Ljava/lang/String;)Z
+		ARG 1 file
+		ARG 2 s

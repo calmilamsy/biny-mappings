@@ -1,0 +1,72 @@
+CLASS net/minecraft/class_353 net/minecraft/world/chunk/storage/RegionFile
+	FIELD field_1315 BLOCK_BUFFER [B
+	FIELD field_1316 file Ljava/io/File;
+	FIELD field_1317 randomAccessFile Ljava/io/RandomAccessFile;
+	FIELD field_1318 chunkBlockInfo [I
+	FIELD field_1319 chunkSaveTimes [I
+	FIELD field_1320 blockEmptyFlags Ljava/util/ArrayList;
+	FIELD field_1321 bytesWritten I
+	FIELD field_1322 lastModifiedTime J
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 file
+	METHOD method_1158 resetBytesWritten ()I
+	METHOD method_1159 getChunkInputStream (II)Ljava/io/DataInputStream;
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD method_1160 writeChunkBlockInfo (III)V
+		ARG 1 chunkX
+		ARG 2 chunkZ
+		ARG 3 blockInfo
+	METHOD method_1161 writeChunkData (II[BI)V
+		ARG 1 chunkX
+		ARG 2 chunkZ
+		ARG 3 data
+		ARG 4 size
+	METHOD method_1162 writeChunkData (I[BI)V
+		ARG 1 blockOffset
+		ARG 2 data
+		ARG 3 size
+	METHOD method_1163 print (Ljava/lang/String;)V
+		ARG 1 s
+	METHOD method_1164 print (Ljava/lang/String;IIILjava/lang/String;)V
+		ARG 1 action
+		ARG 2 chunkX
+		ARG 3 chunkZ
+		ARG 4 size
+		ARG 5 s
+	METHOD method_1165 print (Ljava/lang/String;IILjava/lang/String;)V
+		ARG 1 action
+		ARG 2 chunkX
+		ARG 3 chunkZ
+		ARG 4 s
+	METHOD method_1166 close ()V
+	METHOD method_1167 getChunkOutputStream (II)Ljava/io/DataOutputStream;
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD method_1168 writeChunkSaveTime (III)V
+		ARG 1 chunkX
+		ARG 2 chunkZ
+		ARG 3 seconds
+	METHOD method_1169 println (Ljava/lang/String;)V
+		ARG 1 s
+	METHOD method_1170 println (Ljava/lang/String;IILjava/lang/String;)V
+		ARG 1 action
+		ARG 2 chunkX
+		ARG 3 chunkZ
+		ARG 4 s
+	METHOD method_1171 hasChunkData (II)Z
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD method_1172 isOutsideRegion (II)Z
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD method_1173 getChunkBlockInfo (II)I
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	CLASS class_354 ChunkOutputStream
+		FIELD field_1324 chunkX I
+		FIELD field_1325 chunkZ I
+		METHOD <init> (Lnet/minecraft/class_353;II)V
+			ARG 2 chunkX
+			ARG 3 chunkZ
+		METHOD close close ()V

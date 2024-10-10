@@ -9,7 +9,14 @@ CLASS net/minecraft/class_97 net/minecraft/client/gui/widget/EntryListWidget
 	FIELD field_1535 top I
 	FIELD field_1536 bottom I
 	FIELD field_1537 itemHeight I
+	FIELD field_1538 mostYStart F
+	FIELD field_1539 scrollSpeedMultiplier F
 	FIELD field_1540 scrollAmount F
+	FIELD field_1541 pos I
+	FIELD field_1542 time J
+	FIELD field_1543 renderSelectionHighlight Z
+	FIELD field_1544 renderHeader Z
+	FIELD field_1545 headerHeight I
 	METHOD <init> (Lnet/minecraft/client/Minecraft;IIIII)V
 		ARG 1 minecraft
 		ARG 2 width
@@ -17,20 +24,40 @@ CLASS net/minecraft/class_97 net/minecraft/client/gui/widget/EntryListWidget
 		ARG 4 top
 		ARG 5 bottom
 		ARG 6 itemHeight
+	METHOD method_1254 headerClicked (II)V
+		ARG 1 x
+		ARG 2 y
+	METHOD method_1255 renderDecorations (II)V
+		ARG 1 mouseX
+		ARG 2 mouseY
 	METHOD method_1256 render (IIF)V
 		ARG 1 mouseX
 		ARG 2 mouseY
 	METHOD method_1257 renderBackground (IIII)V
 	METHOD method_1258 registerButtons (Ljava/util/List;II)V
+		ARG 1 buttons
 		ARG 2 scrollUp
 		ARG 3 scrollDown
 	METHOD method_1259 buttonClicked (Lnet/minecraft/class_33;)V
 		ARG 1 button
+	METHOD method_1260 setRenderSelectionHighlight (Z)V
+		ARG 1 renderSelectionHighlight
+	METHOD method_1261 setHeader (ZI)V
+		ARG 1 renderHeader
+		ARG 2 headerHeight
+	METHOD method_1262 getEntryAt (II)I
+		ARG 1 x
+		ARG 2 y
+	METHOD method_1263 clampScrolling ()V
 	METHOD method_1264 renderEntry (IIIILnet/minecraft/class_67;)V
 		ARG 1 index
 		ARG 2 x
 		ARG 3 y
 		ARG 5 tesselator
+	METHOD method_1265 renderHeader (IILnet/minecraft/class_67;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 tessellator
 	METHOD method_1266 getEntryCount ()I
 	METHOD method_1267 entryClicked (IZ)V
 		ARG 1 index

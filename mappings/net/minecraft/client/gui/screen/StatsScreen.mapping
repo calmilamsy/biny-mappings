@@ -1,11 +1,58 @@
 CLASS net/minecraft/class_91 net/minecraft/client/gui/screen/StatsScreen
 	FIELD field_303 parent Lnet/minecraft/class_32;
+	FIELD field_304 title Ljava/lang/String;
+	FIELD field_305 itemRenderer Lnet/minecraft/class_92;
 	FIELD field_306 generalStats Lnet/minecraft/class_91$class_93;
 	FIELD field_307 itemStats Lnet/minecraft/class_91$class_94;
 	FIELD field_308 blockStats Lnet/minecraft/class_91$class_95;
+	FIELD field_309 stats Lnet/minecraft/class_96;
+	FIELD field_310 selectedStatsList Lnet/minecraft/class_97;
 	METHOD <init> (Lnet/minecraft/class_32;Lnet/minecraft/class_96;)V
 		ARG 1 parent
+		ARG 2 stats
+	METHOD method_353 renderIcon (II)V
+		ARG 1 x
+		ARG 2 y
+	METHOD method_360 render (III)V
+		ARG 1 mouseX
+		ARG 2 mouseY
+		ARG 3 tickDelta
+	METHOD method_361 renderIcon (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 u
+		ARG 4 v
+	METHOD method_370 createButtons ()V
 	CLASS class_93 GeneralStatsListWidget
 	CLASS class_94 ItemStatsListWidget
+		CLASS 1
+			METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I
+				ARG 1 stat1
+				ARG 2 stat2
 	CLASS class_95 BlockStatsListWidget
+		CLASS 1
+			METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I
+				ARG 1 stat1
+				ARG 2 stat2
 	CLASS class_99 AbstractStatsListWidget
+		FIELD field_314 clickedIconId I
+		FIELD field_315 entries Ljava/util/List;
+			COMMENT List of ItemOrBlockStat
+		FIELD field_316 statComparator Ljava/util/Comparator;
+		FIELD field_317 selectedTab I
+		FIELD field_318 statSortOrder I
+		METHOD method_377 renderStat (Lnet/minecraft/class_98;II)V
+			ARG 1 stat
+			ARG 2 x
+			ARG 3 y
+		METHOD method_378 renderStat (Lnet/minecraft/class_98;IIZ)V
+			ARG 1 stat
+			ARG 2 x
+			ARG 3 y
+			ARG 4 isRowEven
+		METHOD method_379 getEntry (I)Lnet/minecraft/class_98;
+			ARG 1 index
+		METHOD method_380 click (I)V
+			ARG 1 buttonDownTime
+		METHOD method_381 getColumnHeader (I)Ljava/lang/String;
+			ARG 1 column

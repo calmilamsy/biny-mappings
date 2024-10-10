@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_509 net/minecraft/client/render/texture/WaterSideSprite
+	FIELD field_2118 current [F
+	FIELD field_2119 next [F
+	FIELD field_2120 heat [F
+	FIELD field_2121 heatDelta [F
+	FIELD field_2122 ticks I

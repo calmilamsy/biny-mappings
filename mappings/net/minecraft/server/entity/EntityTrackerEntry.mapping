@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_174 net/minecraft/server/entity/EntityTrackerEntry
+	FIELD field_597 currentTrackedEntity Lnet/minecraft/class_57;
+	FIELD field_609 newPlayerDataUpdated Z
+	METHOD method_596 notifyEntityRemoved ()V
+	METHOD method_597 notifyEntityRemoved (Lnet/minecraft/class_69;)V
+	METHOD method_598 sendToListeners (Lnet/minecraft/class_169;)V
+	METHOD method_599 notifyNewLocation (Ljava/util/List;)V
+	METHOD method_601 updateListener (Lnet/minecraft/class_69;)V
+	METHOD method_602 sendToAround (Lnet/minecraft/class_169;)V
+	METHOD method_603 updateListeners (Ljava/util/List;)V
+	METHOD method_604 removeListener (Lnet/minecraft/class_69;)V

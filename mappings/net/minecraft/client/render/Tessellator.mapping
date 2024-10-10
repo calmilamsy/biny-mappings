@@ -1,7 +1,9 @@
 CLASS net/minecraft/class_67 net/minecraft/client/render/Tessellator
+	FIELD field_2052 vboCount I
 	FIELD field_2053 bufferSize I
 	FIELD field_2054 INSTANCE Lnet/minecraft/class_67;
-	FIELD field_2055 useTriangles Z
+	FIELD field_2055 TRIANGLE_MODE Z
+	FIELD field_2056 USE_VBO Z
 	FIELD field_2057 byteBuffer Ljava/nio/ByteBuffer;
 	FIELD field_2058 intBuffer Ljava/nio/IntBuffer;
 	FIELD field_2059 floatBuffer Ljava/nio/FloatBuffer;
@@ -22,6 +24,9 @@ CLASS net/minecraft/class_67 net/minecraft/client/render/Tessellator
 	FIELD field_2074 zOffset D
 	FIELD field_2075 normal I
 	FIELD field_2076 drawing Z
+	FIELD field_2077 useVbo Z
+	FIELD field_2078 vboBuffer Ljava/nio/IntBuffer;
+	FIELD field_2079 vbo I
 	METHOD <init> (I)V
 		ARG 1 bufferSize
 	METHOD method_1685 draw ()V

@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_518 net/minecraft/client/particle/PortalParticle
+	FIELD field_2149 initialScale F
+	FIELD field_2150 initialX D
+	FIELD field_2151 initialY D
+	FIELD field_2152 initialZ D

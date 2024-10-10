@@ -1,8 +1,59 @@
 CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
+	FIELD field_2837 LOGGER Ljava/util/logging/Logger;
+	FIELD field_2839 connections Lnet/minecraft/class_9;
 	FIELD field_2840 properties Lnet/minecraft/class_391;
 	FIELD field_2841 worlds [Lnet/minecraft/class_73;
 	FIELD field_2842 playerManager Lnet/minecraft/class_166;
+	FIELD field_2843 stopped Z
+	FIELD field_2844 ticks I
+	FIELD field_2845 progressMessage Ljava/lang/String;
+	FIELD field_2846 progress I
+	FIELD field_2847 entityTrackers [Lnet/minecraft/class_488;
 	FIELD field_2848 onlineMode Z
+	FIELD field_2849 spawnAnimals Z
+	FIELD field_2850 pvpEnabled Z
+	FIELD field_2851 flightEnabled Z
+	FIELD field_2852 commandHandler Lnet/minecraft/class_426;
+	FIELD field_2853 running Z
+	FIELD field_2854 tickables Ljava/util/List;
+	FIELD field_2855 pendingCommands Ljava/util/List;
+	METHOD main main ([Ljava/lang/String;)V
+		ARG 0 args
+	METHOD method_2156 stop ()V
 	METHOD method_2157 getWorld (I)Lnet/minecraft/class_73;
 		ARG 1 dimensionId
+	METHOD method_2158 addTickable (Lnet/minecraft/class_46;)V
+		ARG 1 tickable
+	METHOD method_2159 loadWorld (Lnet/minecraft/class_182;Ljava/lang/String;J)V
+		ARG 1 storageSource
+		ARG 2 worldDir
+		ARG 3 seed
+	METHOD method_2160 getFile (Ljava/lang/String;)Ljava/io/File;
+		ARG 1 path
+	METHOD method_2161 logProgress (Ljava/lang/String;I)V
+		ARG 1 progressType
+		ARG 2 progress
+	METHOD method_2162 queueCommands (Ljava/lang/String;Lnet/minecraft/class_39;)V
+	METHOD method_2164 runPendingCommands ()V
+	METHOD method_2165 getEntityTracker (I)Lnet/minecraft/class_488;
+		ARG 1 dimensionId
+	METHOD method_2166 init ()Z
+	METHOD method_2167 warn (Ljava/lang/String;)V
+		ARG 1 message
+	METHOD method_2168 clearProgress ()V
+	METHOD method_2169 saveWorlds ()V
+	METHOD method_2170 shutdown ()V
 	METHOD method_2171 tick ()V
+	METHOD run run ()V
+	CLASS class_643 ServerThread
+		FIELD field_2856 server Lnet/minecraft/server/MinecraftServer;
+		METHOD <init> (Ljava/lang/String;Lnet/minecraft/server/MinecraftServer;)V
+			ARG 1 name
+			ARG 2 server
+		METHOD run run ()V
+	CLASS class_644 WorldConversionProgress
+		FIELD field_2858 lastLogTime J
+	CLASS class_645 CommandThread
+		METHOD run run ()V
+	CLASS class_646 BackgroundDaemon
+		METHOD run run ()V

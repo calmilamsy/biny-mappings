@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_143 net/minecraft/client/particle/PickupParticle
+	FIELD field_537 entity Lnet/minecraft/class_57;
+		COMMENT Any entity that is being picked up by another
+	FIELD field_538 collector Lnet/minecraft/class_57;
+	FIELD field_539 pickupAge I
+	FIELD field_540 lifetime I
+	FIELD field_541 offsetY F
+	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_57;Lnet/minecraft/class_57;F)V
+		ARG 1 world
+		ARG 2 entity
+		ARG 3 collector
+		ARG 4 offsetY

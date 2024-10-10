@@ -1,3 +1,34 @@
 CLASS net/minecraft/class_385 net/minecraft/block/LiquidBlock
+	METHOD method_1217 getLiquidDepth (Lnet/minecraft/class_14;III)I
+		ARG 1 blockView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1218 getFluidHeightFromMeta (I)F
 		ARG 0 meta
+	METHOD method_1219 getFlow (Lnet/minecraft/class_14;III)Lnet/minecraft/class_26;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1220 getLiquidState (Lnet/minecraft/class_18;III)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1221 fizz (Lnet/minecraft/class_18;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1222 checkBlockCollisions (Lnet/minecraft/class_18;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1223 getFlowingAngle (Lnet/minecraft/class_14;IIILnet/minecraft/class_15;)D
+		ARG 0 view
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 material

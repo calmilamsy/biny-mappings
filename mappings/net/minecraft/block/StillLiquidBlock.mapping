@@ -1,1 +1,11 @@
 CLASS net/minecraft/class_315 net/minecraft/block/StillLiquidBlock
+	METHOD method_1037 convertToFlowing (Lnet/minecraft/class_18;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1038 isFlammable (Lnet/minecraft/class_18;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

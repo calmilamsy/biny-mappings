@@ -1,0 +1,46 @@
+CLASS net/minecraft/class_605 net/minecraft/stat/StatsSyncer
+	FIELD field_2715 busy Z
+	FIELD field_2716 stats Ljava/util/Map;
+		COMMENT Map of Stat, Integer
+	FIELD field_2717 unsentStats Ljava/util/Map;
+		COMMENT Map of Stat, Integer
+	FIELD field_2718 statHandler Lnet/minecraft/class_96;
+	FIELD field_2719 unsentStatsFile Ljava/io/File;
+	FIELD field_2720 statsFile Ljava/io/File;
+	FIELD field_2721 tempUnsentStatsFile Ljava/io/File;
+	FIELD field_2722 tempStatsFile Ljava/io/File;
+	FIELD field_2723 oldUnsentStatsFile Ljava/io/File;
+	FIELD field_2724 oldStatsFile Ljava/io/File;
+	FIELD field_2725 session Lnet/minecraft/class_237;
+	FIELD field_2726 saveCooldown I
+	FIELD field_2727 saveUnsentCooldown I
+	METHOD <init> (Lnet/minecraft/class_237;Lnet/minecraft/class_96;Ljava/io/File;)V
+		ARG 1 session
+		ARG 2 stats
+		ARG 3 dir
+	METHOD method_2051 load ()V
+	METHOD method_2057 loadStats (Ljava/io/File;)Ljava/util/Map;
+		ARG 1 file
+	METHOD method_2058 loadStats (Ljava/io/File;Ljava/io/File;Ljava/io/File;)Ljava/util/Map;
+		ARG 1 file
+		ARG 2 tempFile
+		ARG 3 oldFile
+	METHOD method_2059 renameFile (Ljava/io/File;Ljava/lang/String;Ljava/io/File;)V
+		ARG 1 dir
+		ARG 2 name
+		ARG 3 to
+	METHOD method_2060 save (Ljava/util/Map;)V
+		ARG 1 stats
+	METHOD method_2061 save (Ljava/util/Map;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V
+		ARG 1 stats
+		ARG 2 file
+		ARG 3 tempFile
+		ARG 4 oldFile
+	METHOD method_2062 canSave ()Z
+	METHOD method_2064 saveUnsent (Ljava/util/Map;)V
+		ARG 1 stats
+	METHOD method_2065 tick ()V
+	CLASS 1
+		METHOD run run ()V
+	CLASS 2
+		METHOD run run ()V

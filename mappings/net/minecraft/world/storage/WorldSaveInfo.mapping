@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_591 net/minecraft/world/storage/WorldSaveInfo
+	FIELD field_2557 saveName Ljava/lang/String;
+	FIELD field_2558 name Ljava/lang/String;
+	FIELD field_2559 lastPlayed J
+	FIELD field_2560 size J
+	FIELD field_2561 sameVersion Z
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;JJZ)V
+		ARG 1 fileName
+		ARG 2 name
+		ARG 3 lastPlayed
+		ARG 5 size
+		ARG 7 sameVersion
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
+		ARG 1 saveInfo
+	METHOD method_1956 getSaveName ()Ljava/lang/String;
+	METHOD method_1958 getName ()Ljava/lang/String;
+	METHOD method_1959 getSize ()J
+	METHOD method_1960 isSameVersion ()Z
+	METHOD method_1961 getLastPlayed ()J

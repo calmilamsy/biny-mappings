@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_68 net/minecraft/client/render/Culler
+	METHOD method_2006 prepare (DDD)V
+		ARG 1 offsetX
+		ARG 3 offsetY
+		ARG 5 offsetZ
+	METHOD method_2007 isVisible (Lnet/minecraft/class_25;)Z
+		ARG 1 box

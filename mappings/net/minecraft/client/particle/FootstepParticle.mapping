@@ -1,1 +1,10 @@
 CLASS net/minecraft/class_227 net/minecraft/client/particle/FootstepParticle
+	FIELD field_849 footstepAge I
+	FIELD field_850 footstepMaxAge I
+	FIELD field_851 textureManager Lnet/minecraft/class_76;
+	METHOD <init> (Lnet/minecraft/class_76;Lnet/minecraft/class_18;DDD)V
+		ARG 1 textureManager
+		ARG 2 world
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z

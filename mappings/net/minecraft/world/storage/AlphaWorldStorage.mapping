@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_81 net/minecraft/world/storage/AlphaWorldStorage
+	FIELD field_278 LOGGER Ljava/util/logging/Logger;
+	FIELD field_279 dir Ljava/io/File;
+	FIELD field_280 playerDataDir Ljava/io/File;
+	FIELD field_281 dataDir Ljava/io/File;
+	FIELD field_282 startTime J
+	METHOD <init> (Ljava/io/File;Ljava/lang/String;Z)V
+		ARG 1 savesDir
+		ARG 2 name
+		ARG 3 createPlayerDataDir
+	METHOD method_332 getDirectory ()Ljava/io/File;
+	METHOD method_333 loadPlayerData (Ljava/lang/String;)Lnet/minecraft/class_8;
+		ARG 1 playerName
+	METHOD method_334 writeSessionLock ()V

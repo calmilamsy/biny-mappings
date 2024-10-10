@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_52 net/minecraft/world/storage/WorldStorage
+	METHOD method_1732 save (Lnet/minecraft/class_7;)V
+		ARG 1 properties
+	METHOD method_1733 save (Lnet/minecraft/class_7;Ljava/util/List;)V
+		ARG 1 properties
+		ARG 2 players
+	METHOD method_1734 getChunkStorage (Lnet/minecraft/class_50;)Lnet/minecraft/class_243;
+		ARG 1 dimension
+	METHOD method_1735 checkSessionLock ()V
+	METHOD method_1736 getWorldPropertiesFile (Ljava/lang/String;)Ljava/io/File;
+		ARG 1 name
+	METHOD method_1737 loadProperties ()Lnet/minecraft/class_7;
+	METHOD method_1738 getPlayerSaveHandler ()Lnet/minecraft/class_168;
+	METHOD method_1739 forceSave ()V

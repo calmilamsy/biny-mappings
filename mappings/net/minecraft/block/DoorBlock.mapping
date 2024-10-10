@@ -7,3 +7,7 @@ CLASS net/minecraft/class_252 net/minecraft/block/DoorBlock
 		ARG 5 open
 	METHOD method_838 rotate (I)V
 		ARG 1 meta
+	METHOD method_839 setOpen (I)I
+		ARG 1 meta
+	METHOD method_840 getOpen (I)Z
+		ARG 0 meta

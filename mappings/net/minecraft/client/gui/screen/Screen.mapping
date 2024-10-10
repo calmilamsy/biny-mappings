@@ -4,7 +4,9 @@ CLASS net/minecraft/class_32 net/minecraft/client/gui/screen/Screen
 	FIELD field_152 width I
 	FIELD field_153 height I
 	FIELD field_154 buttons Ljava/util/List;
+	FIELD field_155 passEvents Z
 	FIELD field_156 textRenderer Lnet/minecraft/class_34;
+	FIELD field_157 particlesGui Lnet/minecraft/class_35;
 	METHOD method_117 keyPressed (CI)V
 		ARG 1 character
 		ARG 2 keyCode

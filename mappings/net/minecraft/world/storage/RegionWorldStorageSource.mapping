@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_157 net/minecraft/world/storage/RegionWorldStorageSource
+	METHOD method_535 writeDimensionData (Ljava/io/File;Ljava/util/ArrayList;IILnet/minecraft/class_62;)V
+		ARG 1 dir
+		ARG 2 datafiles
+		ARG 3 index
+		ARG 4 total
+		ARG 5 display
+	METHOD method_536 collectData (Ljava/io/File;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+		ARG 1 dir
+		ARG 2 dimensions
+		ARG 3 data
+	METHOD method_537 deleteData (Ljava/util/ArrayList;IILnet/minecraft/class_62;)V
+		ARG 1 files
+		ARG 2 index
+		ARG 3 total
+		ARG 4 display

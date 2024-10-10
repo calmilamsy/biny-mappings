@@ -205,6 +205,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 3 y
 		ARG 5 z
 	METHOD method_1366 getShadowRadius ()F
+	METHOD method_1367 shouldRender (Lnet/minecraft/class_26;)Z
 	METHOD method_1368 writeNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
 	METHOD method_1369 getTargetingMargin ()F
@@ -253,3 +254,4 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		COMMENT
 	METHOD method_1394 getBrightnessAtEyes (F)F
 		COMMENT The float here seems to be randomly used for seemingly random things.
+		ARG 1 tickDelta

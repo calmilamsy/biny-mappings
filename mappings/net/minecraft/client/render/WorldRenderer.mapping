@@ -1,5 +1,113 @@
 CLASS net/minecraft/class_471 net/minecraft/client/render/WorldRenderer
+	FIELD field_1775 darkSkyGlList I
+	FIELD field_1776 minChunkX I
+	FIELD field_1777 minChunkY I
+	FIELD field_1778 minChunkZ I
+	FIELD field_1779 maxChunkX I
+	FIELD field_1780 maxChunkY I
+	FIELD field_1781 maxChunkZ I
+	FIELD field_1782 lastViewDistance I
+	FIELD field_1783 entityRenderCooldown I
+	FIELD field_1784 entityCount I
+	FIELD field_1785 renderedEntityCount I
+	FIELD field_1786 culledEntityCount I
+	FIELD field_1787 chunkCount I
+	FIELD field_1788 invisibleChunkCount I
+	FIELD field_1789 occludedChunkCount I
+	FIELD field_1790 compiledChunkCount I
+	FIELD field_1791 emptyChunkCount I
+	FIELD field_1793 chunksInCurrentLayer Ljava/util/List;
+	FIELD field_1794 chunkRenderers [Lnet/minecraft/class_472;
+	FIELD field_1795 globalBlockEntities Ljava/util/List;
+	FIELD field_1797 occlusionQueryBuffer Ljava/nio/IntBuffer;
+	FIELD field_1800 prevCameraX D
+	FIELD field_1801 prevCameraY D
+	FIELD field_1802 prevCameraZ D
+	FIELD field_1803 miningProgress F
+	FIELD field_1804 cullStep I
 	FIELD field_1805 world Lnet/minecraft/class_18;
 	FIELD field_1806 textureManager Lnet/minecraft/class_76;
+	FIELD field_1807 dirtyChunks Ljava/util/List;
+	FIELD field_1808 sortedChunks [Lnet/minecraft/class_66;
+	FIELD field_1809 chunks [Lnet/minecraft/class_66;
+	FIELD field_1810 chunkCountX I
+	FIELD field_1811 chunkCountY I
+	FIELD field_1812 chunkCountZ I
+	FIELD field_1813 chunkGlList I
 	FIELD field_1814 client Lnet/minecraft/client/Minecraft;
 	FIELD field_1815 blockRenderManager Lnet/minecraft/class_13;
+	FIELD field_1816 occlusionBuffer Ljava/nio/IntBuffer;
+	FIELD field_1817 occlusion Z
+	FIELD field_1818 ticks I
+	FIELD field_1819 starsGlList I
+	FIELD field_1820 lightSkyGlList I
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/class_76;)V
+		ARG 1 minecraft
+		ARG 2 textureManager
+	METHOD method_1537 reload ()V
+	METHOD method_1538 hasFog (DDDF)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 tickDelta
+	METHOD method_1539 renderSky (F)V
+		ARG 1 tickDelta
+	METHOD method_1540 renderLastChunks (ID)V
+		ARG 1 layer
+		ARG 2 tickDelta
+	METHOD method_1541 checkOcclusionQueries (II)V
+		ARG 1 from
+		ARG 2 to
+	METHOD method_1542 renderChunks (IIID)I
+		ARG 1 from
+		ARG 2 to
+		ARG 3 layer
+		ARG 4 tickDelta
+	METHOD method_1543 markDirty (IIIIII)V
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
+	METHOD method_1544 renderEntities (Lnet/minecraft/class_26;Lnet/minecraft/class_68;F)V
+		ARG 1 cameraPos
+		ARG 2 culler
+		ARG 3 tickDelta
+	METHOD method_1545 renderOutline (Lnet/minecraft/class_25;)V
+		ARG 1 box
+	METHOD method_1546 setWorld (Lnet/minecraft/class_18;)V
+		ARG 1 world
+	METHOD method_1547 renderMiningProgress (Lnet/minecraft/class_54;Lnet/minecraft/class_27;ILnet/minecraft/class_31;F)V
+		ARG 1 entity
+		ARG 2 hit
+		ARG 4 handStack
+		ARG 5 tickDelta
+	METHOD method_1548 render (Lnet/minecraft/class_127;ID)I
+		ARG 1 camera
+		ARG 2 layer
+		ARG 3 tickDelta
+	METHOD method_1549 compileChunks (Lnet/minecraft/class_127;Z)Z
+		ARG 1 camera
+		ARG 2 force
+	METHOD method_1550 cullChunks (Lnet/minecraft/class_68;F)V
+		ARG 1 culler
+		ARG 2 tickDelta
+	METHOD method_1551 getChunkDebugInfo ()Ljava/lang/String;
+	METHOD method_1552 renderClouds (F)V
+		ARG 1 tickDelta
+	METHOD method_1553 sortChunks (III)V
+		ARG 1 cameraX
+		ARG 2 cameraY
+		ARG 3 cameraZ
+	METHOD method_1554 renderBlockOutline (Lnet/minecraft/class_54;Lnet/minecraft/class_27;ILnet/minecraft/class_31;F)V
+		ARG 1 player
+		ARG 2 hitResult
+		ARG 4 handStack
+		ARG 5 tickDelta
+	METHOD method_1555 getEntityDebugInfo ()Ljava/lang/String;
+	METHOD method_1556 renderFancyClouds (F)V
+		ARG 1 tickDelta
+	METHOD method_1557 tick ()V
+	METHOD method_1558 releaseGlLists ()V
+	METHOD method_1559 renderStars ()V

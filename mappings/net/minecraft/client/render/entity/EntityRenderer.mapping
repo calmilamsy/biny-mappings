@@ -2,6 +2,7 @@ CLASS net/minecraft/class_579 net/minecraft/client/render/entity/EntityRenderer
 	FIELD field_2676 model Lnet/minecraft/class_173;
 	FIELD field_2677 dispatcher Lnet/minecraft/class_578;
 	FIELD field_2678 shadowRadius F
+	FIELD field_2679 shadowDarkness F
 	METHOD method_2022 render (Lnet/minecraft/class_57;DDDFF)V
 		ARG 1 entity
 		ARG 2 x

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_254 net/minecraft/util/MD5MessageDigest
+	METHOD method_852 digest (Ljava/lang/String;)Ljava/lang/String;

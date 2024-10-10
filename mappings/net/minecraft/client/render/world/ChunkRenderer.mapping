@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_472 net/minecraft/client/render/world/ChunkRenderer
+	METHOD method_1909 render ()V
+	METHOD method_1910 addGlList (I)V
+	METHOD method_1911 isAt (III)Z
+	METHOD method_1912 init (IIIDDD)V
+	METHOD method_1913 clear ()V

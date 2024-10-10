@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_105 net/minecraft/world/gen/Generator
+	FIELD field_330 range I
+	FIELD field_331 random Ljava/util/Random;
+	METHOD method_395 place (Lnet/minecraft/class_51;Lnet/minecraft/class_18;II[B)V
+		ARG 1 source
+		ARG 2 world
+		ARG 3 chunkX
+		ARG 4 chunkZ
+		ARG 5 blocks
+	METHOD method_396 place (Lnet/minecraft/class_18;IIII[B)V
+		ARG 1 world
+		ARG 2 startChunkX
+		ARG 3 startChunkZ
+		ARG 4 chunkX
+		ARG 5 chunkZ
+		ARG 6 blocks

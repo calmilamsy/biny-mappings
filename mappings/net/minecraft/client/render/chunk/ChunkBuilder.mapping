@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_66 net/minecraft/client/render/chunk/ChunkBuilder
+	FIELD field_223 hasSkyLight Z
 	FIELD field_224 blockEntities Ljava/util/List;
 	FIELD field_225 baseRenderList I
 	FIELD field_226 tessellator Lnet/minecraft/class_67;
@@ -24,7 +25,7 @@ CLASS net/minecraft/class_66 net/minecraft/client/render/chunk/ChunkBuilder
 	FIELD field_246 centerY I
 	FIELD field_247 centerZ I
 	FIELD field_248 radius F
-	FIELD field_249 invalidated Z
+	FIELD field_249 dirty Z
 	FIELD field_250 cullingBox Lnet/minecraft/class_25;
 	FIELD field_251 id I
 	FIELD field_252 unoccluded Z
@@ -48,6 +49,7 @@ CLASS net/minecraft/class_66 net/minecraft/client/render/chunk/ChunkBuilder
 	METHOD method_299 squaredDistanceTo (Lnet/minecraft/class_57;)F
 		ARG 1 entity
 	METHOD method_300 updateFrustum (Lnet/minecraft/class_68;)V
+		ARG 1 culler
 	METHOD method_301 reset ()V
 	METHOD method_302 close ()V
 	METHOD method_303 renderOcclusionBox ()V

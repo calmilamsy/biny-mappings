@@ -1,1 +1,38 @@
 CLASS net/minecraft/class_92 net/minecraft/client/render/item/ItemRenderer
+	FIELD field_1707 useCustomDisplayColor Z
+	FIELD field_1708 blockRenderer Lnet/minecraft/class_13;
+	FIELD field_1709 random Ljava/util/Random;
+	METHOD method_1483 drawTexture (IIIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 u
+		ARG 4 v
+		ARG 5 width
+		ARG 6 height
+	METHOD method_1485 fillRect (Lnet/minecraft/class_67;IIIII)V
+		ARG 1 tesselator
+		ARG 2 x
+		ARG 3 y
+		ARG 4 width
+		ARG 5 height
+		ARG 6 color
+	METHOD method_1486 renderGuiItem (Lnet/minecraft/class_34;Lnet/minecraft/class_76;IIIII)V
+		ARG 1 textRenderer
+		ARG 2 textureManager
+		ARG 3 item
+		ARG 4 meta
+		ARG 5 sprite
+		ARG 6 x
+		ARG 7 y
+	METHOD method_1487 renderGuiItem (Lnet/minecraft/class_34;Lnet/minecraft/class_76;Lnet/minecraft/class_31;II)V
+		ARG 1 textRenderer
+		ARG 2 textureManager
+		ARG 3 stack
+		ARG 4 x
+		ARG 5 y
+	METHOD method_1488 renderGuiItemDecoration (Lnet/minecraft/class_34;Lnet/minecraft/class_76;Lnet/minecraft/class_31;II)V
+		ARG 1 textrenderer
+		ARG 2 textureManager
+		ARG 3 stack
+		ARG 4 x
+		ARG 5 y

@@ -1,11 +1,28 @@
 CLASS net/minecraft/class_34 net/minecraft/client/font/TextRenderer
+	FIELD field_2461 boundTexture I
+	FIELD field_2462 characterWidths [I
+	FIELD field_2463 boundPage I
+	FIELD field_2464 pageBuffer Ljava/nio/IntBuffer;
+	METHOD <init> (Lnet/minecraft/class_322;Ljava/lang/String;Lnet/minecraft/class_76;)V
+		ARG 1 options
+		ARG 2 fontPath
+		ARG 3 textureManager
 	METHOD method_1901 getWidth (Ljava/lang/String;)I
 		ARG 1 text
+	METHOD method_1902 splitAndGetHeight (Ljava/lang/String;I)I
+		ARG 1 text
+		ARG 2 width
 	METHOD method_1903 drawWithShadow (Ljava/lang/String;III)V
 		ARG 1 text
 		ARG 2 x
 		ARG 3 y
 		ARG 4 color
+	METHOD method_1904 drawSplit (Ljava/lang/String;IIII)V
+		ARG 1 text
+		ARG 2 x
+		ARG 3 y
+		ARG 4 width
+		ARG 5 color
 	METHOD method_1905 draw (Ljava/lang/String;IIIZ)V
 		ARG 1 text
 		ARG 2 x

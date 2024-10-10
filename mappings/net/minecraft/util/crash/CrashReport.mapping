@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_447 net/minecraft/util/crash/CrashReport
+	FIELD field_1705 exception Ljava/lang/Throwable;

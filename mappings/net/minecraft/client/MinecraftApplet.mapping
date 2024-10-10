@@ -1,1 +1,19 @@
 CLASS net/minecraft/client/MinecraftApplet net/minecraft/client/MinecraftApplet
+	FIELD field_2831 canvas Ljava/awt/Canvas;
+	FIELD field_2832 minecraft Lnet/minecraft/client/Minecraft;
+	FIELD field_2833 thread Ljava/lang/Thread;
+	METHOD destroy destroy ()V
+	METHOD init init ()V
+	METHOD method_2153 startThread ()V
+	METHOD method_2154 stopThread ()V
+	METHOD method_2155 clearMemory ()V
+	METHOD start start ()V
+	METHOD stop stop ()V
+	CLASS class_641 AppletMinecraft
+		METHOD <init> (Lnet/minecraft/client/MinecraftApplet;Ljava/awt/Component;Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZ)V
+			ARG 2 component
+			ARG 3 canvas
+			ARG 4 applet
+	CLASS class_642 AppletCanvas
+		METHOD addNotify addNotify ()V
+		METHOD removeNotify removeNotify ()V

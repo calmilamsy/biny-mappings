@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_559 net/minecraft/client/util/Timer
+	FIELD field_2369 ticksThisFrame I
+	FIELD field_2370 partialTick F
+	METHOD method_1853 advance ()V

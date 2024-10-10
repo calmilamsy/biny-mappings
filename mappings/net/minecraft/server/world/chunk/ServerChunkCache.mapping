@@ -1,0 +1,26 @@
+CLASS net/minecraft/class_79 net/minecraft/server/world/chunk/ServerChunkCache
+	FIELD field_933 forceLoad Z
+	FIELD field_934 chunksToUnload Ljava/util/Set;
+		COMMENT Set of Integer, queue of chunks to unload
+	FIELD field_935 empty Lnet/minecraft/class_43;
+	FIELD field_936 generator Lnet/minecraft/class_51;
+	FIELD field_937 storage Lnet/minecraft/class_243;
+	FIELD field_938 chunksByPos Ljava/util/Map;
+		COMMENT Map of Integer, Chunk, all loaded chunks by chunk position
+	FIELD field_939 chunks Ljava/util/List;
+		COMMENT List of Chunk, all loaded chunks
+	FIELD field_940 world Lnet/minecraft/class_73;
+	METHOD <init> (Lnet/minecraft/class_73;Lnet/minecraft/class_243;Lnet/minecraft/class_51;)V
+		ARG 1 world
+		ARG 2 storage
+		ARG 3 generator
+	METHOD method_848 saveEntities (Lnet/minecraft/class_43;)V
+		ARG 1 chunk
+	METHOD method_849 saveChunk (Lnet/minecraft/class_43;)V
+		ARG 1 chunk
+	METHOD method_850 isLoaded (II)V
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD method_851 loadChunkFromStorage (II)Lnet/minecraft/class_43;
+		ARG 1 chunkX
+		ARG 2 chunkZ

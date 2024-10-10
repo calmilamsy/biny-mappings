@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_194 net/minecraft/client/gui/screen/pack/PackScreen
 	FIELD field_703 parent Lnet/minecraft/class_32;
+	FIELD field_704 cooldown I
+	FIELD field_705 texturePacksDir Ljava/lang/String;
+	FIELD field_706 texturePacks Lnet/minecraft/class_194$class_195;
 	METHOD <init> (Lnet/minecraft/class_32;)V
 		ARG 1 parent
 	CLASS class_195 PackListWidget

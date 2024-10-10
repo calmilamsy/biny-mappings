@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_384 net/minecraft/client/render/texture/ClockSprite
+	FIELD field_1437 minecraft Lnet/minecraft/client/Minecraft;
+	FIELD field_1438 clock [I
+	FIELD field_1439 dial [I
+	FIELD field_1440 angle D
+	FIELD field_1441 angleDelta D

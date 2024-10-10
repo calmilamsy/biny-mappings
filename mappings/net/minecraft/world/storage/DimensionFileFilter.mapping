@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_550 net/minecraft/world/storage/DimensionFileFilter
+	FIELD field_2291 PATTERN Ljava/util/regex/Pattern;
+	METHOD <init> (Lnet/minecraft/class_179;)V
+		ARG 1 subclass
+	METHOD accept accept (Ljava/io/File;)Z
+		ARG 1 file

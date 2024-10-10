@@ -1,17 +1,22 @@
 CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	FIELD field_1009 maxHealth I
 	FIELD field_1019 texture Ljava/lang/String;
+	FIELD field_1021 rotationOffset F
+	FIELD field_1022 modelName Ljava/lang/String;
 	FIELD field_1024 scoreAmount I
 	FIELD field_1029 sidewaysSpeed F
 	FIELD field_1031 jumping Z
 	FIELD field_1033 movementSpeed F
 	FIELD field_1036 health I
+	FIELD field_1037 lastHealth I
 	FIELD field_1038 hurtTime I
+	FIELD field_1039 damagedTime I
 	FIELD field_1041 deathTime I
 	FIELD field_1042 attackCooldown I
 	FIELD field_1045 dead Z
 	FIELD field_1051 bodyTrackingIncrements I
 		COMMENT Used for lerp in the tickMovement method
+	FIELD field_1058 prevHealth I
 	FIELD field_1059 despawnCounter I
 	FIELD field_1060 forwardSpeed F
 	METHOD method_909 getHeldItem ()Lnet/minecraft/class_31;

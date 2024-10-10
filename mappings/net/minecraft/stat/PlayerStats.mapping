@@ -1,0 +1,38 @@
+CLASS net/minecraft/class_96 net/minecraft/stat/PlayerStats
+	FIELD field_2604 stats Ljava/util/Map;
+		COMMENT Map of Stat, Integer
+	FIELD field_2605 unsentStats Ljava/util/Map;
+		COMMENT Map of Stat, Integer
+	FIELD field_2606 dirty Z
+	FIELD field_2607 syncer Lnet/minecraft/class_605;
+	METHOD <init> (Lnet/minecraft/class_237;Ljava/io/File;)V
+		ARG 1 session
+		ARG 2 parentDir
+	METHOD method_1983 doIncrement ()Ljava/util/Map;
+	METHOD method_1984 deserialize (Ljava/lang/String;)Ljava/util/Map;
+		ARG 0 data
+	METHOD method_1985 serialize (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
+		ARG 0 playerName
+		ARG 1 sessionId
+		ARG 2 stats
+	METHOD method_1986 increment (Ljava/util/Map;)V
+		ARG 1 amounts
+	METHOD method_1987 doIncrement (Ljava/util/Map;Lnet/minecraft/class_139;I)V
+		ARG 1 stats
+		ARG 2 stat
+		ARG 3 amount
+	METHOD method_1988 hasAchievement (Lnet/minecraft/class_24;)Z
+		ARG 1 achievement
+	METHOD method_1989 get (Lnet/minecraft/class_139;)I
+		ARG 1 stat
+	METHOD method_1990 increment (Lnet/minecraft/class_139;I)V
+		ARG 1 stat
+		ARG 2 amount
+	METHOD method_1992 tick (Ljava/util/Map;)V
+		ARG 1 stats
+	METHOD method_1993 hasParentAchievement (Lnet/minecraft/class_24;)Z
+		ARG 1 achievement
+	METHOD method_1994 save ()V
+	METHOD method_1995 tickUnsent (Ljava/util/Map;)V
+		ARG 1 stats
+	METHOD method_1996 tick ()V

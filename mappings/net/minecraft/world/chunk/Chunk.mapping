@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
+	FIELD field_953 hasSkyLight Z
 	FIELD field_954 blocks [B
+	FIELD field_955 loaded Z
 	FIELD field_956 world Lnet/minecraft/class_18;
 	FIELD field_957 meta Lnet/minecraft/class_257;
 	FIELD field_958 skyLight Lnet/minecraft/class_257;
@@ -10,7 +12,11 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 	FIELD field_963 z I
 	FIELD field_964 blockEntities Ljava/util/Map;
 	FIELD field_965 entities [Ljava/util/List;
+	FIELD field_966 terrainPopulated Z
 	FIELD field_967 dirty Z
+	FIELD field_968 empty Z
+	FIELD field_969 lastSaveHadEntities Z
+	FIELD field_970 lastSaveTime J
 	METHOD <init> (Lnet/minecraft/class_18;II)V
 		ARG 1 world
 		ARG 2 x
@@ -39,9 +45,9 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 		ARG 4 rawId
 		ARG 5 meta
 	METHOD method_862 setBlockEntity (IIILnet/minecraft/class_55;)V
-		ARG 1 x
+		ARG 1 localX
 		ARG 2 y
-		ARG 3 z
+		ARG 3 localZ
 		ARG 4 blockEntity
 	METHOD method_863 getSlimeRandom (J)Ljava/util/Random;
 		ARG 1 scrambler
@@ -71,6 +77,8 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 		ARG 1 except
 		ARG 2 box
 		ARG 3 result
+	METHOD method_871 shouldSave (Z)Z
+		ARG 1 saveEntities
 	METHOD method_872 toPacket ([BIIIIIII)I
 		ARG 1 bytes
 		ARG 2 minX
@@ -80,6 +88,7 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 		ARG 6 maxY
 		ARG 7 maxZ
 		ARG 8 offset
+	METHOD method_873 populateHeightMap ()V
 	METHOD method_874 getHeight (II)I
 		ARG 1 x
 		ARG 2 z
@@ -94,6 +103,7 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 		ARG 4 meta
 	METHOD method_877 removeEntity (Lnet/minecraft/class_57;)V
 		ARG 1 entity
+	METHOD method_878 populateBlockLight ()V
 	METHOD method_879 isAboveMaxHeight (III)Z
 		ARG 1 x
 		ARG 2 y
@@ -103,22 +113,30 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 		ARG 2 y
 		ARG 3 z
 		ARG 4 ambientDarkness
+	METHOD method_881 load ()V
 	METHOD method_882 getBlockEntity (III)Lnet/minecraft/class_55;
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_885 markDirty ()V
-	METHOD method_887 (II)V
-		ARG 1 x
-		ARG 2 z
-	METHOD method_888 (III)V
-		ARG 1 x
-		ARG 2 z
-		ARG 3 neighborMaxY
-	METHOD method_889 (III)V
-		ARG 1 x
+	METHOD method_883 unload ()V
+	METHOD method_884 removeBlockEntityAt (III)V
+		ARG 1 localX
 		ARG 2 y
-		ARG 3 z
+		ARG 3 localZ
+	METHOD method_885 markDirty ()V
+	METHOD method_886 isEmpty ()Z
+	METHOD method_887 lightGaps (II)V
+		ARG 1 x
+		ARG 2 z
+	METHOD method_888 lightGap (III)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 y
+	METHOD method_889 updateHeightMap (III)V
+		ARG 1 localX
+		ARG 2 y
+		ARG 3 localZ
+	METHOD method_890 fill ()V
 	METHOD method_891 loadFromPacket ([BIIIIIII)I
 		ARG 1 bytes
 		ARG 2 minX
@@ -128,4 +146,4 @@ CLASS net/minecraft/class_43 net/minecraft/world/chunk/Chunk
 		ARG 6 maxY
 		ARG 7 maxZ
 		ARG 8 offset
-	METHOD method_892 populateHeightmap ()V
+	METHOD method_892 populateHeightmapOnly ()V
