@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_586 net/minecraft/isom/IsomChunkRenderer
+	FIELD field_2525 colors [F
+	FIELD field_2526 pixels [I
+	FIELD field_2527 height [I
+	FIELD field_2528 waterHeight [I
+	FIELD field_2529 waterBrightness [I
+	FIELD field_2530 depth [I
+	FIELD field_2531 sprites [I
+	METHOD method_1938 postProcess ()V
+	METHOD method_1939 render (Lnet/minecraft/class_478;)V
+		ARG 1 chunk

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_404 net/minecraft/stat/achievement/AchievementMap
+	FIELD field_1549 INSTANCE Lnet/minecraft/class_404;
+	FIELD field_1550 uuids Ljava/util/Map;
+		COMMENT Map of Integer, String
+	METHOD method_1271 getUuid (I)Ljava/lang/String;
+		ARG 0 id

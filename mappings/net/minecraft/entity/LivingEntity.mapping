@@ -1,37 +1,90 @@
 CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
-	FIELD field_1009 maxHealth I
+	FIELD field_1009 invulnerableTicks I
+	FIELD field_1012 bodyYaw F
+	FIELD field_1013 lastBodyYaw F
+	FIELD field_1014 lastWalkProgress F
+	FIELD field_1015 walkProgress F
 	FIELD field_1019 texture Ljava/lang/String;
 	FIELD field_1021 rotationOffset F
 	FIELD field_1022 modelName Ljava/lang/String;
 	FIELD field_1024 scoreAmount I
+	FIELD field_1025 damageAmount F
+	FIELD field_1026 interpolateOnly Z
+	FIELD field_1027 lastSwingAnimationProgress F
+	FIELD field_1028 ambientSoundTimer I
 	FIELD field_1029 sidewaysSpeed F
+	FIELD field_1030 rotationSpeed F
 	FIELD field_1031 jumping Z
+	FIELD field_1032 defaultPitch F
 	FIELD field_1033 movementSpeed F
+	FIELD field_1034 lookTimer I
+	FIELD field_1035 swingAnimationProgress F
 	FIELD field_1036 health I
 	FIELD field_1037 lastHealth I
-	FIELD field_1038 hurtTime I
+	FIELD field_1038 damagedTimer I
 	FIELD field_1039 damagedTime I
-	FIELD field_1041 deathTime I
+	FIELD field_1040 damagedSwingDir F
+	FIELD field_1041 deathTicks I
 	FIELD field_1042 attackCooldown I
+	FIELD field_1043 prevTilt F
+	FIELD field_1044 tilt F
 	FIELD field_1045 dead Z
+	FIELD field_1048 lastWalkAnimationSpeed F
+	FIELD field_1049 walkAnimationSpeed F
+	FIELD field_1050 walkAnimationProgress F
 	FIELD field_1051 bodyTrackingIncrements I
 		COMMENT Used for lerp in the tickMovement method
+	FIELD field_1052 lerpX D
+	FIELD field_1053 lerpY D
+	FIELD field_1054 lerpZ D
+	FIELD field_1055 lerpYaw D
+	FIELD field_1056 lerpPitch D
 	FIELD field_1058 prevHealth I
 	FIELD field_1059 despawnCounter I
 	FIELD field_1060 forwardSpeed F
+	FIELD field_1061 lookTarget Lnet/minecraft/class_57;
 	METHOD method_909 getHeldItem ()Lnet/minecraft/class_31;
 	METHOD method_910 tickLiving ()V
 	METHOD method_911 getRandomSound ()Ljava/lang/String;
 	METHOD method_912 getHurtSound ()Ljava/lang/String;
 	METHOD method_913 getDeathSound ()Ljava/lang/String;
-	METHOD method_914 getDroppedId ()I
+	METHOD method_914 getDroppedItemId ()I
 	METHOD method_915 getSoundVolume ()F
 	METHOD method_916 getLimitPerChunk ()I
 		COMMENT The size of a spawn group for this entity per chunk.
 	METHOD method_917 getItemStackTextureId (Lnet/minecraft/class_31;)I
 		ARG 1 stack
+	METHOD method_918 makeSound ()V
+	METHOD method_919 animateSpawn ()V
+	METHOD method_920 tryDespawn ()V
+	METHOD method_921 hasLookTarget ()Z
+	METHOD method_922 getLookTarget ()Lnet/minecraft/class_57;
+	METHOD method_923 beforeRemove ()V
+	METHOD method_924 lookAt (Lnet/minecraft/class_57;FF)V
+		ARG 1 target
+		ARG 2 maxPitch
+		ARG 3 maxYaw
+	METHOD method_925 applyKnockback (Lnet/minecraft/class_57;IDD)V
+		ARG 1 attacker
+		ARG 2 amount
+		ARG 3 dx
+		ARG 5 dz
+	METHOD method_926 getLookVector (F)Lnet/minecraft/class_26;
+		ARG 1 tickDelta
+	METHOD method_927 lerpRotation (FFF)F
+		ARG 1 from
+		ARG 2 to
+		ARG 3 maxChange
+	METHOD method_928 canSee (Lnet/minecraft/class_57;)Z
+		ARG 1 entity
+	METHOD method_929 raycast (DF)Lnet/minecraft/class_27;
+		ARG 1 distance
+		ARG 3 tickDelta
+	METHOD method_930 getHandSwingProgress (F)F
+	METHOD method_931 getPosition (F)Lnet/minecraft/class_26;
+		ARG 1 tickDelta
 	METHOD method_932 isOnLadder ()Z
-	METHOD method_933 drop ()V
+	METHOD method_933 dropItems ()V
 	METHOD method_934 canBreatheInWater ()Z
 	METHOD method_935 canSpawn ()Z
 	METHOD method_936 getMinAmbientSoundDelay ()I

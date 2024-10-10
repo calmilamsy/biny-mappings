@@ -1,0 +1,55 @@
+CLASS net/minecraft/class_477 net/minecraft/isom/IsomPreviewCanvas
+	FIELD field_1954 offsetZ I
+	FIELD field_1955 mouseX I
+	FIELD field_1956 mouseY I
+	FIELD field_1957 frames I
+	FIELD field_1958 scale I
+	FIELD field_1959 renderDebugInfo Z
+	FIELD field_1960 world Lnet/minecraft/class_18;
+	FIELD field_1961 workingDir Ljava/io/File;
+	FIELD field_1962 running Z
+	FIELD field_1963 chunksToRender Ljava/util/List;
+		COMMENT List of IsomRenderChunk
+	FIELD field_1964 chunks [[Lnet/minecraft/class_478;
+	FIELD field_1965 offsetX I
+	METHOD keyPressed keyPressed (Ljava/awt/event/KeyEvent;)V
+		ARG 1 keyEvent
+	METHOD keyReleased keyReleased (Ljava/awt/event/KeyEvent;)V
+		ARG 1 keyEvent
+	METHOD keyTyped keyTyped (Ljava/awt/event/KeyEvent;)V
+		ARG 1 keyEvent
+	METHOD method_1633 getWorkingDirectory ()Ljava/io/File;
+	METHOD method_1634 setAmbientDarkness (I)V
+		ARG 1 ambientDarkness
+	METHOD method_1635 getChunk (II)Lnet/minecraft/class_478;
+		ARG 1 x
+		ARG 2 y
+	METHOD method_1637 render (Ljava/awt/Graphics2D;)V
+		ARG 1 graphics
+	METHOD method_1638 getWorkingDirectory (Ljava/lang/String;)Ljava/io/File;
+		ARG 1 name
+	METHOD method_1639 start ()V
+	METHOD method_1640 openWorld (Ljava/lang/String;)V
+		ARG 1 saveName
+	METHOD method_1641 stop ()V
+	METHOD method_1642 update ()V
+	METHOD method_1643 getOs ()Lnet/minecraft/class_343;
+	METHOD mouseClicked mouseClicked (Ljava/awt/event/MouseEvent;)V
+		ARG 1 mouseEvent
+	METHOD mouseDragged mouseDragged (Ljava/awt/event/MouseEvent;)V
+		ARG 1 mouseEvent
+	METHOD mouseEntered mouseEntered (Ljava/awt/event/MouseEvent;)V
+		ARG 1 mouseEvent
+	METHOD mouseExited mouseExited (Ljava/awt/event/MouseEvent;)V
+		ARG 1 mouseEvent
+	METHOD mouseMoved mouseMoved (Ljava/awt/event/MouseEvent;)V
+		ARG 1 mouseEvent
+	METHOD mousePressed mousePressed (Ljava/awt/event/MouseEvent;)V
+		ARG 1 mouseEvent
+	METHOD mouseReleased mouseReleased (Ljava/awt/event/MouseEvent;)V
+		ARG 1 mouseEvent
+	METHOD paint paint (Ljava/awt/Graphics;)V
+	METHOD run run ()V
+	METHOD update update (Ljava/awt/Graphics;)V
+	CLASS 1
+		METHOD run run ()V

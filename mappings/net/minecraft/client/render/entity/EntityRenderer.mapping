@@ -1,8 +1,9 @@
 CLASS net/minecraft/class_579 net/minecraft/client/render/entity/EntityRenderer
-	FIELD field_2676 model Lnet/minecraft/class_173;
+	FIELD field_2676 bipedModel Lnet/minecraft/class_173;
 	FIELD field_2677 dispatcher Lnet/minecraft/class_578;
 	FIELD field_2678 shadowRadius F
 	FIELD field_2679 shadowDarkness F
+	FIELD field_2680 renderManager Lnet/minecraft/class_13;
 	METHOD method_2022 render (Lnet/minecraft/class_57;DDDFF)V
 		ARG 1 entity
 		ARG 2 x
@@ -10,7 +11,52 @@ CLASS net/minecraft/class_579 net/minecraft/client/render/entity/EntityRenderer
 		ARG 6 z
 		ARG 8 yaw
 		ARG 9 pitch
+	METHOD method_2023 getTextRenderer ()Lnet/minecraft/class_34;
+	METHOD method_2024 renderShapeFlat (Lnet/minecraft/class_25;)V
+		ARG 0 box
+	METHOD method_2025 renderShape (Lnet/minecraft/class_25;DDD)V
+		ARG 0 box
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_2026 bindTexture (Ljava/lang/String;)V
 		ARG 1 texturePath
+	METHOD method_2027 bindDownloadImage (Ljava/lang/String;Ljava/lang/String;)Z
+		ARG 1 url
+		ARG 2 backup
+	METHOD method_2028 renderOnFire (Lnet/minecraft/class_57;DDDF)V
+		ARG 1 entity
+		ARG 2 dx
+		ARG 4 dy
+		ARG 6 dz
+		ARG 8 tickDelta
 	METHOD method_2029 setDispatcher (Lnet/minecraft/class_578;)V
+		ARG 1 dispatcher
+	METHOD method_2030 renderShadowOnBlock (Lnet/minecraft/class_17;DDDIIIFFDDD)V
+		ARG 1 block
+		ARG 2 dx
+		ARG 4 dy
+		ARG 6 dz
+		ARG 8 x
+		ARG 9 y
+		ARG 10 z
+		ARG 11 yaw
+		ARG 12 shadowSize
+		ARG 13 cx
+		ARG 15 cy
+		ARG 17 cz
+	METHOD method_2031 getWorld ()Lnet/minecraft/class_18;
 	METHOD method_2032 postRender (Lnet/minecraft/class_57;DDDFF)V
+		ARG 1 entity
+		ARG 2 dx
+		ARG 4 dy
+		ARG 6 dz
+		ARG 8 yaw
+		ARG 9 tickDelta
+	METHOD method_2033 renderShadow (Lnet/minecraft/class_57;DDDFF)V
+		ARG 1 entity
+		ARG 2 dx
+		ARG 4 dy
+		ARG 6 dz
+		ARG 8 yaw
+		ARG 9 tickDelta

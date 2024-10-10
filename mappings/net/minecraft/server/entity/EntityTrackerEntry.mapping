@@ -1,11 +1,45 @@
 CLASS net/minecraft/class_174 net/minecraft/server/entity/EntityTrackerEntry
 	FIELD field_597 currentTrackedEntity Lnet/minecraft/class_57;
+	FIELD field_598 trackedDistance I
+	FIELD field_599 trackingFrequency I
+	FIELD field_600 lastX I
+	FIELD field_601 lastY I
+	FIELD field_602 lastZ I
+	FIELD field_603 lastYaw I
+	FIELD field_604 lastPitch I
+	FIELD field_605 velocityX D
+	FIELD field_606 velocityY D
+	FIELD field_607 velocityZ D
+	FIELD field_608 ticks I
 	FIELD field_609 newPlayerDataUpdated Z
+	FIELD field_610 listeners Ljava/util/Set;
+		COMMENT Set of ServerPlayerEntity
+	FIELD field_611 x D
+	FIELD field_612 y D
+	FIELD field_613 z D
+	FIELD field_614 isInitialized Z
+	FIELD field_615 alwaysUpdateVelocity Z
+	FIELD field_616 ticksSinceLastDismount I
+	METHOD <init> (Lnet/minecraft/class_57;IIZ)V
+		ARG 1 entity
+		ARG 2 trackedDistance
+		ARG 3 trackedFrequency
+		ARG 4 alwaysUpdateVelocity
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 object
 	METHOD method_596 notifyEntityRemoved ()V
 	METHOD method_597 notifyEntityRemoved (Lnet/minecraft/class_69;)V
+		ARG 1 player
 	METHOD method_598 sendToListeners (Lnet/minecraft/class_169;)V
+		ARG 1 packet
 	METHOD method_599 notifyNewLocation (Ljava/util/List;)V
+		ARG 1 players
+	METHOD method_600 createAddEntityPacket ()Lnet/minecraft/class_169;
 	METHOD method_601 updateListener (Lnet/minecraft/class_69;)V
+		ARG 1 player
 	METHOD method_602 sendToAround (Lnet/minecraft/class_169;)V
+		ARG 1 packet
 	METHOD method_603 updateListeners (Ljava/util/List;)V
+		ARG 1 players
 	METHOD method_604 removeListener (Lnet/minecraft/class_69;)V
+		ARG 1 player

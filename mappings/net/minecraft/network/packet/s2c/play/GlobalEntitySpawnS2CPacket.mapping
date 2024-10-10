@@ -1,7 +1,8 @@
-CLASS net/minecraft/class_45 net/minecraft/network/packet/s2c/play/LightningEntitySpawnS2CPacket
+CLASS net/minecraft/class_45 net/minecraft/network/packet/s2c/play/GlobalEntitySpawnS2CPacket
 	FIELD field_172 id I
 	FIELD field_173 x I
 	FIELD field_174 y I
 	FIELD field_175 z I
+	FIELD field_176 type I
 	METHOD <init> (Lnet/minecraft/class_57;)V
 		ARG 1 entity

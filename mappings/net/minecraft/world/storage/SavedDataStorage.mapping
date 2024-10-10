@@ -1,7 +1,10 @@
-CLASS net/minecraft/class_53 net/minecraft/world/PersistentStateManager
+CLASS net/minecraft/class_53 net/minecraft/world/storage/SavedDataStorage
+	FIELD field_550 storage Lnet/minecraft/class_52;
 	FIELD field_551 loadedStatesById Ljava/util/Map;
 	FIELD field_552 loadedStates Ljava/util/List;
 	FIELD field_553 idCounts Ljava/util/Map;
+	METHOD <init> (Lnet/minecraft/class_52;)V
+		ARG 1 storage
 	METHOD method_523 save ()V
 	METHOD method_524 save (Lnet/minecraft/class_58;)V
 		ARG 1 state

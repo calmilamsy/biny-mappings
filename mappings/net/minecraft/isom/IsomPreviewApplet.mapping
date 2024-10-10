@@ -1,0 +1,4 @@
+CLASS net/minecraft/isom/IsomPreviewApplet net/minecraft/isom/IsomPreviewApplet
+	FIELD field_2836 canvas Lnet/minecraft/class_477;
+	METHOD start start ()V
+	METHOD stop stop ()V

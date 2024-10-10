@@ -20,3 +20,6 @@ CLASS net/minecraft/class_139 net/minecraft/stat/Stat
 	METHOD method_1677 localOnly ()Lnet/minecraft/class_139;
 	METHOD method_1678 isAchievement ()Z
 	METHOD method_1679 format (I)Ljava/lang/String;
+		ARG 1 value
+	METHOD method_1680 getNumberFormat ()Ljava/text/NumberFormat;
+	METHOD method_1681 getDecimalFormat ()Ljava/text/DecimalFormat;

@@ -1,15 +1,33 @@
 CLASS net/minecraft/class_11 net/minecraft/server/network/ServerPlayNetworkHandler
-	FIELD field_916 logger Ljava/util/logging/Logger;
+	FIELD field_916 LOGGER Ljava/util/logging/Logger;
 	FIELD field_917 connection Lnet/minecraft/class_117;
 	FIELD field_918 disconnected Z
 	FIELD field_919 server Lnet/minecraft/server/MinecraftServer;
 	FIELD field_920 player Lnet/minecraft/class_69;
+	FIELD field_921 ticks I
+	FIELD field_922 lastKeepAliveTime I
+	FIELD field_923 floatingTime I
+	FIELD field_924 moved Z
+	FIELD field_925 teleportTargetX D
+	FIELD field_926 teleportTargetY D
+	FIELD field_927 teleportTargetZ D
+	FIELD field_928 teleported Z
+	FIELD field_929 transactions Ljava/util/Map;
+		COMMENT HashMap of Integer, Short
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_117;Lnet/minecraft/class_69;)V
 		ARG 1 server
 		ARG 2 connection
 		ARG 3 player
+	METHOD method_831 tick ()V
+	METHOD method_832 teleport (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
 	METHOD method_833 disconnect (Ljava/lang/String;)V
 		ARG 1 reason
+	METHOD method_834 getBlockDataSendQueueSize ()I
 	METHOD method_835 sendPacket (Lnet/minecraft/class_169;)V
 		ARG 1 packet
 	METHOD method_836 handleCommand (Ljava/lang/String;)V

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_237 net/minecraft/client/util/Session
+	FIELD field_871 CREATIVE_INVENTORY Ljava/util/List;
 	FIELD field_872 username Ljava/lang/String;
 	FIELD field_873 sessionId Ljava/lang/String;
 	FIELD field_874 mpPass Ljava/lang/String;

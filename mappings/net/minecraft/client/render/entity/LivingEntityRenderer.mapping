@@ -1,5 +1,54 @@
 CLASS net/minecraft/class_245 net/minecraft/client/render/entity/LivingEntityRenderer
 	FIELD field_909 model Lnet/minecraft/class_173;
+	FIELD field_910 decorationModel Lnet/minecraft/class_173;
 	METHOD <init> (Lnet/minecraft/class_173;F)V
 		ARG 1 entityModel
 		ARG 2 shadowRadius
+	METHOD method_815 setDecorationModel (Lnet/minecraft/class_173;)V
+		ARG 1 model
+	METHOD method_816 getDeathYaw (Lnet/minecraft/class_127;)F
+		ARG 1 entity
+	METHOD method_817 getOverlayColor (Lnet/minecraft/class_127;FF)I
+		ARG 1 entity
+		ARG 2 brightness
+		ARG 3 timeDelta
+	METHOD method_818 renderNameTag (Lnet/minecraft/class_127;Ljava/lang/String;DDDI)V
+		ARG 1 entity
+		ARG 2 name
+		ARG 3 dx
+		ARG 5 dy
+		ARG 7 dz
+		ARG 9 range
+	METHOD method_819 bindDecorationTexture (Lnet/minecraft/class_127;IF)Z
+		ARG 1 entity
+	METHOD method_820 getHandSwingProgress (Lnet/minecraft/class_127;F)F
+		ARG 1 entity
+		ARG 2 tickDelta
+	METHOD method_821 renderNameTag (Lnet/minecraft/class_127;DDD)V
+		ARG 1 entity
+		ARG 2 dx
+		ARG 4 dy
+		ARG 6 dz
+	METHOD method_823 applyScale (Lnet/minecraft/class_127;F)V
+		ARG 1 entity
+		ARG 2 scale
+	METHOD method_824 getHandSwingProgress (Lnet/minecraft/class_127;FFF)V
+		ARG 1 entity
+		ARG 2 dx
+		ARG 3 dy
+		ARG 4 dz
+	METHOD method_825 bindTexture (Lnet/minecraft/class_127;IF)Z
+		ARG 1 mob
+		ARG 2 layer
+		ARG 3 tickDelta
+	METHOD method_826 applyTranslation (Lnet/minecraft/class_127;DDD)V
+		ARG 1 entity
+		ARG 2 headBob
+		ARG 4 bodyYaw
+		ARG 6 tickDelta
+	METHOD method_827 renderMore (Lnet/minecraft/class_127;F)V
+		ARG 1 entity
+		ARG 2 tickDelta
+	METHOD method_828 getHeadBob (Lnet/minecraft/class_127;F)F
+		ARG 1 entity
+		ARG 2 tickDelta
