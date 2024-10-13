@@ -1,0 +1,31 @@
+CLASS net/minecraft/class_567 net/minecraft/world/NaturalSpawner
+	FIELD field_2408 MONSTER_TYPE [Ljava/lang/Class;
+		COMMENT Class is of any extends Monster
+	FIELD field_2409 mobSpawningChunks Ljava/util/Set;
+		COMMENT Set of ChunkPos.
+		COMMENT This set keeps track of chunks that allow mob spawning. Mob spawning can occur within
+		COMMENT a 15x15 grid of chunks around players. The ring of chunks around that are lazy chunks,
+		COMMENT which do not allow mob spawning, but to contribute to the mob cap.
+	METHOD method_1868 getRandomPosInChunk (Lnet/minecraft/class_18;II)Lnet/minecraft/class_339;
+		ARG 0 world
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD method_1869 spawnMonstersAndWakePlayers (Lnet/minecraft/class_18;Ljava/util/List;)Z
+		ARG 0 world
+		ARG 1 players
+	METHOD method_1870 tick (Lnet/minecraft/class_18;ZZ)I
+		ARG 0 world
+		ARG 1 spawnAnimals
+		ARG 2 spawnMonsters
+	METHOD method_1871 isValidSpawnPos (Lnet/minecraft/class_238;Lnet/minecraft/class_18;III)Z
+		ARG 0 spawnGroup
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1872 spawnMonstersAndWakePlayers (Lnet/minecraft/class_127;Lnet/minecraft/class_18;FFF)V
+		ARG 0 entity
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
