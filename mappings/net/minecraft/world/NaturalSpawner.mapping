@@ -23,7 +23,7 @@ CLASS net/minecraft/class_567 net/minecraft/world/NaturalSpawner
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1872 spawnMonstersAndWakePlayers (Lnet/minecraft/class_127;Lnet/minecraft/class_18;FFF)V
+	METHOD method_1872 postSpawnEntity (Lnet/minecraft/class_127;Lnet/minecraft/class_18;FFF)V
 		ARG 0 entity
 		ARG 1 world
 		ARG 2 x
