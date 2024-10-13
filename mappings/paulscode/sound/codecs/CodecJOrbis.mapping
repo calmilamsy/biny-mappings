@@ -1,0 +1,4 @@
+CLASS paulscode/sound/codecs/CodecJOrbis
+	FIELD urlConnection urlConnection Ljava/net/URLConnection;
+	FIELD url url Ljava/net/URL;
+	METHOD openInputStream openInputStream ()Ljava/io/InputStream;
