@@ -21,10 +21,10 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	FIELD field_1035 swingAnimationProgress F
 	FIELD field_1036 health I
 	FIELD field_1037 lastHealth I
-	FIELD field_1038 damagedTimer I
+	FIELD field_1038 hurtTime I
 	FIELD field_1039 damagedTime I
 	FIELD field_1040 damagedSwingDir F
-	FIELD field_1041 deathTicks I
+	FIELD field_1041 deathTime I
 	FIELD field_1042 attackCooldown I
 	FIELD field_1043 prevTilt F
 	FIELD field_1044 tilt F
