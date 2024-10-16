@@ -28,7 +28,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	FIELD field_1042 attackCooldown I
 	FIELD field_1043 prevTilt F
 	FIELD field_1044 tilt F
-	FIELD field_1045 dead Z
+	FIELD field_1045 killedByOtherEntity Z
 	FIELD field_1048 lastWalkAnimationSpeed F
 	FIELD field_1049 walkAnimationSpeed F
 	FIELD field_1050 walkAnimationProgress F
