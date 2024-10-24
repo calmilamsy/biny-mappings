@@ -20,5 +20,5 @@ CLASS net/minecraft/class_189 net/minecraft/util/math/MathHelper
 	METHOD method_650 floorDiv (II)I
 		ARG 0 dividend
 		ARG 1 divisor
-	METHOD method_651 isNullOrEmtpy (Ljava/lang/String;)Z
+	METHOD method_651 isNullOrEmpty (Ljava/lang/String;)Z
 		ARG 0 text

@@ -10,7 +10,7 @@ CLASS net/minecraft/class_92 net/minecraft/client/render/item/ItemRenderer
 		ARG 5 width
 		ARG 6 height
 	METHOD method_1485 fillRect (Lnet/minecraft/class_67;IIIII)V
-		ARG 1 tesselator
+		ARG 1 tessellator
 		ARG 2 x
 		ARG 3 y
 		ARG 4 width

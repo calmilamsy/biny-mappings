@@ -36,7 +36,7 @@ CLASS net/minecraft/class_186 net/minecraft/world/gen/feature/LargeOakTreeFeatur
 		ARG 1 from
 		ARG 2 to
 		ARG 3 log
-	METHOD method_618 placeFoilage ()V
+	METHOD method_618 placeFoliage ()V
 	METHOD method_619 getClusterShape (I)F
 		ARG 1 layer
 	METHOD method_620 PlaceTrunk ()V

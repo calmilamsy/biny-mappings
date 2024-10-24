@@ -33,7 +33,7 @@ CLASS net/minecraft/class_32 net/minecraft/client/gui/screen/Screen
 		ARG 1 confirmed
 		ARG 2 id
 	METHOD method_127 renderBackgroundTexture (I)V
-		ARG 1 vOFfset
+		ARG 1 vOffset
 	METHOD method_128 mouseReleased (III)V
 		ARG 1 mouseX
 		ARG 2 mouseY

@@ -18,7 +18,7 @@ CLASS net/minecraft/class_7 net/minecraft/world/WorldProperties
 		ARG 1 seed
 		ARG 3 name
 	METHOD <init> (Lnet/minecraft/class_7;)V
-		ARG 1 propeties
+		ARG 1 properties
 	METHOD <init> (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
 	METHOD method_10 setThundering (Z)V

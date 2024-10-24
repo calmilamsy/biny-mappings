@@ -3,7 +3,7 @@ CLASS net/minecraft/class_573 net/minecraft/client/render/FrustumCuller
 	FIELD field_2466 offsetX D
 	FIELD field_2467 offsetY D
 	FIELD field_2468 offsetZ D
-	METHOD method_1907 intersectsFrustrum (DDDDDD)Z
+	METHOD method_1907 intersectsFrustum (DDDDDD)Z
 		ARG 1 minX
 		ARG 3 minY
 		ARG 5 minZ
