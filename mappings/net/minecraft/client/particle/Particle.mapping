@@ -25,7 +25,7 @@ CLASS net/minecraft/class_77 net/minecraft/client/particle/Particle
 	METHOD method_2001 setScale (F)Lnet/minecraft/class_77;
 		ARG 1 scale
 	METHOD method_2002 render (Lnet/minecraft/class_67;FFFFFF)V
-		ARG 1 tesselator
+		ARG 1 tessellator
 		ARG 2 partialTicks
 		ARG 3 horizontalSize
 		ARG 4 verticalSize

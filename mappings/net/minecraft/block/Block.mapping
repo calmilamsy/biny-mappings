@@ -238,7 +238,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 	METHOD method_1584 setTickRandomly (Z)Lnet/minecraft/class_17;
 		ARG 1 tickRandomly
 	METHOD method_1585 setResistance (F)Lnet/minecraft/class_17;
-		ARG 1 resistence
+		ARG 1 resistance
 	METHOD method_1586 containsInXZPlane (Lnet/minecraft/class_26;)Z
 	METHOD method_1587 setHardness (F)Lnet/minecraft/class_17;
 		ARG 1 hardness

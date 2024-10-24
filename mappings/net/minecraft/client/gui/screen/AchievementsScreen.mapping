@@ -8,7 +8,7 @@ CLASS net/minecraft/class_609 net/minecraft/client/gui/screen/AchievementsScreen
 	FIELD field_2624 scaledMouseDx D
 	FIELD field_2625 scaledMouseDy D
 	FIELD field_2626 scrollX D
-	FIELD field_2627 scollY D
+	FIELD field_2627 scrollY D
 	FIELD field_2628 MIN_COLUMN I
 	FIELD field_2629 MIN_ROW I
 	FIELD field_2630 MAX_COLUMN I

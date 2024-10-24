@@ -53,7 +53,7 @@ CLASS net/minecraft/class_97 net/minecraft/client/gui/widget/EntryListWidget
 		ARG 1 index
 		ARG 2 x
 		ARG 3 y
-		ARG 5 tesselator
+		ARG 5 tessellator
 	METHOD method_1265 renderHeader (IILnet/minecraft/class_67;)V
 		ARG 1 x
 		ARG 2 y
