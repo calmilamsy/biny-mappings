@@ -431,21 +431,22 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_247 canTransferPowerInDirection (IIII)Z
+	METHOD method_247 isStrongPoweringSide (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 direction
+		ARG 4 side
 	METHOD method_248 manageChunkUpdatesAndEvents ()V
 	METHOD method_249 hasSkyLight (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_250 isEmittingRedstonePowerInDirection (IIII)Z
+	METHOD method_250 isPoweringSide (IIII)Z
+		COMMENT Returns true if any of the neighbors are being strong-powered or if the specified face is being powered
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 direction
+		ARG 4 side
 	METHOD method_251 checkSessionLock ()V
 	METHOD method_252 getBrightness (III)I
 		ARG 1 x
@@ -474,12 +475,12 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 3 z
 	METHOD method_261 getWorldStorage ()Lnet/minecraft/class_52;
 	METHOD method_262 getProperties ()Lnet/minecraft/class_7;
-	METHOD method_263 canTransferPower (III)Z
+	METHOD method_263 isStrongPowered (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 	METHOD method_264 updateSleepingPlayers ()V
-	METHOD method_265 isEmittingRedstonePower (III)Z
+	METHOD method_265 isPowered (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

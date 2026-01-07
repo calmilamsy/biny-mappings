@@ -1,10 +1,10 @@
 CLASS net/minecraft/class_293 net/minecraft/client/gui/screen/ingame/HandledScreen
 	FIELD field_1152 backgroundWidth I
 	FIELD field_1153 backgroundHeight I
-	FIELD field_1154 container Lnet/minecraft/class_71;
+	FIELD field_1154 handler Lnet/minecraft/class_71;
 	FIELD field_1155 itemRenderer Lnet/minecraft/class_92;
 	METHOD <init> (Lnet/minecraft/class_71;)V
-		ARG 1 container
+		ARG 1 handler
 	METHOD method_984 drawBackground (F)V
 		ARG 1 tickDelta
 	METHOD method_985 drawForeground ()V
