@@ -1,0 +1,12 @@
+{
+	// Common b1.7.3 types for field name suggestions
+	"net/minecraft/client/Minecraft": "minecraft",
+	"net/minecraft/world/World": "world",
+	"net/minecraft/entity/player/PlayerEntity": "player",
+	"net/minecraft/block/Block": "block",
+	"net/minecraft/item/Item": "item",
+	"net/minecraft/item/ItemStack": "stack",
+	"net/minecraft/entity/Entity": "entity",
+	"net/minecraft/util/math/Vec3d": "vec",
+	"net/minecraft/nbt/NbtCompound": "nbt"
+}

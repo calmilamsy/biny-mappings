@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_225 net/minecraft/block/entity/ChestBlockEntity
-	FIELD field_846 inventory [Lnet/minecraft/class_31;

@@ -1,25 +1,26 @@
 .gradle/
-*-merged.jar
-*-mapped.jar
-*-intermediary.jar
-*.DS_Store
 build/
 out/
-namedSrc/
+run/
 
-# idea
+# Jars
+*.jar
+
+# OS
+*.DS_Store
+
+# IntelliJ IDEA
 .idea/
 *.iml
 *.iws
 *.ipr
-*.jar
 
-# eclipse
+# Eclipse
 .eclipse
 .classpath
 .project
 .settings/
 
-# vscode
+# VSCode
 .vscode/
 bin/

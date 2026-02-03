@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_525 net/minecraft/client/gui/screen/GameMenuScreen
-	FIELD field_2204 saveStep I
-	FIELD field_2205 ticks I

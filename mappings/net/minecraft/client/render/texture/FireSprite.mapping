@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_572 net/minecraft/client/render/texture/FireSprite
-	FIELD field_2459 current [F
-	FIELD field_2460 next [F

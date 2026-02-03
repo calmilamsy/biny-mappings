@@ -1,21 +1,30 @@
-# BINY Mappings
+# BINY-Ornithe Mappings
 
-**B**oring **I**nstructional **N**ames (**Y**arn Edition) is a [barn](https://github.com/babric/barn) fork, which is a [yarn](https://github.com/FabricMC/yarn) fork for b1.7.3
-
-The intent of this project is to continue the work of BIN mappings, but this time following Yarn's naming scheme better.
+**B**oring **I**nstructional **N**ames (**Y**arn Edition) is a [biny-mappings](https://github.com/babric/biny-mappings) port, which is a [barn](https://github.com/babric/barn) fork, which is a [yarn](https://github.com/FabricMC/yarn) fork for b1.7.3 - ported to [Ornithe](https://ornithemc.net/) gen2 intermediary for compatibility with [Feather](https://github.com/OrnitheMC/feather)-based mods.
 
 ## Usage
 
-To use yarn-deobfuscated Minecraft for Minecraft modding or as a dependency in a Java project, you can
-use [loom](https://github.com/babric/fabric-loom) Gradle plugin.
-See [fabric wiki tutorial](https://fabricmc.net/wiki/tutorial:setup) for more information.
-- See [StationAPI Example Mod](https://github.com/calmilamsy/stationapi-example-mod) for an example on how to use BINY in loom.
-- Uses commit hashes for versioning. You *can* use jitpack instead of glass-maven, but unless you're testing a PR, you really shouldn't use it due to potentially long artefact times.
+To use BINY-Ornithe mappings in your mod, add this to your `build.gradle`:
 
-To obtain a deobfuscated Minecraft jar, [`./gradlew mapNamedJar`](#mapNamedJar) will generate a jar named
+```groovy
+repositories {
+    maven {
+        name = 'Glass Launcher'
+        url = 'https://maven.glass-launcher.net/releases'
+    }
+}
+
+dependencies {
+    mappings "net.glasslauncher:biny-ornithe:b1.7.3+build.VERSION:mergedv2"
+}
+```
+
+Replace `VERSION` with the desired build number.
+
+To obtain a deobfuscated Minecraft jar, [`./gradlew mapMinecraftToNamed`](#mapMinecraftToNamed) will generate a jar named
 like `<minecraft version>-named.jar`, which can be sent to a decompiler for deobfuscated code.
 
-Please note to run the yarn build script **Java 17** or higher is required!
+Please note to run the build script **Java 17** or higher is required!
 
 ## Contributing
 
@@ -26,21 +35,19 @@ the CC0 license. This includes using the names from those mappings for inspirati
 used in said projects is also not welcome - you have been warned. However, it is a good idea to consult name changes
 with other people - use pull requests or our community spaces to ask questions!
 
-Please have a look at the [naming conventions](/CONVENTIONS.md) before submitting mappings.
-
 ### Getting Started
 
 1. Fork and clone the repo
-2. Run `./gradlew yarn` (Linux, macOS) or `gradlew yarn` (Windows) to open [Enigma](https://github.com/FabricMC/Enigma),
+2. Run `./gradlew enigma` (Linux, macOS) or `gradlew enigma` (Windows) to open [Enigma](https://github.com/FabricMC/Enigma),
    a user interface to easily edit the mappings
 3. Commit and push your work to your fork
 4. Open a pull request with your changes
 
 ## Gradle
 
-Yarn uses Gradle to provide a number of utility tasks for working with the mappings.
+BINY-Ornithe uses Gradle to provide a number of utility tasks for working with the mappings.
 
-### `yarn`
+### `enigma`
 
 Setup and download and launch the latest version of [Enigma](https://github.com/FabricMC/Enigma) automatically
 configured to use the merged jar and the mappings.
@@ -51,23 +58,22 @@ few constant field names.
 ### `build`
 
 Build a GZip'd archive containing a tiny mapping between official (obfuscated)
-, [intermediary](https://github.com/FabricMC/intermediary), and yarn names ("named") and packages enigma mappings into a
-zip archive..
+, [intermediary](https://github.com/OrnitheMC/ornithe-intermediary), and named mappings and packages enigma mappings into a
+zip archive.
 
-### `mapNamedJar`
+### `mapMinecraftToNamed`
 
-Builds a deobfuscated jar with yarn mappings and automapped fields (enums, etc.). Unmapped names will be filled
-with [intermediary](https://github.com/FabricMC/Intermediary) names.
+Builds a deobfuscated jar with named mappings and automapped fields (enums, etc.). Unmapped names will be filled
+with [intermediary](https://github.com/OrnitheMC/ornithe-intermediary) names.
 
-### `decompileCFR`
+### `decompileWithCfr`
 
-Decompile the mapped source code. **Note:** This is not designed to be recompiled.
+Decompile the mapped source code using CFR. **Note:** This is not designed to be recompiled.
 
-### `download`
+### `downloadMinecraftJars`
 
-Downloads the client and server Minecraft jars for the current Minecraft version to `.gradle/minecraft`
+Downloads the client and server Minecraft jars for the current Minecraft version.
 
-### `mergeJars`
+### `mergeMinecraftJars`
 
-Merges the client and server jars into one merged jar, located at `VERSION-merged.jar` in the mappings directory
-where `VERSION` is the current Minecraft version.
+Merges the client and server jars into one merged jar.

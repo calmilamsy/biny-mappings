@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_601 net/minecraft/client/BorderCanvas
-	METHOD <init> (I)V
-		ARG 1 size

@@ -1,2 +1,2 @@
-[*.{gradle,mapping,unpick}]
+[*.{gradle,mapping,unpick,tiny}]
 indent_style = tab

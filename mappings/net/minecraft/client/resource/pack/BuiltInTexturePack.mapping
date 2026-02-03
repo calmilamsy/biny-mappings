@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_527 net/minecraft/client/resource/pack/BuiltInTexturePack
-	FIELD field_2207 iconId I
-	FIELD field_2208 icon Ljava/awt/image/BufferedImage;
