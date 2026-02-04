@@ -4671,7 +4671,7 @@ c	net/minecraft/unmapped/C_46108969	net/minecraft/world/BlockView
 		p	2		y
 		p	3		z
 	m	()Lnet/minecraft/unmapped/C_28112798;	m_72354999	getBiomeSource
-	m	(III)F	m_80119644	getLuminance
+	m	(III)F	m_80119644	getBrightness
 		p	1		x
 		p	2		y
 		p	3		z
