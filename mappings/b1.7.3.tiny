@@ -4666,12 +4666,12 @@ c	net/minecraft/unmapped/C_46108969	net/minecraft/world/BlockView
 		p	1		x
 		p	2		y
 		p	3		z
-	m	(III)Z	m_46357017	m_46357017
+	m	(III)Z	m_46357017	isOpaque
 		p	1		x
 		p	2		y
 		p	3		z
 	m	()Lnet/minecraft/unmapped/C_28112798;	m_72354999	getBiomeSource
-	m	(III)F	m_80119644	getBrightness
+	m	(III)F	m_80119644	getLuminance
 		p	1		x
 		p	2		y
 		p	3		z
@@ -6172,7 +6172,7 @@ c	net/minecraft/unmapped/C_64041439	net/minecraft/world/World
 	m	(II)I	m_45270422	getSpawnPositionValidityY
 		p	1		x
 		p	2		z
-	m	(III)Z	m_46357017	m_46357017
+	m	(III)Z	m_46357017	isOpaque
 	m	(IIII)Z	m_48917424	isStrongPoweringSide
 		p	1		x
 		p	2		y
@@ -6330,7 +6330,7 @@ c	net/minecraft/unmapped/C_64041439	net/minecraft/world/World
 		p	1		entityBoundingBox
 		p	2		fluidMaterial
 		p	3		entity
-	m	(III)F	m_80119644	getBrightness
+	m	(III)F	m_80119644	getLuminance
 	m	(IIII)Z	m_80621374	isRegionLoaded
 		p	1		x
 		p	2		y
@@ -7304,8 +7304,8 @@ c	net/minecraft/unmapped/C_72103717	net/minecraft/entity/EntityRegistry
 		p	0		entity
 c	net/minecraft/unmapped/C_72342472	net/minecraft/world/storage/AlphaWorldStorageSource
 	f	Ljava/io/File;	f_90285215	dir
-	m	(Ljava/lang/String;)Lnet/minecraft/unmapped/C_64676926;	m_18055305	m_18055305
-	m	(Ljava/lang/String;Z)Lnet/minecraft/unmapped/C_08489468;	m_46878601	m_46878601
+	m	(Ljava/lang/String;)Lnet/minecraft/unmapped/C_64676926;	m_18055305	getProperties
+	m	(Ljava/lang/String;Z)Lnet/minecraft/unmapped/C_08489468;	m_46878601	get
 	m	([Ljava/io/File;)V	m_58119675	deleteFilesAndDirs
 		p	0		files
 	m	(Ljava/io/File;)V	<init>	<init>
@@ -10553,12 +10553,12 @@ c	net/minecraft/unmapped/C_98608386	net/minecraft/network/packet/c2s/play/Player
 		p	5		direction
 c	net/minecraft/unmapped/C_98861173	net/minecraft/world/storage/WorldStorageSource
 	m	()V	m_05162239	flush
-	m	(Ljava/lang/String;)Lnet/minecraft/unmapped/C_64676926;	m_18055305	m_18055305
+	m	(Ljava/lang/String;)Lnet/minecraft/unmapped/C_64676926;	m_18055305	getProperties
 		p	1		saveName
 	m	()Ljava/util/List;	m_45201496	getAll
 	m	(Ljava/lang/String;)V	m_45678673	delete
 		p	1		saveName
-	m	(Ljava/lang/String;Z)Lnet/minecraft/unmapped/C_08489468;	m_46878601	m_46878601
+	m	(Ljava/lang/String;Z)Lnet/minecraft/unmapped/C_08489468;	m_46878601	get
 		p	1		saveName
 		p	2		createPlayerDataDir
 	m	(Ljava/lang/String;Lnet/minecraft/unmapped/C_71803183;)Z	m_49902149	convert
