@@ -42,18 +42,40 @@ def mappingVersion = "${minecraft_version}+build.${build_number}"
 version = mappingVersion
 
 // Nests versions from gradle.properties
-def clientNestsVersion = "${minecraft_version}-client+build.${project.client_nests_build}"
-def serverNestsVersion = "${minecraft_version}-server+build.${project.server_nests_build}"
+def nestsVersion = project.nests_build
+def clientNestsVersion = "${minecraft_version}-client+build.${nestsVersion}"
+def serverNestsVersion = "${minecraft_version}-server+build.${nestsVersion}"
+def mergedNestsVersion = "${minecraft_version}+build.${nestsVersion}"
 
 // Source nests files
 def clientNestsFile = file("nests/${minecraft_version}-client.nest")
 def serverNestsFile = file("nests/${minecraft_version}-server.nest")
+def mergedNestsFile = file("nests/${minecraft_version}.nest")
+
+// Determine if we're authenticated for remote publish
+def isAuthenticated = project.hasProperty("glass_maven_url")
+
+// Local temp maven directory for non-authenticated builds
+def tempMavenDir = file("${projectDir}/temp")
+
+// Nests repository URL - use remote if authenticated, local temp otherwise
+def nestsRepositoryUrl = isAuthenticated
+	? 'https://maven.glass-launcher.net/releases'
+	: "file://${tempMavenDir.absolutePath}/"
 
 keratin {
 	minecraftVersion minecraft_version
 	intermediaryGen = 2
 
 	tasks TaskSelection.MAPPINGS
+
+	// Use custom biny-nests instead of default ornithe nests
+	// This is necessary because biny has some classes standalone that ornithe/feather nests
+	mavenSourcedNestsArtifacts {
+		repositoryUrl = nestsRepositoryUrl
+		groupId = 'net.glasslauncher'
+		artifactId = 'biny-nests'
+	}
 }
 
 // Create client nests JAR
@@ -82,6 +104,20 @@ tasks.register('serverNestsJar', Jar) {
 	}
 
 	onlyIf { serverNestsFile.exists() }
+}
+
+// Create merged nests JAR
+tasks.register('mergedNestsJar', Jar) {
+	archiveBaseName = 'biny-nests'
+	archiveVersion = mergedNestsVersion
+	archiveClassifier = ''
+
+	from(mergedNestsFile) {
+		into 'nests'
+		rename { 'mappings.nest' }
+	}
+
+	onlyIf { mergedNestsFile.exists() }
 }
 
 // Helper to check if a version exists on maven
@@ -132,19 +168,69 @@ publishing {
 			version = serverNestsVersion
 			artifact(tasks.serverNestsJar)
 		}
+
+		mergedNests(MavenPublication) {
+			groupId = 'net.glasslauncher'
+			artifactId = 'biny-nests'
+			version = mergedNestsVersion
+			artifact(tasks.mergedNestsJar)
+		}
 	}
 	repositories {
+		// Local temp maven for local builds
+		maven {
+			name = 'TempLocal'
+			url = tempMavenDir
+		}
+		// Standard local maven
 		mavenLocal()
-		// Match biny-mappings maven property names
-		if (project.hasProperty("glass_maven_url")) {
+		// Remote glass-launcher maven (if authenticated)
+		if (isAuthenticated) {
 			maven {
-				url project.glass_maven_url
+				name = 'GlassLauncher'
+				url = project.glass_maven_url
 				credentials {
 					username project.glass_maven_username
 					password project.glass_maven_password
 				}
 			}
 		}
+	}
+}
+
+// Task to publish nests to temp local maven and generate maven-metadata.xml
+task publishNestsToTempLocal {
+	dependsOn 'publishClientNestsPublicationToTempLocalRepository'
+	dependsOn 'publishServerNestsPublicationToTempLocalRepository'
+	dependsOn 'publishMergedNestsPublicationToTempLocalRepository'
+
+	doLast {
+		// Generate maven-metadata.xml for keratin to find the nests
+		def nestsDir = file("${tempMavenDir}/net/glasslauncher/biny-nests")
+		nestsDir.mkdirs()
+
+		def metadataFile = file("${nestsDir}/maven-metadata.xml")
+		metadataFile.text = """<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>net.glasslauncher</groupId>
+  <artifactId>biny-nests</artifactId>
+  <versioning>
+    <latest>${mergedNestsVersion}</latest>
+    <release>${mergedNestsVersion}</release>
+    <versions>
+      <version>${clientNestsVersion}</version>
+      <version>${serverNestsVersion}</version>
+      <version>${mergedNestsVersion}</version>
+    </versions>
+    <lastUpdated>${new Date().format('yyyyMMddHHmmss')}</lastUpdated>
+  </versioning>
+</metadata>
+"""
+		println ""
+		println "Published nests to temp local maven: ${tempMavenDir}"
+		println "  net.glasslauncher:biny-nests:${clientNestsVersion}"
+		println "  net.glasslauncher:biny-nests:${serverNestsVersion}"
+		println "  net.glasslauncher:biny-nests:${mergedNestsVersion}"
 	}
 }
 
@@ -162,8 +248,8 @@ task checkVersion {
 
 publish.mustRunAfter checkVersion
 
-// Configure nests publication tasks to skip if version already exists (no error)
-tasks.matching { it.name.startsWith('publishClientNestsPublication') }.configureEach {
+// Configure nests publication tasks to skip if version already exists on remote (no error)
+tasks.matching { it.name.startsWith('publishClientNestsPublicationToGlassLauncherRepository') }.configureEach {
 	onlyIf {
 		def exists = versionExists('biny-nests', clientNestsVersion)
 		if (exists) {
@@ -173,7 +259,7 @@ tasks.matching { it.name.startsWith('publishClientNestsPublication') }.configure
 	}
 }
 
-tasks.matching { it.name.startsWith('publishServerNestsPublication') }.configureEach {
+tasks.matching { it.name.startsWith('publishServerNestsPublicationToGlassLauncherRepository') }.configureEach {
 	onlyIf {
 		def exists = versionExists('biny-nests', serverNestsVersion)
 		if (exists) {
@@ -183,15 +269,60 @@ tasks.matching { it.name.startsWith('publishServerNestsPublication') }.configure
 	}
 }
 
-// Also publish nests to local maven
-task publishNestsToMavenLocal {
-	dependsOn 'publishClientNestsPublicationToMavenLocal'
-	dependsOn 'publishServerNestsPublicationToMavenLocal'
+tasks.matching { it.name.startsWith('publishMergedNestsPublicationToGlassLauncherRepository') }.configureEach {
+	onlyIf {
+		def exists = versionExists('biny-nests', mergedNestsVersion)
+		if (exists) {
+			println "Skipping merged nests publish: ${mergedNestsVersion} already exists"
+		}
+		return !exists && mergedNestsFile.exists()
+	}
+}
+
+// Task to publish nests to remote glass-launcher maven
+task publishNestsToRemote {
+	dependsOn 'publishClientNestsPublicationToGlassLauncherRepository'
+	dependsOn 'publishServerNestsPublicationToGlassLauncherRepository'
+	dependsOn 'publishMergedNestsPublicationToGlassLauncherRepository'
 
 	doLast {
 		println ""
-		println "Published to local Maven:"
+		println "Published nests to glass-launcher maven:"
 		println "  net.glasslauncher:biny-nests:${clientNestsVersion}"
 		println "  net.glasslauncher:biny-nests:${serverNestsVersion}"
+		println "  net.glasslauncher:biny-nests:${mergedNestsVersion}"
 	}
+}
+
+// Task to publish nests to local maven
+task publishNestsToMavenLocal {
+	dependsOn 'publishClientNestsPublicationToMavenLocal'
+	dependsOn 'publishServerNestsPublicationToMavenLocal'
+	dependsOn 'publishMergedNestsPublicationToMavenLocal'
+
+	doLast {
+		println ""
+		println "Published nests to local Maven:"
+		println "  net.glasslauncher:biny-nests:${clientNestsVersion}"
+		println "  net.glasslauncher:biny-nests:${serverNestsVersion}"
+		println "  net.glasslauncher:biny-nests:${mergedNestsVersion}"
+	}
+}
+
+// Ensure nests are published before mappings can be built/published
+// downloadNests task needs the nests to exist in the repository first
+tasks.matching { it.name == 'downloadNests' }.configureEach {
+	if (!isAuthenticated) {
+		dependsOn publishNestsToTempLocal
+	}
+}
+
+// For remote publish, ensure nests are published before mappings
+tasks.matching { it.name == 'publishMavenPublicationToGlassLauncherRepository' }.configureEach {
+	mustRunAfter publishNestsToRemote
+}
+
+// For local maven publish, ensure nests are published before mappings
+tasks.matching { it.name == 'publishMavenPublicationToMavenLocal' }.configureEach {
+	mustRunAfter publishNestsToMavenLocal
 }

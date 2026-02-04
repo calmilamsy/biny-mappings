@@ -206,7 +206,7 @@ c	net/minecraft/server/MinecraftServer	net/minecraft/server/MinecraftServer
 	f	I	f_57608612	ticks
 	f	[Lnet/minecraft/unmapped/C_70668269;	f_58488472	worlds
 	f	I	f_58756551	progress
-	f	Ljava/util/HashMap;	f_61501184	f_61501184
+	f	Ljava/util/HashMap;	f_61501184	GIVE_COMMANDS_COOLDOWNS
 	f	Z	f_62554889	running
 	f	Lnet/minecraft/unmapped/C_79915627;	f_64434672	commandHandler
 	f	Lnet/minecraft/unmapped/C_29639016;	f_65897993	playerManager
@@ -1709,7 +1709,7 @@ c	net/minecraft/unmapped/C_14917579	net/minecraft/world/chunk/Chunk
 		p	1		localX
 		p	2		y
 		p	3		localZ
-	m	()V	m_07531080	m_07531080
+	m	()V	m_07531080	populateLight
 	m	(IIIII)Z	m_09335939	setBlock
 		p	1		x
 		p	2		y
@@ -4666,12 +4666,12 @@ c	net/minecraft/unmapped/C_46108969	net/minecraft/world/BlockView
 		p	1		x
 		p	2		y
 		p	3		z
-	m	(III)Z	m_46357017	m_46357017
+	m	(III)Z	m_46357017	isOpaque
 		p	1		x
 		p	2		y
 		p	3		z
-	m	()Lnet/minecraft/unmapped/C_28112798;	m_72354999	m_72354999
-	m	(III)F	m_80119644	m_80119644
+	m	()Lnet/minecraft/unmapped/C_28112798;	m_72354999	getBiomeSource
+	m	(III)F	m_80119644	getLuminance
 		p	1		x
 		p	2		y
 		p	3		z
@@ -5351,13 +5351,13 @@ c	net/minecraft/unmapped/C_54765678	net/minecraft/client/SingleplayerInteraction
 	f	I	f_83250694	breakingPosZ
 	f	I	f_84902206	breakingPosY
 c	net/minecraft/unmapped/C_54810664	net/minecraft/client/network/OtherPlayerEntity
-	f	I	f_00652100	f_00652100
-	f	D	f_13718234	f_13718234
-	f	D	f_25686687	f_25686687
+	f	I	f_00652100	lerpSteps
+	f	D	f_13718234	lerpX
+	f	D	f_25686687	lerpZ
 	f	F	f_58709213	f_58709213
-	f	D	f_64630394	f_64630394
-	f	D	f_97942722	f_97942722
-	f	D	f_98729689	f_98729689
+	f	D	f_64630394	lerpPitch
+	f	D	f_97942722	lerpYaw
+	f	D	f_98729689	lerpY
 	m	(Lnet/minecraft/unmapped/C_64041439;Ljava/lang/String;)V	<init>	<init>
 		p	1		world
 		p	2		name
@@ -5480,7 +5480,7 @@ c	net/minecraft/unmapped/C_57165061	net/minecraft/server/dedicated/gui/PlayerSta
 	f	[I	f_38288216	memoryUsePercentage
 	f	[Ljava/lang/String;	f_62480509	lines
 	f	I	f_70416132	memoryUsage
-	m	(Lnet/minecraft/unmapped/C_57165061;)V	m_41140136	m_41140136
+	m	(Lnet/minecraft/unmapped/C_57165061;)V	m_41140136	update
 	m	()V	m_78217179	update
 	m	(Ljava/awt/Graphics;)V	paint	paint
 		p	1		graphics
@@ -5659,8 +5659,8 @@ c	net/minecraft/unmapped/C_59053975	net/minecraft/world/chunk/storage/RegionIo
 c	net/minecraft/unmapped/C_59625208	net/minecraft/server/dedicated/gui/LogHandler
 	f	Ljava/util/logging/Formatter;	f_13612335	formatter
 	f	Ljavax/swing/JTextArea;	f_61759702	textArea
-	f	[I	f_62140838	f_62140838
-	f	I	f_83820941	f_83820941
+	f	[I	f_62140838	logDeltas
+	f	I	f_83820941	logDeltaIndex
 	m	(Ljavax/swing/JTextArea;)V	<init>	<init>
 		p	1		textArea
 	m	(Ljava/util/logging/LogRecord;)V	publish	publish
@@ -6295,7 +6295,7 @@ c	net/minecraft/unmapped/C_64041439	net/minecraft/world/World
 		p	3		y
 		p	4		z
 		p	5		range
-	m	()Lnet/minecraft/unmapped/C_28112798;	m_72354999	m_72354999
+	m	()Lnet/minecraft/unmapped/C_28112798;	m_72354999	getBiomeSource
 	m	(Ljava/lang/String;III)V	m_72733093	playStreaming
 		p	1		music
 		p	2		x
@@ -6330,7 +6330,7 @@ c	net/minecraft/unmapped/C_64041439	net/minecraft/world/World
 		p	1		entityBoundingBox
 		p	2		fluidMaterial
 		p	3		entity
-	m	(III)F	m_80119644	m_80119644
+	m	(III)F	m_80119644	getBrightness
 	m	(IIII)Z	m_80621374	isRegionLoaded
 		p	1		x
 		p	2		y
@@ -6979,7 +6979,7 @@ c	net/minecraft/unmapped/C_68775612	net/minecraft/server/dedicated/gui/Dedicated
 	m	()Ljavax/swing/JComponent;	m_14768130	createPlaysPanel
 	m	(Lnet/minecraft/server/MinecraftServer;)V	m_20700705	create
 		p	0		server
-	m	(Lnet/minecraft/unmapped/C_68775612;)Lnet/minecraft/server/MinecraftServer;	m_41776761	m_41776761
+	m	(Lnet/minecraft/unmapped/C_68775612;)Lnet/minecraft/server/MinecraftServer;	m_41776761	getServerFrom
 	m	()Ljavax/swing/JComponent;	m_54835577	createLogPanel
 	m	()Ljavax/swing/JComponent;	m_84597349	createStatsPanel
 	m	(Lnet/minecraft/server/MinecraftServer;)V	<init>	<init>
@@ -7513,7 +7513,7 @@ c	net/minecraft/unmapped/C_74425583	net/minecraft/entity/LivingEntity
 	f	F	f_42956251	damageAmount
 	f	Ljava/lang/String;	f_44916003	modelName
 	f	F	f_47083104	lastWalkAnimationSpeed
-	f	F	f_48153616	f_48153616
+	f	F	f_48153616	totalWalkDistance
 	f	Lnet/minecraft/unmapped/C_42232651;	f_50057365	lookTarget
 	f	D	f_50328601	lerpX
 	f	I	f_51635995	hurtTime
@@ -7532,7 +7532,7 @@ c	net/minecraft/unmapped/C_74425583	net/minecraft/entity/LivingEntity
 	f	D	f_76898687	lerpY
 	f	D	f_78195516	lerpYaw
 	f	I	f_81229305	prevHealth
-	f	F	f_86368643	f_86368643
+	f	F	f_86368643	lastTotalWalkDistance
 	f	D	f_88095020	lerpPitch
 	f	F	f_92185951	f_92185951
 	f	Z	f_92491955	f_92491955
@@ -9413,7 +9413,7 @@ c	net/minecraft/unmapped/C_88708284	net/minecraft/item/ItemStack
 	m	(Lnet/minecraft/unmapped/C_64041439;Lnet/minecraft/unmapped/C_40996800;)Lnet/minecraft/unmapped/C_88708284;	m_27811940	use
 		p	1		world
 		p	2		user
-	m	()Ljava/lang/String;	m_27822537	m_27822537
+	m	()Ljava/lang/String;	m_27822537	getTranslationKey
 	m	()I	m_30227787	getDamage2
 	m	(Lnet/minecraft/unmapped/C_81592558;)F	m_37796960	getMiningSpeedMultiplier
 		p	1		block
@@ -10485,23 +10485,23 @@ c	net/minecraft/unmapped/C_97866173	net/minecraft/client/gui/hud/InGameHud
 	m	(Lnet/minecraft/client/Minecraft;)V	<init>	<init>
 		p	1		minecraft
 c	net/minecraft/unmapped/C_97929192	net/minecraft/client/network/MultiplayerClientPlayerEntity
-	f	D	f_40216241	f_40216241
-	f	D	f_40773808	f_40773808
-	f	F	f_43373824	f_43373824
-	f	D	f_44207243	f_44207243
-	f	Z	f_54695730	f_54695730
-	f	F	f_62696952	f_62696952
-	f	D	f_63002488	f_63002488
+	f	D	f_40216241	sentX
+	f	D	f_40773808	sentZ
+	f	F	f_43373824	sentPitch
+	f	D	f_44207243	sentY
+	f	Z	f_54695730	sentOnGround
+	f	F	f_62696952	sentYaw
+	f	D	f_63002488	sentMinY
 	f	Lnet/minecraft/unmapped/C_88014908;	f_64157656	networkHandler
 	f	Z	f_66908748	f_66908748
-	f	Z	f_71051865	f_71051865
-	f	I	f_85150392	f_85150392
-	f	I	f_93552697	f_93552697
+	f	Z	f_71051865	sentSneaking
+	f	I	f_85150392	ticksSinceSendOnGround
+	f	I	f_93552697	ticksSinceSendInventory
 	m	(Lnet/minecraft/unmapped/C_62649600;I)V	m_09818795	handleIncreaseStat
 		p	1		stat
 		p	2		amount
-	m	()V	m_24369218	m_24369218
-	m	()V	m_73792792	m_73792792
+	m	()V	m_24369218	sendInventory
+	m	()V	m_73792792	sendMovement
 	m	(Lnet/minecraft/client/Minecraft;Lnet/minecraft/unmapped/C_64041439;Lnet/minecraft/unmapped/C_87604186;Lnet/minecraft/unmapped/C_88014908;)V	<init>	<init>
 		p	1		minecraft
 		p	2		world
@@ -10553,12 +10553,12 @@ c	net/minecraft/unmapped/C_98608386	net/minecraft/network/packet/c2s/play/Player
 		p	5		direction
 c	net/minecraft/unmapped/C_98861173	net/minecraft/world/storage/WorldStorageSource
 	m	()V	m_05162239	flush
-	m	(Ljava/lang/String;)Lnet/minecraft/unmapped/C_64676926;	m_18055305	m_18055305
+	m	(Ljava/lang/String;)Lnet/minecraft/unmapped/C_64676926;	m_18055305	getProperties
 		p	1		saveName
 	m	()Ljava/util/List;	m_45201496	getAll
 	m	(Ljava/lang/String;)V	m_45678673	delete
 		p	1		saveName
-	m	(Ljava/lang/String;Z)Lnet/minecraft/unmapped/C_08489468;	m_46878601	m_46878601
+	m	(Ljava/lang/String;Z)Lnet/minecraft/unmapped/C_08489468;	m_46878601	get
 		p	1		saveName
 		p	2		createPlayerDataDir
 	m	(Ljava/lang/String;Lnet/minecraft/unmapped/C_71803183;)Z	m_49902149	convert
@@ -10705,7 +10705,7 @@ c	net/minecraft/unmapped/C_98888256	net/minecraft/item/Item
 	m	()Ljava/lang/String;	m_17134118	getTranslatedName
 	m	(I)I	m_27460772	getTextureId
 		p	1		damage
-	m	()Ljava/lang/String;	m_27822537	m_27822537
+	m	()Ljava/lang/String;	m_27822537	getTranslationKey
 	m	(I)Lnet/minecraft/unmapped/C_98888256;	m_30881980	setMaxCount
 		p	1		maxCount
 	m	(Lnet/minecraft/unmapped/C_88708284;Lnet/minecraft/unmapped/C_74425583;)V	m_34653982	useOnEntity

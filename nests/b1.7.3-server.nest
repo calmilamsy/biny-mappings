@@ -1,28 +1,14 @@
 net/minecraft/unmapped/C_31065883	net/minecraft/unmapped/C_88220120			C_31065883	1
-net/minecraft/unmapped/C_74918097	net/minecraft/unmapped/C_28105876			C_74918097	9
-net/minecraft/unmapped/C_67983403	net/minecraft/unmapped/C_62649600	<clinit>	()V	67983403	8
-net/minecraft/unmapped/C_04534631	net/minecraft/unmapped/C_62649600	<clinit>	()V	04534631	8
-net/minecraft/unmapped/C_57916369	net/minecraft/unmapped/C_62649600	<clinit>	()V	57916369	8
-net/minecraft/unmapped/C_74597326	net/minecraft/unmapped/C_98888256			C_74597326	16409
-net/minecraft/unmapped/C_12236698	net/minecraft/unmapped/C_92964787			C_12236698	9
 net/minecraft/unmapped/C_98761130	net/minecraft/server/MinecraftServer	main	([Ljava/lang/String;)V	98761130	9
 net/minecraft/unmapped/C_80772377	net/minecraft/server/MinecraftServer	m_93447105	(Lnet/minecraft/unmapped/C_98861173;Ljava/lang/String;J)V	80772377	1
 net/minecraft/unmapped/C_97965498	net/minecraft/server/MinecraftServer	m_25762730	()Z	97965498	1
 net/minecraft/unmapped/C_05307018	net/minecraft/server/MinecraftServer	<init>	()V	05307018	1
-net/minecraft/unmapped/C_35685693	net/minecraft/unmapped/C_40996800			C_35685693	16409
-net/minecraft/unmapped/C_89435341	net/minecraft/unmapped/C_88996113			C_89435341	9
 net/minecraft/unmapped/C_15575233	net/minecraft/unmapped/C_58873528	m_46932114	(Lnet/minecraft/unmapped/C_47909326;)V	15575233	0
-net/minecraft/unmapped/C_88697224	net/minecraft/unmapped/C_03562565			88697224	4104
 net/minecraft/unmapped/C_33454154	net/minecraft/unmapped/C_89060550			C_33454154	0
 net/minecraft/unmapped/C_42279890	net/minecraft/unmapped/C_59625208	<init>	(Ljavax/swing/JTextArea;)V	42279890	0
-net/minecraft/unmapped/C_46273812	net/minecraft/unmapped/C_92964787			46273812	4104
-net/minecraft/unmapped/C_25850426	net/minecraft/unmapped/C_24654288			C_25850426	16409
 net/minecraft/unmapped/C_57536588	net/minecraft/unmapped/C_70737137	<init>	()V	57536588	0
 net/minecraft/unmapped/C_94457548	net/minecraft/unmapped/C_57165061	<init>	()V	94457548	0
-net/minecraft/unmapped/C_95179189	net/minecraft/unmapped/C_61027059			C_95179189	9
-net/minecraft/unmapped/C_71454160	net/minecraft/unmapped/C_03562565			C_71454160	9
 net/minecraft/unmapped/C_82076943	net/minecraft/unmapped/C_09553359	<init>	(Lnet/minecraft/unmapped/C_87542771;Z)V	82076943	0
-net/minecraft/unmapped/C_20933744	net/minecraft/unmapped/C_92964787			C_20933744	9
 net/minecraft/unmapped/C_84711441	net/minecraft/unmapped/C_37790612	<init>	(Lnet/minecraft/server/MinecraftServer;Ljava/net/InetAddress;I)V	84711441	0
 net/minecraft/unmapped/C_97962560	net/minecraft/unmapped/C_88220120			C_97962560	1
 net/minecraft/unmapped/C_92241048	net/minecraft/unmapped/C_02333628			C_92241048	1

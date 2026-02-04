@@ -1,11 +1,5 @@
 net/minecraft/unmapped/C_31065883	net/minecraft/unmapped/C_88220120			C_31065883	1
-net/minecraft/unmapped/C_74918097	net/minecraft/unmapped/C_28105876			C_74918097	9
-net/minecraft/unmapped/C_67983403	net/minecraft/unmapped/C_62649600	<clinit>	()V	67983403	8
-net/minecraft/unmapped/C_04534631	net/minecraft/unmapped/C_62649600	<clinit>	()V	04534631	8
-net/minecraft/unmapped/C_57916369	net/minecraft/unmapped/C_62649600	<clinit>	()V	57916369	8
-net/minecraft/unmapped/C_74597326	net/minecraft/unmapped/C_98888256			C_74597326	16409
 net/minecraft/unmapped/C_53134182	net/minecraft/unmapped/C_66796240			C_53134182	0
-net/minecraft/unmapped/C_12236698	net/minecraft/unmapped/C_92964787			C_12236698	9
 com/jcraft/jorbis/CodeBook$DecodeAux	com/jcraft/jorbis/CodeBook			DecodeAux	0
 com/jcraft/jorbis/Floor0$EchstateFloor0	com/jcraft/jorbis/Floor0			EchstateFloor0	0
 com/jcraft/jorbis/Floor0$InfoFloor0	com/jcraft/jorbis/Floor0			InfoFloor0	0
@@ -18,16 +12,11 @@ com/jcraft/jorbis/Mapping0$InfoMapping0	com/jcraft/jorbis/Mapping0			InfoMapping
 com/jcraft/jorbis/Mapping0$LookMapping0	com/jcraft/jorbis/Mapping0			LookMapping0	0
 com/jcraft/jorbis/Residue0$InfoResidue0	com/jcraft/jorbis/Residue0			InfoResidue0	0
 com/jcraft/jorbis/Residue0$LookResidue0	com/jcraft/jorbis/Residue0			LookResidue0	0
-net/minecraft/unmapped/C_35685693	net/minecraft/unmapped/C_40996800			C_35685693	16409
 net/minecraft/unmapped/C_09899208	net/minecraft/unmapped/C_80955943			C_09899208	0
-net/minecraft/unmapped/C_89435341	net/minecraft/unmapped/C_88996113			C_89435341	9
 net/minecraft/unmapped/C_38633026	net/minecraft/unmapped/C_66796240			C_38633026	0
 net/minecraft/unmapped/C_94908875	net/minecraft/unmapped/C_53134182	<init>	(Lnet/minecraft/unmapped/C_66796240;)V	94908875	0
-net/minecraft/unmapped/C_88697224	net/minecraft/unmapped/C_03562565			88697224	4104
 net/minecraft/unmapped/C_33454154	net/minecraft/unmapped/C_89060550			C_33454154	0
-net/minecraft/unmapped/C_46273812	net/minecraft/unmapped/C_92964787			46273812	4104
 net/minecraft/unmapped/C_03318703	net/minecraft/unmapped/C_66796240			C_03318703	1024
-net/minecraft/unmapped/C_25850426	net/minecraft/unmapped/C_24654288			C_25850426	16409
 net/minecraft/unmapped/C_59435135	net/minecraft/unmapped/C_41874688	m_34920490	([Ljava/lang/Object;)Lnet/minecraft/unmapped/C_03367835;	59435135	8
 net/minecraft/unmapped/C_32171470	net/minecraft/client/Minecraft	<init>	(Ljava/awt/Component;Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZ)V	32171470	0
 net/minecraft/unmapped/C_59268710	net/minecraft/client/Minecraft	m_81815981	()V	59268710	0
@@ -37,13 +26,11 @@ net/minecraft/unmapped/C_04691774	net/minecraft/client/Minecraft	m_54848678	()V	
 net/minecraft/unmapped/C_40594244	net/minecraft/client/Minecraft	m_45269355	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V	40594244	9
 net/minecraft/unmapped/C_57536588	net/minecraft/unmapped/C_70737137	<init>	()V	57536588	0
 net/minecraft/unmapped/C_29312769	net/minecraft/unmapped/C_98947689			29312769	4104
-net/minecraft/unmapped/C_95179189	net/minecraft/unmapped/C_61027059			C_95179189	9
 net/minecraft/unmapped/C_96230020	net/minecraft/unmapped/C_43588014			C_96230020	0
 net/minecraft/unmapped/C_46316363	net/minecraft/unmapped/C_62514435	m_55922973	()V	46316363	0
 net/minecraft/unmapped/C_93410249	net/minecraft/unmapped/C_62514435	m_86590686	()V	93410249	0
 net/minecraft/unmapped/C_35499707	net/minecraft/unmapped/C_62514435	m_87718619	(Ljava/lang/String;)V	35499707	0
 net/minecraft/unmapped/C_18321010	net/minecraft/unmapped/C_46812242			C_18321010	0
-net/minecraft/unmapped/C_71454160	net/minecraft/unmapped/C_03562565			C_71454160	9
 net/minecraft/unmapped/C_28308777	net/minecraft/unmapped/C_32542459	m_78149366	()Lnet/minecraft/unmapped/C_35971787;	28308777	0
 paulscode/sound/MidiChannel$1	paulscode/sound/MidiChannel			1	4104
 paulscode/sound/MidiChannel$FadeThread	paulscode/sound/MidiChannel			FadeThread	0
@@ -56,7 +43,6 @@ net/minecraft/unmapped/C_13412947	net/minecraft/unmapped/C_41874688	m_79406130	(
 net/minecraft/unmapped/C_00522450	net/minecraft/unmapped/C_41874688	m_68986990	(I)Lnet/minecraft/unmapped/C_03367835;	00522450	8
 net/minecraft/unmapped/C_64730384	net/minecraft/unmapped/C_41874688	m_81016084	(Lnet/minecraft/unmapped/C_65175111;)Lnet/minecraft/unmapped/C_03367835;	64730384	8
 net/minecraft/unmapped/C_72207753	net/minecraft/client/MinecraftApplet	init	()V	72207753	0
-net/minecraft/unmapped/C_20933744	net/minecraft/unmapped/C_92964787			C_20933744	9
 net/minecraft/unmapped/C_97962560	net/minecraft/unmapped/C_88220120			C_97962560	1
 net/minecraft/unmapped/C_12979938	net/minecraft/unmapped/C_66796240			C_12979938	0
 net/minecraft/unmapped/C_34366662	net/minecraft/unmapped/C_63022874	<init>	(Ljava/lang/String;Lnet/minecraft/unmapped/C_90849090;)V	34366662	0
@@ -74,4 +60,3 @@ net/minecraft/unmapped/C_52522387	net/minecraft/unmapped/C_39588828	m_17873754	(
 net/minecraft/unmapped/C_99036743	net/minecraft/unmapped/C_39588828	<init>	(Ljava/net/Socket;Ljava/lang/String;Lnet/minecraft/unmapped/C_10918870;)V	99036743	0
 net/minecraft/unmapped/C_62556030	net/minecraft/unmapped/C_39588828	<init>	(Ljava/net/Socket;Ljava/lang/String;Lnet/minecraft/unmapped/C_10918870;)V	62556030	0
 net/minecraft/unmapped/C_58338291	net/minecraft/unmapped/C_80301944	m_08351567	(Ljava/lang/Iterable;)Ljava/util/List;	58338291	8
-net/minecraft/unmapped/C_73364496	net/minecraft/unmapped/C_98947689			C_73364496	24
