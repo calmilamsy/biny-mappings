@@ -312,7 +312,9 @@ task publishNestsToMavenLocal {
 // Ensure nests are published before mappings can be built/published
 // downloadNests task needs the nests to exist in the repository first
 tasks.matching { it.name == 'downloadNests' }.configureEach {
-	if (!isAuthenticated) {
+	if (isAuthenticated) {
+		dependsOn publishNestsToRemote
+	} else {
 		dependsOn publishNestsToTempLocal
 	}
 }
