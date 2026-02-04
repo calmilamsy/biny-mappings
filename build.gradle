@@ -60,7 +60,7 @@ def tempMavenDir = file("${projectDir}/temp")
 
 // Nests repository URL - use remote if authenticated, local temp otherwise
 def nestsRepositoryUrl = isAuthenticated
-	? 'https://maven.glass-launcher.net/releases'
+	? 'https://maven.glass-launcher.net/releases/'
 	: "file://${tempMavenDir.absolutePath}/"
 
 keratin {
