@@ -1,0 +1,89 @@
+net/minecraft/world/map/SavedMapData__Decoration	net/minecraft/world/map/SavedMapData			Decoration	1
+net/minecraft/world/biome/Biome__SpawnEntry	net/minecraft/world/biome/Biome			SpawnEntry	9
+net/minecraft/stat/Stat__67983403	net/minecraft/stat/Stat	<clinit>	()V	67983403	8
+net/minecraft/stat/Stat__04534631	net/minecraft/stat/Stat	<clinit>	()V	04534631	8
+net/minecraft/stat/Stat__57916369	net/minecraft/stat/Stat	<clinit>	()V	57916369	8
+net/minecraft/item/Item__Tier	net/minecraft/item/Item			Tier	16409
+net/minecraft/client/gui/screen/StatsScreen__ItemStatsListWidget	net/minecraft/client/gui/screen/StatsScreen			ItemStatsListWidget	0
+net/minecraft/world/storage/RegionWorldStorageSource__AlphaChunkDirectoryFilter	net/minecraft/world/storage/RegionWorldStorageSource			AlphaChunkDirectoryFilter	9
+com/jcraft/jorbis/CodeBook$DecodeAux	com/jcraft/jorbis/CodeBook			DecodeAux	0
+com/jcraft/jorbis/Floor0$EchstateFloor0	com/jcraft/jorbis/Floor0			EchstateFloor0	0
+com/jcraft/jorbis/Floor0$InfoFloor0	com/jcraft/jorbis/Floor0			InfoFloor0	0
+com/jcraft/jorbis/Floor0$LookFloor0	com/jcraft/jorbis/Floor0			LookFloor0	0
+com/jcraft/jorbis/Floor1$EchstateFloor1	com/jcraft/jorbis/Floor1			EchstateFloor1	0
+com/jcraft/jorbis/Floor1$InfoFloor1	com/jcraft/jorbis/Floor1			InfoFloor1	0
+com/jcraft/jorbis/Floor1$LookFloor1	com/jcraft/jorbis/Floor1			LookFloor1	0
+com/jcraft/jorbis/Floor1$Lsfit_acc	com/jcraft/jorbis/Floor1			Lsfit_acc	0
+com/jcraft/jorbis/Mapping0$InfoMapping0	com/jcraft/jorbis/Mapping0			InfoMapping0	0
+com/jcraft/jorbis/Mapping0$LookMapping0	com/jcraft/jorbis/Mapping0			LookMapping0	0
+com/jcraft/jorbis/Residue0$InfoResidue0	com/jcraft/jorbis/Residue0			InfoResidue0	0
+com/jcraft/jorbis/Residue0$LookResidue0	com/jcraft/jorbis/Residue0			LookResidue0	0
+net/minecraft/entity/mob/player/PlayerEntity__SleepAllowedStatus	net/minecraft/entity/mob/player/PlayerEntity			SleepAllowedStatus	16409
+net/minecraft/client/gui/screen/TexturePacksScreen__TexturePackList	net/minecraft/client/gui/screen/TexturePacksScreen			TexturePackList	0
+net/minecraft/block/JukeboxBlock__JukeboxBlockEntity	net/minecraft/block/JukeboxBlock			JukeboxBlockEntity	9
+net/minecraft/client/gui/screen/StatsScreen__StatsListWidget	net/minecraft/client/gui/screen/StatsScreen			StatsListWidget	0
+net/minecraft/client/gui/screen/StatsScreen__ItemStatsListWidget__94908875	net/minecraft/client/gui/screen/StatsScreen__ItemStatsListWidget	<init>	(Lnet/minecraft/client/gui/screen/StatsScreen;)V	94908875	0
+net/minecraft/network/packet/Packet__88697224	net/minecraft/network/packet/Packet			88697224	4104
+net/minecraft/world/chunk/storage/RegionFile__ChunkOutputStream	net/minecraft/world/chunk/storage/RegionFile			ChunkOutputStream	0
+net/minecraft/world/storage/RegionWorldStorageSource__46273812	net/minecraft/world/storage/RegionWorldStorageSource			46273812	4104
+net/minecraft/client/gui/screen/StatsScreen__AbstractStatsListWidget	net/minecraft/client/gui/screen/StatsScreen			AbstractStatsListWidget	1024
+net/minecraft/world/HitResult__Type	net/minecraft/world/HitResult			Type	16409
+argo/jdom/JsonNodeSelectors__59435135	argo/jdom/JsonNodeSelectors	anArrayNode	([Ljava/lang/Object;)Largo/jdom/JsonNodeSelector;	59435135	8
+net/minecraft/client/Minecraft__32171470	net/minecraft/client/Minecraft	<init>	(Ljava/awt/Component;Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZ)V	32171470	0
+net/minecraft/client/Minecraft__59268710	net/minecraft/client/Minecraft	init	()V	59268710	0
+net/minecraft/client/Minecraft__35989700	net/minecraft/client/Minecraft	startAndConnect	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V	35989700	9
+argo/jdom/JsonNodeSelectors__64509670	argo/jdom/JsonNodeSelectors	aStringNode	([Ljava/lang/Object;)Largo/jdom/JsonNodeSelector;	64509670	8
+net/minecraft/client/Minecraft__04691774	net/minecraft/client/Minecraft	initLicenseCheckThread	()V	04691774	1
+net/minecraft/client/Minecraft__40594244	net/minecraft/client/Minecraft	startAndConnect	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V	40594244	9
+net/minecraft/crafting/CraftingManager__57536588	net/minecraft/crafting/CraftingManager	<init>	()V	57536588	0
+argo/format/CompactJsonFormatter__29312769	argo/format/CompactJsonFormatter			29312769	4104
+net/minecraft/entity/data/SyncedData__Entry	net/minecraft/entity/data/SyncedData			Entry	9
+net/minecraft/client/gui/screen/world/SelectWorldScreen__WorldListWidget	net/minecraft/client/gui/screen/world/SelectWorldScreen			WorldListWidget	0
+argo/jdom/JsonListenerToJdomAdapter__46316363	argo/jdom/JsonListenerToJdomAdapter	m_55922973	()V	46316363	0
+argo/jdom/JsonListenerToJdomAdapter__93410249	argo/jdom/JsonListenerToJdomAdapter	m_86590686	()V	93410249	0
+argo/jdom/JsonListenerToJdomAdapter__35499707	argo/jdom/JsonListenerToJdomAdapter	m_87718619	(Ljava/lang/String;)V	35499707	0
+paulscode/sound/codecs/CodecMus__MusInputStream	paulscode/sound/codecs/CodecMus			MusInputStream	0
+net/minecraft/network/packet/Packet__Tracker	net/minecraft/network/packet/Packet			Tracker	9
+argo/jdom/JsonObjectNodeBuilder__28308777	argo/jdom/JsonObjectNodeBuilder	m_78149366	()Largo/jdom/JsonRootNode;	28308777	0
+paulscode/sound/MidiChannel$1	paulscode/sound/MidiChannel			1	4104
+paulscode/sound/MidiChannel$FadeThread	paulscode/sound/MidiChannel			FadeThread	0
+paulscode/sound/SimpleThread$1	paulscode/sound/SimpleThread	restart	()V	1	0
+paulscode/sound/SoundSystemConfig$Codec	paulscode/sound/SoundSystemConfig			Codec	8
+net/minecraft/client/gui/screen/StatsScreen__StatsListWidget__86464455	net/minecraft/client/gui/screen/StatsScreen__StatsListWidget	<init>	(Lnet/minecraft/client/gui/screen/StatsScreen;)V	86464455	0
+net/minecraft/inventory/menu/PlayerMenu__82076943	net/minecraft/inventory/menu/PlayerMenu	<init>	(Lnet/minecraft/entity/mob/player/PlayerInventory;Z)V	82076943	0
+net/minecraft/client/MinecraftApplet__71402804	net/minecraft/client/MinecraftApplet	init	()V	71402804	0
+argo/jdom/JsonNodeSelectors__13412947	argo/jdom/JsonNodeSelectors	anObjectNode	([Ljava/lang/Object;)Largo/jdom/JsonNodeSelector;	13412947	8
+argo/jdom/JsonNodeSelectors__00522450	argo/jdom/JsonNodeSelectors	anElement	(I)Largo/jdom/JsonNodeSelector;	00522450	8
+argo/jdom/JsonNodeSelectors__64730384	argo/jdom/JsonNodeSelectors	aField	(Largo/jdom/JsonStringNode;)Largo/jdom/JsonNodeSelector;	64730384	8
+net/minecraft/client/MinecraftApplet__72207753	net/minecraft/client/MinecraftApplet	init	()V	72207753	0
+net/minecraft/world/storage/RegionWorldStorageSource__AlphaChunkFilenameFilter	net/minecraft/world/storage/RegionWorldStorageSource			AlphaChunkFilenameFilter	9
+net/minecraft/world/map/SavedMapData__Holder	net/minecraft/world/map/SavedMapData			Holder	1
+net/minecraft/client/gui/screen/StatsScreen__GeneralStatsListWidget	net/minecraft/client/gui/screen/StatsScreen			GeneralStatsListWidget	0
+net/minecraft/client/render/texture/HttpTexture__34366662	net/minecraft/client/render/texture/HttpTexture	<init>	(Ljava/lang/String;Lnet/minecraft/client/render/texture/HttpImageProcessor;)V	34366662	0
+net/minecraft/client/world/MultiplayerWorld__BlockReset	net/minecraft/client/world/MultiplayerWorld			BlockReset	0
+net/minecraft/isom/IsomPreviewCanvas__35616119	net/minecraft/isom/IsomPreviewCanvas	start	()V	35616119	0
+argo/jdom/JsonNodeBuilders__20232373	argo/jdom/JsonNodeBuilders	aFalseBuilder	()Largo/jdom/JsonNodeBuilder;	20232373	8
+argo/jdom/JsonNodeBuilders__70104989	argo/jdom/JsonNodeBuilders	aTrueBuilder	()Largo/jdom/JsonNodeBuilder;	70104989	8
+argo/jdom/JsonNodeBuilders__87562732	argo/jdom/JsonNodeBuilders	aNullBuilder	()Largo/jdom/JsonNodeBuilder;	87562732	8
+net/minecraft/stat/StatsSyncer__93080346	net/minecraft/stat/StatsSyncer	save	(Ljava/util/Map;)V	93080346	0
+net/minecraft/stat/StatsSyncer__55909615	net/minecraft/stat/StatsSyncer	load	()V	55909615	0
+net/minecraft/block/RailBlock__RailNode	net/minecraft/block/RailBlock			RailNode	1
+net/minecraft/client/gui/screen/ConnectScreen__04471202	net/minecraft/client/gui/screen/ConnectScreen	<init>	(Lnet/minecraft/client/Minecraft;Ljava/lang/String;I)V	04471202	0
+net/minecraft/network/Connection__42766668	net/minecraft/network/Connection	close	(Ljava/lang/String;[Ljava/lang/Object;)V	42766668	0
+net/minecraft/network/Connection__52522387	net/minecraft/network/Connection	close	()V	52522387	0
+net/minecraft/network/Connection__99036743	net/minecraft/network/Connection	<init>	(Ljava/net/Socket;Ljava/lang/String;Lnet/minecraft/network/PacketHandler;)V	99036743	0
+net/minecraft/network/Connection__62556030	net/minecraft/network/Connection	<init>	(Ljava/net/Socket;Ljava/lang/String;Lnet/minecraft/network/PacketHandler;)V	62556030	0
+argo/jdom/JsonArray__58338291	argo/jdom/JsonArray	asList	(Ljava/lang/Iterable;)Ljava/util/List;	58338291	8
+argo/format/CompactJsonFormatter__FormattedText	argo/format/CompactJsonFormatter			FormattedText	24
+net/minecraft/server/MinecraftServer__98761130	net/minecraft/server/MinecraftServer	main	([Ljava/lang/String;)V	98761130	9
+net/minecraft/server/MinecraftServer__80772377	net/minecraft/server/MinecraftServer	loadWorld	(Lnet/minecraft/world/storage/WorldStorageSource;Ljava/lang/String;J)V	80772377	1
+net/minecraft/server/MinecraftServer__97965498	net/minecraft/server/MinecraftServer	init	()Z	97965498	1
+net/minecraft/server/MinecraftServer__05307018	net/minecraft/server/MinecraftServer	<init>	()V	05307018	1
+net/minecraft/server/network/handler/ServerLoginNetworkHandler__15575233	net/minecraft/server/network/handler/ServerLoginNetworkHandler	m_46932114	(Lnet/minecraft/network/packet/LoginPacket;)V	15575233	0
+net/minecraft/server/gui/LogHandler__42279890	net/minecraft/server/gui/LogHandler	<init>	(Ljavax/swing/JTextArea;)V	42279890	0
+net/minecraft/server/gui/PlayerStatsGui__94457548	net/minecraft/server/gui/PlayerStatsGui	<init>	()V	94457548	0
+net/minecraft/server/network/ConnectionListener__84711441	net/minecraft/server/network/ConnectionListener	<init>	(Lnet/minecraft/server/MinecraftServer;Ljava/net/InetAddress;I)V	84711441	0
+net/minecraft/server/gui/MinecraftServerGui__02519014	net/minecraft/server/gui/MinecraftServerGui	create	(Lnet/minecraft/server/MinecraftServer;)V	02519014	8
+net/minecraft/server/gui/MinecraftServerGui__59009041	net/minecraft/server/gui/MinecraftServerGui	createLogPanel	()Ljavax/swing/JComponent;	59009041	0
+net/minecraft/server/gui/MinecraftServerGui__78250670	net/minecraft/server/gui/MinecraftServerGui	createLogPanel	()Ljavax/swing/JComponent;	78250670	0
+net/minecraft/server/ChunkMap__ChunkHolder	net/minecraft/server/ChunkMap			ChunkHolder	0

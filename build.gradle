@@ -32,18 +32,70 @@ repositories {
 }
 
 def ENV = System.getenv()
-def minecraft_version = "b1.7.3"
+
+// Use minecraft_version from gradle.properties
+def minecraft_version = project.minecraft_version
 
 // Match biny-mappings build number pattern
 def build_number = project.hasProperty("build_id") ? project.build_id : "local"
 def mappingVersion = "${minecraft_version}+build.${build_number}"
 version = mappingVersion
 
+// Nests versions from gradle.properties
+def clientNestsVersion = "${minecraft_version}-client+build.${project.client_nests_build}"
+def serverNestsVersion = "${minecraft_version}-server+build.${project.server_nests_build}"
+
+// Source nests files
+def clientNestsFile = file("nests/${minecraft_version}-client.nest")
+def serverNestsFile = file("nests/${minecraft_version}-server.nest")
+
 keratin {
 	minecraftVersion minecraft_version
 	intermediaryGen = 2
 
 	tasks TaskSelection.MAPPINGS
+}
+
+// Create client nests JAR
+tasks.register('clientNestsJar', Jar) {
+	archiveBaseName = 'biny-nests'
+	archiveVersion = clientNestsVersion
+	archiveClassifier = ''
+
+	from(clientNestsFile) {
+		into 'nests'
+		rename { 'mappings.nest' }
+	}
+
+	onlyIf { clientNestsFile.exists() }
+}
+
+// Create server nests JAR
+tasks.register('serverNestsJar', Jar) {
+	archiveBaseName = 'biny-nests'
+	archiveVersion = serverNestsVersion
+	archiveClassifier = ''
+
+	from(serverNestsFile) {
+		into 'nests'
+		rename { 'mappings.nest' }
+	}
+
+	onlyIf { serverNestsFile.exists() }
+}
+
+// Helper to check if a version exists on maven
+def versionExists(String artifactId, String version) {
+	try {
+		def url = "https://maven.glass-launcher.net/releases/net/glasslauncher/${artifactId}/maven-metadata.xml"
+		def xml = new URL(url).text
+		def metadata = new XmlSlurper().parseText(xml)
+		def versions = metadata.versioning.versions.version*.text()
+		return versions.contains(version)
+	} catch (Exception e) {
+		// If we can't check (e.g., artifact doesn't exist yet), assume it doesn't exist
+		return false
+	}
 }
 
 publishing {
@@ -65,6 +117,20 @@ publishing {
 			artifact(tasks.named("${minecraft_version}_mergedTinyV2Jar")) {
 				classifier = 'mergedv2'
 			}
+		}
+
+		clientNests(MavenPublication) {
+			groupId = 'net.glasslauncher'
+			artifactId = 'biny-nests'
+			version = clientNestsVersion
+			artifact(tasks.clientNestsJar)
+		}
+
+		serverNests(MavenPublication) {
+			groupId = 'net.glasslauncher'
+			artifactId = 'biny-nests'
+			version = serverNestsVersion
+			artifact(tasks.serverNestsJar)
 		}
 	}
 	repositories {
@@ -95,3 +161,37 @@ task checkVersion {
 }
 
 publish.mustRunAfter checkVersion
+
+// Configure nests publication tasks to skip if version already exists (no error)
+tasks.matching { it.name.startsWith('publishClientNestsPublication') }.configureEach {
+	onlyIf {
+		def exists = versionExists('biny-nests', clientNestsVersion)
+		if (exists) {
+			println "Skipping client nests publish: ${clientNestsVersion} already exists"
+		}
+		return !exists && clientNestsFile.exists()
+	}
+}
+
+tasks.matching { it.name.startsWith('publishServerNestsPublication') }.configureEach {
+	onlyIf {
+		def exists = versionExists('biny-nests', serverNestsVersion)
+		if (exists) {
+			println "Skipping server nests publish: ${serverNestsVersion} already exists"
+		}
+		return !exists && serverNestsFile.exists()
+	}
+}
+
+// Also publish nests to local maven
+task publishNestsToMavenLocal {
+	dependsOn 'publishClientNestsPublicationToMavenLocal'
+	dependsOn 'publishServerNestsPublicationToMavenLocal'
+
+	doLast {
+		println ""
+		println "Published to local Maven:"
+		println "  net.glasslauncher:biny-nests:${clientNestsVersion}"
+		println "  net.glasslauncher:biny-nests:${serverNestsVersion}"
+	}
+}
