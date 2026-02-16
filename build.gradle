@@ -1,4 +1,5 @@
 import net.ornithemc.keratin.api.TaskSelection
+import net.fabricmc.filament.task.MappingPoetTask
 
 plugins {
 	id 'java'
@@ -41,16 +42,16 @@ def build_number = project.hasProperty("build_id") ? project.build_id : "local"
 def mappingVersion = "${minecraft_version}+build.${build_number}"
 version = mappingVersion
 
-// Nests versions from gradle.properties
-def nestsVersion = project.nests_build
-def clientNestsVersion = "${minecraft_version}-client+build.${nestsVersion}"
-def serverNestsVersion = "${minecraft_version}-server+build.${nestsVersion}"
-def mergedNestsVersion = "${minecraft_version}+build.${nestsVersion}"
+// Nests versions from nests-builds.json
+def nestsBuilds = new groovy.json.JsonSlurper().parseText(file("nests-builds.json").text)
+def clientNestsBuild = nestsBuilds["${minecraft_version}-client"]
+def serverNestsBuild = nestsBuilds["${minecraft_version}-server"]
+def clientNestsVersion = "${minecraft_version}-client+build.${clientNestsBuild}"
+def serverNestsVersion = "${minecraft_version}-server+build.${serverNestsBuild}"
 
 // Source nests files
 def clientNestsFile = file("nests/${minecraft_version}-client.nest")
 def serverNestsFile = file("nests/${minecraft_version}-server.nest")
-def mergedNestsFile = file("nests/${minecraft_version}.nest")
 
 // Determine if we're authenticated for remote publish
 def isAuthenticated = project.hasProperty("glass_maven_url")
@@ -106,20 +107,6 @@ tasks.register('serverNestsJar', Jar) {
 	onlyIf { serverNestsFile.exists() }
 }
 
-// Create merged nests JAR
-tasks.register('mergedNestsJar', Jar) {
-	archiveBaseName = 'biny-nests'
-	archiveVersion = mergedNestsVersion
-	archiveClassifier = ''
-
-	from(mergedNestsFile) {
-		into 'nests'
-		rename { 'mappings.nest' }
-	}
-
-	onlyIf { mergedNestsFile.exists() }
-}
-
 // Helper to check if a version exists on maven
 def versionExists(String artifactId, String version) {
 	try {
@@ -169,12 +156,6 @@ publishing {
 			artifact(tasks.serverNestsJar)
 		}
 
-		mergedNests(MavenPublication) {
-			groupId = 'net.glasslauncher'
-			artifactId = 'biny-nests'
-			version = mergedNestsVersion
-			artifact(tasks.mergedNestsJar)
-		}
 	}
 	repositories {
 		// Local temp maven for local builds
@@ -202,7 +183,6 @@ publishing {
 task publishNestsToTempLocal {
 	dependsOn 'publishClientNestsPublicationToTempLocalRepository'
 	dependsOn 'publishServerNestsPublicationToTempLocalRepository'
-	dependsOn 'publishMergedNestsPublicationToTempLocalRepository'
 
 	doLast {
 		// Generate maven-metadata.xml for keratin to find the nests
@@ -215,12 +195,11 @@ task publishNestsToTempLocal {
   <groupId>net.glasslauncher</groupId>
   <artifactId>biny-nests</artifactId>
   <versioning>
-    <latest>${mergedNestsVersion}</latest>
-    <release>${mergedNestsVersion}</release>
+    <latest>${clientNestsVersion}</latest>
+    <release>${clientNestsVersion}</release>
     <versions>
       <version>${clientNestsVersion}</version>
       <version>${serverNestsVersion}</version>
-      <version>${mergedNestsVersion}</version>
     </versions>
     <lastUpdated>${new Date().format('yyyyMMddHHmmss')}</lastUpdated>
   </versioning>
@@ -230,7 +209,6 @@ task publishNestsToTempLocal {
 		println "Published nests to temp local maven: ${tempMavenDir}"
 		println "  net.glasslauncher:biny-nests:${clientNestsVersion}"
 		println "  net.glasslauncher:biny-nests:${serverNestsVersion}"
-		println "  net.glasslauncher:biny-nests:${mergedNestsVersion}"
 	}
 }
 
@@ -269,28 +247,16 @@ tasks.matching { it.name.startsWith('publishServerNestsPublicationToGlassLaunche
 	}
 }
 
-tasks.matching { it.name.startsWith('publishMergedNestsPublicationToGlassLauncherRepository') }.configureEach {
-	onlyIf {
-		def exists = versionExists('biny-nests', mergedNestsVersion)
-		if (exists) {
-			println "Skipping merged nests publish: ${mergedNestsVersion} already exists"
-		}
-		return !exists && mergedNestsFile.exists()
-	}
-}
-
 // Task to publish nests to remote glass-launcher maven
 task publishNestsToRemote {
 	dependsOn 'publishClientNestsPublicationToGlassLauncherRepository'
 	dependsOn 'publishServerNestsPublicationToGlassLauncherRepository'
-	dependsOn 'publishMergedNestsPublicationToGlassLauncherRepository'
 
 	doLast {
 		println ""
 		println "Published nests to glass-launcher maven:"
 		println "  net.glasslauncher:biny-nests:${clientNestsVersion}"
 		println "  net.glasslauncher:biny-nests:${serverNestsVersion}"
-		println "  net.glasslauncher:biny-nests:${mergedNestsVersion}"
 	}
 }
 
@@ -298,14 +264,12 @@ task publishNestsToRemote {
 task publishNestsToMavenLocal {
 	dependsOn 'publishClientNestsPublicationToMavenLocal'
 	dependsOn 'publishServerNestsPublicationToMavenLocal'
-	dependsOn 'publishMergedNestsPublicationToMavenLocal'
 
 	doLast {
 		println ""
 		println "Published nests to local Maven:"
 		println "  net.glasslauncher:biny-nests:${clientNestsVersion}"
 		println "  net.glasslauncher:biny-nests:${serverNestsVersion}"
-		println "  net.glasslauncher:biny-nests:${mergedNestsVersion}"
 	}
 }
 
@@ -328,3 +292,45 @@ tasks.matching { it.name == 'publishMavenPublicationToGlassLauncherRepository' }
 tasks.matching { it.name == 'publishMavenPublicationToMavenLocal' }.configureEach {
 	mustRunAfter publishNestsToMavenLocal
 }
+
+// Javadoc configuration with MappingTaglet support
+tasks.withType(Javadoc, {
+	it.outputs.upToDateWhen { false }
+
+	it.options {
+		source = "8"
+		encoding = 'UTF-8'
+		charSet = 'UTF-8'
+		memberLevel = JavadocMemberLevel.PRIVATE
+		splitIndex true
+		tags(
+				'apiNote:a:API Note:',
+				'implSpec:a:Implementation Requirements:',
+				'implNote:a:Implementation Note:'
+		)
+		taglets "net.fabricmc.filament.mappingpoet.jd.MappingTaglet"
+		it.use()
+
+		addBooleanOption "-allow-script-in-comments", true
+		addBooleanOption "-ignore-source-errors", true
+		links(
+				'https://guava.dev/releases/21.0/api/docs/',
+				'https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/',
+				'https://logging.apache.org/log4j/2.x/javadoc/log4j-api/',
+				'https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/',
+				'https://javadoc.lwjgl.org/',
+				"https://docs.oracle.com/en/java/javase/11/docs/api/"
+		)
+		addBooleanOption 'Xdoclint:html', true
+		addBooleanOption 'Xdoclint:syntax', true
+		addBooleanOption 'Xdoclint:reference', true
+		addBooleanOption 'Xdoclint:accessibility', true
+	}
+
+	def filamentCodeSource = MappingPoetTask.class.getProtectionDomain().getCodeSource()
+	def filamentJarFile = new File(filamentCodeSource.getLocation().getFile())
+
+	options {
+		tagletPath = [filamentJarFile]
+	}
+})
